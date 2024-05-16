@@ -1,0 +1,194 @@
+\hypertarget{classfcl_1_1Convex}{}\doxysection{fcl\+::Convex$<$ S\+\_\+ $>$ Class Template Reference}
+\label{classfcl_1_1Convex}\index{fcl::Convex$<$ S\_ $>$@{fcl::Convex$<$ S\_ $>$}}
+
+
+A convex polytope.  
+
+
+
+
+{\ttfamily \#include $<$convex.\+h$>$}
+
+Inheritance diagram for fcl\+::Convex$<$ S\+\_\+ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classfcl_1_1Convex}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Convex_a7b23d6de911cbc0f0bdc355c7a1e56e9}\label{classfcl_1_1Convex_a7b23d6de911cbc0f0bdc355c7a1e56e9}} 
+using {\bfseries S} = S\+\_\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfcl_1_1Convex_af8bb9e4d6b8eb3ecc3afa8bcabdbb7d0}{Convex}} (const std\+::shared\+\_\+ptr$<$ const std\+::vector$<$ Vector3$<$ S $>$$>$$>$ \&vertices, int num\+\_\+faces, const std\+::shared\+\_\+ptr$<$ const std\+::vector$<$ int $>$$>$ \&faces, bool throw\+\_\+if\+\_\+invalid=false)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Convex_adfa63bf9f8d9a79db6f3f7e4c80a5be0}\label{classfcl_1_1Convex_adfa63bf9f8d9a79db6f3f7e4c80a5be0}} 
+\mbox{\hyperlink{classfcl_1_1Convex_adfa63bf9f8d9a79db6f3f7e4c80a5be0}{Convex}} (const \mbox{\hyperlink{classfcl_1_1Convex}{Convex}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Convex_a98d49d69fecb052c096fcf09f7136444}\label{classfcl_1_1Convex_a98d49d69fecb052c096fcf09f7136444}} 
+void \mbox{\hyperlink{classfcl_1_1Convex_a98d49d69fecb052c096fcf09f7136444}{compute\+Local\+A\+A\+BB}} () override
+\begin{DoxyCompactList}\small\item\em Computes \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}\sout{ in the geometry\textquotesingle{}s canonical frame. }\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Convex_a3be460f6f2a118e587cf3b877c511ff1}\label{classfcl_1_1Convex_a3be460f6f2a118e587cf3b877c511ff1}} 
+\mbox{\hyperlink{namespacefcl_a2b48aa89f14ef2fb4082575eefb145fc}{N\+O\+D\+E\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{classfcl_1_1Convex_a3be460f6f2a118e587cf3b877c511ff1}{get\+Node\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Gets node type\+: a convex polytope. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Convex_a46c42a01f8782ba6d626e1dfe84e3a01}\label{classfcl_1_1Convex_a46c42a01f8782ba6d626e1dfe84e3a01}} 
+const std\+::vector$<$ Vector3$<$ S $>$ $>$ \& \mbox{\hyperlink{classfcl_1_1Convex_a46c42a01f8782ba6d626e1dfe84e3a01}{get\+Vertices}} () const
+\begin{DoxyCompactList}\small\item\em Gets the vertex positions in the geometry\textquotesingle{}s frame G. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Convex_a6bfd2d086e7107fae17b9341f9393633}\label{classfcl_1_1Convex_a6bfd2d086e7107fae17b9341f9393633}} 
+int \mbox{\hyperlink{classfcl_1_1Convex_a6bfd2d086e7107fae17b9341f9393633}{get\+Face\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Gets the total number of faces in the convex mesh. \end{DoxyCompactList}\item 
+const std\+::vector$<$ int $>$ \& \mbox{\hyperlink{classfcl_1_1Convex_a71a4c04fa44a423d8d25ddc3acea08c0}{get\+Faces}} () const
+\begin{DoxyCompactList}\small\item\em Gets the representation of the {\itshape faces} of the convex hull. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Convex_a44325129b248418b0266d4d9aa83b6c1}\label{classfcl_1_1Convex_a44325129b248418b0266d4d9aa83b6c1}} 
+const Vector3$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1Convex_a44325129b248418b0266d4d9aa83b6c1}{get\+Interior\+Point}} () const
+\begin{DoxyCompactList}\small\item\em A point guaranteed to be on the interior of the convex polytope, used for collision. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Convex_acce8bf301ba393f7055ee0d97cd498f7}\label{classfcl_1_1Convex_acce8bf301ba393f7055ee0d97cd498f7}} 
+Matrix3$<$ S $>$ {\bfseries compute\+Momentof\+Inertia} () const override
+\item 
+\mbox{\Hypertarget{classfcl_1_1Convex_aa60b11c87fdce95b95697855217fa58e}\label{classfcl_1_1Convex_aa60b11c87fdce95b95697855217fa58e}} 
+Vector3$<$ S $>$ {\bfseries compute\+C\+OM} () const override
+\item 
+\mbox{\Hypertarget{classfcl_1_1Convex_ac2d30dad09760aa9d697964ebb37776a}\label{classfcl_1_1Convex_ac2d30dad09760aa9d697964ebb37776a}} 
+S {\bfseries compute\+Volume} () const override
+\item 
+\mbox{\Hypertarget{classfcl_1_1Convex_ada3a742113cb33b6cd672ff8405e8015}\label{classfcl_1_1Convex_ada3a742113cb33b6cd672ff8405e8015}} 
+std\+::vector$<$ Vector3$<$ S $>$ $>$ \mbox{\hyperlink{classfcl_1_1Convex_ada3a742113cb33b6cd672ff8405e8015}{get\+Bound\+Vertices}} (const Transform3$<$ S $>$ \&tf) const
+\begin{DoxyCompactList}\small\item\em Gets the vertices of some convex shape which can bound this shape in a specific configuration. \end{DoxyCompactList}\item 
+const Vector3$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1Convex_a0daa7629d489d6b66e8d8e56b0550909}{find\+Extreme\+Vertex}} (const Vector3$<$ S $>$ \&v\+\_\+C) const
+\begin{DoxyCompactList}\small\item\em Reports a vertex in this convex polytope that lies farthest in the given direction v\+\_\+C. The direction vector must be expressed in the same frame C as the vertices of {\ttfamily this} Convex polytope. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classfcl_1_1Convex_a2c6c2bfa3b5380e374ad6ae7bf8e8972}{representation}} (int precision=20) const
+\begin{DoxyCompactList}\small\item\em Create a string that should be sufficient to recreate this shape. This is akin to the repr() implementation in python. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Convex_a6ccec553e07e225557dfb16d660c9a57}\label{classfcl_1_1Convex_a6ccec553e07e225557dfb16d660c9a57}} 
+class {\bfseries Convex\+Tester}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Convex_a363e53f09b401c7855b0d70350b10a2e}\label{classfcl_1_1Convex_a363e53f09b401c7855b0d70350b10a2e}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{classfcl_1_1Convex}{Convex}} \&convex)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S\+\_\+$>$\newline
+class fcl\+::\+Convex$<$ S\+\_\+ $>$}
+
+A convex polytope. 
+
+The Convex class represents a subset of general meshes\+: convex meshes. The class represents its underlying mesh quite simply\+: an ordered list of vertices, {\ttfamily V = \mbox{[}v₀, v₁, ..., vₙ₋₁\mbox{]}}, and an ordered list of faces, {\ttfamily F = \mbox{[}f₀, f₁, ..., fₘ₋₁\mbox{]}}, built on those vertices (via vertex {\itshape indices}).
+
+A mesh is only compatible with Convex if it satisfies the following properties\+:
+\begin{DoxyItemize}
+\item Each face, fᵢ, must be planar and completely lies on a supporting plane πᵢ. The ordered sets {\ttfamily F = \mbox{[}f₀, f₁, ..., fₙ₋₁\mbox{]}} and {\ttfamily Π = \mbox{[}π₀, π₁, ..., πₙ₋₁\mbox{]}} are defined such that face fᵢ has supporting plane πᵢ.
+\item A face fᵢ is defined by an ordered list of vertex indices (e.\+g., {\ttfamily fᵢ = \mbox{[}iᵢ₀, iᵢ₁, ..., iᵢₖ₋₁\mbox{]}} (for a face with k vertices and k edges). The {\itshape ordering} of the vertex indices must visit the face\textquotesingle{}s vertices in a {\itshape counter-\/clockwise} order when viewed from outside the mesh and the vertices must all lie on the face\textquotesingle{}s supporting plane.
+\item Define functions {\ttfamily πᵢ(x)} which report the signed distance from point {\ttfamily x} to plane {\ttfamily πᵢ}. To be convex, it must be true that {\ttfamily π(v) ≤ 0, ∀ π ∈ Π ∧ v ∈ V}.
+\end{DoxyItemize}
+
+If those requirements are satisfied, for a given convex region, the mesh with the smallest number of faces {\itshape may} have non-\/triangular faces. In fact, they could be polygons with an arbitrary number of edges/vertices. The Convex class supports compact representation. But it {\itshape also} supports representations that decompose a large n-\/gon into a set of smaller polygons or triangles. In this case, each of the triangles supporting planes would be the same and the requirements listed above would still be satisfied.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em S\+\_\+} & The scalar type; must be a valid Eigen scalar. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfcl_1_1Convex_af8bb9e4d6b8eb3ecc3afa8bcabdbb7d0}\label{classfcl_1_1Convex_af8bb9e4d6b8eb3ecc3afa8bcabdbb7d0}} 
+\index{fcl::Convex$<$ S\_ $>$@{fcl::Convex$<$ S\_ $>$}!Convex@{Convex}}
+\index{Convex@{Convex}!fcl::Convex$<$ S\_ $>$@{fcl::Convex$<$ S\_ $>$}}
+\doxysubsubsection{\texorpdfstring{Convex()}{Convex()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+\mbox{\hyperlink{classfcl_1_1Convex}{fcl\+::\+Convex}}$<$ S $>$\+::\mbox{\hyperlink{classfcl_1_1Convex}{Convex}} (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ const std\+::vector$<$ Vector3$<$ S $>$$>$$>$ \&}]{vertices,  }\item[{int}]{num\+\_\+faces,  }\item[{const std\+::shared\+\_\+ptr$<$ const std\+::vector$<$ int $>$$>$ \&}]{faces,  }\item[{bool}]{throw\+\_\+if\+\_\+invalid = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\begin{DoxyNote}{Note}
+\+: The Convex geometry assumes that the input data vertices and faces do not change through the life of the object.
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+\+: The Convex class only partially validates the input; it generally trusts that the inputs truly represent a coherent convex polytope. For those aspects that {\itshape are} validated, the constructor will throw for failed tests if {\ttfamily throw\+\_\+if\+\_\+invalid} is set to {\ttfamily true}.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & The positions of the polytope vertices. \\
+\hline
+{\em num\+\_\+faces} & The number of faces defined in {\ttfamily faces}. \\
+\hline
+{\em faces} & Encoding of the polytope faces. Must encode {\ttfamily num\+\_\+faces} number of faces. See member documentation for details on encoding. \\
+\hline
+{\em throw\+\_\+if\+\_\+invalid} & If {\ttfamily true}, failed attempts to validate the mesh will throw an exception. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfcl_1_1Convex_a0daa7629d489d6b66e8d8e56b0550909}\label{classfcl_1_1Convex_a0daa7629d489d6b66e8d8e56b0550909}} 
+\index{fcl::Convex$<$ S\_ $>$@{fcl::Convex$<$ S\_ $>$}!findExtremeVertex@{findExtremeVertex}}
+\index{findExtremeVertex@{findExtremeVertex}!fcl::Convex$<$ S\_ $>$@{fcl::Convex$<$ S\_ $>$}}
+\doxysubsubsection{\texorpdfstring{findExtremeVertex()}{findExtremeVertex()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+const Vector3$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1Convex}{fcl\+::\+Convex}}$<$ S $>$\+::find\+Extreme\+Vertex (\begin{DoxyParamCaption}\item[{const Vector3$<$ S $>$ \&}]{v\+\_\+C }\end{DoxyParamCaption}) const}
+
+
+
+Reports a vertex in this convex polytope that lies farthest in the given direction v\+\_\+C. The direction vector must be expressed in the same frame C as the vertices of {\ttfamily this} Convex polytope. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em p\+\_\+\+CE} & the position vector from Frame C\textquotesingle{}s origin to the extreme vertex E. It is guaranteed that v\+\_\+\+C⋅p\+\_\+\+CE ≥ v\+\_\+\+C⋅p\+\_\+\+CF for all F ≠ E in the Convex polytope\textquotesingle{}s set of vertices. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classfcl_1_1Convex_a71a4c04fa44a423d8d25ddc3acea08c0}\label{classfcl_1_1Convex_a71a4c04fa44a423d8d25ddc3acea08c0}} 
+\index{fcl::Convex$<$ S\_ $>$@{fcl::Convex$<$ S\_ $>$}!getFaces@{getFaces}}
+\index{getFaces@{getFaces}!fcl::Convex$<$ S\_ $>$@{fcl::Convex$<$ S\_ $>$}}
+\doxysubsubsection{\texorpdfstring{getFaces()}{getFaces()}}
+{\footnotesize\ttfamily template$<$typename S\+\_\+ $>$ \\
+const std\+::vector$<$int$>$\& \mbox{\hyperlink{classfcl_1_1Convex}{fcl\+::\+Convex}}$<$ S\+\_\+ $>$\+::get\+Faces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the representation of the {\itshape faces} of the convex hull. 
+
+The array is the concatenation of an integer-\/based representations of each face. A single face is encoded as a sub-\/array of ints where the first int is the {\itshape number} n of vertices in the face, and the following n values are ordered indices into {\ttfamily vertices} which visit the vertex values in a {\itshape counter-\/clockwise} order (viewed from the outside).
+
+For a well-\/formed face {\ttfamily f} consisting of indices \mbox{[}i₀, i₁, ..., iₘ₋₁\mbox{]}, it should be the case that\+:
+
+{\ttfamily eⱼ × eⱼ₊₁ · n̂ₚ = $\vert$eⱼ × eⱼ₊₁$\vert$, ∀ 0 ≤ j $<$ m, j ∈ ℤ}, where {\ttfamily n̂ₚ} is the normal for plane {\ttfamily π} on which face {\ttfamily f} lies. {\ttfamily eⱼ = vertices\mbox{[}iⱼ\mbox{]} -\/ vertices\mbox{[}iⱼ₋₁\mbox{]}} is the edge vector of face {\ttfamily f} defined by adjacent vertex indices at jᵗʰ vertex (wrapping around such that {\ttfamily j -\/ 1 = m -\/ 1} for {\ttfamily j = 0}).
+
+Satisfying this condition implies the following\+:
+\begin{DoxyEnumerate}
+\item vertices are not coincident and
+\item the indices of the face correspond to a proper counter-\/clockwise ordering. 
+\end{DoxyEnumerate}\mbox{\Hypertarget{classfcl_1_1Convex_a2c6c2bfa3b5380e374ad6ae7bf8e8972}\label{classfcl_1_1Convex_a2c6c2bfa3b5380e374ad6ae7bf8e8972}} 
+\index{fcl::Convex$<$ S\_ $>$@{fcl::Convex$<$ S\_ $>$}!representation@{representation}}
+\index{representation@{representation}!fcl::Convex$<$ S\_ $>$@{fcl::Convex$<$ S\_ $>$}}
+\doxysubsubsection{\texorpdfstring{representation()}{representation()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+std\+::string \mbox{\hyperlink{classfcl_1_1Convex}{fcl\+::\+Convex}}$<$ S $>$\+::representation (\begin{DoxyParamCaption}\item[{int}]{precision = {\ttfamily 20} }\end{DoxyParamCaption}) const}
+
+
+
+Create a string that should be sufficient to recreate this shape. This is akin to the repr() implementation in python. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em precision} & The requested digits of precision for the numerical measures (same semantics as std\+::setprecision()). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string representation of this instance. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/geometry/shape/convex.\+h\item 
+/home/prodefi/fcl/include/fcl/geometry/shape/convex-\/inl.\+h\end{DoxyCompactItemize}

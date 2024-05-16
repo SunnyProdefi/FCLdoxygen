@@ -1,0 +1,71 @@
+\hypertarget{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode}{}\doxysection{fcl\+::detail\+::Shape\+Mesh\+Conservative\+Advancement\+Traversal\+Node$<$ Shape, BV, Narrow\+Phase\+Solver $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode}\index{fcl::detail::ShapeMeshConservativeAdvancementTraversalNode$<$ Shape, BV, NarrowPhaseSolver $>$@{fcl::detail::ShapeMeshConservativeAdvancementTraversalNode$<$ Shape, BV, NarrowPhaseSolver $>$}}
+Inheritance diagram for fcl\+::detail\+::Shape\+Mesh\+Conservative\+Advancement\+Traversal\+Node$<$ Shape, BV, Narrow\+Phase\+Solver $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.761905cm]{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a794f6dee0902fae0f878e309425b7d01}\label{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a794f6dee0902fae0f878e309425b7d01}} 
+using {\bfseries S} = typename B\+V\+::S
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a852804751f1fabb67def5e569c8e54c5}\label{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a852804751f1fabb67def5e569c8e54c5}} 
+{\bfseries Shape\+Mesh\+Conservative\+Advancement\+Traversal\+Node} (S w\+\_\+=1)
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a51ae780f488b40c61916fd7320e08a22}\label{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a51ae780f488b40c61916fd7320e08a22}} 
+S \mbox{\hyperlink{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a51ae780f488b40c61916fd7320e08a22}{B\+V\+Testing}} (int b1, int b2) const
+\begin{DoxyCompactList}\small\item\em BV culling test in one B\+V\+TT node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a340f112f5b31748395feb078e1d66cb1}\label{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a340f112f5b31748395feb078e1d66cb1}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a340f112f5b31748395feb078e1d66cb1}{leaf\+Testing}} (int b1, int b2) const
+\begin{DoxyCompactList}\small\item\em Conservative advancement testing between leaves (one triangle and one shape) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a81c25e8647997f3aa55313acf76d0e32}\label{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a81c25e8647997f3aa55313acf76d0e32}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a81c25e8647997f3aa55313acf76d0e32}{can\+Stop}} (S c) const
+\begin{DoxyCompactList}\small\item\em Whether the traversal process can stop early. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_aa2ba19fe6a1386fedc10dacd45d31fa6}\label{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_aa2ba19fe6a1386fedc10dacd45d31fa6}} 
+S {\bfseries min\+\_\+distance}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a555917cb43e79f3bacde672879e07d14}\label{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a555917cb43e79f3bacde672879e07d14}} 
+Vector3$<$ S $>$ {\bfseries closest\+\_\+p1}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_af498e52aa5636250f483cc13750078d4}\label{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_af498e52aa5636250f483cc13750078d4}} 
+Vector3$<$ S $>$ {\bfseries closest\+\_\+p2}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_aebded2ee18b95b198f4f790351c37e8a}\label{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_aebded2ee18b95b198f4f790351c37e8a}} 
+int {\bfseries last\+\_\+tri\+\_\+id}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_aea9ee92896f448629b599d2806b6453a}\label{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_aea9ee92896f448629b599d2806b6453a}} 
+S \mbox{\hyperlink{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_aea9ee92896f448629b599d2806b6453a}{w}}
+\begin{DoxyCompactList}\small\item\em CA controlling variable\+: early stop for the early iterations of CA. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a62b40da8f65c2fbc86a8047f707f2481}\label{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a62b40da8f65c2fbc86a8047f707f2481}} 
+S \mbox{\hyperlink{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a62b40da8f65c2fbc86a8047f707f2481}{toc}}
+\begin{DoxyCompactList}\small\item\em The time from beginning point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a997d71b3a0819f0b075fc241c0e4bae2}\label{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a997d71b3a0819f0b075fc241c0e4bae2}} 
+S {\bfseries t\+\_\+err}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a15cb1cb79f22f41c886a5c44459d6f15}\label{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a15cb1cb79f22f41c886a5c44459d6f15}} 
+S \mbox{\hyperlink{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a15cb1cb79f22f41c886a5c44459d6f15}{delta\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em The delta\+\_\+t each step. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a5b2d364eff4b755240cb5e8ec6acadc6}\label{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a5b2d364eff4b755240cb5e8ec6acadc6}} 
+const \mbox{\hyperlink{classfcl_1_1MotionBase}{Motion\+Base}}$<$ S $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a5b2d364eff4b755240cb5e8ec6acadc6}{motion1}}
+\begin{DoxyCompactList}\small\item\em Motions for the two objects in query. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_ac2c8b9b1ee444a0a041056b7f4e27913}\label{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_ac2c8b9b1ee444a0a041056b7f4e27913}} 
+const \mbox{\hyperlink{classfcl_1_1MotionBase}{Motion\+Base}}$<$ S $>$ $\ast$ {\bfseries motion2}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a5f1907ef360e6aa3df442c115badbd61}\label{classfcl_1_1detail_1_1ShapeMeshConservativeAdvancementTraversalNode_a5f1907ef360e6aa3df442c115badbd61}} 
+std\+::vector$<$ \mbox{\hyperlink{structfcl_1_1detail_1_1ConservativeAdvancementStackData}{Conservative\+Advancement\+Stack\+Data}}$<$ S $>$ $>$ {\bfseries stack}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/distance/shape\+\_\+mesh\+\_\+conservative\+\_\+advancement\+\_\+traversal\+\_\+node.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/distance/shape\+\_\+mesh\+\_\+conservative\+\_\+advancement\+\_\+traversal\+\_\+node-\/inl.\+h\end{DoxyCompactItemize}

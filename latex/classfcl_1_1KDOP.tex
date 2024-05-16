@@ -1,0 +1,83 @@
+\hypertarget{classfcl_1_1KDOP}{}\doxysection{fcl\+::K\+D\+OP$<$ S\+\_\+, N $>$ Class Template Reference}
+\label{classfcl_1_1KDOP}\index{fcl::KDOP$<$ S\_, N $>$@{fcl::KDOP$<$ S\_, N $>$}}
+
+
+\mbox{\hyperlink{classfcl_1_1KDOP}{K\+D\+OP}} class describes the \mbox{\hyperlink{classfcl_1_1KDOP}{K\+D\+OP}} collision structures. K is set as the template parameter, which should be 16, 18, or 24 The \mbox{\hyperlink{classfcl_1_1KDOP}{K\+D\+OP}} structure is defined by some pairs of parallel planes defined by some axes. For K = 16, the planes are 6 \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} planes and 10 diagonal planes that cut off some space of the edges\+: (-\/1,0,0) and (1,0,0) -\/$>$ indices 0 and 8 (0,-\/1,0) and (0,1,0) -\/$>$ indices 1 and 9 (0,0,-\/1) and (0,0,1) -\/$>$ indices 2 and 10 (-\/1,-\/1,0) and (1,1,0) -\/$>$ indices 3 and 11 (-\/1,0,-\/1) and (1,0,1) -\/$>$ indices 4 and 12 (0,-\/1,-\/1) and (0,1,1) -\/$>$ indices 5 and 13 (-\/1,1,0) and (1,-\/1,0) -\/$>$ indices 6 and 14 (-\/1,0,1) and (1,0,-\/1) -\/$>$ indices 7 and 15 For K = 18, the planes are 6 \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} planes and 12 diagonal planes that cut off some space of the edges\+: (-\/1,0,0) and (1,0,0) -\/$>$ indices 0 and 9 (0,-\/1,0) and (0,1,0) -\/$>$ indices 1 and 10 (0,0,-\/1) and (0,0,1) -\/$>$ indices 2 and 11 (-\/1,-\/1,0) and (1,1,0) -\/$>$ indices 3 and 12 (-\/1,0,-\/1) and (1,0,1) -\/$>$ indices 4 and 13 (0,-\/1,-\/1) and (0,1,1) -\/$>$ indices 5 and 14 (-\/1,1,0) and (1,-\/1,0) -\/$>$ indices 6 and 15 (-\/1,0,1) and (1,0,-\/1) -\/$>$ indices 7 and 16 (0,-\/1,1) and (0,1,-\/1) -\/$>$ indices 8 and 17 For K = 18, the planes are 6 \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} planes and 18 diagonal planes that cut off some space of the edges\+: (-\/1,0,0) and (1,0,0) -\/$>$ indices 0 and 12 (0,-\/1,0) and (0,1,0) -\/$>$ indices 1 and 13 (0,0,-\/1) and (0,0,1) -\/$>$ indices 2 and 14 (-\/1,-\/1,0) and (1,1,0) -\/$>$ indices 3 and 15 (-\/1,0,-\/1) and (1,0,1) -\/$>$ indices 4 and 16 (0,-\/1,-\/1) and (0,1,1) -\/$>$ indices 5 and 17 (-\/1,1,0) and (1,-\/1,0) -\/$>$ indices 6 and 18 (-\/1,0,1) and (1,0,-\/1) -\/$>$ indices 7 and 19 (0,-\/1,1) and (0,1,-\/1) -\/$>$ indices 8 and 20 (-\/1, -\/1, 1) and (1, 1, -\/1) -\/-\/$>$ indices 9 and 21 (-\/1, 1, -\/1) and (1, -\/1, 1) -\/-\/$>$ indices 10 and 22 (1, -\/1, -\/1) and (-\/1, 1, 1) -\/-\/$>$ indices 11 and 23.  
+
+
+
+
+{\ttfamily \#include $<$k\+D\+O\+P.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_a4d2350c5ab776d18e920e8b3be101eca}\label{classfcl_1_1KDOP_a4d2350c5ab776d18e920e8b3be101eca}} 
+using {\bfseries S} = S\+\_\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_a9d390fd8170f4b4e89dafd5d4aa3e247}\label{classfcl_1_1KDOP_a9d390fd8170f4b4e89dafd5d4aa3e247}} 
+\mbox{\hyperlink{classfcl_1_1KDOP_a9d390fd8170f4b4e89dafd5d4aa3e247}{K\+D\+OP}} ()
+\begin{DoxyCompactList}\small\item\em Creating k\+D\+OP containing nothing. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_a974d12c9b399502ddd2a72175c7c8781}\label{classfcl_1_1KDOP_a974d12c9b399502ddd2a72175c7c8781}} 
+\mbox{\hyperlink{classfcl_1_1KDOP_a974d12c9b399502ddd2a72175c7c8781}{K\+D\+OP}} (const Vector3$<$ S $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Creating k\+D\+OP containing only one point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_a3ce9b264a761985054c5d0559ba6a164}\label{classfcl_1_1KDOP_a3ce9b264a761985054c5d0559ba6a164}} 
+\mbox{\hyperlink{classfcl_1_1KDOP_a3ce9b264a761985054c5d0559ba6a164}{K\+D\+OP}} (const Vector3$<$ S $>$ \&a, const Vector3$<$ S $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Creating k\+D\+OP containing two points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_a7dffde09d5826756f6606aea4a6a3bac}\label{classfcl_1_1KDOP_a7dffde09d5826756f6606aea4a6a3bac}} 
+bool \mbox{\hyperlink{classfcl_1_1KDOP_a7dffde09d5826756f6606aea4a6a3bac}{overlap}} (const \mbox{\hyperlink{classfcl_1_1KDOP}{K\+D\+OP}}$<$ S, N $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Check whether two K\+D\+O\+Ps are overlapped. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_a23cba94a8b5f5fd3ca81bd419194c9d1}\label{classfcl_1_1KDOP_a23cba94a8b5f5fd3ca81bd419194c9d1}} 
+bool {\bfseries inside} (const Vector3$<$ S $>$ \&p) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_a43860a447e3228ee29546c062c40b19c}\label{classfcl_1_1KDOP_a43860a447e3228ee29546c062c40b19c}} 
+\mbox{\hyperlink{classfcl_1_1KDOP}{K\+D\+OP}}$<$ S, N $>$ \& \mbox{\hyperlink{classfcl_1_1KDOP_a43860a447e3228ee29546c062c40b19c}{operator+=}} (const Vector3$<$ S $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Merge the point and the \mbox{\hyperlink{classfcl_1_1KDOP}{K\+D\+OP}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_aea1c32e4c5a4b4afd8bd38f81dae94e5}\label{classfcl_1_1KDOP_aea1c32e4c5a4b4afd8bd38f81dae94e5}} 
+\mbox{\hyperlink{classfcl_1_1KDOP}{K\+D\+OP}}$<$ S, N $>$ \& \mbox{\hyperlink{classfcl_1_1KDOP_aea1c32e4c5a4b4afd8bd38f81dae94e5}{operator+=}} (const \mbox{\hyperlink{classfcl_1_1KDOP}{K\+D\+OP}}$<$ S, N $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Merge two K\+D\+O\+Ps. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_a326408ea6e1973ab563522a290002aae}\label{classfcl_1_1KDOP_a326408ea6e1973ab563522a290002aae}} 
+\mbox{\hyperlink{classfcl_1_1KDOP}{K\+D\+OP}}$<$ S, N $>$ \mbox{\hyperlink{classfcl_1_1KDOP_a326408ea6e1973ab563522a290002aae}{operator+}} (const \mbox{\hyperlink{classfcl_1_1KDOP}{K\+D\+OP}}$<$ S, N $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classfcl_1_1KDOP}{K\+D\+OP}} by mergin two K\+D\+O\+Ps. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_ad6ce2a33dc97615f0b9d3ed385c2a8a4}\label{classfcl_1_1KDOP_ad6ce2a33dc97615f0b9d3ed385c2a8a4}} 
+S \mbox{\hyperlink{classfcl_1_1KDOP_ad6ce2a33dc97615f0b9d3ed385c2a8a4}{width}} () const
+\begin{DoxyCompactList}\small\item\em The (\mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}) width. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_ade5ea8ee6a8e7e1b24f11357a1e8ad92}\label{classfcl_1_1KDOP_ade5ea8ee6a8e7e1b24f11357a1e8ad92}} 
+S \mbox{\hyperlink{classfcl_1_1KDOP_ade5ea8ee6a8e7e1b24f11357a1e8ad92}{height}} () const
+\begin{DoxyCompactList}\small\item\em The (\mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}) height. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_a9066c0f26b3c00788f8e7d82f2c7da9f}\label{classfcl_1_1KDOP_a9066c0f26b3c00788f8e7d82f2c7da9f}} 
+S \mbox{\hyperlink{classfcl_1_1KDOP_a9066c0f26b3c00788f8e7d82f2c7da9f}{depth}} () const
+\begin{DoxyCompactList}\small\item\em The (\mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}) depth. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_a9ac964fb4fae4b2e3c8b0958b92949d8}\label{classfcl_1_1KDOP_a9ac964fb4fae4b2e3c8b0958b92949d8}} 
+S \mbox{\hyperlink{classfcl_1_1KDOP_a9ac964fb4fae4b2e3c8b0958b92949d8}{volume}} () const
+\begin{DoxyCompactList}\small\item\em The (\mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}) volume. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_ad80cb7206899673b920a7ded62c24296}\label{classfcl_1_1KDOP_ad80cb7206899673b920a7ded62c24296}} 
+S \mbox{\hyperlink{classfcl_1_1KDOP_ad80cb7206899673b920a7ded62c24296}{size}} () const
+\begin{DoxyCompactList}\small\item\em Size of the k\+D\+OP (used in B\+V\+\_\+\+Splitter to order two k\+D\+O\+Ps) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_a23c3fbeb04ed8c2e409fce59a53a245c}\label{classfcl_1_1KDOP_a23c3fbeb04ed8c2e409fce59a53a245c}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1KDOP_a23c3fbeb04ed8c2e409fce59a53a245c}{center}} () const
+\begin{DoxyCompactList}\small\item\em The (\mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}) center. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_a21a1b7f413deb793cf17db223fb83a71}\label{classfcl_1_1KDOP_a21a1b7f413deb793cf17db223fb83a71}} 
+S \mbox{\hyperlink{classfcl_1_1KDOP_a21a1b7f413deb793cf17db223fb83a71}{distance}} (const \mbox{\hyperlink{classfcl_1_1KDOP}{K\+D\+OP}}$<$ S, N $>$ \&other, Vector3$<$ S $>$ $\ast$P=nullptr, Vector3$<$ S $>$ $\ast$Q=nullptr) const
+\begin{DoxyCompactList}\small\item\em The distance between two K\+D\+O\+P$<$\+S, N$>$. Not implemented. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_ac256cb9fad9aaa0f5679a2fd5af2fb52}\label{classfcl_1_1KDOP_ac256cb9fad9aaa0f5679a2fd5af2fb52}} 
+S {\bfseries dist} (std\+::size\+\_\+t i) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1KDOP_a4a0159aaa040968c4f19adf6ab24f6c7}\label{classfcl_1_1KDOP_a4a0159aaa040968c4f19adf6ab24f6c7}} 
+S \& {\bfseries dist} (std\+::size\+\_\+t i)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S\+\_\+, std\+::size\+\_\+t N$>$\newline
+class fcl\+::\+K\+D\+O\+P$<$ S\+\_\+, N $>$}
+
+\mbox{\hyperlink{classfcl_1_1KDOP}{K\+D\+OP}} class describes the \mbox{\hyperlink{classfcl_1_1KDOP}{K\+D\+OP}} collision structures. K is set as the template parameter, which should be 16, 18, or 24 The \mbox{\hyperlink{classfcl_1_1KDOP}{K\+D\+OP}} structure is defined by some pairs of parallel planes defined by some axes. For K = 16, the planes are 6 \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} planes and 10 diagonal planes that cut off some space of the edges\+: (-\/1,0,0) and (1,0,0) -\/$>$ indices 0 and 8 (0,-\/1,0) and (0,1,0) -\/$>$ indices 1 and 9 (0,0,-\/1) and (0,0,1) -\/$>$ indices 2 and 10 (-\/1,-\/1,0) and (1,1,0) -\/$>$ indices 3 and 11 (-\/1,0,-\/1) and (1,0,1) -\/$>$ indices 4 and 12 (0,-\/1,-\/1) and (0,1,1) -\/$>$ indices 5 and 13 (-\/1,1,0) and (1,-\/1,0) -\/$>$ indices 6 and 14 (-\/1,0,1) and (1,0,-\/1) -\/$>$ indices 7 and 15 For K = 18, the planes are 6 \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} planes and 12 diagonal planes that cut off some space of the edges\+: (-\/1,0,0) and (1,0,0) -\/$>$ indices 0 and 9 (0,-\/1,0) and (0,1,0) -\/$>$ indices 1 and 10 (0,0,-\/1) and (0,0,1) -\/$>$ indices 2 and 11 (-\/1,-\/1,0) and (1,1,0) -\/$>$ indices 3 and 12 (-\/1,0,-\/1) and (1,0,1) -\/$>$ indices 4 and 13 (0,-\/1,-\/1) and (0,1,1) -\/$>$ indices 5 and 14 (-\/1,1,0) and (1,-\/1,0) -\/$>$ indices 6 and 15 (-\/1,0,1) and (1,0,-\/1) -\/$>$ indices 7 and 16 (0,-\/1,1) and (0,1,-\/1) -\/$>$ indices 8 and 17 For K = 18, the planes are 6 \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} planes and 18 diagonal planes that cut off some space of the edges\+: (-\/1,0,0) and (1,0,0) -\/$>$ indices 0 and 12 (0,-\/1,0) and (0,1,0) -\/$>$ indices 1 and 13 (0,0,-\/1) and (0,0,1) -\/$>$ indices 2 and 14 (-\/1,-\/1,0) and (1,1,0) -\/$>$ indices 3 and 15 (-\/1,0,-\/1) and (1,0,1) -\/$>$ indices 4 and 16 (0,-\/1,-\/1) and (0,1,1) -\/$>$ indices 5 and 17 (-\/1,1,0) and (1,-\/1,0) -\/$>$ indices 6 and 18 (-\/1,0,1) and (1,0,-\/1) -\/$>$ indices 7 and 19 (0,-\/1,1) and (0,1,-\/1) -\/$>$ indices 8 and 20 (-\/1, -\/1, 1) and (1, 1, -\/1) -\/-\/$>$ indices 9 and 21 (-\/1, 1, -\/1) and (1, -\/1, 1) -\/-\/$>$ indices 10 and 22 (1, -\/1, -\/1) and (-\/1, 1, 1) -\/-\/$>$ indices 11 and 23. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/math/bv/k\+D\+O\+P.\+h\item 
+/home/prodefi/fcl/include/fcl/math/bv/k\+D\+O\+P-\/inl.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,71 @@
+\hypertarget{classfcl_1_1detail_1_1TraversalNodeBase}{}\doxysection{fcl\+::detail\+::Traversal\+Node\+Base$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1TraversalNodeBase}\index{fcl::detail::TraversalNodeBase$<$ S $>$@{fcl::detail::TraversalNodeBase$<$ S $>$}}
+
+
+Node structure encoding the information required for traversal.  
+
+
+
+
+{\ttfamily \#include $<$traversal\+\_\+node\+\_\+base.\+h$>$}
+
+Inheritance diagram for fcl\+::detail\+::Traversal\+Node\+Base$<$ S $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfcl_1_1detail_1_1TraversalNodeBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1TraversalNodeBase_a841c5fbb6675a175351f910aff1a7327}\label{classfcl_1_1detail_1_1TraversalNodeBase_a841c5fbb6675a175351f910aff1a7327}} 
+virtual void {\bfseries preprocess} ()
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1TraversalNodeBase_afc2b3976b5782cdc83a56119418fc4d9}\label{classfcl_1_1detail_1_1TraversalNodeBase_afc2b3976b5782cdc83a56119418fc4d9}} 
+virtual void {\bfseries postprocess} ()
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1TraversalNodeBase_a6f4e1f8db35d6e9db4318f3391976db2}\label{classfcl_1_1detail_1_1TraversalNodeBase_a6f4e1f8db35d6e9db4318f3391976db2}} 
+virtual bool \mbox{\hyperlink{classfcl_1_1detail_1_1TraversalNodeBase_a6f4e1f8db35d6e9db4318f3391976db2}{is\+First\+Node\+Leaf}} (int b) const
+\begin{DoxyCompactList}\small\item\em Whether b is a leaf node in the first B\+VH tree. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1TraversalNodeBase_a1e83518150cd538e19d5f55be5fe047f}\label{classfcl_1_1detail_1_1TraversalNodeBase_a1e83518150cd538e19d5f55be5fe047f}} 
+virtual bool \mbox{\hyperlink{classfcl_1_1detail_1_1TraversalNodeBase_a1e83518150cd538e19d5f55be5fe047f}{is\+Second\+Node\+Leaf}} (int b) const
+\begin{DoxyCompactList}\small\item\em Whether b is a leaf node in the second B\+VH tree. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1TraversalNodeBase_ae1abdb790d392b5b56b10377ed6af887}\label{classfcl_1_1detail_1_1TraversalNodeBase_ae1abdb790d392b5b56b10377ed6af887}} 
+virtual bool \mbox{\hyperlink{classfcl_1_1detail_1_1TraversalNodeBase_ae1abdb790d392b5b56b10377ed6af887}{first\+Over\+Second}} (int b1, int b2) const
+\begin{DoxyCompactList}\small\item\em Traverse the subtree of the node in the first tree first. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1TraversalNodeBase_a91542e9bbc53fc954ea186dbeb7d126a}\label{classfcl_1_1detail_1_1TraversalNodeBase_a91542e9bbc53fc954ea186dbeb7d126a}} 
+virtual int \mbox{\hyperlink{classfcl_1_1detail_1_1TraversalNodeBase_a91542e9bbc53fc954ea186dbeb7d126a}{get\+First\+Left\+Child}} (int b) const
+\begin{DoxyCompactList}\small\item\em Get the left child of the node b in the first tree. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1TraversalNodeBase_a7d4ca11969e95bb3b23d886ed50aee1c}\label{classfcl_1_1detail_1_1TraversalNodeBase_a7d4ca11969e95bb3b23d886ed50aee1c}} 
+virtual int \mbox{\hyperlink{classfcl_1_1detail_1_1TraversalNodeBase_a7d4ca11969e95bb3b23d886ed50aee1c}{get\+First\+Right\+Child}} (int b) const
+\begin{DoxyCompactList}\small\item\em Get the right child of the node b in the first tree. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1TraversalNodeBase_a6116059545d2635bae4a9aef4bbbfc13}\label{classfcl_1_1detail_1_1TraversalNodeBase_a6116059545d2635bae4a9aef4bbbfc13}} 
+virtual int \mbox{\hyperlink{classfcl_1_1detail_1_1TraversalNodeBase_a6116059545d2635bae4a9aef4bbbfc13}{get\+Second\+Left\+Child}} (int b) const
+\begin{DoxyCompactList}\small\item\em Get the left child of the node b in the second tree. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1TraversalNodeBase_a7c2ef5deee278e36df02c6ded5a8b5c5}\label{classfcl_1_1detail_1_1TraversalNodeBase_a7c2ef5deee278e36df02c6ded5a8b5c5}} 
+virtual int \mbox{\hyperlink{classfcl_1_1detail_1_1TraversalNodeBase_a7c2ef5deee278e36df02c6ded5a8b5c5}{get\+Second\+Right\+Child}} (int b) const
+\begin{DoxyCompactList}\small\item\em Get the right child of the node b in the second tree. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1TraversalNodeBase_adb1111f7aa24b86fffc765f54a90b9fa}\label{classfcl_1_1detail_1_1TraversalNodeBase_adb1111f7aa24b86fffc765f54a90b9fa}} 
+virtual void \mbox{\hyperlink{classfcl_1_1detail_1_1TraversalNodeBase_adb1111f7aa24b86fffc765f54a90b9fa}{enable\+Statistics}} (bool enable)=0
+\begin{DoxyCompactList}\small\item\em Enable statistics (verbose mode) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1TraversalNodeBase_aa561abd9cfcb068d28adede05a548ff2}\label{classfcl_1_1detail_1_1TraversalNodeBase_aa561abd9cfcb068d28adede05a548ff2}} 
+Transform3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1detail_1_1TraversalNodeBase_aa561abd9cfcb068d28adede05a548ff2}{tf1}}
+\begin{DoxyCompactList}\small\item\em configuation of first object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1TraversalNodeBase_a43670415605c96bdbb3e83a62b8c0fa5}\label{classfcl_1_1detail_1_1TraversalNodeBase_a43670415605c96bdbb3e83a62b8c0fa5}} 
+Transform3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1detail_1_1TraversalNodeBase_a43670415605c96bdbb3e83a62b8c0fa5}{tf2}}
+\begin{DoxyCompactList}\small\item\em configuration of second object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+class fcl\+::detail\+::\+Traversal\+Node\+Base$<$ S $>$}
+
+Node structure encoding the information required for traversal. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/traversal\+\_\+node\+\_\+base.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/traversal\+\_\+node\+\_\+base-\/inl.\+h\end{DoxyCompactItemize}

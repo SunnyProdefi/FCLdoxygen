@@ -1,0 +1,60 @@
+\hypertarget{structfcl_1_1CollisionResult}{}\doxysection{fcl\+::Collision\+Result$<$ S $>$ Struct Template Reference}
+\label{structfcl_1_1CollisionResult}\index{fcl::CollisionResult$<$ S $>$@{fcl::CollisionResult$<$ S $>$}}
+
+
+collision result  
+
+
+
+
+{\ttfamily \#include $<$collision\+\_\+result.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionResult_a82a459c3bae07f0bd506f9edca341205}\label{structfcl_1_1CollisionResult_a82a459c3bae07f0bd506f9edca341205}} 
+void \mbox{\hyperlink{structfcl_1_1CollisionResult_a82a459c3bae07f0bd506f9edca341205}{add\+Contact}} (const \mbox{\hyperlink{structfcl_1_1Contact}{Contact}}$<$ S $>$ \&c)
+\begin{DoxyCompactList}\small\item\em add one contact into result structure \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionResult_a592eeb116167939ebae011dc79a76527}\label{structfcl_1_1CollisionResult_a592eeb116167939ebae011dc79a76527}} 
+void \mbox{\hyperlink{structfcl_1_1CollisionResult_a592eeb116167939ebae011dc79a76527}{add\+Cost\+Source}} (const \mbox{\hyperlink{structfcl_1_1CostSource}{Cost\+Source}}$<$ S $>$ \&c, std\+::size\+\_\+t num\+\_\+max\+\_\+cost\+\_\+sources)
+\begin{DoxyCompactList}\small\item\em add one cost source into result structure \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionResult_a95f94b3ababa8ee2c3e81227ed26d3f8}\label{structfcl_1_1CollisionResult_a95f94b3ababa8ee2c3e81227ed26d3f8}} 
+bool \mbox{\hyperlink{structfcl_1_1CollisionResult_a95f94b3ababa8ee2c3e81227ed26d3f8}{is\+Collision}} () const
+\begin{DoxyCompactList}\small\item\em return binary collision result \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionResult_aa351a498209c9a068331b2a892ea75f2}\label{structfcl_1_1CollisionResult_aa351a498209c9a068331b2a892ea75f2}} 
+size\+\_\+t \mbox{\hyperlink{structfcl_1_1CollisionResult_aa351a498209c9a068331b2a892ea75f2}{num\+Contacts}} () const
+\begin{DoxyCompactList}\small\item\em number of contacts found \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionResult_a7ca4f2f3b9d7db69731892002a4ca3cb}\label{structfcl_1_1CollisionResult_a7ca4f2f3b9d7db69731892002a4ca3cb}} 
+size\+\_\+t \mbox{\hyperlink{structfcl_1_1CollisionResult_a7ca4f2f3b9d7db69731892002a4ca3cb}{num\+Cost\+Sources}} () const
+\begin{DoxyCompactList}\small\item\em number of cost sources found \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionResult_a157237f7f69d66467373efc659c1f934}\label{structfcl_1_1CollisionResult_a157237f7f69d66467373efc659c1f934}} 
+const \mbox{\hyperlink{structfcl_1_1Contact}{Contact}}$<$ S $>$ \& \mbox{\hyperlink{structfcl_1_1CollisionResult_a157237f7f69d66467373efc659c1f934}{get\+Contact}} (size\+\_\+t i) const
+\begin{DoxyCompactList}\small\item\em get the i-\/th contact calculated \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionResult_af80f02937f833461c23e2ba74540f944}\label{structfcl_1_1CollisionResult_af80f02937f833461c23e2ba74540f944}} 
+void \mbox{\hyperlink{structfcl_1_1CollisionResult_af80f02937f833461c23e2ba74540f944}{get\+Contacts}} (std\+::vector$<$ \mbox{\hyperlink{structfcl_1_1Contact}{Contact}}$<$ S $>$$>$ \&contacts\+\_\+)
+\begin{DoxyCompactList}\small\item\em get all the contacts \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionResult_a1858089154715d8396b07bfc8ee5adff}\label{structfcl_1_1CollisionResult_a1858089154715d8396b07bfc8ee5adff}} 
+void \mbox{\hyperlink{structfcl_1_1CollisionResult_a1858089154715d8396b07bfc8ee5adff}{get\+Cost\+Sources}} (std\+::vector$<$ \mbox{\hyperlink{structfcl_1_1CostSource}{Cost\+Source}}$<$ S $>$$>$ \&cost\+\_\+sources\+\_\+)
+\begin{DoxyCompactList}\small\item\em get all the cost sources \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionResult_adad775ff8674763f2d5beaa7c6e3f40f}\label{structfcl_1_1CollisionResult_adad775ff8674763f2d5beaa7c6e3f40f}} 
+void \mbox{\hyperlink{structfcl_1_1CollisionResult_adad775ff8674763f2d5beaa7c6e3f40f}{clear}} ()
+\begin{DoxyCompactList}\small\item\em clear the results obtained \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionResult_a8d20c8be3c6f9dd83d62f5cbf841cdb7}\label{structfcl_1_1CollisionResult_a8d20c8be3c6f9dd83d62f5cbf841cdb7}} 
+Vector3$<$ S $>$ {\bfseries cached\+\_\+gjk\+\_\+guess}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+struct fcl\+::\+Collision\+Result$<$ S $>$}
+
+collision result 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/collision\+\_\+request.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/collision\+\_\+result.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/collision\+\_\+result-\/inl.\+h\end{DoxyCompactItemize}

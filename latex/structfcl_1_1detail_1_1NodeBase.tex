@@ -1,0 +1,54 @@
+\hypertarget{structfcl_1_1detail_1_1NodeBase}{}\doxysection{fcl\+::detail\+::Node\+Base$<$ BV $>$ Struct Template Reference}
+\label{structfcl_1_1detail_1_1NodeBase}\index{fcl::detail::NodeBase$<$ BV $>$@{fcl::detail::NodeBase$<$ BV $>$}}
+
+
+dynamic \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}\sout{ tree node } 
+
+
+
+
+{\ttfamily \#include $<$node\+\_\+base.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1NodeBase_a33e75e411ebb2e2de0a93ea13f04da5d}\label{structfcl_1_1detail_1_1NodeBase_a33e75e411ebb2e2de0a93ea13f04da5d}} 
+bool \mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase_a33e75e411ebb2e2de0a93ea13f04da5d}{is\+Leaf}} () const
+\begin{DoxyCompactList}\small\item\em whether is a leaf \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1NodeBase_a30bef57a3925f13e553c73d46dcc9445}\label{structfcl_1_1detail_1_1NodeBase_a30bef57a3925f13e553c73d46dcc9445}} 
+bool \mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase_a30bef57a3925f13e553c73d46dcc9445}{is\+Internal}} () const
+\begin{DoxyCompactList}\small\item\em whether is internal node \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1NodeBase_a1f45dcef7e6099f9029ca3a19fb80b87}\label{structfcl_1_1detail_1_1NodeBase_a1f45dcef7e6099f9029ca3a19fb80b87}} 
+BV \mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase_a1f45dcef7e6099f9029ca3a19fb80b87}{bv}}
+\begin{DoxyCompactList}\small\item\em the bounding volume for the node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1NodeBase_a49c4a58a562ca90d393098f700e24bef}\label{structfcl_1_1detail_1_1NodeBase_a49c4a58a562ca90d393098f700e24bef}} 
+\mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{Node\+Base}}$<$ BV $>$ $\ast$ \mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase_a49c4a58a562ca90d393098f700e24bef}{parent}}
+\begin{DoxyCompactList}\small\item\em pointer to parent node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1NodeBase_aa66e7930ff8e554efac4b4a755957964}\label{structfcl_1_1detail_1_1NodeBase_aa66e7930ff8e554efac4b4a755957964}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{NodeBase}}$<$ BV $>$ $\ast$ \mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase_ad0e1b1bbfddfa6fb0b068c09b7b49f05}{children}} \mbox{[}2\mbox{]}\\
+\>\>{\em for leaf node, children nodes }\\
+\>void $\ast$ {\bfseries data}\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1NodeBase_acbd1fa07cdd1dea4e7b64fd9c72ee014}\label{structfcl_1_1detail_1_1NodeBase_acbd1fa07cdd1dea4e7b64fd9c72ee014}} 
+uint32 \mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase_acbd1fa07cdd1dea4e7b64fd9c72ee014}{code}}
+\begin{DoxyCompactList}\small\item\em morton code for current BV \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename BV$>$\newline
+struct fcl\+::detail\+::\+Node\+Base$<$ B\+V $>$}
+
+dynamic \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}\sout{ tree node }
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/broadphase/detail/node\+\_\+base.\+h\item 
+/home/prodefi/fcl/include/fcl/broadphase/detail/node\+\_\+base-\/inl.\+h\end{DoxyCompactItemize}

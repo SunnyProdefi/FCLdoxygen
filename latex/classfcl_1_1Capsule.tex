@@ -1,0 +1,95 @@
+\hypertarget{classfcl_1_1Capsule}{}\doxysection{fcl\+::Capsule$<$ S\+\_\+ $>$ Class Template Reference}
+\label{classfcl_1_1Capsule}\index{fcl::Capsule$<$ S\_ $>$@{fcl::Capsule$<$ S\_ $>$}}
+
+
+Center at zero point capsule.  
+
+
+
+
+{\ttfamily \#include $<$capsule.\+h$>$}
+
+Inheritance diagram for fcl\+::Capsule$<$ S\+\_\+ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classfcl_1_1Capsule}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Capsule_a63a1c564f7f5cb26755a35d4fedfdef4}\label{classfcl_1_1Capsule_a63a1c564f7f5cb26755a35d4fedfdef4}} 
+using {\bfseries S} = S\+\_\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Capsule_ac5ad438dde6f9945f9e4048845af7d2b}\label{classfcl_1_1Capsule_ac5ad438dde6f9945f9e4048845af7d2b}} 
+\mbox{\hyperlink{classfcl_1_1Capsule_ac5ad438dde6f9945f9e4048845af7d2b}{Capsule}} (S \mbox{\hyperlink{classfcl_1_1Capsule_acf3db54bb36add42dce870344581578b}{radius}}, S \mbox{\hyperlink{classfcl_1_1Capsule_a5b53a6f7df51720ad086e5985090be13}{lz}})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Capsule_abeaee0e5b2a198b3ec340c68513da8eb}\label{classfcl_1_1Capsule_abeaee0e5b2a198b3ec340c68513da8eb}} 
+void \mbox{\hyperlink{classfcl_1_1Capsule_abeaee0e5b2a198b3ec340c68513da8eb}{compute\+Local\+A\+A\+BB}} () override
+\begin{DoxyCompactList}\small\item\em Compute \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}\sout{ }\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Capsule_a9a9a0947ed2839726616f0b67a77219c}\label{classfcl_1_1Capsule_a9a9a0947ed2839726616f0b67a77219c}} 
+\mbox{\hyperlink{namespacefcl_a2b48aa89f14ef2fb4082575eefb145fc}{N\+O\+D\+E\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{classfcl_1_1Capsule_a9a9a0947ed2839726616f0b67a77219c}{get\+Node\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Get node type\+: a capsule. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Capsule_ace45025eac21288ff7dc6b2dc6060cd1}\label{classfcl_1_1Capsule_ace45025eac21288ff7dc6b2dc6060cd1}} 
+S {\bfseries compute\+Volume} () const override
+\item 
+\mbox{\Hypertarget{classfcl_1_1Capsule_adaaecc8edb272bf7fc81db60d8390d85}\label{classfcl_1_1Capsule_adaaecc8edb272bf7fc81db60d8390d85}} 
+Matrix3$<$ S $>$ {\bfseries compute\+Momentof\+Inertia} () const override
+\item 
+\mbox{\Hypertarget{classfcl_1_1Capsule_a4f20d30595d3c3833e3f8a74f306e5b7}\label{classfcl_1_1Capsule_a4f20d30595d3c3833e3f8a74f306e5b7}} 
+std\+::vector$<$ Vector3$<$ S $>$ $>$ \mbox{\hyperlink{classfcl_1_1Capsule_a4f20d30595d3c3833e3f8a74f306e5b7}{get\+Bound\+Vertices}} (const Transform3$<$ S $>$ \&tf) const
+\begin{DoxyCompactList}\small\item\em get the vertices of some convex shape which can bound this shape in a specific configuration \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classfcl_1_1Capsule_a2a27bad44712c25df4de0818a00bd1d2}{representation}} (int precision=20) const
+\begin{DoxyCompactList}\small\item\em Create a string that should be sufficient to recreate this shape. This is akin to the repr() implementation in python. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Capsule_acf3db54bb36add42dce870344581578b}\label{classfcl_1_1Capsule_acf3db54bb36add42dce870344581578b}} 
+S \mbox{\hyperlink{classfcl_1_1Capsule_acf3db54bb36add42dce870344581578b}{radius}}
+\begin{DoxyCompactList}\small\item\em Radius of capsule. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Capsule_a5b53a6f7df51720ad086e5985090be13}\label{classfcl_1_1Capsule_a5b53a6f7df51720ad086e5985090be13}} 
+S \mbox{\hyperlink{classfcl_1_1Capsule_a5b53a6f7df51720ad086e5985090be13}{lz}}
+\begin{DoxyCompactList}\small\item\em Length along z axis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Capsule_ad1ab6ee3c6139e015f45b79e7555c513}\label{classfcl_1_1Capsule_ad1ab6ee3c6139e015f45b79e7555c513}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{classfcl_1_1Capsule}{Capsule}} \&capsule)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S\+\_\+$>$\newline
+class fcl\+::\+Capsule$<$ S\+\_\+ $>$}
+
+Center at zero point capsule. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfcl_1_1Capsule_a2a27bad44712c25df4de0818a00bd1d2}\label{classfcl_1_1Capsule_a2a27bad44712c25df4de0818a00bd1d2}} 
+\index{fcl::Capsule$<$ S\_ $>$@{fcl::Capsule$<$ S\_ $>$}!representation@{representation}}
+\index{representation@{representation}!fcl::Capsule$<$ S\_ $>$@{fcl::Capsule$<$ S\_ $>$}}
+\doxysubsubsection{\texorpdfstring{representation()}{representation()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+std\+::string \mbox{\hyperlink{classfcl_1_1Capsule}{fcl\+::\+Capsule}}$<$ S $>$\+::representation (\begin{DoxyParamCaption}\item[{int}]{precision = {\ttfamily 20} }\end{DoxyParamCaption}) const}
+
+
+
+Create a string that should be sufficient to recreate this shape. This is akin to the repr() implementation in python. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em precision} & The requested digits of precision for the numerical measures (same semantics as std\+::setprecision()). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string representation of this instance. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/geometry/shape/capsule.\+h\item 
+/home/prodefi/fcl/include/fcl/geometry/shape/capsule-\/inl.\+h\end{DoxyCompactItemize}

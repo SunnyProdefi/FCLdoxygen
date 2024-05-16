@@ -1,0 +1,59 @@
+\hypertarget{classfcl_1_1detail_1_1ShapeCollisionTraversalNode}{}\doxysection{fcl\+::detail\+::Shape\+Collision\+Traversal\+Node$<$ Shape1, Shape2, Narrow\+Phase\+Solver $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1ShapeCollisionTraversalNode}\index{fcl::detail::ShapeCollisionTraversalNode$<$ Shape1, Shape2, NarrowPhaseSolver $>$@{fcl::detail::ShapeCollisionTraversalNode$<$ Shape1, Shape2, NarrowPhaseSolver $>$}}
+
+
+Traversal node for collision between two shapes.  
+
+
+
+
+{\ttfamily \#include $<$shape\+\_\+collision\+\_\+traversal\+\_\+node.\+h$>$}
+
+Inheritance diagram for fcl\+::detail\+::Shape\+Collision\+Traversal\+Node$<$ Shape1, Shape2, Narrow\+Phase\+Solver $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classfcl_1_1detail_1_1ShapeCollisionTraversalNode}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeCollisionTraversalNode_acb9a2db22bfe750935618db95f33f93e}\label{classfcl_1_1detail_1_1ShapeCollisionTraversalNode_acb9a2db22bfe750935618db95f33f93e}} 
+using {\bfseries S} = typename Shape1\+::S
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeCollisionTraversalNode_a71df85dbb8f79414a0df4f625d898600}\label{classfcl_1_1detail_1_1ShapeCollisionTraversalNode_a71df85dbb8f79414a0df4f625d898600}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1ShapeCollisionTraversalNode_a71df85dbb8f79414a0df4f625d898600}{B\+V\+Testing}} (int, int) const
+\begin{DoxyCompactList}\small\item\em BV culling test in one B\+V\+TT node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeCollisionTraversalNode_a409f6b4ad2dbb96d89d6f77216569001}\label{classfcl_1_1detail_1_1ShapeCollisionTraversalNode_a409f6b4ad2dbb96d89d6f77216569001}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1ShapeCollisionTraversalNode_a409f6b4ad2dbb96d89d6f77216569001}{leaf\+Testing}} (int, int) const
+\begin{DoxyCompactList}\small\item\em Intersection testing between leaves (two shapes) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeCollisionTraversalNode_a90e85e03f5976cbee0f85dade4a0267c}\label{classfcl_1_1detail_1_1ShapeCollisionTraversalNode_a90e85e03f5976cbee0f85dade4a0267c}} 
+const Shape1 $\ast$ {\bfseries model1}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeCollisionTraversalNode_ac3aef7c27116f73a921158af70811d52}\label{classfcl_1_1detail_1_1ShapeCollisionTraversalNode_ac3aef7c27116f73a921158af70811d52}} 
+const Shape2 $\ast$ {\bfseries model2}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeCollisionTraversalNode_a12cdb2b6f47936ded5223e672d556404}\label{classfcl_1_1detail_1_1ShapeCollisionTraversalNode_a12cdb2b6f47936ded5223e672d556404}} 
+S {\bfseries cost\+\_\+density}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeCollisionTraversalNode_a92b3c35d82f16704d4bcf2cc537e5302}\label{classfcl_1_1detail_1_1ShapeCollisionTraversalNode_a92b3c35d82f16704d4bcf2cc537e5302}} 
+const Narrow\+Phase\+Solver $\ast$ {\bfseries nsolver}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Shape1, typename Shape2, typename Narrow\+Phase\+Solver$>$\newline
+class fcl\+::detail\+::\+Shape\+Collision\+Traversal\+Node$<$ Shape1, Shape2, Narrow\+Phase\+Solver $>$}
+
+Traversal node for collision between two shapes. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/collision/shape\+\_\+collision\+\_\+traversal\+\_\+node.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/collision/shape\+\_\+collision\+\_\+traversal\+\_\+node-\/inl.\+h\end{DoxyCompactItemize}

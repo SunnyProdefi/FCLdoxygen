@@ -1,0 +1,177 @@
+\hypertarget{classfcl_1_1BVHModel}{}\doxysection{fcl\+::B\+V\+H\+Model$<$ BV $>$ Class Template Reference}
+\label{classfcl_1_1BVHModel}\index{fcl::BVHModel$<$ BV $>$@{fcl::BVHModel$<$ BV $>$}}
+
+
+A class describing the bounding hierarchy of a mesh model or a point cloud model (which is viewed as a degraded version of mesh)  
+
+
+
+
+{\ttfamily \#include $<$B\+V\+H\+\_\+model.\+h$>$}
+
+Inheritance diagram for fcl\+::B\+V\+H\+Model$<$ BV $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfcl_1_1BVHModel}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a261d2b39af7271ab179af787f22a7eb1}\label{classfcl_1_1BVHModel_a261d2b39af7271ab179af787f22a7eb1}} 
+using {\bfseries S} = typename B\+V\+::S
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a759ff89bbf2a845b98d8ae108c25f711}\label{classfcl_1_1BVHModel_a759ff89bbf2a845b98d8ae108c25f711}} 
+\mbox{\hyperlink{namespacefcl_a41f5f0e97729622fd4749b285a0fd848}{B\+V\+H\+Model\+Type}} \mbox{\hyperlink{classfcl_1_1BVHModel_a759ff89bbf2a845b98d8ae108c25f711}{get\+Model\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Model type described by the instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a38fcb5c959db086729dc6d3d1c5bc581}\label{classfcl_1_1BVHModel_a38fcb5c959db086729dc6d3d1c5bc581}} 
+\mbox{\hyperlink{classfcl_1_1BVHModel_a38fcb5c959db086729dc6d3d1c5bc581}{B\+V\+H\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Constructing an empty B\+VH. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_aaf725781a411f0a35ed33f9ca05e3117}\label{classfcl_1_1BVHModel_aaf725781a411f0a35ed33f9ca05e3117}} 
+\mbox{\hyperlink{classfcl_1_1BVHModel_aaf725781a411f0a35ed33f9ca05e3117}{B\+V\+H\+Model}} (const \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}} \&other)
+\begin{DoxyCompactList}\small\item\em copy from another B\+VH \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_ab0e56d63cc11fc5be315c6593a519a2a}\label{classfcl_1_1BVHModel_ab0e56d63cc11fc5be315c6593a519a2a}} 
+\mbox{\hyperlink{classfcl_1_1BVHModel_ab0e56d63cc11fc5be315c6593a519a2a}{$\sim$\+B\+V\+H\+Model}} ()
+\begin{DoxyCompactList}\small\item\em deconstruction, delete mesh data related. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{structfcl_1_1BVNode}{B\+V\+Node}}$<$ BV $>$ \& \mbox{\hyperlink{classfcl_1_1BVHModel_a52e1ed633a14d5b0ece7c5e165d0e6e9}{get\+BV}} (int id) const
+\begin{DoxyCompactList}\small\item\em We provide \mbox{\hyperlink{classfcl_1_1BVHModel_a52e1ed633a14d5b0ece7c5e165d0e6e9}{get\+B\+V()}} and \mbox{\hyperlink{classfcl_1_1BVHModel_a646fe7f3db74607740e51f37adc9b99c}{get\+Num\+B\+Vs()}} because B\+VH may be compressed (in future), so we must provide some flexibility here. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a4c931167c65b8e1fa1035c5372870d44}\label{classfcl_1_1BVHModel_a4c931167c65b8e1fa1035c5372870d44}} 
+\mbox{\hyperlink{structfcl_1_1BVNode}{B\+V\+Node}}$<$ BV $>$ \& \mbox{\hyperlink{classfcl_1_1BVHModel_a4c931167c65b8e1fa1035c5372870d44}{get\+BV}} (int id)
+\begin{DoxyCompactList}\small\item\em Access the bv giving the its index. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a646fe7f3db74607740e51f37adc9b99c}\label{classfcl_1_1BVHModel_a646fe7f3db74607740e51f37adc9b99c}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_a646fe7f3db74607740e51f37adc9b99c}{get\+Num\+B\+Vs}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of bv in the B\+VH. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a65af90e93f3c388196772dc9a2eb8275}\label{classfcl_1_1BVHModel_a65af90e93f3c388196772dc9a2eb8275}} 
+\mbox{\hyperlink{namespacefcl_a7675859ca6424d6552ee6b1028f29d7d}{O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{classfcl_1_1BVHModel_a65af90e93f3c388196772dc9a2eb8275}{get\+Object\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Get the object type\+: it is a B\+VH. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a8e2c92c04b0740208e8bb0360f034f1b}\label{classfcl_1_1BVHModel_a8e2c92c04b0740208e8bb0360f034f1b}} 
+\mbox{\hyperlink{namespacefcl_a2b48aa89f14ef2fb4082575eefb145fc}{N\+O\+D\+E\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{classfcl_1_1BVHModel_a8e2c92c04b0740208e8bb0360f034f1b}{get\+Node\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Get the BV type\+: default is unknown. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a33300e06590acdcbe1dc52508e1c61a0}\label{classfcl_1_1BVHModel_a33300e06590acdcbe1dc52508e1c61a0}} 
+void \mbox{\hyperlink{classfcl_1_1BVHModel_a33300e06590acdcbe1dc52508e1c61a0}{compute\+Local\+A\+A\+BB}} () override
+\begin{DoxyCompactList}\small\item\em Compute the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} for the B\+VH, used for broad-\/phase collision. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a7a8c84283932e5b74be5c4cf16f73d31}\label{classfcl_1_1BVHModel_a7a8c84283932e5b74be5c4cf16f73d31}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_a7a8c84283932e5b74be5c4cf16f73d31}{begin\+Model}} (int \mbox{\hyperlink{classfcl_1_1BVHModel_af2ede8da1d6939efcf4b9b984942753d}{num\+\_\+tris}}=0, int \mbox{\hyperlink{classfcl_1_1BVHModel_a2953a9947132714b4b2c7331cb9fb894}{num\+\_\+vertices}}=0)
+\begin{DoxyCompactList}\small\item\em Begin a new B\+VH model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a9e56ac7e6e0ec8b4284f3bf9eecfb928}\label{classfcl_1_1BVHModel_a9e56ac7e6e0ec8b4284f3bf9eecfb928}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_a9e56ac7e6e0ec8b4284f3bf9eecfb928}{add\+Vertex}} (const Vector3$<$ S $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Add one point in the new B\+VH model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a8e9d8441f4c78ae69cd80c004cf1cf82}\label{classfcl_1_1BVHModel_a8e9d8441f4c78ae69cd80c004cf1cf82}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_a8e9d8441f4c78ae69cd80c004cf1cf82}{add\+Triangle}} (const Vector3$<$ S $>$ \&p1, const Vector3$<$ S $>$ \&p2, const Vector3$<$ S $>$ \&p3)
+\begin{DoxyCompactList}\small\item\em Add one triangle in the new B\+VH model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_aecf633a60005b4e8be4c8edcf4c774d4}\label{classfcl_1_1BVHModel_aecf633a60005b4e8be4c8edcf4c774d4}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_aecf633a60005b4e8be4c8edcf4c774d4}{add\+Sub\+Model}} (const std\+::vector$<$ Vector3$<$ S $>$$>$ \&ps, const std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1Triangle}{Triangle}} $>$ \&ts)
+\begin{DoxyCompactList}\small\item\em Add a set of triangles in the new B\+VH model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a827fbeeca69e8ef16144ba846c90841b}\label{classfcl_1_1BVHModel_a827fbeeca69e8ef16144ba846c90841b}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_a827fbeeca69e8ef16144ba846c90841b}{add\+Sub\+Model}} (const std\+::vector$<$ Vector3$<$ S $>$$>$ \&ps)
+\begin{DoxyCompactList}\small\item\em Add a set of points in the new B\+VH model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a70354bb54015495559bb95cd137ccdef}\label{classfcl_1_1BVHModel_a70354bb54015495559bb95cd137ccdef}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_a70354bb54015495559bb95cd137ccdef}{end\+Model}} ()
+\begin{DoxyCompactList}\small\item\em End B\+VH model construction, will build the bounding volume hierarchy. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a452b14badbd22661e6ba4e16d6ab67c3}\label{classfcl_1_1BVHModel_a452b14badbd22661e6ba4e16d6ab67c3}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_a452b14badbd22661e6ba4e16d6ab67c3}{begin\+Replace\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Replace the geometry information of current frame (i.\+e. should have the same mesh topology with the previous frame) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a7186420b7524df5d823163bba1aa05b2}\label{classfcl_1_1BVHModel_a7186420b7524df5d823163bba1aa05b2}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_a7186420b7524df5d823163bba1aa05b2}{replace\+Vertex}} (const Vector3$<$ S $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Replace one point in the old B\+VH model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_ad7df8fb46b7a13612bfd52c8e6722e9b}\label{classfcl_1_1BVHModel_ad7df8fb46b7a13612bfd52c8e6722e9b}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_ad7df8fb46b7a13612bfd52c8e6722e9b}{replace\+Triangle}} (const Vector3$<$ S $>$ \&p1, const Vector3$<$ S $>$ \&p2, const Vector3$<$ S $>$ \&p3)
+\begin{DoxyCompactList}\small\item\em Replace one triangle in the old B\+VH model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a86360f445c30e64ae9eef00460bb4798}\label{classfcl_1_1BVHModel_a86360f445c30e64ae9eef00460bb4798}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_a86360f445c30e64ae9eef00460bb4798}{replace\+Sub\+Model}} (const std\+::vector$<$ Vector3$<$ S $>$$>$ \&ps)
+\begin{DoxyCompactList}\small\item\em Replace a set of points in the old B\+VH model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a494df75b80618343dc54c64dd75ee23f}\label{classfcl_1_1BVHModel_a494df75b80618343dc54c64dd75ee23f}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_a494df75b80618343dc54c64dd75ee23f}{end\+Replace\+Model}} (bool refit=true, bool bottomup=true)
+\begin{DoxyCompactList}\small\item\em End B\+VH model replacement, will also refit or rebuild the bounding volume hierarchy. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_ad5f8dc040fc693d61023b0b3444d312f}\label{classfcl_1_1BVHModel_ad5f8dc040fc693d61023b0b3444d312f}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_ad5f8dc040fc693d61023b0b3444d312f}{begin\+Update\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Replace the geometry information of current frame (i.\+e. should have the same mesh topology with the previous frame). The current frame will be saved as the previous frame in prev\+\_\+vertices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a391cf34eea203b65bdfa21c53c004405}\label{classfcl_1_1BVHModel_a391cf34eea203b65bdfa21c53c004405}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_a391cf34eea203b65bdfa21c53c004405}{update\+Vertex}} (const Vector3$<$ S $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Update one point in the old B\+VH model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a2d79720f2699ad7fd09412483825ed26}\label{classfcl_1_1BVHModel_a2d79720f2699ad7fd09412483825ed26}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_a2d79720f2699ad7fd09412483825ed26}{update\+Triangle}} (const Vector3$<$ S $>$ \&p1, const Vector3$<$ S $>$ \&p2, const Vector3$<$ S $>$ \&p3)
+\begin{DoxyCompactList}\small\item\em Update one triangle in the old B\+VH model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_ab03726211fa5ab83560fd2532b3b8a33}\label{classfcl_1_1BVHModel_ab03726211fa5ab83560fd2532b3b8a33}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_ab03726211fa5ab83560fd2532b3b8a33}{update\+Sub\+Model}} (const std\+::vector$<$ Vector3$<$ S $>$$>$ \&ps)
+\begin{DoxyCompactList}\small\item\em Update a set of points in the old B\+VH model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a61f276aaacc4b2950a13c9532813f6ee}\label{classfcl_1_1BVHModel_a61f276aaacc4b2950a13c9532813f6ee}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_a61f276aaacc4b2950a13c9532813f6ee}{end\+Update\+Model}} (bool refit=true, bool bottomup=true)
+\begin{DoxyCompactList}\small\item\em End B\+VH model update, will also refit or rebuild the bounding volume hierarchy. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a63835dea1e1705a9435b3393e59c70fb}\label{classfcl_1_1BVHModel_a63835dea1e1705a9435b3393e59c70fb}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_a63835dea1e1705a9435b3393e59c70fb}{mem\+Usage}} (int msg) const
+\begin{DoxyCompactList}\small\item\em Check the number of memory used. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a4f7710016d73967b5daa2784ff5aee6a}\label{classfcl_1_1BVHModel_a4f7710016d73967b5daa2784ff5aee6a}} 
+void \mbox{\hyperlink{classfcl_1_1BVHModel_a4f7710016d73967b5daa2784ff5aee6a}{make\+Parent\+Relative}} ()
+\begin{DoxyCompactList}\small\item\em This is a special acceleration\+: B\+V\+H\+\_\+model default stores the BV\textquotesingle{}s transform in world coordinate. However, we can also store each BV\textquotesingle{}s transform related to its parent BV node. When traversing the B\+VH, this can save one matrix transformation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a5b2c1a91aa196c432865c49220e401ca}\label{classfcl_1_1BVHModel_a5b2c1a91aa196c432865c49220e401ca}} 
+Vector3$<$ S $>$ {\bfseries compute\+C\+OM} () const override
+\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_aa7994ae4931508962c3201da8ef41777}\label{classfcl_1_1BVHModel_aa7994ae4931508962c3201da8ef41777}} 
+S {\bfseries compute\+Volume} () const override
+\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_ad06ea9d893d1cb18c5bc40d5c6f8d04e}\label{classfcl_1_1BVHModel_ad06ea9d893d1cb18c5bc40d5c6f8d04e}} 
+Matrix3$<$ S $>$ {\bfseries compute\+Momentof\+Inertia} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a526b89baf6b167887f6f8360a35b01c5}\label{classfcl_1_1BVHModel_a526b89baf6b167887f6f8360a35b01c5}} 
+Vector3$<$ S $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1BVHModel_a526b89baf6b167887f6f8360a35b01c5}{vertices}}
+\begin{DoxyCompactList}\small\item\em Geometry point data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a1134e5a4f7503e18bef7e74b1662a259}\label{classfcl_1_1BVHModel_a1134e5a4f7503e18bef7e74b1662a259}} 
+\mbox{\hyperlink{classfcl_1_1Triangle}{Triangle}} $\ast$ \mbox{\hyperlink{classfcl_1_1BVHModel_a1134e5a4f7503e18bef7e74b1662a259}{tri\+\_\+indices}}
+\begin{DoxyCompactList}\small\item\em Geometry triangle index data, will be nullptr for point clouds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a44259bc925de1baf8450e5051ef80ce7}\label{classfcl_1_1BVHModel_a44259bc925de1baf8450e5051ef80ce7}} 
+Vector3$<$ S $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1BVHModel_a44259bc925de1baf8450e5051ef80ce7}{prev\+\_\+vertices}}
+\begin{DoxyCompactList}\small\item\em Geometry point data in previous frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_af2ede8da1d6939efcf4b9b984942753d}\label{classfcl_1_1BVHModel_af2ede8da1d6939efcf4b9b984942753d}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_af2ede8da1d6939efcf4b9b984942753d}{num\+\_\+tris}}
+\begin{DoxyCompactList}\small\item\em Number of triangles. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a2953a9947132714b4b2c7331cb9fb894}\label{classfcl_1_1BVHModel_a2953a9947132714b4b2c7331cb9fb894}} 
+int \mbox{\hyperlink{classfcl_1_1BVHModel_a2953a9947132714b4b2c7331cb9fb894}{num\+\_\+vertices}}
+\begin{DoxyCompactList}\small\item\em Number of points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_aed755a5dbdfa474d870559d7bb1aed90}\label{classfcl_1_1BVHModel_aed755a5dbdfa474d870559d7bb1aed90}} 
+\mbox{\hyperlink{namespacefcl_ae282ecfb7a2a310150ab7a5a1cb0b903}{B\+V\+H\+Build\+State}} \mbox{\hyperlink{classfcl_1_1BVHModel_aed755a5dbdfa474d870559d7bb1aed90}{build\+\_\+state}}
+\begin{DoxyCompactList}\small\item\em The state of B\+VH building process. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_ae6e69ce85af9ca2b4ed7435897360a0a}\label{classfcl_1_1BVHModel_ae6e69ce85af9ca2b4ed7435897360a0a}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classfcl_1_1detail_1_1BVSplitterBase}{detail\+::\+B\+V\+Splitter\+Base}}$<$ BV $>$ $>$ \mbox{\hyperlink{classfcl_1_1BVHModel_ae6e69ce85af9ca2b4ed7435897360a0a}{bv\+\_\+splitter}}
+\begin{DoxyCompactList}\small\item\em Split rule to split one BV node into two children. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a6ad33407d02df643689c2ab2086277ca}\label{classfcl_1_1BVHModel_a6ad33407d02df643689c2ab2086277ca}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classfcl_1_1detail_1_1BVFitterBase}{detail\+::\+B\+V\+Fitter\+Base}}$<$ BV $>$ $>$ \mbox{\hyperlink{classfcl_1_1BVHModel_a6ad33407d02df643689c2ab2086277ca}{bv\+\_\+fitter}}
+\begin{DoxyCompactList}\small\item\em Fitting rule to fit a BV node to a set of geometry primitives. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1BVHModel_ae5fe41ac582fefd8230f19f927f7293d}\label{classfcl_1_1BVHModel_ae5fe41ac582fefd8230f19f927f7293d}} 
+{\footnotesize template$<$typename , typename $>$ }\\struct {\bfseries Make\+Parent\+Relative\+Recurse\+Impl}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename BV$>$\newline
+class fcl\+::\+B\+V\+H\+Model$<$ B\+V $>$}
+
+A class describing the bounding hierarchy of a mesh model or a point cloud model (which is viewed as a degraded version of mesh) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfcl_1_1BVHModel_a52e1ed633a14d5b0ece7c5e165d0e6e9}\label{classfcl_1_1BVHModel_a52e1ed633a14d5b0ece7c5e165d0e6e9}} 
+\index{fcl::BVHModel$<$ BV $>$@{fcl::BVHModel$<$ BV $>$}!getBV@{getBV}}
+\index{getBV@{getBV}!fcl::BVHModel$<$ BV $>$@{fcl::BVHModel$<$ BV $>$}}
+\doxysubsubsection{\texorpdfstring{getBV()}{getBV()}}
+{\footnotesize\ttfamily template$<$typename BV $>$ \\
+const \mbox{\hyperlink{structfcl_1_1BVNode}{B\+V\+Node}}$<$ BV $>$ \& \mbox{\hyperlink{classfcl_1_1BVHModel}{fcl\+::\+B\+V\+H\+Model}}$<$ BV $>$\+::get\+BV (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+
+
+We provide \mbox{\hyperlink{classfcl_1_1BVHModel_a52e1ed633a14d5b0ece7c5e165d0e6e9}{get\+B\+V()}} and \mbox{\hyperlink{classfcl_1_1BVHModel_a646fe7f3db74607740e51f37adc9b99c}{get\+Num\+B\+Vs()}} because B\+VH may be compressed (in future), so we must provide some flexibility here. 
+
+Access the bv giving the its index 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/geometry/bvh/B\+V\+H\+\_\+model.\+h\item 
+/home/prodefi/fcl/include/fcl/geometry/bvh/B\+V\+H\+\_\+model-\/inl.\+h\end{DoxyCompactItemize}

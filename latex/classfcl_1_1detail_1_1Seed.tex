@@ -1,0 +1,52 @@
+\hypertarget{classfcl_1_1detail_1_1Seed}{}\doxysection{fcl\+::detail\+::Seed Class Reference}
+\label{classfcl_1_1detail_1_1Seed}\index{fcl::detail::Seed@{fcl::detail::Seed}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Seed_a602c1e4fd6ce1b768929ab3782fe9073}\label{classfcl_1_1detail_1_1Seed_a602c1e4fd6ce1b768929ab3782fe9073}} 
+static bool {\bfseries is\+First\+Seed\+Generated} ()
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Seed_af7e69257a71561da2b8f164f98e090d5}\label{classfcl_1_1detail_1_1Seed_af7e69257a71561da2b8f164f98e090d5}} 
+static std\+::uint\+\_\+fast32\+\_\+t {\bfseries get\+User\+Set\+Seed} ()
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Seed_a56abd180ca1ff68096aaf45f3dfb6ba1}\label{classfcl_1_1detail_1_1Seed_a56abd180ca1ff68096aaf45f3dfb6ba1}} 
+static void {\bfseries set\+User\+Set\+Seed} (std\+::uint\+\_\+fast32\+\_\+t seed)
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Seed_a92ca541d9404cf38fecb051e1ea41c75}\label{classfcl_1_1detail_1_1Seed_a92ca541d9404cf38fecb051e1ea41c75}} 
+static std\+::uint\+\_\+fast32\+\_\+t {\bfseries get\+First\+Seed} ()
+\item 
+static std\+::uint\+\_\+fast32\+\_\+t \mbox{\hyperlink{classfcl_1_1detail_1_1Seed_a1a6f58cffe3b30120cab6b927f8b92af}{get\+Next\+Seed}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Seed_a828004281c95f58455a188b9efa77bba}\label{classfcl_1_1detail_1_1Seed_a828004281c95f58455a188b9efa77bba}} 
+static \mbox{\hyperlink{classfcl_1_1detail_1_1Seed}{Seed}} \& {\bfseries get\+Instance} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Seed_a1662c17bec18af6f66360a709971a831}\label{classfcl_1_1detail_1_1Seed_a1662c17bec18af6f66360a709971a831}} 
+std\+::uint\+\_\+fast32\+\_\+t \mbox{\hyperlink{classfcl_1_1detail_1_1Seed_a1662c17bec18af6f66360a709971a831}{user\+Set\+Seed}}
+\begin{DoxyCompactList}\small\item\em The seed the user asked for (cannot be 0) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Seed_afb9dafd7d3a71b4c03b1e64911ce2f5c}\label{classfcl_1_1detail_1_1Seed_afb9dafd7d3a71b4c03b1e64911ce2f5c}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1Seed_afb9dafd7d3a71b4c03b1e64911ce2f5c}{first\+Seed\+Generated}}
+\begin{DoxyCompactList}\small\item\em Flag indicating whether the first seed has already been generated or not. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Seed_a9c4963e4b34de9260df85d576495b8fb}\label{classfcl_1_1detail_1_1Seed_a9c4963e4b34de9260df85d576495b8fb}} 
+std\+::uint\+\_\+fast32\+\_\+t \mbox{\hyperlink{classfcl_1_1detail_1_1Seed_a9c4963e4b34de9260df85d576495b8fb}{first\+Seed\+Value}}
+\begin{DoxyCompactList}\small\item\em The value of the first seed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Seed_a1a6f58cffe3b30120cab6b927f8b92af}\label{classfcl_1_1detail_1_1Seed_a1a6f58cffe3b30120cab6b927f8b92af}} 
+\index{fcl::detail::Seed@{fcl::detail::Seed}!getNextSeed@{getNextSeed}}
+\index{getNextSeed@{getNextSeed}!fcl::detail::Seed@{fcl::detail::Seed}}
+\doxysubsubsection{\texorpdfstring{getNextSeed()}{getNextSeed()}}
+{\footnotesize\ttfamily uint\+\_\+fast32\+\_\+t fcl\+::detail\+::\+Seed\+::get\+Next\+Seed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+We use a different random number generator for the seeds of the Other random generators. The root seed is from the number of nano-\/seconds in the current time. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/math/detail/seed.\+h\item 
+/home/prodefi/fcl/src/math/detail/seed.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\hypertarget{structfcl_1_1Contact}{}\doxysection{fcl\+::Contact$<$ S $>$ Struct Template Reference}
+\label{structfcl_1_1Contact}\index{fcl::Contact$<$ S $>$@{fcl::Contact$<$ S $>$}}
+
+
+\mbox{\hyperlink{structfcl_1_1Contact}{Contact}} information returned by collision.  
+
+
+
+
+{\ttfamily \#include $<$contact.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1Contact_a3506dfcf03f15148cdfb0c2b056da157}\label{structfcl_1_1Contact_a3506dfcf03f15148cdfb0c2b056da157}} 
+{\bfseries Contact} (const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $\ast$o1\+\_\+, const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $\ast$o2\+\_\+, int b1\+\_\+, int b2\+\_\+)
+\item 
+\mbox{\Hypertarget{structfcl_1_1Contact_a0861df5bda37de480006b4a217b59b75}\label{structfcl_1_1Contact_a0861df5bda37de480006b4a217b59b75}} 
+{\bfseries Contact} (const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $\ast$o1\+\_\+, const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $\ast$o2\+\_\+, int b1\+\_\+, int b2\+\_\+, const Vector3$<$ S $>$ \&pos\+\_\+, const Vector3$<$ S $>$ \&normal\+\_\+, S depth\+\_\+)
+\item 
+\mbox{\Hypertarget{structfcl_1_1Contact_a28f1e62bdca9c734d4dc8e867f0251e5}\label{structfcl_1_1Contact_a28f1e62bdca9c734d4dc8e867f0251e5}} 
+bool {\bfseries operator$<$} (const \mbox{\hyperlink{structfcl_1_1Contact}{Contact}} \&other) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1Contact_a1361c13ee774a362e6f88d74d9a2cef6}\label{structfcl_1_1Contact_a1361c13ee774a362e6f88d74d9a2cef6}} 
+const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $\ast$ \mbox{\hyperlink{structfcl_1_1Contact_a1361c13ee774a362e6f88d74d9a2cef6}{o1}}
+\begin{DoxyCompactList}\small\item\em collision object 1 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Contact_a5678a704a4f4b531b1bbf65dfa6c128d}\label{structfcl_1_1Contact_a5678a704a4f4b531b1bbf65dfa6c128d}} 
+const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $\ast$ \mbox{\hyperlink{structfcl_1_1Contact_a5678a704a4f4b531b1bbf65dfa6c128d}{o2}}
+\begin{DoxyCompactList}\small\item\em collision object 2 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Contact_afb92cc38af5ccb718f503993ec5f4011}\label{structfcl_1_1Contact_afb92cc38af5ccb718f503993ec5f4011}} 
+intptr\+\_\+t \mbox{\hyperlink{structfcl_1_1Contact_afb92cc38af5ccb718f503993ec5f4011}{b1}}
+\begin{DoxyCompactList}\small\item\em contact primitive in object 1 if object 1 is mesh or point cloud, it is the triangle or point id if object 1 is geometry shape, it is N\+O\+NE (-\/1), if object 1 is octree, it is the query cell id (see \mbox{\hyperlink{classfcl_1_1OcTree_aeb65629d41c14e92f7ae1ef68c549a5b}{Oc\+Tree\+::get\+Node\+By\+Query\+Cell\+Id}}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Contact_a52f6f3182433c49bb38666ad2b2059f2}\label{structfcl_1_1Contact_a52f6f3182433c49bb38666ad2b2059f2}} 
+intptr\+\_\+t \mbox{\hyperlink{structfcl_1_1Contact_a52f6f3182433c49bb38666ad2b2059f2}{b2}}
+\begin{DoxyCompactList}\small\item\em contact primitive in object 2 if object 2 is mesh or point cloud, it is the triangle or point id if object 2 is geometry shape, it is N\+O\+NE (-\/1), if object 2 is octree, it is the query cell id (see \mbox{\hyperlink{classfcl_1_1OcTree_aeb65629d41c14e92f7ae1ef68c549a5b}{Oc\+Tree\+::get\+Node\+By\+Query\+Cell\+Id}}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Contact_abe9aefd00822924103c8c3dc4ada9a8a}\label{structfcl_1_1Contact_abe9aefd00822924103c8c3dc4ada9a8a}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{structfcl_1_1Contact_abe9aefd00822924103c8c3dc4ada9a8a}{normal}}
+\begin{DoxyCompactList}\small\item\em contact normal, pointing from o1 to o2 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Contact_aaf0e8fd1dfb698c7a28e46176ae91a21}\label{structfcl_1_1Contact_aaf0e8fd1dfb698c7a28e46176ae91a21}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{structfcl_1_1Contact_aaf0e8fd1dfb698c7a28e46176ae91a21}{pos}}
+\begin{DoxyCompactList}\small\item\em contact position, in world space \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Contact_a62f618456c4318d4601501f94cc9443a}\label{structfcl_1_1Contact_a62f618456c4318d4601501f94cc9443a}} 
+S \mbox{\hyperlink{structfcl_1_1Contact_a62f618456c4318d4601501f94cc9443a}{penetration\+\_\+depth}}
+\begin{DoxyCompactList}\small\item\em penetration depth \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1Contact_a702152de1092aafeb6b044d087213ee7}\label{structfcl_1_1Contact_a702152de1092aafeb6b044d087213ee7}} 
+static const int \mbox{\hyperlink{structfcl_1_1Contact_a702152de1092aafeb6b044d087213ee7}{N\+O\+NE}} = -\/1
+\begin{DoxyCompactList}\small\item\em invalid contact primitive information \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+struct fcl\+::\+Contact$<$ S $>$}
+
+\mbox{\hyperlink{structfcl_1_1Contact}{Contact}} information returned by collision. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/contact.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/contact-\/inl.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\hypertarget{classfcl_1_1detail_1_1MeshDistanceTraversalNode}{}\doxysection{fcl\+::detail\+::Mesh\+Distance\+Traversal\+Node$<$ BV $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1MeshDistanceTraversalNode}\index{fcl::detail::MeshDistanceTraversalNode$<$ BV $>$@{fcl::detail::MeshDistanceTraversalNode$<$ BV $>$}}
+
+
+Traversal node for distance computation between two meshes.  
+
+
+
+
+{\ttfamily \#include $<$mesh\+\_\+distance\+\_\+traversal\+\_\+node.\+h$>$}
+
+Inheritance diagram for fcl\+::detail\+::Mesh\+Distance\+Traversal\+Node$<$ BV $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classfcl_1_1detail_1_1MeshDistanceTraversalNode}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshDistanceTraversalNode_aaa2ebc3b1ed7fb23124dd904bf619d64}\label{classfcl_1_1detail_1_1MeshDistanceTraversalNode_aaa2ebc3b1ed7fb23124dd904bf619d64}} 
+using {\bfseries S} = typename B\+V\+::S
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshDistanceTraversalNode_a9d4a39811a77df7c1c6e65aeb2476625}\label{classfcl_1_1detail_1_1MeshDistanceTraversalNode_a9d4a39811a77df7c1c6e65aeb2476625}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1MeshDistanceTraversalNode_a9d4a39811a77df7c1c6e65aeb2476625}{leaf\+Testing}} (int b1, int b2) const
+\begin{DoxyCompactList}\small\item\em Distance testing between leaves (two triangles) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshDistanceTraversalNode_af963b01304e28e13aa25c389f5204e8a}\label{classfcl_1_1detail_1_1MeshDistanceTraversalNode_af963b01304e28e13aa25c389f5204e8a}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1MeshDistanceTraversalNode_af963b01304e28e13aa25c389f5204e8a}{can\+Stop}} (S c) const
+\begin{DoxyCompactList}\small\item\em Whether the traversal process can stop early. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshDistanceTraversalNode_a43df14bfd85e3e681ac81b3cec306809}\label{classfcl_1_1detail_1_1MeshDistanceTraversalNode_a43df14bfd85e3e681ac81b3cec306809}} 
+Vector3$<$ S $>$ $\ast$ {\bfseries vertices1}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshDistanceTraversalNode_adfd0330dd51d215189c2fdc720f86453}\label{classfcl_1_1detail_1_1MeshDistanceTraversalNode_adfd0330dd51d215189c2fdc720f86453}} 
+Vector3$<$ S $>$ $\ast$ {\bfseries vertices2}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshDistanceTraversalNode_affd438cdbdb64a9c4e13e96528a3c53d}\label{classfcl_1_1detail_1_1MeshDistanceTraversalNode_affd438cdbdb64a9c4e13e96528a3c53d}} 
+\mbox{\hyperlink{classfcl_1_1Triangle}{Triangle}} $\ast$ {\bfseries tri\+\_\+indices1}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshDistanceTraversalNode_a27fb265031191fc41542364413b6d76a}\label{classfcl_1_1detail_1_1MeshDistanceTraversalNode_a27fb265031191fc41542364413b6d76a}} 
+\mbox{\hyperlink{classfcl_1_1Triangle}{Triangle}} $\ast$ {\bfseries tri\+\_\+indices2}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshDistanceTraversalNode_abd64cde18f88f98c4b1d0bf5223bd01d}\label{classfcl_1_1detail_1_1MeshDistanceTraversalNode_abd64cde18f88f98c4b1d0bf5223bd01d}} 
+S \mbox{\hyperlink{classfcl_1_1detail_1_1MeshDistanceTraversalNode_abd64cde18f88f98c4b1d0bf5223bd01d}{rel\+\_\+err}}
+\begin{DoxyCompactList}\small\item\em relative and absolute error, default value is 0.\+01 for both terms \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshDistanceTraversalNode_ace1e1911ed302678366e2f9c08440261}\label{classfcl_1_1detail_1_1MeshDistanceTraversalNode_ace1e1911ed302678366e2f9c08440261}} 
+S {\bfseries abs\+\_\+err}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename BV$>$\newline
+class fcl\+::detail\+::\+Mesh\+Distance\+Traversal\+Node$<$ B\+V $>$}
+
+Traversal node for distance computation between two meshes. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/distance/mesh\+\_\+distance\+\_\+traversal\+\_\+node.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/distance/mesh\+\_\+distance\+\_\+traversal\+\_\+node-\/inl.\+h\end{DoxyCompactItemize}

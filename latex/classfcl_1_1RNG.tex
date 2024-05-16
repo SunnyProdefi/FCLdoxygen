@@ -1,0 +1,74 @@
+\hypertarget{classfcl_1_1RNG}{}\doxysection{fcl\+::R\+NG$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1RNG}\index{fcl::RNG$<$ S $>$@{fcl::RNG$<$ S $>$}}
+
+
+Random number generation. An instance of this class cannot be used by multiple threads at once (member functions are not const). However, the constructor is thread safe and different instances can be used safely in any number of threads. It is also guaranteed that all created instances will have a different random seed.  
+
+
+
+
+{\ttfamily \#include $<$rng.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1RNG_a198b84515d3fb548565b005330593415}\label{classfcl_1_1RNG_a198b84515d3fb548565b005330593415}} 
+\mbox{\hyperlink{classfcl_1_1RNG_a198b84515d3fb548565b005330593415}{R\+NG}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. Always sets a different random seed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RNG_a944e2373be0778351cb67e7937d93532}\label{classfcl_1_1RNG_a944e2373be0778351cb67e7937d93532}} 
+S \mbox{\hyperlink{classfcl_1_1RNG_a944e2373be0778351cb67e7937d93532}{uniform01}} ()
+\begin{DoxyCompactList}\small\item\em Generate a random real between 0 and 1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RNG_af4739149899c7c696cc4c42dc7454990}\label{classfcl_1_1RNG_af4739149899c7c696cc4c42dc7454990}} 
+S \mbox{\hyperlink{classfcl_1_1RNG_af4739149899c7c696cc4c42dc7454990}{uniform\+Real}} (S lower\+\_\+bound, S upper\+\_\+bound)
+\begin{DoxyCompactList}\small\item\em Generate a random real within given bounds\+: \mbox{[}{\itshape lower\+\_\+bound}, {\itshape upper\+\_\+bound}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RNG_a1f82162a6886af862f0bbfcc0c177c89}\label{classfcl_1_1RNG_a1f82162a6886af862f0bbfcc0c177c89}} 
+int \mbox{\hyperlink{classfcl_1_1RNG_a1f82162a6886af862f0bbfcc0c177c89}{uniform\+Int}} (int lower\+\_\+bound, int upper\+\_\+bound)
+\begin{DoxyCompactList}\small\item\em Generate a random integer within given bounds\+: \mbox{[}{\itshape lower\+\_\+bound}, {\itshape upper\+\_\+bound}\mbox{]}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RNG_aa0977d7c9620a759a608c7825597556c}\label{classfcl_1_1RNG_aa0977d7c9620a759a608c7825597556c}} 
+bool \mbox{\hyperlink{classfcl_1_1RNG_aa0977d7c9620a759a608c7825597556c}{uniform\+Bool}} ()
+\begin{DoxyCompactList}\small\item\em Generate a random boolean. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RNG_a7cd4d01179600c0e1bce777fab52a7d2}\label{classfcl_1_1RNG_a7cd4d01179600c0e1bce777fab52a7d2}} 
+S \mbox{\hyperlink{classfcl_1_1RNG_a7cd4d01179600c0e1bce777fab52a7d2}{gaussian01}} ()
+\begin{DoxyCompactList}\small\item\em Generate a random real using a normal distribution with mean 0 and variance 1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RNG_a3852c81a9e22942ace983deac1c3ec38}\label{classfcl_1_1RNG_a3852c81a9e22942ace983deac1c3ec38}} 
+S \mbox{\hyperlink{classfcl_1_1RNG_a3852c81a9e22942ace983deac1c3ec38}{gaussian}} (S mean, S stddev)
+\begin{DoxyCompactList}\small\item\em Generate a random real using a normal distribution with given mean and variance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RNG_af9d6a17c8c012913f2eb3be4fd6bcf65}\label{classfcl_1_1RNG_af9d6a17c8c012913f2eb3be4fd6bcf65}} 
+S \mbox{\hyperlink{classfcl_1_1RNG_af9d6a17c8c012913f2eb3be4fd6bcf65}{half\+Normal\+Real}} (S r\+\_\+min, S r\+\_\+max, S focus=3.\+0)
+\begin{DoxyCompactList}\small\item\em Generate a random real using a half-\/normal distribution. The value is within specified bounds \mbox{[}{\itshape r\+\_\+min}, {\itshape r\+\_\+max}\mbox{]}, but with a bias towards {\itshape r\+\_\+max}. The function is implemended using a Gaussian distribution with mean at {\itshape r\+\_\+max} -\/ {\itshape r\+\_\+min}. The distribution is \textquotesingle{}folded\textquotesingle{} around {\itshape r\+\_\+max} axis towards {\itshape r\+\_\+min}. The variance of the distribution is ({\itshape r\+\_\+max} -\/ {\itshape r\+\_\+min}) / {\itshape focus}. The higher the focus, the more probable it is that generated numbers are close to {\itshape r\+\_\+max}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RNG_aec7a25dcea09c7e83b6abbe80b93cfa4}\label{classfcl_1_1RNG_aec7a25dcea09c7e83b6abbe80b93cfa4}} 
+int \mbox{\hyperlink{classfcl_1_1RNG_aec7a25dcea09c7e83b6abbe80b93cfa4}{half\+Normal\+Int}} (int r\+\_\+min, int r\+\_\+max, S focus=3.\+0)
+\begin{DoxyCompactList}\small\item\em Generate a random integer using a half-\/normal distribution. The value is within specified bounds (\mbox{[}{\itshape r\+\_\+min}, {\itshape r\+\_\+max}\mbox{]}), but with a bias towards {\itshape r\+\_\+max}. The function is implemented on top of \mbox{\hyperlink{classfcl_1_1RNG_af9d6a17c8c012913f2eb3be4fd6bcf65}{half\+Normal\+Real()}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RNG_abdf87721cd410fc5bba0616e637c9eaa}\label{classfcl_1_1RNG_abdf87721cd410fc5bba0616e637c9eaa}} 
+void \mbox{\hyperlink{classfcl_1_1RNG_abdf87721cd410fc5bba0616e637c9eaa}{quaternion}} (S value\mbox{[}4\mbox{]})
+\begin{DoxyCompactList}\small\item\em Uniform random unit quaternion sampling. The computed value has the order (x,y,z,w) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RNG_abb784c1e51ac52acb3abd83ec2904f28}\label{classfcl_1_1RNG_abb784c1e51ac52acb3abd83ec2904f28}} 
+void \mbox{\hyperlink{classfcl_1_1RNG_abb784c1e51ac52acb3abd83ec2904f28}{euler\+R\+PY}} (S value\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Uniform random sampling of Euler roll-\/pitch-\/yaw angles, each in the range \mbox{[}-\/pi, pi). The computed value has the order (roll, pitch, yaw) $\ast$/. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RNG_a08c0987ce3ac3c99b6793b3d48d5bfed}\label{classfcl_1_1RNG_a08c0987ce3ac3c99b6793b3d48d5bfed}} 
+void \mbox{\hyperlink{classfcl_1_1RNG_a08c0987ce3ac3c99b6793b3d48d5bfed}{disk}} (S r\+\_\+min, S r\+\_\+max, S \&x, S \&y)
+\begin{DoxyCompactList}\small\item\em Uniform random sample on a disk with radius from r\+\_\+min to r\+\_\+max. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RNG_aca795e19ace7a182b683910fd3143cf0}\label{classfcl_1_1RNG_aca795e19ace7a182b683910fd3143cf0}} 
+void \mbox{\hyperlink{classfcl_1_1RNG_aca795e19ace7a182b683910fd3143cf0}{ball}} (S r\+\_\+min, S r\+\_\+max, S \&x, S \&y, S \&z)
+\begin{DoxyCompactList}\small\item\em Uniform random sample in a ball with radius from r\+\_\+min to r\+\_\+max. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1RNG_a47426a756043e5b0a2acb0e1b39f8fc6}\label{classfcl_1_1RNG_a47426a756043e5b0a2acb0e1b39f8fc6}} 
+static void \mbox{\hyperlink{classfcl_1_1RNG_a47426a756043e5b0a2acb0e1b39f8fc6}{set\+Seed}} (std\+::uint\+\_\+fast32\+\_\+t seed)
+\begin{DoxyCompactList}\small\item\em Set the seed for random number generation. Use this function to ensure the same sequence of random numbers is generated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RNG_afbe7cd16e65660344918198e3958e015}\label{classfcl_1_1RNG_afbe7cd16e65660344918198e3958e015}} 
+static std\+::uint\+\_\+fast32\+\_\+t \mbox{\hyperlink{classfcl_1_1RNG_afbe7cd16e65660344918198e3958e015}{get\+Seed}} ()
+\begin{DoxyCompactList}\small\item\em Get the seed used for random number generation. Passing the returned value to \mbox{\hyperlink{classfcl_1_1RNG_a47426a756043e5b0a2acb0e1b39f8fc6}{set\+Seed()}} at a subsequent execution of the code will ensure deterministic (repeatable) behaviour. Useful for debugging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+class fcl\+::\+R\+N\+G$<$ S $>$}
+
+Random number generation. An instance of this class cannot be used by multiple threads at once (member functions are not const). However, the constructor is thread safe and different instances can be used safely in any number of threads. It is also guaranteed that all created instances will have a different random seed. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/math/rng.\+h\item 
+/home/prodefi/fcl/include/fcl/math/rng-\/inl.\+h\end{DoxyCompactItemize}

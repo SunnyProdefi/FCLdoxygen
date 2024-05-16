@@ -1,0 +1,77 @@
+\hypertarget{structfcl_1_1CollisionRequest}{}\doxysection{fcl\+::Collision\+Request$<$ S $>$ Struct Template Reference}
+\label{structfcl_1_1CollisionRequest}\index{fcl::CollisionRequest$<$ S $>$@{fcl::CollisionRequest$<$ S $>$}}
+
+
+Parameters for performing collision request.  
+
+
+
+
+{\ttfamily \#include $<$collision\+\_\+request.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Eigen\+::\+Num\+Traits$<$ S $>$\+::\mbox{\hyperlink{structfcl_1_1CollisionRequest_af04c0dc7ad2d1b8252cb62a0aaba8ada}{Real}} \mbox{\hyperlink{structfcl_1_1CollisionRequest_af04c0dc7ad2d1b8252cb62a0aaba8ada}{Real}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionRequest_a02ae1fd4b1bf5d4dcdfc0ed65d6d5d71}\label{structfcl_1_1CollisionRequest_a02ae1fd4b1bf5d4dcdfc0ed65d6d5d71}} 
+\mbox{\hyperlink{structfcl_1_1CollisionRequest_a02ae1fd4b1bf5d4dcdfc0ed65d6d5d71}{Collision\+Request}} (size\+\_\+t num\+\_\+max\+\_\+contacts\+\_\+=1, bool enable\+\_\+contact\+\_\+=false, size\+\_\+t num\+\_\+max\+\_\+cost\+\_\+sources\+\_\+=1, bool enable\+\_\+cost\+\_\+=false, bool use\+\_\+approximate\+\_\+cost\+\_\+=true, \mbox{\hyperlink{namespacefcl_a576bdc98c01e92cdef6f3c60617b2d3d}{G\+J\+K\+Solver\+Type}} gjk\+\_\+solver\+\_\+type\+\_\+=G\+S\+T\+\_\+\+L\+I\+B\+C\+CD, \mbox{\hyperlink{structfcl_1_1CollisionRequest_af04c0dc7ad2d1b8252cb62a0aaba8ada}{Real}} gjk\+\_\+tolerance\+\_\+=1e-\/6)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionRequest_a532824caf7d1ad858593abb91d3c3a18}\label{structfcl_1_1CollisionRequest_a532824caf7d1ad858593abb91d3c3a18}} 
+bool {\bfseries is\+Satisfied} (const \mbox{\hyperlink{structfcl_1_1CollisionResult}{Collision\+Result}}$<$ S $>$ \&result) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionRequest_a5def54193d37d50a4411d815dec9f354}\label{structfcl_1_1CollisionRequest_a5def54193d37d50a4411d815dec9f354}} 
+size\+\_\+t \mbox{\hyperlink{structfcl_1_1CollisionRequest_a5def54193d37d50a4411d815dec9f354}{num\+\_\+max\+\_\+contacts}}
+\begin{DoxyCompactList}\small\item\em The maximum number of contacts that can be returned. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionRequest_aedd521cb2bbe50bcf97d6e7d39da4941}\label{structfcl_1_1CollisionRequest_aedd521cb2bbe50bcf97d6e7d39da4941}} 
+bool \mbox{\hyperlink{structfcl_1_1CollisionRequest_aedd521cb2bbe50bcf97d6e7d39da4941}{enable\+\_\+contact}}
+\begin{DoxyCompactList}\small\item\em If true, contact information (e.\+g., normal, penetration depth, and contact position) will be returned. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionRequest_acee0067b8041f0899c909e646a472df3}\label{structfcl_1_1CollisionRequest_acee0067b8041f0899c909e646a472df3}} 
+size\+\_\+t \mbox{\hyperlink{structfcl_1_1CollisionRequest_acee0067b8041f0899c909e646a472df3}{num\+\_\+max\+\_\+cost\+\_\+sources}}
+\begin{DoxyCompactList}\small\item\em The maximum number of cost sources that can be returned. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionRequest_a9244a3335db6395f1734a60a8c6933cc}\label{structfcl_1_1CollisionRequest_a9244a3335db6395f1734a60a8c6933cc}} 
+bool \mbox{\hyperlink{structfcl_1_1CollisionRequest_a9244a3335db6395f1734a60a8c6933cc}{enable\+\_\+cost}}
+\begin{DoxyCompactList}\small\item\em If true, the cost sources will be computed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionRequest_a3f40cab9513a1cd53cd504a557d9df0c}\label{structfcl_1_1CollisionRequest_a3f40cab9513a1cd53cd504a557d9df0c}} 
+bool \mbox{\hyperlink{structfcl_1_1CollisionRequest_a3f40cab9513a1cd53cd504a557d9df0c}{use\+\_\+approximate\+\_\+cost}}
+\begin{DoxyCompactList}\small\item\em If true, the cost computation is approximated (if computed). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionRequest_a24296b31dcece74c94d76f9e7d4cc060}\label{structfcl_1_1CollisionRequest_a24296b31dcece74c94d76f9e7d4cc060}} 
+\mbox{\hyperlink{namespacefcl_a576bdc98c01e92cdef6f3c60617b2d3d}{G\+J\+K\+Solver\+Type}} \mbox{\hyperlink{structfcl_1_1CollisionRequest_a24296b31dcece74c94d76f9e7d4cc060}{gjk\+\_\+solver\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em Enumeration indicating the G\+JK solver implementation to use. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionRequest_a4e33c93fdf9b3e54184bb08a234252ba}\label{structfcl_1_1CollisionRequest_a4e33c93fdf9b3e54184bb08a234252ba}} 
+bool \mbox{\hyperlink{structfcl_1_1CollisionRequest_a4e33c93fdf9b3e54184bb08a234252ba}{enable\+\_\+cached\+\_\+gjk\+\_\+guess}}
+\begin{DoxyCompactList}\small\item\em If true, uses the provided initial guess for the G\+JK algorithm. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionRequest_aa880f986c0a3a4bd3536ba6ac625134e}\label{structfcl_1_1CollisionRequest_aa880f986c0a3a4bd3536ba6ac625134e}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{structfcl_1_1CollisionRequest_aa880f986c0a3a4bd3536ba6ac625134e}{cached\+\_\+gjk\+\_\+guess}}
+\begin{DoxyCompactList}\small\item\em The initial guess to use in the G\+JK algorithm. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CollisionRequest_ad067789045c05c10c02c59a79ab76c84}\label{structfcl_1_1CollisionRequest_ad067789045c05c10c02c59a79ab76c84}} 
+\mbox{\hyperlink{structfcl_1_1CollisionRequest_af04c0dc7ad2d1b8252cb62a0aaba8ada}{Real}} \mbox{\hyperlink{structfcl_1_1CollisionRequest_ad067789045c05c10c02c59a79ab76c84}{gjk\+\_\+tolerance}} \{1e-\/6\}
+\begin{DoxyCompactList}\small\item\em Numerical tolerance to use in the G\+JK algorithm. N\+O\+TE\+: The default value is currently set as 1e-\/6 to provide backwards compatibility; historically it has been 1e-\/6. Future code should provide a value that is consistent with the precision of {\ttfamily S}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+struct fcl\+::\+Collision\+Request$<$ S $>$}
+
+Parameters for performing collision request. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structfcl_1_1CollisionRequest_af04c0dc7ad2d1b8252cb62a0aaba8ada}\label{structfcl_1_1CollisionRequest_af04c0dc7ad2d1b8252cb62a0aaba8ada}} 
+\index{fcl::CollisionRequest$<$ S $>$@{fcl::CollisionRequest$<$ S $>$}!Real@{Real}}
+\index{Real@{Real}!fcl::CollisionRequest$<$ S $>$@{fcl::CollisionRequest$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{Real}{Real}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+typedef Eigen\+::\+Num\+Traits$<$S$>$\+::\mbox{\hyperlink{structfcl_1_1CollisionRequest_af04c0dc7ad2d1b8252cb62a0aaba8ada}{Real}} \mbox{\hyperlink{structfcl_1_1CollisionRequest}{fcl\+::\+Collision\+Request}}$<$ S $>$\+::\mbox{\hyperlink{structfcl_1_1CollisionRequest_af04c0dc7ad2d1b8252cb62a0aaba8ada}{Real}}}
+
+The underlying numerical representation of the request\textquotesingle{}s scalar (e.\+g., float or double). 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/collision\+\_\+request.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/collision\+\_\+request-\/inl.\+h\end{DoxyCompactItemize}

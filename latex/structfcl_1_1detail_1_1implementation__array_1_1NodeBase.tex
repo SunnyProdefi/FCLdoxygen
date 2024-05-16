@@ -1,0 +1,44 @@
+\hypertarget{structfcl_1_1detail_1_1implementation__array_1_1NodeBase}{}\doxysection{fcl\+::detail\+::implementation\+\_\+array\+::Node\+Base$<$ BV $>$ Struct Template Reference}
+\label{structfcl_1_1detail_1_1implementation__array_1_1NodeBase}\index{fcl::detail::implementation\_array::NodeBase$<$ BV $>$@{fcl::detail::implementation\_array::NodeBase$<$ BV $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1implementation__array_1_1NodeBase_a47ce627315a462dedffbdbdc2833de52}\label{structfcl_1_1detail_1_1implementation__array_1_1NodeBase_a47ce627315a462dedffbdbdc2833de52}} 
+bool {\bfseries is\+Leaf} () const
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1implementation__array_1_1NodeBase_a55953d725a35d4be056a50bddf77e8dd}\label{structfcl_1_1detail_1_1implementation__array_1_1NodeBase_a55953d725a35d4be056a50bddf77e8dd}} 
+bool {\bfseries is\+Internal} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1implementation__array_1_1NodeBase_a239728e78832d784d5072b9f6c3e191b}\label{structfcl_1_1detail_1_1implementation__array_1_1NodeBase_a239728e78832d784d5072b9f6c3e191b}} 
+BV {\bfseries bv}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1implementation__array_1_1NodeBase_aa1d3b44cacf841bbd9a908142c5ec9bd}\label{structfcl_1_1detail_1_1implementation__array_1_1NodeBase_aa1d3b44cacf841bbd9a908142c5ec9bd}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>size\_t {\bfseries parent}\\
+\>size\_t {\bfseries next}\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1implementation__array_1_1NodeBase_a1b7b00c54f39ae640c86da139ce39461}\label{structfcl_1_1detail_1_1implementation__array_1_1NodeBase_a1b7b00c54f39ae640c86da139ce39461}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>size\_t {\bfseries children} \mbox{[}2\mbox{]}\\
+\>void $\ast$ {\bfseries data}\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1implementation__array_1_1NodeBase_a87365b44f807df233aeac8ab7eb4808d}\label{structfcl_1_1detail_1_1implementation__array_1_1NodeBase_a87365b44f807df233aeac8ab7eb4808d}} 
+uint32 {\bfseries code}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/broadphase/detail/node\+\_\+base\+\_\+array.\+h\item 
+/home/prodefi/fcl/include/fcl/broadphase/detail/node\+\_\+base\+\_\+array-\/inl.\+h\end{DoxyCompactItemize}

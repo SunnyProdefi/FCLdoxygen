@@ -1,0 +1,101 @@
+\hypertarget{classfcl_1_1Halfspace}{}\doxysection{fcl\+::Halfspace$<$ S\+\_\+ $>$ Class Template Reference}
+\label{classfcl_1_1Halfspace}\index{fcl::Halfspace$<$ S\_ $>$@{fcl::Halfspace$<$ S\_ $>$}}
+
+
+Half Space\+: this is equivalent to the Planed in O\+DE. The separation plane is defined as n $\ast$ x = d. Points in the negative side of the separation plane (i.\+e. \{x $\vert$ n $\ast$ x $<$ d\}) are inside the half space and points in the positive side of the separation plane (i.\+e. \{x $\vert$ n $\ast$ x $>$ d\}) are outside the half space.  
+
+
+
+
+{\ttfamily \#include $<$halfspace.\+h$>$}
+
+Inheritance diagram for fcl\+::Halfspace$<$ S\+\_\+ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classfcl_1_1Halfspace}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Halfspace_aca89678b596f43a508f5ff99ee85c001}\label{classfcl_1_1Halfspace_aca89678b596f43a508f5ff99ee85c001}} 
+using {\bfseries S} = S\+\_\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Halfspace_aa75b1003cbd3beaecb2e2b6c9436ea0f}\label{classfcl_1_1Halfspace_aa75b1003cbd3beaecb2e2b6c9436ea0f}} 
+\mbox{\hyperlink{classfcl_1_1Halfspace_aa75b1003cbd3beaecb2e2b6c9436ea0f}{Halfspace}} (const Vector3$<$ S $>$ \&\mbox{\hyperlink{classfcl_1_1Halfspace_a3349cee8d05ec75b068433df83be3e5b}{n}}, S \mbox{\hyperlink{classfcl_1_1Halfspace_ac5aaac8270aa2df31950a0f904f774d4}{d}})
+\begin{DoxyCompactList}\small\item\em Construct a half space with normal direction and offset. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Halfspace_a4cc5e20bedda7c6990bc71d708101155}\label{classfcl_1_1Halfspace_a4cc5e20bedda7c6990bc71d708101155}} 
+\mbox{\hyperlink{classfcl_1_1Halfspace_a4cc5e20bedda7c6990bc71d708101155}{Halfspace}} (S a, S b, S c, S d\+\_\+)
+\begin{DoxyCompactList}\small\item\em Construct a plane with normal direction and offset. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Halfspace_aa93a26d8f3b92a09efd311ec6c6535b3}\label{classfcl_1_1Halfspace_aa93a26d8f3b92a09efd311ec6c6535b3}} 
+S {\bfseries signed\+Distance} (const Vector3$<$ S $>$ \&p) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1Halfspace_a77e58944ca77298c8ccfbd29f51961db}\label{classfcl_1_1Halfspace_a77e58944ca77298c8ccfbd29f51961db}} 
+S {\bfseries distance} (const Vector3$<$ S $>$ \&p) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1Halfspace_a6fc252ebfc51e86d4ff5ef333fca1b65}\label{classfcl_1_1Halfspace_a6fc252ebfc51e86d4ff5ef333fca1b65}} 
+void \mbox{\hyperlink{classfcl_1_1Halfspace_a6fc252ebfc51e86d4ff5ef333fca1b65}{compute\+Local\+A\+A\+BB}} () override
+\begin{DoxyCompactList}\small\item\em Compute \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Halfspace_a05cc4fc2af444ccd62edf97d9176bd4a}\label{classfcl_1_1Halfspace_a05cc4fc2af444ccd62edf97d9176bd4a}} 
+\mbox{\hyperlink{namespacefcl_a2b48aa89f14ef2fb4082575eefb145fc}{N\+O\+D\+E\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{classfcl_1_1Halfspace_a05cc4fc2af444ccd62edf97d9176bd4a}{get\+Node\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Get node type\+: a half space. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classfcl_1_1Halfspace_a340b2f410ca5e5af84e52dba5786037a}{representation}} (int precision=20) const
+\begin{DoxyCompactList}\small\item\em Create a string that should be sufficient to recreate this shape. This is akin to the repr() implementation in python. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Halfspace_a3349cee8d05ec75b068433df83be3e5b}\label{classfcl_1_1Halfspace_a3349cee8d05ec75b068433df83be3e5b}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1Halfspace_a3349cee8d05ec75b068433df83be3e5b}{n}}
+\begin{DoxyCompactList}\small\item\em Planed normal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Halfspace_ac5aaac8270aa2df31950a0f904f774d4}\label{classfcl_1_1Halfspace_ac5aaac8270aa2df31950a0f904f774d4}} 
+S \mbox{\hyperlink{classfcl_1_1Halfspace_ac5aaac8270aa2df31950a0f904f774d4}{d}}
+\begin{DoxyCompactList}\small\item\em Planed offset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Halfspace_a5fbe5dc0e17536bf6e73c40c9a4f2db8}\label{classfcl_1_1Halfspace_a5fbe5dc0e17536bf6e73c40c9a4f2db8}} 
+void \mbox{\hyperlink{classfcl_1_1Halfspace_a5fbe5dc0e17536bf6e73c40c9a4f2db8}{unit\+Normal\+Test}} ()
+\begin{DoxyCompactList}\small\item\em Turn non-\/unit normal into unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Halfspace_a2e2253e316c503e6eb1103902ed56e2b}\label{classfcl_1_1Halfspace_a2e2253e316c503e6eb1103902ed56e2b}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{classfcl_1_1Halfspace}{Halfspace}} \&halfspace)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S\+\_\+$>$\newline
+class fcl\+::\+Halfspace$<$ S\+\_\+ $>$}
+
+Half Space\+: this is equivalent to the Planed in O\+DE. The separation plane is defined as n $\ast$ x = d. Points in the negative side of the separation plane (i.\+e. \{x $\vert$ n $\ast$ x $<$ d\}) are inside the half space and points in the positive side of the separation plane (i.\+e. \{x $\vert$ n $\ast$ x $>$ d\}) are outside the half space. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfcl_1_1Halfspace_a340b2f410ca5e5af84e52dba5786037a}\label{classfcl_1_1Halfspace_a340b2f410ca5e5af84e52dba5786037a}} 
+\index{fcl::Halfspace$<$ S\_ $>$@{fcl::Halfspace$<$ S\_ $>$}!representation@{representation}}
+\index{representation@{representation}!fcl::Halfspace$<$ S\_ $>$@{fcl::Halfspace$<$ S\_ $>$}}
+\doxysubsubsection{\texorpdfstring{representation()}{representation()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+std\+::string \mbox{\hyperlink{classfcl_1_1Halfspace}{fcl\+::\+Halfspace}}$<$ S $>$\+::representation (\begin{DoxyParamCaption}\item[{int}]{precision = {\ttfamily 20} }\end{DoxyParamCaption}) const}
+
+
+
+Create a string that should be sufficient to recreate this shape. This is akin to the repr() implementation in python. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em precision} & The requested digits of precision for the numerical measures (same semantics as std\+::setprecision()). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string representation of this instance. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/geometry/shape/halfspace.\+h\item 
+/home/prodefi/fcl/include/fcl/geometry/shape/halfspace-\/inl.\+h\end{DoxyCompactItemize}

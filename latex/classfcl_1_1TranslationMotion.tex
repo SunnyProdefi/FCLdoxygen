@@ -1,0 +1,36 @@
+\hypertarget{classfcl_1_1TranslationMotion}{}\doxysection{fcl\+::Translation\+Motion$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1TranslationMotion}\index{fcl::TranslationMotion$<$ S $>$@{fcl::TranslationMotion$<$ S $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1TranslationMotion_a933a19bb54d55c99d46dcd78c0f67ba6}\label{classfcl_1_1TranslationMotion_a933a19bb54d55c99d46dcd78c0f67ba6}} 
+\mbox{\hyperlink{classfcl_1_1TranslationMotion_a933a19bb54d55c99d46dcd78c0f67ba6}{Translation\+Motion}} (const Transform3$<$ S $>$ \&tf1, const Transform3$<$ S $>$ \&tf2)
+\begin{DoxyCompactList}\small\item\em Construct motion from intial and goal transform. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1TranslationMotion_a8854a76d05d292b5ea5c81aad41b5b98}\label{classfcl_1_1TranslationMotion_a8854a76d05d292b5ea5c81aad41b5b98}} 
+{\bfseries Translation\+Motion} (const Matrix3$<$ S $>$ \&R, const Vector3$<$ S $>$ \&T1, const Vector3$<$ S $>$ \&T2)
+\item 
+\mbox{\Hypertarget{classfcl_1_1TranslationMotion_a19db559465e324ddc769fdefec0b59d0}\label{classfcl_1_1TranslationMotion_a19db559465e324ddc769fdefec0b59d0}} 
+bool {\bfseries integrate} (S dt) const override
+\item 
+\mbox{\Hypertarget{classfcl_1_1TranslationMotion_a02957678d24f96dcb9b3f621fced2b6b}\label{classfcl_1_1TranslationMotion_a02957678d24f96dcb9b3f621fced2b6b}} 
+S {\bfseries compute\+Motion\+Bound} (const \mbox{\hyperlink{classfcl_1_1BVMotionBoundVisitor}{B\+V\+Motion\+Bound\+Visitor}}$<$ S $>$ \&mb\+\_\+visitor) const override
+\item 
+\mbox{\Hypertarget{classfcl_1_1TranslationMotion_a4cd19b5e0fafc63748c77d0c136f1b0f}\label{classfcl_1_1TranslationMotion_a4cd19b5e0fafc63748c77d0c136f1b0f}} 
+S {\bfseries compute\+Motion\+Bound} (const \mbox{\hyperlink{classfcl_1_1TriangleMotionBoundVisitor}{Triangle\+Motion\+Bound\+Visitor}}$<$ S $>$ \&mb\+\_\+visitor) const override
+\item 
+\mbox{\Hypertarget{classfcl_1_1TranslationMotion_a9aefbb0ea2f34c5be4836073a196387d}\label{classfcl_1_1TranslationMotion_a9aefbb0ea2f34c5be4836073a196387d}} 
+void {\bfseries get\+Current\+Transform} (Transform3$<$ S $>$ \&tf\+\_\+) const override
+\item 
+\mbox{\Hypertarget{classfcl_1_1TranslationMotion_a52effbe49453a55bade6b25b6fd8474a}\label{classfcl_1_1TranslationMotion_a52effbe49453a55bade6b25b6fd8474a}} 
+void {\bfseries get\+Taylor\+Model} (\mbox{\hyperlink{classfcl_1_1TMatrix3}{T\+Matrix3}}$<$ S $>$ \&tm, \mbox{\hyperlink{classfcl_1_1TVector3}{T\+Vector3}}$<$ S $>$ \&tv) const override
+\item 
+\mbox{\Hypertarget{classfcl_1_1TranslationMotion_a06ee4b30c0012e938d1134915f85e7c3}\label{classfcl_1_1TranslationMotion_a06ee4b30c0012e938d1134915f85e7c3}} 
+Vector3$<$ S $>$ {\bfseries get\+Velocity} () const
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/math/motion/bv\+\_\+motion\+\_\+bound\+\_\+visitor.\+h\item 
+/home/prodefi/fcl/include/fcl/math/motion/translation\+\_\+motion.\+h\item 
+/home/prodefi/fcl/include/fcl/math/motion/translation\+\_\+motion-\/inl.\+h\end{DoxyCompactItemize}

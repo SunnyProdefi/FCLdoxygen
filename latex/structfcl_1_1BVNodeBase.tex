@@ -1,0 +1,53 @@
+\hypertarget{structfcl_1_1BVNodeBase}{}\doxysection{fcl\+::B\+V\+Node\+Base Struct Reference}
+\label{structfcl_1_1BVNodeBase}\index{fcl::BVNodeBase@{fcl::BVNodeBase}}
+
+
+\mbox{\hyperlink{structfcl_1_1BVNodeBase}{B\+V\+Node\+Base}} encodes the tree structure for B\+VH.  
+
+
+
+
+{\ttfamily \#include $<$B\+V\+\_\+node\+\_\+base.\+h$>$}
+
+Inheritance diagram for fcl\+::B\+V\+Node\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{structfcl_1_1BVNodeBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1BVNodeBase_a1f544a7105f9d1e5192f93212d5a8882}\label{structfcl_1_1BVNodeBase_a1f544a7105f9d1e5192f93212d5a8882}} 
+bool \mbox{\hyperlink{structfcl_1_1BVNodeBase_a1f544a7105f9d1e5192f93212d5a8882}{is\+Leaf}} () const
+\begin{DoxyCompactList}\small\item\em Whether current node is a leaf node (i.\+e. contains a primitive index. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1BVNodeBase_a083cfab8b1f6984e70339b73d5286b2c}\label{structfcl_1_1BVNodeBase_a083cfab8b1f6984e70339b73d5286b2c}} 
+int \mbox{\hyperlink{structfcl_1_1BVNodeBase_a083cfab8b1f6984e70339b73d5286b2c}{primitive\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Return the primitive index. The index is referred to the original data (i.\+e. vertices or tri\+\_\+indices) in \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1BVNodeBase_a274f6ccf683ed92e9667093f42c13274}\label{structfcl_1_1BVNodeBase_a274f6ccf683ed92e9667093f42c13274}} 
+int \mbox{\hyperlink{structfcl_1_1BVNodeBase_a274f6ccf683ed92e9667093f42c13274}{left\+Child}} () const
+\begin{DoxyCompactList}\small\item\em Return the index of the first child. The index is referred to the bounding volume array (i.\+e. bvs) in \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1BVNodeBase_a2e342c5841e7922b235b89b5064fdf58}\label{structfcl_1_1BVNodeBase_a2e342c5841e7922b235b89b5064fdf58}} 
+int \mbox{\hyperlink{structfcl_1_1BVNodeBase_a2e342c5841e7922b235b89b5064fdf58}{right\+Child}} () const
+\begin{DoxyCompactList}\small\item\em Return the index of the second child. The index is referred to the bounding volume array (i.\+e. bvs) in \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1BVNodeBase_ad5dbf4a7800e3e363037c70832a3eb77}\label{structfcl_1_1BVNodeBase_ad5dbf4a7800e3e363037c70832a3eb77}} 
+int \mbox{\hyperlink{structfcl_1_1BVNodeBase_ad5dbf4a7800e3e363037c70832a3eb77}{first\+\_\+child}}
+\begin{DoxyCompactList}\small\item\em An index for first child node or primitive If the value is positive, it is the index of the first child bv node If the value is negative, it is -\/(primitive index + 1) Zero is not used. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1BVNodeBase_abac5f855986413897d5d15883869997e}\label{structfcl_1_1BVNodeBase_abac5f855986413897d5d15883869997e}} 
+int \mbox{\hyperlink{structfcl_1_1BVNodeBase_abac5f855986413897d5d15883869997e}{first\+\_\+primitive}}
+\begin{DoxyCompactList}\small\item\em The start id the primitive belonging to the current node. The index is referred to the primitive\+\_\+indices in \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}} and from that we can obtain the primitive\textquotesingle{}s index in original data indirectly. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1BVNodeBase_a1ba90180a92f8193bce61d6f1cd0d2a2}\label{structfcl_1_1BVNodeBase_a1ba90180a92f8193bce61d6f1cd0d2a2}} 
+int \mbox{\hyperlink{structfcl_1_1BVNodeBase_a1ba90180a92f8193bce61d6f1cd0d2a2}{num\+\_\+primitives}}
+\begin{DoxyCompactList}\small\item\em The number of primitives belonging to the current node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{structfcl_1_1BVNodeBase}{B\+V\+Node\+Base}} encodes the tree structure for B\+VH. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/geometry/bvh/B\+V\+\_\+node\+\_\+base.\+h\item 
+/home/prodefi/fcl/src/geometry/bvh/B\+V\+\_\+node\+\_\+base.\+cpp\end{DoxyCompactItemize}

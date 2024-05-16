@@ -1,0 +1,105 @@
+\hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array}{}\doxysection{fcl\+::Dynamic\+A\+A\+B\+B\+Tree\+Collision\+Manager\+\_\+\+Array$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array}\index{fcl::DynamicAABBTreeCollisionManager\_Array$<$ S $>$@{fcl::DynamicAABBTreeCollisionManager\_Array$<$ S $>$}}
+Inheritance diagram for fcl\+::Dynamic\+A\+A\+B\+B\+Tree\+Collision\+Manager\+\_\+\+Array$<$ S $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfcl_1_1DynamicAABBTreeCollisionManager__Array}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a188620314a482915d3607b8b9f39c164}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a188620314a482915d3607b8b9f39c164}} 
+using {\bfseries Dynamic\+A\+A\+B\+B\+Node} = \mbox{\hyperlink{structfcl_1_1detail_1_1implementation__array_1_1NodeBase}{detail\+::implementation\+\_\+array\+::\+Node\+Base}}$<$ \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ $>$
+\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a7ff6cb4eea688ff6db502dd1a22f66a1}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a7ff6cb4eea688ff6db502dd1a22f66a1}} 
+using {\bfseries Dynamic\+A\+A\+B\+B\+Table} = std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$, size\+\_\+t $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a4e8280337c71482d75d1cb8e67cddd5a}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a4e8280337c71482d75d1cb8e67cddd5a}} 
+void \mbox{\hyperlink{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a4e8280337c71482d75d1cb8e67cddd5a}{register\+Objects}} (const std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&other\+\_\+objs)
+\begin{DoxyCompactList}\small\item\em add objects to the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_afb1faa9e921b71b39c6022d15aa4f06f}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_afb1faa9e921b71b39c6022d15aa4f06f}} 
+void \mbox{\hyperlink{classfcl_1_1DynamicAABBTreeCollisionManager__Array_afb1faa9e921b71b39c6022d15aa4f06f}{register\+Object}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj)
+\begin{DoxyCompactList}\small\item\em add one object to the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a5381f0c85e768beafa63017aab3ba013}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a5381f0c85e768beafa63017aab3ba013}} 
+void \mbox{\hyperlink{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a5381f0c85e768beafa63017aab3ba013}{unregister\+Object}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj)
+\begin{DoxyCompactList}\small\item\em remove one object from the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a678d6d367cf382c6bdf2d4cb7d690505}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a678d6d367cf382c6bdf2d4cb7d690505}} 
+void \mbox{\hyperlink{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a678d6d367cf382c6bdf2d4cb7d690505}{setup}} ()
+\begin{DoxyCompactList}\small\item\em initialize the manager, related with the specific type of manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a8810aa3b2dceda70fee40efb844510e1}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a8810aa3b2dceda70fee40efb844510e1}} 
+void \mbox{\hyperlink{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a8810aa3b2dceda70fee40efb844510e1}{update}} ()
+\begin{DoxyCompactList}\small\item\em update the condition of manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a96dd9b7e61b72d88d0f708a7618f96c7}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a96dd9b7e61b72d88d0f708a7618f96c7}} 
+void \mbox{\hyperlink{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a96dd9b7e61b72d88d0f708a7618f96c7}{update}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$updated\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em update the manager by explicitly given the object updated \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a7ea6cfe7ef2395c5de0deb518b285af8}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a7ea6cfe7ef2395c5de0deb518b285af8}} 
+void \mbox{\hyperlink{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a7ea6cfe7ef2395c5de0deb518b285af8}{update}} (const std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&updated\+\_\+objs)
+\begin{DoxyCompactList}\small\item\em update the manager by explicitly given the set of objects update \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_aef328313677f738c88438814d316b91c}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_aef328313677f738c88438814d316b91c}} 
+void \mbox{\hyperlink{classfcl_1_1DynamicAABBTreeCollisionManager__Array_aef328313677f738c88438814d316b91c}{clear}} ()
+\begin{DoxyCompactList}\small\item\em clear the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a11ec58e5dbefd50dcd1679871c7ae657}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a11ec58e5dbefd50dcd1679871c7ae657}} 
+void \mbox{\hyperlink{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a11ec58e5dbefd50dcd1679871c7ae657}{get\+Objects}} (std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&objs) const
+\begin{DoxyCompactList}\small\item\em return the objects managed by the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a64457d7b5df2cf6e26e3113b71ce7b70}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a64457d7b5df2cf6e26e3113b71ce7b70}} 
+void \mbox{\hyperlink{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a64457d7b5df2cf6e26e3113b71ce7b70}{collide}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform collision test between one object and all the objects belonging to the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a6397c499ac351d2d3dd2c080f2706171}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a6397c499ac351d2d3dd2c080f2706171}} 
+void \mbox{\hyperlink{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a6397c499ac351d2d3dd2c080f2706171}{distance}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform distance computation between one object and all the objects belonging to the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_ac11aa2eeac3fc09e26e182920cdb11ab}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_ac11aa2eeac3fc09e26e182920cdb11ab}} 
+void \mbox{\hyperlink{classfcl_1_1DynamicAABBTreeCollisionManager__Array_ac11aa2eeac3fc09e26e182920cdb11ab}{collide}} (void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform collision test for the objects belonging to the manager (i.\+e., N$^\wedge$2 self collision) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a4222393da61e2a0765a819311e0533db}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a4222393da61e2a0765a819311e0533db}} 
+void \mbox{\hyperlink{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a4222393da61e2a0765a819311e0533db}{distance}} (void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform distance test for the objects belonging to the manager (i.\+e., N$^\wedge$2 self distance) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a19e4e68093959765766279ec5eaa1e4b}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a19e4e68093959765766279ec5eaa1e4b}} 
+void \mbox{\hyperlink{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a19e4e68093959765766279ec5eaa1e4b}{collide}} (\mbox{\hyperlink{classfcl_1_1BroadPhaseCollisionManager}{Broad\+Phase\+Collision\+Manager}}$<$ S $>$ $\ast$other\+\_\+manager\+\_\+, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform collision test with objects belonging to another manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a330ab858b2ed31724baf403a296e3cce}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a330ab858b2ed31724baf403a296e3cce}} 
+void \mbox{\hyperlink{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a330ab858b2ed31724baf403a296e3cce}{distance}} (\mbox{\hyperlink{classfcl_1_1BroadPhaseCollisionManager}{Broad\+Phase\+Collision\+Manager}}$<$ S $>$ $\ast$other\+\_\+manager\+\_\+, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform distance test with objects belonging to another manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a0f401f06bdf1a42ef4c2689a8d99808c}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a0f401f06bdf1a42ef4c2689a8d99808c}} 
+bool \mbox{\hyperlink{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a0f401f06bdf1a42ef4c2689a8d99808c}{empty}} () const
+\begin{DoxyCompactList}\small\item\em whether the manager is empty \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a0987d7e06bd5be5dbbfee9ec0b0e4135}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a0987d7e06bd5be5dbbfee9ec0b0e4135}} 
+size\+\_\+t \mbox{\hyperlink{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a0987d7e06bd5be5dbbfee9ec0b0e4135}{size}} () const
+\begin{DoxyCompactList}\small\item\em the number of objects managed by the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_ac6d9000a1ec3bdcf9d024406e41af8b3}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_ac6d9000a1ec3bdcf9d024406e41af8b3}} 
+const \mbox{\hyperlink{classfcl_1_1detail_1_1implementation__array_1_1HierarchyTree}{detail\+::implementation\+\_\+array\+::\+Hierarchy\+Tree}}$<$ \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ $>$ \& {\bfseries get\+Tree} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_ae2043088ea92d7a13cf773350181913d}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_ae2043088ea92d7a13cf773350181913d}} 
+int {\bfseries max\+\_\+tree\+\_\+nonbalanced\+\_\+level}
+\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_ada3a594f594b74fb04725130f1e63241}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_ada3a594f594b74fb04725130f1e63241}} 
+int {\bfseries tree\+\_\+incremental\+\_\+balance\+\_\+pass}
+\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a0ce37a2887d2f7f6e4a253687b5e24cb}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a0ce37a2887d2f7f6e4a253687b5e24cb}} 
+int \& {\bfseries tree\+\_\+topdown\+\_\+balance\+\_\+threshold}
+\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a7351fc765e84f7c245723722473b2056}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a7351fc765e84f7c245723722473b2056}} 
+int \& {\bfseries tree\+\_\+topdown\+\_\+level}
+\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a6b4305e8d8dd1d510c5e0c8c85c11971}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a6b4305e8d8dd1d510c5e0c8c85c11971}} 
+int {\bfseries tree\+\_\+init\+\_\+level}
+\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a8853f70772c5be16d861f30092a58c1f}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a8853f70772c5be16d861f30092a58c1f}} 
+bool {\bfseries octree\+\_\+as\+\_\+geometry\+\_\+collide}
+\item 
+\mbox{\Hypertarget{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a11e2433fceb6f9575e678001539cac1e}\label{classfcl_1_1DynamicAABBTreeCollisionManager__Array_a11e2433fceb6f9575e678001539cac1e}} 
+bool {\bfseries octree\+\_\+as\+\_\+geometry\+\_\+distance}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/broadphase/broadphase\+\_\+dynamic\+\_\+\+A\+A\+B\+B\+\_\+tree\+\_\+array.\+h\item 
+/home/prodefi/fcl/include/fcl/broadphase/broadphase\+\_\+dynamic\+\_\+\+A\+A\+B\+B\+\_\+tree\+\_\+array-\/inl.\+h\end{DoxyCompactItemize}

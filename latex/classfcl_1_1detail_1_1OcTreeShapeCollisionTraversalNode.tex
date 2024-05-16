@@ -1,0 +1,62 @@
+\hypertarget{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode}{}\doxysection{fcl\+::detail\+::Oc\+Tree\+Shape\+Collision\+Traversal\+Node$<$ Shape, Narrow\+Phase\+Solver $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode}\index{fcl::detail::OcTreeShapeCollisionTraversalNode$<$ Shape, NarrowPhaseSolver $>$@{fcl::detail::OcTreeShapeCollisionTraversalNode$<$ Shape, NarrowPhaseSolver $>$}}
+
+
+Traversal node for octree-\/shape collision.  
+
+
+
+
+{\ttfamily \#include $<$octree\+\_\+shape\+\_\+collision\+\_\+traversal\+\_\+node.\+h$>$}
+
+Inheritance diagram for fcl\+::detail\+::Oc\+Tree\+Shape\+Collision\+Traversal\+Node$<$ Shape, Narrow\+Phase\+Solver $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_aabcb2fbd121538f01da6ef961925afba}\label{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_aabcb2fbd121538f01da6ef961925afba}} 
+using {\bfseries S} = typename Shape\+::S
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_ad952ed91d04eb7305addac1933c57cef}\label{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_ad952ed91d04eb7305addac1933c57cef}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_ad952ed91d04eb7305addac1933c57cef}{B\+V\+Testing}} (int, int) const
+\begin{DoxyCompactList}\small\item\em BV test between b1 and b2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_ad1bac76f393e300422d8aeab06e5131d}\label{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_ad1bac76f393e300422d8aeab06e5131d}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_ad1bac76f393e300422d8aeab06e5131d}{leaf\+Testing}} (int, int) const
+\begin{DoxyCompactList}\small\item\em Leaf test between node b1 and b2, if they are both leafs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_a37afd92b3ee65e2a8fae000a59e41780}\label{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_a37afd92b3ee65e2a8fae000a59e41780}} 
+const \mbox{\hyperlink{classfcl_1_1OcTree}{Oc\+Tree}}$<$ S $>$ $\ast$ {\bfseries model1}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_a9736a2560d197c6be2e18a3892a2ffbb}\label{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_a9736a2560d197c6be2e18a3892a2ffbb}} 
+const Shape $\ast$ {\bfseries model2}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_a1f19d836355255e7bb31d8a3f49a55ee}\label{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_a1f19d836355255e7bb31d8a3f49a55ee}} 
+Transform3$<$ S $>$ {\bfseries tf1}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_a1c0a8cbae26467b36acea9dc600eee3c}\label{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_a1c0a8cbae26467b36acea9dc600eee3c}} 
+Transform3$<$ S $>$ {\bfseries tf2}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_a577d77081fe0ee934e171508b60d5db1}\label{classfcl_1_1detail_1_1OcTreeShapeCollisionTraversalNode_a577d77081fe0ee934e171508b60d5db1}} 
+const \mbox{\hyperlink{classfcl_1_1detail_1_1OcTreeSolver}{Oc\+Tree\+Solver}}$<$ Narrow\+Phase\+Solver $>$ $\ast$ {\bfseries otsolver}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Shape, typename Narrow\+Phase\+Solver$>$\newline
+class fcl\+::detail\+::\+Oc\+Tree\+Shape\+Collision\+Traversal\+Node$<$ Shape, Narrow\+Phase\+Solver $>$}
+
+Traversal node for octree-\/shape collision. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/octree/collision/octree\+\_\+shape\+\_\+collision\+\_\+traversal\+\_\+node.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/octree/collision/octree\+\_\+shape\+\_\+collision\+\_\+traversal\+\_\+node-\/inl.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,28 @@
+\hypertarget{structfcl_1_1TriangleMotionBoundVisitorVisitImpl_3_01S_00_01InterpMotion_3_01S_01_4_01_4}{}\doxysection{fcl\+::Triangle\+Motion\+Bound\+Visitor\+Visit\+Impl$<$ S, Interp\+Motion$<$ S $>$ $>$ Struct Template Reference}
+\label{structfcl_1_1TriangleMotionBoundVisitorVisitImpl_3_01S_00_01InterpMotion_3_01S_01_4_01_4}\index{fcl::TriangleMotionBoundVisitorVisitImpl$<$ S, InterpMotion$<$ S $>$ $>$@{fcl::TriangleMotionBoundVisitorVisitImpl$<$ S, InterpMotion$<$ S $>$ $>$}}
+
+
+Compute the motion bound for a triangle along a given direction n according to mu $<$ $\vert$v $\ast$ n$\vert$ + $\vert$$\vert$w x n$\vert$$\vert$(max$\vert$$\vert$ci$\ast$$\vert$$\vert$) where $\vert$$\vert$ci$\ast$$\vert$$\vert$ = $\vert$$\vert$\+R0(ci) x w$\vert$$\vert$ / $|$w$|$. w is the angular velocity and ci are the triangle vertex coordinates. Notice that the triangle is in the local frame of the object, but n should be in the global frame (the reason is that the motion (t1, t2 and t) is in global frame)  
+
+
+
+
+{\ttfamily \#include $<$triangle\+\_\+motion\+\_\+bound\+\_\+visitor-\/inl.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1TriangleMotionBoundVisitorVisitImpl_3_01S_00_01InterpMotion_3_01S_01_4_01_4_a5cd502a0d5b4514eee1b6456fa7a7079}\label{structfcl_1_1TriangleMotionBoundVisitorVisitImpl_3_01S_00_01InterpMotion_3_01S_01_4_01_4_a5cd502a0d5b4514eee1b6456fa7a7079}} 
+static S {\bfseries run} (const \mbox{\hyperlink{classfcl_1_1TriangleMotionBoundVisitor}{Triangle\+Motion\+Bound\+Visitor}}$<$ S $>$ \&visitor, const \mbox{\hyperlink{classfcl_1_1InterpMotion}{Interp\+Motion}}$<$ S $>$ \&motion)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+struct fcl\+::\+Triangle\+Motion\+Bound\+Visitor\+Visit\+Impl$<$ S, Interp\+Motion$<$ S $>$ $>$}
+
+Compute the motion bound for a triangle along a given direction n according to mu $<$ $\vert$v $\ast$ n$\vert$ + $\vert$$\vert$w x n$\vert$$\vert$(max$\vert$$\vert$ci$\ast$$\vert$$\vert$) where $\vert$$\vert$ci$\ast$$\vert$$\vert$ = $\vert$$\vert$\+R0(ci) x w$\vert$$\vert$ / $|$w$|$. w is the angular velocity and ci are the triangle vertex coordinates. Notice that the triangle is in the local frame of the object, but n should be in the global frame (the reason is that the motion (t1, t2 and t) is in global frame) 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/math/motion/triangle\+\_\+motion\+\_\+bound\+\_\+visitor-\/inl.\+h\end{DoxyCompactItemize}

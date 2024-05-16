@@ -1,0 +1,59 @@
+\hypertarget{classfcl_1_1detail_1_1OcTreeSolver}{}\doxysection{fcl\+::detail\+::Oc\+Tree\+Solver$<$ Narrow\+Phase\+Solver $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1OcTreeSolver}\index{fcl::detail::OcTreeSolver$<$ NarrowPhaseSolver $>$@{fcl::detail::OcTreeSolver$<$ NarrowPhaseSolver $>$}}
+
+
+Algorithms for collision related with octree.  
+
+
+
+
+{\ttfamily \#include $<$octree\+\_\+solver.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeSolver_a0972676a845ecd172d0e93b270248bc2}\label{classfcl_1_1detail_1_1OcTreeSolver_a0972676a845ecd172d0e93b270248bc2}} 
+{\bfseries Oc\+Tree\+Solver} (const Narrow\+Phase\+Solver $\ast$solver\+\_\+)
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeSolver_a23c415008767fca3f3c4bcd720a03b1a}\label{classfcl_1_1detail_1_1OcTreeSolver_a23c415008767fca3f3c4bcd720a03b1a}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1OcTreeSolver_a23c415008767fca3f3c4bcd720a03b1a}{Oc\+Tree\+Intersect}} (const \mbox{\hyperlink{classfcl_1_1OcTree}{Oc\+Tree}}$<$ S $>$ $\ast$tree1, const \mbox{\hyperlink{classfcl_1_1OcTree}{Oc\+Tree}}$<$ S $>$ $\ast$tree2, const Transform3$<$ S $>$ \&tf1, const Transform3$<$ S $>$ \&tf2, const \mbox{\hyperlink{structfcl_1_1CollisionRequest}{Collision\+Request}}$<$ S $>$ \&request\+\_\+, \mbox{\hyperlink{structfcl_1_1CollisionResult}{Collision\+Result}}$<$ S $>$ \&result\+\_\+) const
+\begin{DoxyCompactList}\small\item\em collision between two octrees \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeSolver_a868ab6bbe22440831f382d070686169c}\label{classfcl_1_1detail_1_1OcTreeSolver_a868ab6bbe22440831f382d070686169c}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1OcTreeSolver_a868ab6bbe22440831f382d070686169c}{Oc\+Tree\+Distance}} (const \mbox{\hyperlink{classfcl_1_1OcTree}{Oc\+Tree}}$<$ S $>$ $\ast$tree1, const \mbox{\hyperlink{classfcl_1_1OcTree}{Oc\+Tree}}$<$ S $>$ $\ast$tree2, const Transform3$<$ S $>$ \&tf1, const Transform3$<$ S $>$ \&tf2, const \mbox{\hyperlink{structfcl_1_1DistanceRequest}{Distance\+Request}}$<$ S $>$ \&request\+\_\+, \mbox{\hyperlink{structfcl_1_1DistanceResult}{Distance\+Result}}$<$ S $>$ \&result\+\_\+) const
+\begin{DoxyCompactList}\small\item\em distance between two octrees \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeSolver_a98dd0a158eaba8e57cc7771ad5409b52}\label{classfcl_1_1detail_1_1OcTreeSolver_a98dd0a158eaba8e57cc7771ad5409b52}} 
+{\footnotesize template$<$typename BV $>$ }\\void \mbox{\hyperlink{classfcl_1_1detail_1_1OcTreeSolver_a98dd0a158eaba8e57cc7771ad5409b52}{Oc\+Tree\+Mesh\+Intersect}} (const \mbox{\hyperlink{classfcl_1_1OcTree}{Oc\+Tree}}$<$ S $>$ $\ast$tree1, const \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ $\ast$tree2, const Transform3$<$ S $>$ \&tf1, const Transform3$<$ S $>$ \&tf2, const \mbox{\hyperlink{structfcl_1_1CollisionRequest}{Collision\+Request}}$<$ S $>$ \&request\+\_\+, \mbox{\hyperlink{structfcl_1_1CollisionResult}{Collision\+Result}}$<$ S $>$ \&result\+\_\+) const
+\begin{DoxyCompactList}\small\item\em collision between octree and mesh \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeSolver_aef2746507194a701d3a4be1361794550}\label{classfcl_1_1detail_1_1OcTreeSolver_aef2746507194a701d3a4be1361794550}} 
+{\footnotesize template$<$typename BV $>$ }\\void \mbox{\hyperlink{classfcl_1_1detail_1_1OcTreeSolver_aef2746507194a701d3a4be1361794550}{Oc\+Tree\+Mesh\+Distance}} (const \mbox{\hyperlink{classfcl_1_1OcTree}{Oc\+Tree}}$<$ S $>$ $\ast$tree1, const \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ $\ast$tree2, const Transform3$<$ S $>$ \&tf1, const Transform3$<$ S $>$ \&tf2, const \mbox{\hyperlink{structfcl_1_1DistanceRequest}{Distance\+Request}}$<$ S $>$ \&request\+\_\+, \mbox{\hyperlink{structfcl_1_1DistanceResult}{Distance\+Result}}$<$ S $>$ \&result\+\_\+) const
+\begin{DoxyCompactList}\small\item\em distance between octree and mesh \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeSolver_a50f7de5ed9a7b67c84a29f7b8388de7e}\label{classfcl_1_1detail_1_1OcTreeSolver_a50f7de5ed9a7b67c84a29f7b8388de7e}} 
+{\footnotesize template$<$typename BV $>$ }\\void \mbox{\hyperlink{classfcl_1_1detail_1_1OcTreeSolver_a50f7de5ed9a7b67c84a29f7b8388de7e}{Mesh\+Oc\+Tree\+Intersect}} (const \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ $\ast$tree1, const \mbox{\hyperlink{classfcl_1_1OcTree}{Oc\+Tree}}$<$ S $>$ $\ast$tree2, const Transform3$<$ S $>$ \&tf1, const Transform3$<$ S $>$ \&tf2, const \mbox{\hyperlink{structfcl_1_1CollisionRequest}{Collision\+Request}}$<$ S $>$ \&request\+\_\+, \mbox{\hyperlink{structfcl_1_1CollisionResult}{Collision\+Result}}$<$ S $>$ \&result\+\_\+) const
+\begin{DoxyCompactList}\small\item\em collision between mesh and octree \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeSolver_afac942b75df28ade5207f51370eb5e15}\label{classfcl_1_1detail_1_1OcTreeSolver_afac942b75df28ade5207f51370eb5e15}} 
+{\footnotesize template$<$typename BV $>$ }\\void \mbox{\hyperlink{classfcl_1_1detail_1_1OcTreeSolver_afac942b75df28ade5207f51370eb5e15}{Mesh\+Oc\+Tree\+Distance}} (const \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ $\ast$tree1, const \mbox{\hyperlink{classfcl_1_1OcTree}{Oc\+Tree}}$<$ S $>$ $\ast$tree2, const Transform3$<$ S $>$ \&tf1, const Transform3$<$ S $>$ \&tf2, const \mbox{\hyperlink{structfcl_1_1DistanceRequest}{Distance\+Request}}$<$ S $>$ \&request\+\_\+, \mbox{\hyperlink{structfcl_1_1DistanceResult}{Distance\+Result}}$<$ S $>$ \&result\+\_\+) const
+\begin{DoxyCompactList}\small\item\em distance between mesh and octree \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeSolver_ae6d2729f4db6317c33946b1d418dfaa1}\label{classfcl_1_1detail_1_1OcTreeSolver_ae6d2729f4db6317c33946b1d418dfaa1}} 
+{\footnotesize template$<$typename Shape $>$ }\\void \mbox{\hyperlink{classfcl_1_1detail_1_1OcTreeSolver_ae6d2729f4db6317c33946b1d418dfaa1}{Oc\+Tree\+Shape\+Intersect}} (const \mbox{\hyperlink{classfcl_1_1OcTree}{Oc\+Tree}}$<$ S $>$ $\ast$tree, const Shape \&s, const Transform3$<$ S $>$ \&tf1, const Transform3$<$ S $>$ \&tf2, const \mbox{\hyperlink{structfcl_1_1CollisionRequest}{Collision\+Request}}$<$ S $>$ \&request\+\_\+, \mbox{\hyperlink{structfcl_1_1CollisionResult}{Collision\+Result}}$<$ S $>$ \&result\+\_\+) const
+\begin{DoxyCompactList}\small\item\em collision between octree and shape \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeSolver_aad52ca640c570ea0571568d3c94b9df4}\label{classfcl_1_1detail_1_1OcTreeSolver_aad52ca640c570ea0571568d3c94b9df4}} 
+{\footnotesize template$<$typename Shape $>$ }\\void \mbox{\hyperlink{classfcl_1_1detail_1_1OcTreeSolver_aad52ca640c570ea0571568d3c94b9df4}{Shape\+Oc\+Tree\+Intersect}} (const Shape \&s, const \mbox{\hyperlink{classfcl_1_1OcTree}{Oc\+Tree}}$<$ S $>$ $\ast$tree, const Transform3$<$ S $>$ \&tf1, const Transform3$<$ S $>$ \&tf2, const \mbox{\hyperlink{structfcl_1_1CollisionRequest}{Collision\+Request}}$<$ S $>$ \&request\+\_\+, \mbox{\hyperlink{structfcl_1_1CollisionResult}{Collision\+Result}}$<$ S $>$ \&result\+\_\+) const
+\begin{DoxyCompactList}\small\item\em collision between shape and octree \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeSolver_a9ef7a794d24d23938ac2914f0026462d}\label{classfcl_1_1detail_1_1OcTreeSolver_a9ef7a794d24d23938ac2914f0026462d}} 
+{\footnotesize template$<$typename Shape $>$ }\\void \mbox{\hyperlink{classfcl_1_1detail_1_1OcTreeSolver_a9ef7a794d24d23938ac2914f0026462d}{Oc\+Tree\+Shape\+Distance}} (const \mbox{\hyperlink{classfcl_1_1OcTree}{Oc\+Tree}}$<$ S $>$ $\ast$tree, const Shape \&s, const Transform3$<$ S $>$ \&tf1, const Transform3$<$ S $>$ \&tf2, const \mbox{\hyperlink{structfcl_1_1DistanceRequest}{Distance\+Request}}$<$ S $>$ \&request\+\_\+, \mbox{\hyperlink{structfcl_1_1DistanceResult}{Distance\+Result}}$<$ S $>$ \&result\+\_\+) const
+\begin{DoxyCompactList}\small\item\em distance between octree and shape \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1OcTreeSolver_a789332258afaa26eed493fab56ad5c53}\label{classfcl_1_1detail_1_1OcTreeSolver_a789332258afaa26eed493fab56ad5c53}} 
+{\footnotesize template$<$typename Shape $>$ }\\void \mbox{\hyperlink{classfcl_1_1detail_1_1OcTreeSolver_a789332258afaa26eed493fab56ad5c53}{Shape\+Oc\+Tree\+Distance}} (const Shape \&s, const \mbox{\hyperlink{classfcl_1_1OcTree}{Oc\+Tree}}$<$ S $>$ $\ast$tree, const Transform3$<$ S $>$ \&tf1, const Transform3$<$ S $>$ \&tf2, const \mbox{\hyperlink{structfcl_1_1DistanceRequest}{Distance\+Request}}$<$ S $>$ \&request\+\_\+, \mbox{\hyperlink{structfcl_1_1DistanceResult}{Distance\+Result}}$<$ S $>$ \&result\+\_\+) const
+\begin{DoxyCompactList}\small\item\em distance between shape and octree \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Narrow\+Phase\+Solver$>$\newline
+class fcl\+::detail\+::\+Oc\+Tree\+Solver$<$ Narrow\+Phase\+Solver $>$}
+
+Algorithms for collision related with octree. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/octree/octree\+\_\+solver.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/octree/octree\+\_\+solver-\/inl.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,56 @@
+\hypertarget{classfcl_1_1detail_1_1DistanceTraversalNodeBase}{}\doxysection{fcl\+::detail\+::Distance\+Traversal\+Node\+Base$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1DistanceTraversalNodeBase}\index{fcl::detail::DistanceTraversalNodeBase$<$ S $>$@{fcl::detail::DistanceTraversalNodeBase$<$ S $>$}}
+
+
+Node structure encoding the information required for distance traversal.  
+
+
+
+
+{\ttfamily \#include $<$distance\+\_\+traversal\+\_\+node\+\_\+base.\+h$>$}
+
+Inheritance diagram for fcl\+::detail\+::Distance\+Traversal\+Node\+Base$<$ S $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfcl_1_1detail_1_1DistanceTraversalNodeBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1DistanceTraversalNodeBase_ac03753bf24a68fa540d11bd6cb4aa27f}\label{classfcl_1_1detail_1_1DistanceTraversalNodeBase_ac03753bf24a68fa540d11bd6cb4aa27f}} 
+virtual S \mbox{\hyperlink{classfcl_1_1detail_1_1DistanceTraversalNodeBase_ac03753bf24a68fa540d11bd6cb4aa27f}{B\+V\+Testing}} (int b1, int b2) const
+\begin{DoxyCompactList}\small\item\em BV test between b1 and b2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1DistanceTraversalNodeBase_a18b32f68fc5b9c4d1764a909f1a6a6e5}\label{classfcl_1_1detail_1_1DistanceTraversalNodeBase_a18b32f68fc5b9c4d1764a909f1a6a6e5}} 
+virtual void \mbox{\hyperlink{classfcl_1_1detail_1_1DistanceTraversalNodeBase_a18b32f68fc5b9c4d1764a909f1a6a6e5}{leaf\+Testing}} (int b1, int b2) const
+\begin{DoxyCompactList}\small\item\em Leaf test between node b1 and b2, if they are both leafs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1DistanceTraversalNodeBase_ad317e42ee7adb32e5a5888e851a0dafa}\label{classfcl_1_1detail_1_1DistanceTraversalNodeBase_ad317e42ee7adb32e5a5888e851a0dafa}} 
+virtual bool \mbox{\hyperlink{classfcl_1_1detail_1_1DistanceTraversalNodeBase_ad317e42ee7adb32e5a5888e851a0dafa}{can\+Stop}} (S c) const
+\begin{DoxyCompactList}\small\item\em Check whether the traversal can stop. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1DistanceTraversalNodeBase_a1b6cff7f31f00a7f02102318116e1f7b}\label{classfcl_1_1detail_1_1DistanceTraversalNodeBase_a1b6cff7f31f00a7f02102318116e1f7b}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1DistanceTraversalNodeBase_a1b6cff7f31f00a7f02102318116e1f7b}{enable\+Statistics}} (bool enable)
+\begin{DoxyCompactList}\small\item\em Whether store some statistics information during traversal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1DistanceTraversalNodeBase_a102a2596eda8492242a3d5b0b618482b}\label{classfcl_1_1detail_1_1DistanceTraversalNodeBase_a102a2596eda8492242a3d5b0b618482b}} 
+\mbox{\hyperlink{structfcl_1_1DistanceRequest}{Distance\+Request}}$<$ S $>$ \mbox{\hyperlink{classfcl_1_1detail_1_1DistanceTraversalNodeBase_a102a2596eda8492242a3d5b0b618482b}{request}}
+\begin{DoxyCompactList}\small\item\em request setting for distance \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1DistanceTraversalNodeBase_a18e198cde5703835f3c1bc4742d1f19f}\label{classfcl_1_1detail_1_1DistanceTraversalNodeBase_a18e198cde5703835f3c1bc4742d1f19f}} 
+\mbox{\hyperlink{structfcl_1_1DistanceResult}{Distance\+Result}}$<$ S $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1detail_1_1DistanceTraversalNodeBase_a18e198cde5703835f3c1bc4742d1f19f}{result}}
+\begin{DoxyCompactList}\small\item\em distance result kept during the traversal iteration \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1DistanceTraversalNodeBase_a738a016daa34d1b1c34c7181b69215bf}\label{classfcl_1_1detail_1_1DistanceTraversalNodeBase_a738a016daa34d1b1c34c7181b69215bf}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1DistanceTraversalNodeBase_a738a016daa34d1b1c34c7181b69215bf}{enable\+\_\+statistics}}
+\begin{DoxyCompactList}\small\item\em Whether stores statistics. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+class fcl\+::detail\+::\+Distance\+Traversal\+Node\+Base$<$ S $>$}
+
+Node structure encoding the information required for distance traversal. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/distance/distance\+\_\+traversal\+\_\+node\+\_\+base.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/distance/distance\+\_\+traversal\+\_\+node\+\_\+base-\/inl.\+h\end{DoxyCompactItemize}

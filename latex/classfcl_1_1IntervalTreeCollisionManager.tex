@@ -1,0 +1,109 @@
+\hypertarget{classfcl_1_1IntervalTreeCollisionManager}{}\doxysection{fcl\+::Interval\+Tree\+Collision\+Manager$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1IntervalTreeCollisionManager}\index{fcl::IntervalTreeCollisionManager$<$ S $>$@{fcl::IntervalTreeCollisionManager$<$ S $>$}}
+
+
+Collision manager based on interval tree.  
+
+
+
+
+{\ttfamily \#include $<$broadphase\+\_\+interval\+\_\+tree.\+h$>$}
+
+Inheritance diagram for fcl\+::Interval\+Tree\+Collision\+Manager$<$ S $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfcl_1_1IntervalTreeCollisionManager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_a76c3fab48f914695a643c922ff274039}\label{classfcl_1_1IntervalTreeCollisionManager_a76c3fab48f914695a643c922ff274039}} 
+void \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_a76c3fab48f914695a643c922ff274039}{register\+Object}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj)
+\begin{DoxyCompactList}\small\item\em remove one object from the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_a5f4043f703001570909c578b25fa63ea}\label{classfcl_1_1IntervalTreeCollisionManager_a5f4043f703001570909c578b25fa63ea}} 
+void \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_a5f4043f703001570909c578b25fa63ea}{unregister\+Object}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj)
+\begin{DoxyCompactList}\small\item\em add one object to the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_a3997f3d1398994731efb22f60ad79732}\label{classfcl_1_1IntervalTreeCollisionManager_a3997f3d1398994731efb22f60ad79732}} 
+void \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_a3997f3d1398994731efb22f60ad79732}{setup}} ()
+\begin{DoxyCompactList}\small\item\em initialize the manager, related with the specific type of manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_a58f2cc47a8fe2ae35b04b884e6c388f6}\label{classfcl_1_1IntervalTreeCollisionManager_a58f2cc47a8fe2ae35b04b884e6c388f6}} 
+void \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_a58f2cc47a8fe2ae35b04b884e6c388f6}{update}} ()
+\begin{DoxyCompactList}\small\item\em update the condition of manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_a086cab79b2d9748bc461b005bf410aba}\label{classfcl_1_1IntervalTreeCollisionManager_a086cab79b2d9748bc461b005bf410aba}} 
+void \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_a086cab79b2d9748bc461b005bf410aba}{update}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$updated\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em update the manager by explicitly given the object updated \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_a22ecc86d39eed3fd51b496ad701712cf}\label{classfcl_1_1IntervalTreeCollisionManager_a22ecc86d39eed3fd51b496ad701712cf}} 
+void \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_a22ecc86d39eed3fd51b496ad701712cf}{update}} (const std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&updated\+\_\+objs)
+\begin{DoxyCompactList}\small\item\em update the manager by explicitly given the set of objects update \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_a51b0d2ee844a7dfb3ffa162342056243}\label{classfcl_1_1IntervalTreeCollisionManager_a51b0d2ee844a7dfb3ffa162342056243}} 
+void \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_a51b0d2ee844a7dfb3ffa162342056243}{clear}} ()
+\begin{DoxyCompactList}\small\item\em clear the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_ac869cd1d83c1f6c9d9480d60e1b23ad8}\label{classfcl_1_1IntervalTreeCollisionManager_ac869cd1d83c1f6c9d9480d60e1b23ad8}} 
+void \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_ac869cd1d83c1f6c9d9480d60e1b23ad8}{get\+Objects}} (std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&objs) const
+\begin{DoxyCompactList}\small\item\em return the objects managed by the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_a9f0e476e4fdc7c06654cbb586a20ff4e}\label{classfcl_1_1IntervalTreeCollisionManager_a9f0e476e4fdc7c06654cbb586a20ff4e}} 
+void \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_a9f0e476e4fdc7c06654cbb586a20ff4e}{collide}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform collision test between one object and all the objects belonging to the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_a8e0121e291f0de4219c623b8448b4103}\label{classfcl_1_1IntervalTreeCollisionManager_a8e0121e291f0de4219c623b8448b4103}} 
+void \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_a8e0121e291f0de4219c623b8448b4103}{distance}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform distance computation between one object and all the objects belonging to the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_a6f1a09f84bc1741f1eb5152c29d6f241}\label{classfcl_1_1IntervalTreeCollisionManager_a6f1a09f84bc1741f1eb5152c29d6f241}} 
+void \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_a6f1a09f84bc1741f1eb5152c29d6f241}{collide}} (void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform collision test for the objects belonging to the manager (i.\+e., N$^\wedge$2 self collision) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_a4d9e7b296b4281020b3dfafb587ebf28}\label{classfcl_1_1IntervalTreeCollisionManager_a4d9e7b296b4281020b3dfafb587ebf28}} 
+void \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_a4d9e7b296b4281020b3dfafb587ebf28}{distance}} (void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform distance test for the objects belonging to the manager (i.\+e., N$^\wedge$2 self distance) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_a7e382c98d6f68fb8ec4c6a934155b88e}\label{classfcl_1_1IntervalTreeCollisionManager_a7e382c98d6f68fb8ec4c6a934155b88e}} 
+void \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_a7e382c98d6f68fb8ec4c6a934155b88e}{collide}} (\mbox{\hyperlink{classfcl_1_1BroadPhaseCollisionManager}{Broad\+Phase\+Collision\+Manager}}$<$ S $>$ $\ast$other\+\_\+manager, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform collision test with objects belonging to another manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_a9c950364849685b67a035044b29f2516}\label{classfcl_1_1IntervalTreeCollisionManager_a9c950364849685b67a035044b29f2516}} 
+void \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_a9c950364849685b67a035044b29f2516}{distance}} (\mbox{\hyperlink{classfcl_1_1BroadPhaseCollisionManager}{Broad\+Phase\+Collision\+Manager}}$<$ S $>$ $\ast$other\+\_\+manager, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform distance test with objects belonging to another manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_a9e4f57d6508c0abf293738643badf643}\label{classfcl_1_1IntervalTreeCollisionManager_a9e4f57d6508c0abf293738643badf643}} 
+bool \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_a9e4f57d6508c0abf293738643badf643}{empty}} () const
+\begin{DoxyCompactList}\small\item\em whether the manager is empty \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_aae5959a3ae03faaa9c803af5b18a7006}\label{classfcl_1_1IntervalTreeCollisionManager_aae5959a3ae03faaa9c803af5b18a7006}} 
+size\+\_\+t \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_aae5959a3ae03faaa9c803af5b18a7006}{size}} () const
+\begin{DoxyCompactList}\small\item\em the number of objects managed by the manager \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_aedcfae84af3bc73a76d85c5164dec015}\label{classfcl_1_1IntervalTreeCollisionManager_aedcfae84af3bc73a76d85c5164dec015}} 
+bool {\bfseries check\+Coll} (typename std\+::deque$<$ \mbox{\hyperlink{structfcl_1_1detail_1_1SimpleInterval}{detail\+::\+Simple\+Interval}}$<$ S $>$ $\ast$ $>$\+::const\+\_\+iterator pos\+\_\+start, typename std\+::deque$<$ \mbox{\hyperlink{structfcl_1_1detail_1_1SimpleInterval}{detail\+::\+Simple\+Interval}}$<$ S $>$ $\ast$ $>$\+::const\+\_\+iterator pos\+\_\+end, \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_add53fe5f0eb1e9248817f04639c488b4}\label{classfcl_1_1IntervalTreeCollisionManager_add53fe5f0eb1e9248817f04639c488b4}} 
+bool {\bfseries check\+Dist} (typename std\+::deque$<$ \mbox{\hyperlink{structfcl_1_1detail_1_1SimpleInterval}{detail\+::\+Simple\+Interval}}$<$ S $>$ $\ast$ $>$\+::const\+\_\+iterator pos\+\_\+start, typename std\+::deque$<$ \mbox{\hyperlink{structfcl_1_1detail_1_1SimpleInterval}{detail\+::\+Simple\+Interval}}$<$ S $>$ $\ast$ $>$\+::const\+\_\+iterator pos\+\_\+end, \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback, S \&min\+\_\+dist) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_a05ed4876dafdec770498203b2d224fd6}\label{classfcl_1_1IntervalTreeCollisionManager_a05ed4876dafdec770498203b2d224fd6}} 
+bool {\bfseries collide\+\_\+} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_aa9591243c6fbaf8037e4b4e08aca4a86}\label{classfcl_1_1IntervalTreeCollisionManager_aa9591243c6fbaf8037e4b4e08aca4a86}} 
+bool {\bfseries distance\+\_\+} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback, S \&min\+\_\+dist) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_aa4537dc49e7110e96cff85068ed31781}\label{classfcl_1_1IntervalTreeCollisionManager_aa4537dc49e7110e96cff85068ed31781}} 
+std\+::vector$<$ End\+Point $>$ \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_aa4537dc49e7110e96cff85068ed31781}{endpoints}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em vector stores all the end points \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_aeb05def419d2f3de9362b2758c2744df}\label{classfcl_1_1IntervalTreeCollisionManager_aeb05def419d2f3de9362b2758c2744df}} 
+\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree}{detail\+::\+Interval\+Tree}}$<$ S $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_aeb05def419d2f3de9362b2758c2744df}{interval\+\_\+trees}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em interval tree manages the intervals \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_a0c7bf37a90be9f2ff830bf75b5e8b691}\label{classfcl_1_1IntervalTreeCollisionManager_a0c7bf37a90be9f2ff830bf75b5e8b691}} 
+std\+::map$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$, S\+A\+P\+Interval $\ast$ $>$ {\bfseries obj\+\_\+interval\+\_\+maps} \mbox{[}3\mbox{]}
+\item 
+\mbox{\Hypertarget{classfcl_1_1IntervalTreeCollisionManager_a5e3a4c84836100895d936d9348d7da51}\label{classfcl_1_1IntervalTreeCollisionManager_a5e3a4c84836100895d936d9348d7da51}} 
+bool \mbox{\hyperlink{classfcl_1_1IntervalTreeCollisionManager_a5e3a4c84836100895d936d9348d7da51}{setup\+\_\+}}
+\begin{DoxyCompactList}\small\item\em tag for whether the interval tree is maintained suitably \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+class fcl\+::\+Interval\+Tree\+Collision\+Manager$<$ S $>$}
+
+Collision manager based on interval tree. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/broadphase/broadphase\+\_\+interval\+\_\+tree.\+h\end{DoxyCompactItemize}

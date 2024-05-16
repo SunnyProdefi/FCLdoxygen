@@ -1,0 +1,120 @@
+\hypertarget{structfcl_1_1detail_1_1GJKSolver__indep}{}\doxysection{fcl\+::detail\+::G\+J\+K\+Solver\+\_\+indep$<$ S\+\_\+ $>$ Struct Template Reference}
+\label{structfcl_1_1detail_1_1GJKSolver__indep}\index{fcl::detail::GJKSolver\_indep$<$ S\_ $>$@{fcl::detail::GJKSolver\_indep$<$ S\_ $>$}}
+
+
+collision and distance solver based on \mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}} algorithm implemented in fcl (rewritten the code from the \mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}} in bullet)  
+
+
+
+
+{\ttfamily \#include $<$gjk\+\_\+solver\+\_\+indep.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_a629ea3a119e885ec781b6f0b05dc65a4}\label{structfcl_1_1detail_1_1GJKSolver__indep_a629ea3a119e885ec781b6f0b05dc65a4}} 
+using {\bfseries S} = S\+\_\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Shape1 , typename Shape2 $>$ }\\F\+C\+L\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED bool \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep_a68e896de4003bae411809cac6c9be1c7}{shape\+Intersect}} (const Shape1 \&s1, const Transform3$<$ S $>$ \&tf1, const Shape2 \&s2, const Transform3$<$ S $>$ \&tf2, Vector3$<$ S $>$ $\ast$contact\+\_\+points, S $\ast$penetration\+\_\+depth, Vector3$<$ S $>$ $\ast$normal) const
+\begin{DoxyCompactList}\small\item\em intersection checking between two shapes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_aa16a936a2699caad2b3cde579e361dc3}\label{structfcl_1_1detail_1_1GJKSolver__indep_aa16a936a2699caad2b3cde579e361dc3}} 
+{\footnotesize template$<$typename Shape1 , typename Shape2 $>$ }\\bool \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep_aa16a936a2699caad2b3cde579e361dc3}{shape\+Intersect}} (const Shape1 \&s1, const Transform3$<$ S $>$ \&tf1, const Shape2 \&s2, const Transform3$<$ S $>$ \&tf2, std\+::vector$<$ \mbox{\hyperlink{structfcl_1_1ContactPoint}{Contact\+Point}}$<$ S $>$$>$ $\ast$contacts=nullptr) const
+\begin{DoxyCompactList}\small\item\em intersection checking between two shapes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_aa3587834c3832aa25faae3e27cf349fe}\label{structfcl_1_1detail_1_1GJKSolver__indep_aa3587834c3832aa25faae3e27cf349fe}} 
+{\footnotesize template$<$typename Shape $>$ }\\bool \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep_aa3587834c3832aa25faae3e27cf349fe}{shape\+Triangle\+Intersect}} (const Shape \&s, const Transform3$<$ S $>$ \&tf, const Vector3$<$ S $>$ \&P1, const Vector3$<$ S $>$ \&P2, const Vector3$<$ S $>$ \&P3, Vector3$<$ S $>$ $\ast$contact\+\_\+points=nullptr, S $\ast$penetration\+\_\+depth=nullptr, Vector3$<$ S $>$ $\ast$normal=nullptr) const
+\begin{DoxyCompactList}\small\item\em intersection checking between one shape and a triangle \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_af5dbb9a112444d9fdffde776fd1d5ef8}\label{structfcl_1_1detail_1_1GJKSolver__indep_af5dbb9a112444d9fdffde776fd1d5ef8}} 
+{\footnotesize template$<$typename Shape $>$ }\\bool {\bfseries shape\+Triangle\+Intersect} (const Shape \&s, const Transform3$<$ S $>$ \&tf1, const Vector3$<$ S $>$ \&P1, const Vector3$<$ S $>$ \&P2, const Vector3$<$ S $>$ \&P3, const Transform3$<$ S $>$ \&tf2, Vector3$<$ S $>$ $\ast$contact\+\_\+points=nullptr, S $\ast$penetration\+\_\+depth=nullptr, Vector3$<$ S $>$ $\ast$normal=nullptr) const
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_ad3652ff6a831afae23d2bcc1bcca4e9d}\label{structfcl_1_1detail_1_1GJKSolver__indep_ad3652ff6a831afae23d2bcc1bcca4e9d}} 
+{\footnotesize template$<$typename Shape1 , typename Shape2 $>$ }\\bool \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep_ad3652ff6a831afae23d2bcc1bcca4e9d}{shape\+Distance}} (const Shape1 \&s1, const Transform3$<$ S $>$ \&tf1, const Shape2 \&s2, const Transform3$<$ S $>$ \&tf2, S $\ast$\mbox{\hyperlink{namespacefcl_a96484159054b342a432d5a861c3723f1}{distance}}=nullptr, Vector3$<$ S $>$ $\ast$p1=nullptr, Vector3$<$ S $>$ $\ast$p2=nullptr) const
+\begin{DoxyCompactList}\small\item\em distance computation between two shapes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_ac05843ee8a97a8144c8f92d9f19fb7f9}\label{structfcl_1_1detail_1_1GJKSolver__indep_ac05843ee8a97a8144c8f92d9f19fb7f9}} 
+{\footnotesize template$<$typename Shape1 , typename Shape2 $>$ }\\bool \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep_ac05843ee8a97a8144c8f92d9f19fb7f9}{shape\+Signed\+Distance}} (const Shape1 \&s1, const Transform3$<$ S $>$ \&tf1, const Shape2 \&s2, const Transform3$<$ S $>$ \&tf2, S $\ast$\mbox{\hyperlink{namespacefcl_a96484159054b342a432d5a861c3723f1}{distance}}=nullptr, Vector3$<$ S $>$ $\ast$p1=nullptr, Vector3$<$ S $>$ $\ast$p2=nullptr) const
+\begin{DoxyCompactList}\small\item\em distance computation between two shapes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_aee832a5724a988234d79a23d6d397f48}\label{structfcl_1_1detail_1_1GJKSolver__indep_aee832a5724a988234d79a23d6d397f48}} 
+{\footnotesize template$<$typename Shape $>$ }\\bool \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep_aee832a5724a988234d79a23d6d397f48}{shape\+Triangle\+Distance}} (const Shape \&s, const Transform3$<$ S $>$ \&tf, const Vector3$<$ S $>$ \&P1, const Vector3$<$ S $>$ \&P2, const Vector3$<$ S $>$ \&P3, S $\ast$\mbox{\hyperlink{namespacefcl_a96484159054b342a432d5a861c3723f1}{distance}}=nullptr, Vector3$<$ S $>$ $\ast$p1=nullptr, Vector3$<$ S $>$ $\ast$p2=nullptr) const
+\begin{DoxyCompactList}\small\item\em distance computation between one shape and a triangle \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_a4aceb0a0b0f8967260c020a771e77561}\label{structfcl_1_1detail_1_1GJKSolver__indep_a4aceb0a0b0f8967260c020a771e77561}} 
+{\footnotesize template$<$typename Shape $>$ }\\bool \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep_a4aceb0a0b0f8967260c020a771e77561}{shape\+Triangle\+Distance}} (const Shape \&s, const Transform3$<$ S $>$ \&tf1, const Vector3$<$ S $>$ \&P1, const Vector3$<$ S $>$ \&P2, const Vector3$<$ S $>$ \&P3, const Transform3$<$ S $>$ \&tf2, S $\ast$\mbox{\hyperlink{namespacefcl_a96484159054b342a432d5a861c3723f1}{distance}}=nullptr, Vector3$<$ S $>$ $\ast$p1=nullptr, Vector3$<$ S $>$ $\ast$p2=nullptr) const
+\begin{DoxyCompactList}\small\item\em distance computation between one shape and a triangle with transformation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_ac4c139a83129cc0dd8dd5b9bc27f1b04}\label{structfcl_1_1detail_1_1GJKSolver__indep_ac4c139a83129cc0dd8dd5b9bc27f1b04}} 
+\mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep_ac4c139a83129cc0dd8dd5b9bc27f1b04}{G\+J\+K\+Solver\+\_\+indep}} ()
+\begin{DoxyCompactList}\small\item\em default setting for \mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}} algorithm \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_a1304492edc87d8889eeff86eed914251}\label{structfcl_1_1detail_1_1GJKSolver__indep_a1304492edc87d8889eeff86eed914251}} 
+void {\bfseries enable\+Cached\+Guess} (bool if\+\_\+enable) const
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_a7205ec23e2b455dc39c962fa98aa9f14}\label{structfcl_1_1detail_1_1GJKSolver__indep_a7205ec23e2b455dc39c962fa98aa9f14}} 
+void {\bfseries set\+Cached\+Guess} (const Vector3$<$ S $>$ \&guess) const
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_a8f9cd1eeaed2d1e2a06f86a8b8891ba5}\label{structfcl_1_1detail_1_1GJKSolver__indep_a8f9cd1eeaed2d1e2a06f86a8b8891ba5}} 
+Vector3$<$ S $>$ {\bfseries get\+Cached\+Guess} () const
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_ad1f862c64eee12fbce9af3e926f8e37c}\label{structfcl_1_1detail_1_1GJKSolver__indep_ad1f862c64eee12fbce9af3e926f8e37c}} 
+{\footnotesize template$<$typename Shape1 , typename Shape2 $>$ }\\bool {\bfseries shape\+Intersect} (const Shape1 \&s1, const Transform3$<$ S $>$ \&tf1, const Shape2 \&s2, const Transform3$<$ S $>$ \&tf2, Vector3$<$ S $>$ $\ast$contact\+\_\+points, S $\ast$penetration\+\_\+depth, Vector3$<$ S $>$ $\ast$normal) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_a3e6498a84726af50474024131c1cf996}\label{structfcl_1_1detail_1_1GJKSolver__indep_a3e6498a84726af50474024131c1cf996}} 
+unsigned int \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep_a3e6498a84726af50474024131c1cf996}{epa\+\_\+max\+\_\+face\+\_\+num}}
+\begin{DoxyCompactList}\small\item\em maximum number of simplex face used in \mbox{\hyperlink{structfcl_1_1detail_1_1EPA}{E\+PA}} algorithm \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_a1db987ccfda659244fa933529bf1fc6d}\label{structfcl_1_1detail_1_1GJKSolver__indep_a1db987ccfda659244fa933529bf1fc6d}} 
+unsigned int \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep_a1db987ccfda659244fa933529bf1fc6d}{epa\+\_\+max\+\_\+vertex\+\_\+num}}
+\begin{DoxyCompactList}\small\item\em maximum number of simplex vertex used in \mbox{\hyperlink{structfcl_1_1detail_1_1EPA}{E\+PA}} algorithm \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_a91ea1292c55b5376145859f96fddd47d}\label{structfcl_1_1detail_1_1GJKSolver__indep_a91ea1292c55b5376145859f96fddd47d}} 
+unsigned int \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep_a91ea1292c55b5376145859f96fddd47d}{epa\+\_\+max\+\_\+iterations}}
+\begin{DoxyCompactList}\small\item\em maximum number of iterations used for \mbox{\hyperlink{structfcl_1_1detail_1_1EPA}{E\+PA}} iterations \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_ac3d754d14c73ab917c6786f44177ff07}\label{structfcl_1_1detail_1_1GJKSolver__indep_ac3d754d14c73ab917c6786f44177ff07}} 
+S \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep_ac3d754d14c73ab917c6786f44177ff07}{epa\+\_\+tolerance}}
+\begin{DoxyCompactList}\small\item\em the threshold used in \mbox{\hyperlink{structfcl_1_1detail_1_1EPA}{E\+PA}} to stop iteration \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_aa17af55947410e46596c376173bf0a84}\label{structfcl_1_1detail_1_1GJKSolver__indep_aa17af55947410e46596c376173bf0a84}} 
+S \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep_aa17af55947410e46596c376173bf0a84}{gjk\+\_\+tolerance}}
+\begin{DoxyCompactList}\small\item\em the threshold used in \mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}} to stop iteration \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_ab0b9145dd5d98b40d2874826672aa5e2}\label{structfcl_1_1detail_1_1GJKSolver__indep_ab0b9145dd5d98b40d2874826672aa5e2}} 
+S \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep_ab0b9145dd5d98b40d2874826672aa5e2}{gjk\+\_\+max\+\_\+iterations}}
+\begin{DoxyCompactList}\small\item\em maximum number of iterations used for \mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}} iterations \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_a60bd347b1df8fa3f5951394a0afb7e80}\label{structfcl_1_1detail_1_1GJKSolver__indep_a60bd347b1df8fa3f5951394a0afb7e80}} 
+bool \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep_a60bd347b1df8fa3f5951394a0afb7e80}{enable\+\_\+cached\+\_\+guess}}
+\begin{DoxyCompactList}\small\item\em Whether smart guess can be provided. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_aff5cd3160c256d2fc39f1d459c2c815c}\label{structfcl_1_1detail_1_1GJKSolver__indep_aff5cd3160c256d2fc39f1d459c2c815c}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep_aff5cd3160c256d2fc39f1d459c2c815c}{cached\+\_\+guess}}
+\begin{DoxyCompactList}\small\item\em smart guess \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_a33c73fdae2234956f88e46373979d03f}\label{structfcl_1_1detail_1_1GJKSolver__indep_a33c73fdae2234956f88e46373979d03f}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep}{G\+J\+K\+Solver\+\_\+indep}} \&solver)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S\+\_\+$>$\newline
+struct fcl\+::detail\+::\+G\+J\+K\+Solver\+\_\+indep$<$ S\+\_\+ $>$}
+
+collision and distance solver based on \mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}} algorithm implemented in fcl (rewritten the code from the \mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}} in bullet) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__indep_a68e896de4003bae411809cac6c9be1c7}\label{structfcl_1_1detail_1_1GJKSolver__indep_a68e896de4003bae411809cac6c9be1c7}} 
+\index{fcl::detail::GJKSolver\_indep$<$ S\_ $>$@{fcl::detail::GJKSolver\_indep$<$ S\_ $>$}!shapeIntersect@{shapeIntersect}}
+\index{shapeIntersect@{shapeIntersect}!fcl::detail::GJKSolver\_indep$<$ S\_ $>$@{fcl::detail::GJKSolver\_indep$<$ S\_ $>$}}
+\doxysubsubsection{\texorpdfstring{shapeIntersect()}{shapeIntersect()}}
+{\footnotesize\ttfamily template$<$typename S\+\_\+ $>$ \\
+template$<$typename Shape1 , typename Shape2 $>$ \\
+F\+C\+L\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED bool \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep}{fcl\+::detail\+::\+G\+J\+K\+Solver\+\_\+indep}}$<$ S\+\_\+ $>$\+::shape\+Intersect (\begin{DoxyParamCaption}\item[{const Shape1 \&}]{s1,  }\item[{const Transform3$<$ S $>$ \&}]{tf1,  }\item[{const Shape2 \&}]{s2,  }\item[{const Transform3$<$ S $>$ \&}]{tf2,  }\item[{Vector3$<$ S $>$ $\ast$}]{contact\+\_\+points,  }\item[{S $\ast$}]{penetration\+\_\+depth,  }\item[{Vector3$<$ S $>$ $\ast$}]{normal }\end{DoxyParamCaption}) const}
+
+
+
+intersection checking between two shapes 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000001}{Deprecated}}]use \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__indep_aa16a936a2699caad2b3cde579e361dc3}{shape\+Intersect(const Shape1\&, const Transform3$<$\+S$>$\&, const Shape2\&, const Transform3$<$\+S$>$\&, std\+::vector$<$\+Contact\+Point$<$\+S$>$$>$$\ast$) const }} \end{DoxyRefDesc}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/gjk\+\_\+solver\+\_\+indep.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/gjk\+\_\+solver\+\_\+indep-\/inl.\+h\end{DoxyCompactItemize}

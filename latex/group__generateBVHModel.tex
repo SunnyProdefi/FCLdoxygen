@@ -1,0 +1,193 @@
+\hypertarget{group__generateBVHModel}{}\doxysection{Generate\+B\+V\+H\+Model}
+\label{group__generateBVHModel}\index{GenerateBVHModel@{GenerateBVHModel}}
+
+
+Create a \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}} using geometric primitives.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__generateBVHModel_ga3df75d1964387250ac45f34525a8c29c}\label{group__generateBVHModel_ga3df75d1964387250ac45f34525a8c29c}} 
+{\footnotesize template$<$typename BV $>$ }\\int \mbox{\hyperlink{group__generateBVHModel_ga3df75d1964387250ac45f34525a8c29c}{fcl\+::generate\+B\+V\+H\+Model}} (\mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ \&model, const \mbox{\hyperlink{classfcl_1_1Box}{Box}}$<$ typename B\+V\+::S $>$ \&shape, const Transform3$<$ typename B\+V\+::S $>$ \&pose, \mbox{\hyperlink{namespacefcl_a8002b8dad1bdd2771e5ccbb3b466621c}{Finalize\+Model}} finalize\+\_\+model=Finalize\+Model\+::\+DO)
+\begin{DoxyCompactList}\small\item\em Generate B\+VH model from box. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename BV $>$ }\\int \mbox{\hyperlink{group__generateBVHModel_ga3cb315fef65131359c76dab6d460f633}{fcl\+::generate\+B\+V\+H\+Model}} (\mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ \&model, const \mbox{\hyperlink{classfcl_1_1Sphere}{Sphere}}$<$ typename B\+V\+::S $>$ \&shape, const Transform3$<$ typename B\+V\+::S $>$ \&pose, unsigned int seg, unsigned int ring, \mbox{\hyperlink{namespacefcl_a8002b8dad1bdd2771e5ccbb3b466621c}{Finalize\+Model}} finalize\+\_\+model=Finalize\+Model\+::\+DO)
+\begin{DoxyCompactList}\small\item\em Generate B\+VH model from sphere. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename BV $>$ }\\int \mbox{\hyperlink{group__generateBVHModel_ga12c3402db46d419b0acc813a226edc9e}{fcl\+::generate\+B\+V\+H\+Model}} (\mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ \&model, const \mbox{\hyperlink{classfcl_1_1Sphere}{Sphere}}$<$ typename B\+V\+::S $>$ \&shape, const Transform3$<$ typename B\+V\+::S $>$ \&pose, unsigned int n\+\_\+faces\+\_\+for\+\_\+unit\+\_\+sphere, \mbox{\hyperlink{namespacefcl_a8002b8dad1bdd2771e5ccbb3b466621c}{Finalize\+Model}} finalize\+\_\+model=Finalize\+Model\+::\+DO)
+\begin{DoxyCompactList}\small\item\em Generate B\+VH model from sphere. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename BV $>$ }\\int \mbox{\hyperlink{group__generateBVHModel_ga3ea8dc825500643cea0dccbc75adda13}{fcl\+::generate\+B\+V\+H\+Model}} (\mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ \&model, const \mbox{\hyperlink{classfcl_1_1Ellipsoid}{Ellipsoid}}$<$ typename B\+V\+::S $>$ \&shape, const Transform3$<$ typename B\+V\+::S $>$ \&pose, unsigned int seg, unsigned int ring, \mbox{\hyperlink{namespacefcl_a8002b8dad1bdd2771e5ccbb3b466621c}{Finalize\+Model}} finalize\+\_\+model=Finalize\+Model\+::\+DO)
+\begin{DoxyCompactList}\small\item\em Generate B\+VH model from ellipsoid. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename BV $>$ }\\int \mbox{\hyperlink{group__generateBVHModel_gacf939056664e5aba44063b150b2e2718}{fcl\+::generate\+B\+V\+H\+Model}} (\mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ \&model, const \mbox{\hyperlink{classfcl_1_1Ellipsoid}{Ellipsoid}}$<$ typename B\+V\+::S $>$ \&shape, const Transform3$<$ typename B\+V\+::S $>$ \&pose, unsigned int n\+\_\+faces\+\_\+for\+\_\+unit\+\_\+ellipsoid, \mbox{\hyperlink{namespacefcl_a8002b8dad1bdd2771e5ccbb3b466621c}{Finalize\+Model}} finalize\+\_\+model=Finalize\+Model\+::\+DO)
+\begin{DoxyCompactList}\small\item\em Generate B\+VH model from ellipsoid. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename BV $>$ }\\int \mbox{\hyperlink{group__generateBVHModel_ga170e5c2c96b7858a05146ab74a7e2c1e}{fcl\+::generate\+B\+V\+H\+Model}} (\mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ \&model, const \mbox{\hyperlink{classfcl_1_1Cylinder}{Cylinder}}$<$ typename B\+V\+::S $>$ \&shape, const Transform3$<$ typename B\+V\+::S $>$ \&pose, unsigned int circle\+\_\+split\+\_\+tot, unsigned int h\+\_\+num, \mbox{\hyperlink{namespacefcl_a8002b8dad1bdd2771e5ccbb3b466621c}{Finalize\+Model}} finalize\+\_\+model=Finalize\+Model\+::\+DO)
+\begin{DoxyCompactList}\small\item\em Generate B\+VH model from cylinder, given the number of segments along circle and the number of segments along axis. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename BV $>$ }\\int \mbox{\hyperlink{group__generateBVHModel_ga7555e4d2e9887273bc5056566fcf6075}{fcl\+::generate\+B\+V\+H\+Model}} (\mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ \&model, const \mbox{\hyperlink{classfcl_1_1Cylinder}{Cylinder}}$<$ typename B\+V\+::S $>$ \&shape, const Transform3$<$ typename B\+V\+::S $>$ \&pose, unsigned int circle\+\_\+split\+\_\+tot\+\_\+for\+\_\+unit\+\_\+cylinder, \mbox{\hyperlink{namespacefcl_a8002b8dad1bdd2771e5ccbb3b466621c}{Finalize\+Model}} finalize\+\_\+model=Finalize\+Model\+::\+DO)
+\begin{DoxyCompactList}\small\item\em Generate B\+VH model from cylinder. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename BV $>$ }\\int \mbox{\hyperlink{group__generateBVHModel_gab365e5d82c671489373c2a5f8bd728e0}{fcl\+::generate\+B\+V\+H\+Model}} (\mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ \&model, const \mbox{\hyperlink{classfcl_1_1Cone}{Cone}}$<$ typename B\+V\+::S $>$ \&shape, const Transform3$<$ typename B\+V\+::S $>$ \&pose, unsigned int circle\+\_\+split\+\_\+tot, unsigned int h\+\_\+num, \mbox{\hyperlink{namespacefcl_a8002b8dad1bdd2771e5ccbb3b466621c}{Finalize\+Model}} finalize\+\_\+model=Finalize\+Model\+::\+DO)
+\begin{DoxyCompactList}\small\item\em Generate B\+VH model from cone. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename BV $>$ }\\int \mbox{\hyperlink{group__generateBVHModel_ga92c71ad065ac9f4aed6ff76beebeca3e}{fcl\+::generate\+B\+V\+H\+Model}} (\mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ \&model, const \mbox{\hyperlink{classfcl_1_1Cone}{Cone}}$<$ typename B\+V\+::S $>$ \&shape, const Transform3$<$ typename B\+V\+::S $>$ \&pose, unsigned int circle\+\_\+split\+\_\+tot\+\_\+for\+\_\+unit\+\_\+cone, \mbox{\hyperlink{namespacefcl_a8002b8dad1bdd2771e5ccbb3b466621c}{Finalize\+Model}} finalize\+\_\+model=Finalize\+Model\+::\+DO)
+\begin{DoxyCompactList}\small\item\em Generate B\+VH model from cone. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Create a \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}} using geometric primitives. 
+
+The functions in this group can be used to add geometric primitives (\mbox{\hyperlink{classfcl_1_1Box}{Box}}, \mbox{\hyperlink{classfcl_1_1Sphere}{Sphere}}, \mbox{\hyperlink{classfcl_1_1Ellipsoid}{Ellipsoid}}, \mbox{\hyperlink{classfcl_1_1Cylinder}{Cylinder}}, \mbox{\hyperlink{classfcl_1_1Cone}{Cone}}) to a \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}. It can either close off the model or leave it unfinalized in order to add more primitives later. \begin{DoxyNote}{Note}
+All functions in this group have a common sub-\/set of parameters (listed below). In addition, each has unique parameters related to the geometry type being added and how it should be tessellated. These additional parameters are documented with their corresponding function 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+If this function is used to create a \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}} containing multiple geometric primitives, the \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}} inherently represents the {\itshape union} of those primitives. The \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}} structure does not retain any notion of the original geometric primitive. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em model} & The \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}} to be generated or added to \\
+\hline
+\mbox{\texttt{ in}}  & {\em shape} & The geometric object to be added to the \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em pose} & The pose of the geometric object \\
+\hline
+\mbox{\texttt{ in}}  & {\em finalize\+\_\+model} & an enum indicating whether the model is final or more submodels can be added later \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return code (as defined by B\+V\+H\+Return\+Code) indicating the success of the operation 
+\end{DoxyReturn}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__generateBVHModel_gab365e5d82c671489373c2a5f8bd728e0}\label{group__generateBVHModel_gab365e5d82c671489373c2a5f8bd728e0}} 
+\index{GenerateBVHModel@{GenerateBVHModel}!generateBVHModel@{generateBVHModel}}
+\index{generateBVHModel@{generateBVHModel}!GenerateBVHModel@{GenerateBVHModel}}
+\doxysubsubsection{\texorpdfstring{generateBVHModel()}{generateBVHModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily template$<$typename BV $>$ \\
+int fcl\+::generate\+B\+V\+H\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ \&}]{model,  }\item[{const \mbox{\hyperlink{classfcl_1_1Cone}{Cone}}$<$ typename B\+V\+::S $>$ \&}]{shape,  }\item[{const Transform3$<$ typename B\+V\+::S $>$ \&}]{pose,  }\item[{unsigned int}]{circle\+\_\+split\+\_\+tot,  }\item[{unsigned int}]{h\+\_\+num,  }\item[{\mbox{\hyperlink{namespacefcl_a8002b8dad1bdd2771e5ccbb3b466621c}{Finalize\+Model}}}]{finalize\+\_\+model = {\ttfamily FinalizeModel\+:\+:DO} }\end{DoxyParamCaption})}
+
+
+
+Generate B\+VH model from cone. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em circle\+\_\+split\+\_\+tot} & The number of segments the bottom plate is split into \\
+\hline
+\mbox{\texttt{ in}}  & {\em h\+\_\+num} & an The number of segments along the axis the cone is split into \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__generateBVHModel_ga92c71ad065ac9f4aed6ff76beebeca3e}\label{group__generateBVHModel_ga92c71ad065ac9f4aed6ff76beebeca3e}} 
+\index{GenerateBVHModel@{GenerateBVHModel}!generateBVHModel@{generateBVHModel}}
+\index{generateBVHModel@{generateBVHModel}!GenerateBVHModel@{GenerateBVHModel}}
+\doxysubsubsection{\texorpdfstring{generateBVHModel()}{generateBVHModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily template$<$typename BV $>$ \\
+int fcl\+::generate\+B\+V\+H\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ \&}]{model,  }\item[{const \mbox{\hyperlink{classfcl_1_1Cone}{Cone}}$<$ typename B\+V\+::S $>$ \&}]{shape,  }\item[{const Transform3$<$ typename B\+V\+::S $>$ \&}]{pose,  }\item[{unsigned int}]{circle\+\_\+split\+\_\+tot\+\_\+for\+\_\+unit\+\_\+cone,  }\item[{\mbox{\hyperlink{namespacefcl_a8002b8dad1bdd2771e5ccbb3b466621c}{Finalize\+Model}}}]{finalize\+\_\+model = {\ttfamily FinalizeModel\+:\+:DO} }\end{DoxyParamCaption})}
+
+
+
+Generate B\+VH model from cone. 
+
+Difference from generate\+B\+V\+H\+Model\+: is that it gives the circle split number tot for a cylinder with unit radius. For cone with larger radius, the number of circle split number is r $\ast$ tot. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em circle\+\_\+split\+\_\+tot\+\_\+for\+\_\+unit\+\_\+cone} & The number of segments the bottom plate of an equivalent unit-\/sized cone would be split into \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__generateBVHModel_ga170e5c2c96b7858a05146ab74a7e2c1e}\label{group__generateBVHModel_ga170e5c2c96b7858a05146ab74a7e2c1e}} 
+\index{GenerateBVHModel@{GenerateBVHModel}!generateBVHModel@{generateBVHModel}}
+\index{generateBVHModel@{generateBVHModel}!GenerateBVHModel@{GenerateBVHModel}}
+\doxysubsubsection{\texorpdfstring{generateBVHModel()}{generateBVHModel()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily template$<$typename BV $>$ \\
+int fcl\+::generate\+B\+V\+H\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ \&}]{model,  }\item[{const \mbox{\hyperlink{classfcl_1_1Cylinder}{Cylinder}}$<$ typename B\+V\+::S $>$ \&}]{shape,  }\item[{const Transform3$<$ typename B\+V\+::S $>$ \&}]{pose,  }\item[{unsigned int}]{circle\+\_\+split\+\_\+tot,  }\item[{unsigned int}]{h\+\_\+num,  }\item[{\mbox{\hyperlink{namespacefcl_a8002b8dad1bdd2771e5ccbb3b466621c}{Finalize\+Model}}}]{finalize\+\_\+model = {\ttfamily FinalizeModel\+:\+:DO} }\end{DoxyParamCaption})}
+
+
+
+Generate B\+VH model from cylinder, given the number of segments along circle and the number of segments along axis. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em circle\+\_\+split\+\_\+tot} & The number of segments the bottom plate of the cylinder is split into \\
+\hline
+\mbox{\texttt{ in}}  & {\em h\+\_\+num} & The number of segments along the axis the cylinder is split into \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__generateBVHModel_ga7555e4d2e9887273bc5056566fcf6075}\label{group__generateBVHModel_ga7555e4d2e9887273bc5056566fcf6075}} 
+\index{GenerateBVHModel@{GenerateBVHModel}!generateBVHModel@{generateBVHModel}}
+\index{generateBVHModel@{generateBVHModel}!GenerateBVHModel@{GenerateBVHModel}}
+\doxysubsubsection{\texorpdfstring{generateBVHModel()}{generateBVHModel()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily template$<$typename BV $>$ \\
+int fcl\+::generate\+B\+V\+H\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ \&}]{model,  }\item[{const \mbox{\hyperlink{classfcl_1_1Cylinder}{Cylinder}}$<$ typename B\+V\+::S $>$ \&}]{shape,  }\item[{const Transform3$<$ typename B\+V\+::S $>$ \&}]{pose,  }\item[{unsigned int}]{circle\+\_\+split\+\_\+tot\+\_\+for\+\_\+unit\+\_\+cylinder,  }\item[{\mbox{\hyperlink{namespacefcl_a8002b8dad1bdd2771e5ccbb3b466621c}{Finalize\+Model}}}]{finalize\+\_\+model = {\ttfamily FinalizeModel\+:\+:DO} }\end{DoxyParamCaption})}
+
+
+
+Generate B\+VH model from cylinder. 
+
+Difference from generate\+B\+V\+H\+Model\+: is that it gives the circle split number tot for a cylinder with unit radius. For cylinder with larger radius, the number of circle split number is r $\ast$ tot. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em circle\+\_\+split\+\_\+tot\+\_\+for\+\_\+unit\+\_\+cylinder} & The number of segments the bottom plate of an equivalent unit-\/sized cylinder would be split into \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__generateBVHModel_gacf939056664e5aba44063b150b2e2718}\label{group__generateBVHModel_gacf939056664e5aba44063b150b2e2718}} 
+\index{GenerateBVHModel@{GenerateBVHModel}!generateBVHModel@{generateBVHModel}}
+\index{generateBVHModel@{generateBVHModel}!GenerateBVHModel@{GenerateBVHModel}}
+\doxysubsubsection{\texorpdfstring{generateBVHModel()}{generateBVHModel()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily template$<$typename BV $>$ \\
+int fcl\+::generate\+B\+V\+H\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ \&}]{model,  }\item[{const \mbox{\hyperlink{classfcl_1_1Ellipsoid}{Ellipsoid}}$<$ typename B\+V\+::S $>$ \&}]{shape,  }\item[{const Transform3$<$ typename B\+V\+::S $>$ \&}]{pose,  }\item[{unsigned int}]{n\+\_\+faces\+\_\+for\+\_\+unit\+\_\+ellipsoid,  }\item[{\mbox{\hyperlink{namespacefcl_a8002b8dad1bdd2771e5ccbb3b466621c}{Finalize\+Model}}}]{finalize\+\_\+model = {\ttfamily FinalizeModel\+:\+:DO} }\end{DoxyParamCaption})}
+
+
+
+Generate B\+VH model from ellipsoid. 
+
+The difference between generate\+B\+V\+H\+Model is that it gives the number of triangles faces N for an ellipsoid with unit radii (1, 1, 1). For ellipsoid of radii (a, b, c), then the number of triangles is ((a$^\wedge$p $\ast$ b$^\wedge$p + b$^\wedge$p $\ast$ c$^\wedge$p + c$^\wedge$p $\ast$ a$^\wedge$p)/3)$^\wedge$(1/p) $\ast$ N, where p is 1.\+6075, so that the area represented by a single triangle is approximately the same. Reference\+: \href{https://en.wikipedia.org/wiki/Ellipsoid}{\texttt{ https\+://en.\+wikipedia.\+org/wiki/\+Ellipsoid}}\sout{\#\+Approximate\+\_\+formula 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em n\+\_\+faces\+\_\+for\+\_\+unit\+\_\+ellipsoid} & The number of faces a unit ellipsoid would have \\
+\hline
+\end{DoxyParams}
+}\mbox{\Hypertarget{group__generateBVHModel_ga3ea8dc825500643cea0dccbc75adda13}\label{group__generateBVHModel_ga3ea8dc825500643cea0dccbc75adda13}} 
+\index{GenerateBVHModel@{GenerateBVHModel}!generateBVHModel@{generateBVHModel}}
+\index{generateBVHModel@{generateBVHModel}!GenerateBVHModel@{GenerateBVHModel}}
+\doxysubsubsection{\texorpdfstring{generateBVHModel()}{generateBVHModel()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily template$<$typename BV $>$ \\
+int fcl\+::generate\+B\+V\+H\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ \&}]{model,  }\item[{const \mbox{\hyperlink{classfcl_1_1Ellipsoid}{Ellipsoid}}$<$ typename B\+V\+::S $>$ \&}]{shape,  }\item[{const Transform3$<$ typename B\+V\+::S $>$ \&}]{pose,  }\item[{unsigned int}]{seg,  }\item[{unsigned int}]{ring,  }\item[{\mbox{\hyperlink{namespacefcl_a8002b8dad1bdd2771e5ccbb3b466621c}{Finalize\+Model}}}]{finalize\+\_\+model = {\ttfamily FinalizeModel\+:\+:DO} }\end{DoxyParamCaption})}
+
+
+
+Generate B\+VH model from ellipsoid. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em seg} & The number of segments along longitude \\
+\hline
+\mbox{\texttt{ in}}  & {\em ring} & The number of rings along latitude \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__generateBVHModel_ga12c3402db46d419b0acc813a226edc9e}\label{group__generateBVHModel_ga12c3402db46d419b0acc813a226edc9e}} 
+\index{GenerateBVHModel@{GenerateBVHModel}!generateBVHModel@{generateBVHModel}}
+\index{generateBVHModel@{generateBVHModel}!GenerateBVHModel@{GenerateBVHModel}}
+\doxysubsubsection{\texorpdfstring{generateBVHModel()}{generateBVHModel()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily template$<$typename BV $>$ \\
+int fcl\+::generate\+B\+V\+H\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ \&}]{model,  }\item[{const \mbox{\hyperlink{classfcl_1_1Sphere}{Sphere}}$<$ typename B\+V\+::S $>$ \&}]{shape,  }\item[{const Transform3$<$ typename B\+V\+::S $>$ \&}]{pose,  }\item[{unsigned int}]{n\+\_\+faces\+\_\+for\+\_\+unit\+\_\+sphere,  }\item[{\mbox{\hyperlink{namespacefcl_a8002b8dad1bdd2771e5ccbb3b466621c}{Finalize\+Model}}}]{finalize\+\_\+model = {\ttfamily FinalizeModel\+:\+:DO} }\end{DoxyParamCaption})}
+
+
+
+Generate B\+VH model from sphere. 
+
+The difference between generate\+B\+V\+H\+Model is that it gives the number of triangles faces N for a sphere with unit radius. For sphere of radius r, then the number of triangles is r $\ast$ r $\ast$ N so that the area represented by a single triangle is approximately the same. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em n\+\_\+faces\+\_\+for\+\_\+unit\+\_\+sphere} & The number of triangles for a unit-\/sized sphere \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__generateBVHModel_ga3cb315fef65131359c76dab6d460f633}\label{group__generateBVHModel_ga3cb315fef65131359c76dab6d460f633}} 
+\index{GenerateBVHModel@{GenerateBVHModel}!generateBVHModel@{generateBVHModel}}
+\index{generateBVHModel@{generateBVHModel}!GenerateBVHModel@{GenerateBVHModel}}
+\doxysubsubsection{\texorpdfstring{generateBVHModel()}{generateBVHModel()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily template$<$typename BV $>$ \\
+int fcl\+::generate\+B\+V\+H\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ \&}]{model,  }\item[{const \mbox{\hyperlink{classfcl_1_1Sphere}{Sphere}}$<$ typename B\+V\+::S $>$ \&}]{shape,  }\item[{const Transform3$<$ typename B\+V\+::S $>$ \&}]{pose,  }\item[{unsigned int}]{seg,  }\item[{unsigned int}]{ring,  }\item[{\mbox{\hyperlink{namespacefcl_a8002b8dad1bdd2771e5ccbb3b466621c}{Finalize\+Model}}}]{finalize\+\_\+model = {\ttfamily FinalizeModel\+:\+:DO} }\end{DoxyParamCaption})}
+
+
+
+Generate B\+VH model from sphere. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em seg} & The number of segments along longitude \\
+\hline
+\mbox{\texttt{ in}}  & {\em ring} & The number of rings along latitude \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,80 @@
+\hypertarget{classfcl_1_1OBBRSS}{}\doxysection{fcl\+::O\+B\+B\+R\+SS$<$ S\+\_\+ $>$ Class Template Reference}
+\label{classfcl_1_1OBBRSS}\index{fcl::OBBRSS$<$ S\_ $>$@{fcl::OBBRSS$<$ S\_ $>$}}
+
+
+Class merging the \mbox{\hyperlink{classfcl_1_1OBB}{O\+BB}} and \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}, can handle collision and distance simultaneously.  
+
+
+
+
+{\ttfamily \#include $<$O\+B\+B\+R\+S\+S.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1OBBRSS_a3316b0bc3fefde10ab1a52b32b7564e1}\label{classfcl_1_1OBBRSS_a3316b0bc3fefde10ab1a52b32b7564e1}} 
+using {\bfseries S} = S\+\_\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1OBBRSS_a59bde32666c12e047c59400f9edcbdce}\label{classfcl_1_1OBBRSS_a59bde32666c12e047c59400f9edcbdce}} 
+bool \mbox{\hyperlink{classfcl_1_1OBBRSS_a59bde32666c12e047c59400f9edcbdce}{overlap}} (const \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}$<$ S $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Check collision between two \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1OBBRSS_ae438a5847a93885ac2ccca3f8e662aae}\label{classfcl_1_1OBBRSS_ae438a5847a93885ac2ccca3f8e662aae}} 
+bool \mbox{\hyperlink{classfcl_1_1OBBRSS_ae438a5847a93885ac2ccca3f8e662aae}{overlap}} (const \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}$<$ S $>$ \&other, \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}$<$ S $>$ \&overlap\+\_\+part) const
+\begin{DoxyCompactList}\small\item\em Check collision between two \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}} and return the overlap part. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1OBBRSS_a0e0e1561edadd0cf1094ade1b26fa9b0}\label{classfcl_1_1OBBRSS_a0e0e1561edadd0cf1094ade1b26fa9b0}} 
+bool \mbox{\hyperlink{classfcl_1_1OBBRSS_a0e0e1561edadd0cf1094ade1b26fa9b0}{contain}} (const Vector3$<$ S $>$ \&p) const
+\begin{DoxyCompactList}\small\item\em Check whether the \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}} contains a point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1OBBRSS_a1c1469d019bafc6845b670537c59ab2d}\label{classfcl_1_1OBBRSS_a1c1469d019bafc6845b670537c59ab2d}} 
+\mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1OBBRSS_a1c1469d019bafc6845b670537c59ab2d}{operator+=}} (const Vector3$<$ S $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Merge the \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}} and a point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1OBBRSS_a5522f2569b3bf974030ddf3f2110ec4f}\label{classfcl_1_1OBBRSS_a5522f2569b3bf974030ddf3f2110ec4f}} 
+\mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1OBBRSS_a5522f2569b3bf974030ddf3f2110ec4f}{operator+=}} (const \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}$<$ S $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Merge two \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1OBBRSS_a2e7248727ad62814b3125c69df1b6ef6}\label{classfcl_1_1OBBRSS_a2e7248727ad62814b3125c69df1b6ef6}} 
+\mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}$<$ S $>$ \mbox{\hyperlink{classfcl_1_1OBBRSS_a2e7248727ad62814b3125c69df1b6ef6}{operator+}} (const \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}$<$ S $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Merge two \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1OBBRSS_a83f0b65b713d21cffc2ee921e02452fe}\label{classfcl_1_1OBBRSS_a83f0b65b713d21cffc2ee921e02452fe}} 
+S \mbox{\hyperlink{classfcl_1_1OBBRSS_a83f0b65b713d21cffc2ee921e02452fe}{width}} () const
+\begin{DoxyCompactList}\small\item\em Width of the O\+B\+R\+SS. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1OBBRSS_a1682ed73ec32ee06038fb71e57cca38c}\label{classfcl_1_1OBBRSS_a1682ed73ec32ee06038fb71e57cca38c}} 
+S \mbox{\hyperlink{classfcl_1_1OBBRSS_a1682ed73ec32ee06038fb71e57cca38c}{height}} () const
+\begin{DoxyCompactList}\small\item\em Height of the \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1OBBRSS_a8296da6796407e2858867a638983dc80}\label{classfcl_1_1OBBRSS_a8296da6796407e2858867a638983dc80}} 
+S \mbox{\hyperlink{classfcl_1_1OBBRSS_a8296da6796407e2858867a638983dc80}{depth}} () const
+\begin{DoxyCompactList}\small\item\em Depth of the \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1OBBRSS_a48d221eca12473875cb6d29fa689426b}\label{classfcl_1_1OBBRSS_a48d221eca12473875cb6d29fa689426b}} 
+S \mbox{\hyperlink{classfcl_1_1OBBRSS_a48d221eca12473875cb6d29fa689426b}{volume}} () const
+\begin{DoxyCompactList}\small\item\em Volume of the \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1OBBRSS_a033da5e6b3e7a3334af9281568c24445}\label{classfcl_1_1OBBRSS_a033da5e6b3e7a3334af9281568c24445}} 
+S \mbox{\hyperlink{classfcl_1_1OBBRSS_a033da5e6b3e7a3334af9281568c24445}{size}} () const
+\begin{DoxyCompactList}\small\item\em Size of the \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}} (used in B\+V\+\_\+\+Splitter to order two \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1OBBRSS_ad9720944e7036b1a7524229dc4cda3f3}\label{classfcl_1_1OBBRSS_ad9720944e7036b1a7524229dc4cda3f3}} 
+const Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1OBBRSS_ad9720944e7036b1a7524229dc4cda3f3}{center}} () const
+\begin{DoxyCompactList}\small\item\em Center of the \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1OBBRSS_aa6dd4f1d07e03912b8d0402f5caf4955}\label{classfcl_1_1OBBRSS_aa6dd4f1d07e03912b8d0402f5caf4955}} 
+S \mbox{\hyperlink{classfcl_1_1OBBRSS_aa6dd4f1d07e03912b8d0402f5caf4955}{distance}} (const \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}$<$ S $>$ \&other, Vector3$<$ S $>$ $\ast$P=nullptr, Vector3$<$ S $>$ $\ast$Q=nullptr) const
+\begin{DoxyCompactList}\small\item\em Distance between two \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}; P and Q , is not nullptr, returns the nearest points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1OBBRSS_abfe7b120c4b472c45823ff61f37c4170}\label{classfcl_1_1OBBRSS_abfe7b120c4b472c45823ff61f37c4170}} 
+\mbox{\hyperlink{classfcl_1_1OBB}{O\+BB}}$<$ S $>$ \mbox{\hyperlink{classfcl_1_1OBBRSS_abfe7b120c4b472c45823ff61f37c4170}{obb}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classfcl_1_1OBB}{O\+BB}} member, for rotation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1OBBRSS_ab9aa8254f8eaad93511dbe2a4e88fd3f}\label{classfcl_1_1OBBRSS_ab9aa8254f8eaad93511dbe2a4e88fd3f}} 
+\mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}$<$ S $>$ \mbox{\hyperlink{classfcl_1_1OBBRSS_ab9aa8254f8eaad93511dbe2a4e88fd3f}{rss}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}} member, for distance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S\+\_\+$>$\newline
+class fcl\+::\+O\+B\+B\+R\+S\+S$<$ S\+\_\+ $>$}
+
+Class merging the \mbox{\hyperlink{classfcl_1_1OBB}{O\+BB}} and \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}, can handle collision and distance simultaneously. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/math/bv/O\+B\+B\+R\+S\+S.\+h\item 
+/home/prodefi/fcl/include/fcl/math/bv/O\+B\+B\+R\+S\+S-\/inl.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,154 @@
+\hypertarget{classfcl_1_1RSS}{}\doxysection{fcl\+::R\+SS$<$ S\+\_\+ $>$ Class Template Reference}
+\label{classfcl_1_1RSS}\index{fcl::RSS$<$ S\_ $>$@{fcl::RSS$<$ S\_ $>$}}
+
+
+A class for rectangle swept sphere bounding volume.  
+
+
+
+
+{\ttfamily \#include $<$R\+S\+S.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1RSS_ac54f45ec49cc09fca2957a880a48a4f3}\label{classfcl_1_1RSS_ac54f45ec49cc09fca2957a880a48a4f3}} 
+using {\bfseries S} = S\+\_\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1RSS_a67da81f366957e7ce31c24ef9735ae97}\label{classfcl_1_1RSS_a67da81f366957e7ce31c24ef9735ae97}} 
+\mbox{\hyperlink{classfcl_1_1RSS_a67da81f366957e7ce31c24ef9735ae97}{R\+SS}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RSS_aae34bfc48b7a15de86d9e1d50babaa00}\label{classfcl_1_1RSS_aae34bfc48b7a15de86d9e1d50babaa00}} 
+bool \mbox{\hyperlink{classfcl_1_1RSS_aae34bfc48b7a15de86d9e1d50babaa00}{overlap}} (const \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}$<$ S $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Check collision between two \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RSS_a422121e4a38db78fc09658a1840b3efa}\label{classfcl_1_1RSS_a422121e4a38db78fc09658a1840b3efa}} 
+bool \mbox{\hyperlink{classfcl_1_1RSS_a422121e4a38db78fc09658a1840b3efa}{overlap}} (const \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}$<$ S $>$ \&other, \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}$<$ S $>$ \&overlap\+\_\+part) const
+\begin{DoxyCompactList}\small\item\em Check collision between two \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}} and return the overlap part. For \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}, we return nothing, as the overlap part of two R\+S\+Ss usually is not a \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classfcl_1_1RSS_ad2d8b081a0594d7fb8c0bd10d7f08467}{contain}} (const Vector3$<$ S $>$ \&p) const
+\begin{DoxyCompactList}\small\item\em Check whether the \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}} contains a point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1RSS_a8b1c003fdcbd87fd3c2db0d84577f9ba}{operator+=}} (const Vector3$<$ S $>$ \&p)
+\begin{DoxyCompactList}\small\item\em A simple way to merge the \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}} and a point, not compact. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RSS_a9e35e94b14870d1103a57fe22623935d}\label{classfcl_1_1RSS_a9e35e94b14870d1103a57fe22623935d}} 
+\mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1RSS_a9e35e94b14870d1103a57fe22623935d}{operator+=}} (const \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}$<$ S $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Merge the \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}} and another \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RSS_a3887ce0d0ee2d2b5cd8cbebd58f13a5f}\label{classfcl_1_1RSS_a3887ce0d0ee2d2b5cd8cbebd58f13a5f}} 
+\mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}$<$ S $>$ \mbox{\hyperlink{classfcl_1_1RSS_a3887ce0d0ee2d2b5cd8cbebd58f13a5f}{operator+}} (const \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}$<$ S $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Return the merged \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}} of current \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}} and the other one. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RSS_aa28963e5e1d4f16d9aa28a9affb973d2}\label{classfcl_1_1RSS_aa28963e5e1d4f16d9aa28a9affb973d2}} 
+S \mbox{\hyperlink{classfcl_1_1RSS_aa28963e5e1d4f16d9aa28a9affb973d2}{width}} () const
+\begin{DoxyCompactList}\small\item\em Width of the \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RSS_a1101582ec8aa20568506408654acfe94}\label{classfcl_1_1RSS_a1101582ec8aa20568506408654acfe94}} 
+S \mbox{\hyperlink{classfcl_1_1RSS_a1101582ec8aa20568506408654acfe94}{height}} () const
+\begin{DoxyCompactList}\small\item\em Height of the \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RSS_a4f04a0c763b76b861f780bdd8ed52f72}\label{classfcl_1_1RSS_a4f04a0c763b76b861f780bdd8ed52f72}} 
+S \mbox{\hyperlink{classfcl_1_1RSS_a4f04a0c763b76b861f780bdd8ed52f72}{depth}} () const
+\begin{DoxyCompactList}\small\item\em Depth of the \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RSS_ab46680aebb69f4cbf20d39b62e3da4e8}\label{classfcl_1_1RSS_ab46680aebb69f4cbf20d39b62e3da4e8}} 
+S \mbox{\hyperlink{classfcl_1_1RSS_ab46680aebb69f4cbf20d39b62e3da4e8}{volume}} () const
+\begin{DoxyCompactList}\small\item\em Volume of the \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RSS_a444069e70f75dc90cff1bfea785debec}\label{classfcl_1_1RSS_a444069e70f75dc90cff1bfea785debec}} 
+S \mbox{\hyperlink{classfcl_1_1RSS_a444069e70f75dc90cff1bfea785debec}{size}} () const
+\begin{DoxyCompactList}\small\item\em Size of the \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}} (used in B\+V\+\_\+\+Splitter to order two R\+S\+Ss) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RSS_a9d44c7cf3ee73b4b42e83398ea62c8b4}\label{classfcl_1_1RSS_a9d44c7cf3ee73b4b42e83398ea62c8b4}} 
+const Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1RSS_a9d44c7cf3ee73b4b42e83398ea62c8b4}{center}} () const
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}} center C, measured and expressed in frame F\+: p\+\_\+\+Fo\+C\+\_\+F. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfcl_1_1RSS_a7494d71e6c7d064425a4c94b13f95aa1}{set\+To\+From\+Center}} (const Vector3$<$ S $>$ \&p\+\_\+\+Fo\+Center\+\_\+F)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{classfcl_1_1RSS_ab37055460bfdeab00299eb57d5f567da}{To}} of the \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}} from the center coordinates in frame F. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RSS_af72726ce407f7fc1accd432ff4f26e0f}\label{classfcl_1_1RSS_af72726ce407f7fc1accd432ff4f26e0f}} 
+S \mbox{\hyperlink{classfcl_1_1RSS_af72726ce407f7fc1accd432ff4f26e0f}{distance}} (const \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}$<$ S $>$ \&other, Vector3$<$ S $>$ $\ast$P=nullptr, Vector3$<$ S $>$ $\ast$Q=nullptr) const
+\begin{DoxyCompactList}\small\item\em the distance between two \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}; P and Q, if not nullptr, return the nearest points \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Matrix3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1RSS_a00b547cea376bf022b6f3503e282b143}{axis}}
+\begin{DoxyCompactList}\small\item\em Frame T\textquotesingle{}s orientation in frame F. \end{DoxyCompactList}\item 
+Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1RSS_ab37055460bfdeab00299eb57d5f567da}{To}}
+\begin{DoxyCompactList}\small\item\em Origin of frame T in frame F. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RSS_af29bf0e937fb0fd1efa141d0b11f3b5a}\label{classfcl_1_1RSS_af29bf0e937fb0fd1efa141d0b11f3b5a}} 
+S \mbox{\hyperlink{classfcl_1_1RSS_af29bf0e937fb0fd1efa141d0b11f3b5a}{l}} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Side lengths of rectangle in frame T. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1RSS_a54d9c66b1618502f4fc96b84fb34d6fe}\label{classfcl_1_1RSS_a54d9c66b1618502f4fc96b84fb34d6fe}} 
+S \mbox{\hyperlink{classfcl_1_1RSS_a54d9c66b1618502f4fc96b84fb34d6fe}{r}}
+\begin{DoxyCompactList}\small\item\em Radius of sphere summed with rectangle to form \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S\+\_\+$>$\newline
+class fcl\+::\+R\+S\+S$<$ S\+\_\+ $>$}
+
+A class for rectangle swept sphere bounding volume. 
+
+\mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}} defines a rectangle swept sphere. The rectangle is defined in the frame T. It has one corner positioned at the origin of frame T. It lies on T\textquotesingle{}s z = 0 plane. Its longest dimension extends in the +x direction, and its shorter dimension in the +y direction.
+
+The \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}} is then posed in another frame F. R\+\_\+\+FT (the \mbox{\hyperlink{classfcl_1_1RSS_a00b547cea376bf022b6f3503e282b143}{axis}} field) is the relative orientation between frame T and F and p\+\_\+\+Fo\+To\+\_\+F (the \mbox{\hyperlink{classfcl_1_1RSS_ab37055460bfdeab00299eb57d5f567da}{To}} field) is the position of T\textquotesingle{}s origin in frame F. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfcl_1_1RSS_ad2d8b081a0594d7fb8c0bd10d7f08467}\label{classfcl_1_1RSS_ad2d8b081a0594d7fb8c0bd10d7f08467}} 
+\index{fcl::RSS$<$ S\_ $>$@{fcl::RSS$<$ S\_ $>$}!contain@{contain}}
+\index{contain@{contain}!fcl::RSS$<$ S\_ $>$@{fcl::RSS$<$ S\_ $>$}}
+\doxysubsubsection{\texorpdfstring{contain()}{contain()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+bool \mbox{\hyperlink{classfcl_1_1RSS}{fcl\+::\+R\+SS}}$<$ S $>$\+::contain (\begin{DoxyParamCaption}\item[{const Vector3$<$ S $>$ \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Check whether the \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}} contains a point. 
+
+projection is within the rectangle\mbox{\Hypertarget{classfcl_1_1RSS_a8b1c003fdcbd87fd3c2db0d84577f9ba}\label{classfcl_1_1RSS_a8b1c003fdcbd87fd3c2db0d84577f9ba}} 
+\index{fcl::RSS$<$ S\_ $>$@{fcl::RSS$<$ S\_ $>$}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!fcl::RSS$<$ S\_ $>$@{fcl::RSS$<$ S\_ $>$}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+\mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1RSS}{fcl\+::\+R\+SS}}$<$ S $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const Vector3$<$ S $>$ \&}]{p }\end{DoxyParamCaption})}
+
+
+
+A simple way to merge the \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}} and a point, not compact. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000006}{Todo}}]This function may have some bug. \end{DoxyRefDesc}
+\mbox{\Hypertarget{classfcl_1_1RSS_a7494d71e6c7d064425a4c94b13f95aa1}\label{classfcl_1_1RSS_a7494d71e6c7d064425a4c94b13f95aa1}} 
+\index{fcl::RSS$<$ S\_ $>$@{fcl::RSS$<$ S\_ $>$}!setToFromCenter@{setToFromCenter}}
+\index{setToFromCenter@{setToFromCenter}!fcl::RSS$<$ S\_ $>$@{fcl::RSS$<$ S\_ $>$}}
+\doxysubsubsection{\texorpdfstring{setToFromCenter()}{setToFromCenter()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+void \mbox{\hyperlink{classfcl_1_1RSS}{fcl\+::\+R\+SS}}$<$ S $>$\+::set\+To\+From\+Center (\begin{DoxyParamCaption}\item[{const Vector3$<$ S $>$ \&}]{p\+\_\+\+Fo\+Center\+\_\+F }\end{DoxyParamCaption})}
+
+
+
+Set \mbox{\hyperlink{classfcl_1_1RSS_ab37055460bfdeab00299eb57d5f567da}{To}} of the \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}} from the center coordinates in frame F. 
+
+Note\+: only works correctly if \mbox{\hyperlink{classfcl_1_1RSS_a00b547cea376bf022b6f3503e282b143}{axis}} and \mbox{\hyperlink{classfcl_1_1RSS_af29bf0e937fb0fd1efa141d0b11f3b5a}{l}}\mbox{[}\mbox{]} are set. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfcl_1_1RSS_a00b547cea376bf022b6f3503e282b143}\label{classfcl_1_1RSS_a00b547cea376bf022b6f3503e282b143}} 
+\index{fcl::RSS$<$ S\_ $>$@{fcl::RSS$<$ S\_ $>$}!axis@{axis}}
+\index{axis@{axis}!fcl::RSS$<$ S\_ $>$@{fcl::RSS$<$ S\_ $>$}}
+\doxysubsubsection{\texorpdfstring{axis}{axis}}
+{\footnotesize\ttfamily template$<$typename S\+\_\+ $>$ \\
+Matrix3$<$S$>$ \mbox{\hyperlink{classfcl_1_1RSS}{fcl\+::\+R\+SS}}$<$ S\+\_\+ $>$\+::axis}
+
+
+
+Frame T\textquotesingle{}s orientation in frame F. 
+
+The axes of the rotation matrix are the principle directions of the rectangle. The first column corresponds to a unit vector along the longest edge and the second column the shortest edge. The third column is the rectangle\textquotesingle{}s unit normal vector. \mbox{\Hypertarget{classfcl_1_1RSS_ab37055460bfdeab00299eb57d5f567da}\label{classfcl_1_1RSS_ab37055460bfdeab00299eb57d5f567da}} 
+\index{fcl::RSS$<$ S\_ $>$@{fcl::RSS$<$ S\_ $>$}!To@{To}}
+\index{To@{To}!fcl::RSS$<$ S\_ $>$@{fcl::RSS$<$ S\_ $>$}}
+\doxysubsubsection{\texorpdfstring{To}{To}}
+{\footnotesize\ttfamily template$<$typename S\+\_\+ $>$ \\
+Vector3$<$S$>$ \mbox{\hyperlink{classfcl_1_1RSS}{fcl\+::\+R\+SS}}$<$ S\+\_\+ $>$\+::To}
+
+
+
+Origin of frame T in frame F. 
+
+Note this is the translation in frame F to the origin of frame T. The rectangle\textquotesingle{}s minimum corner in frame T is at the origin of frame T. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/math/bv/R\+S\+S.\+h\item 
+/home/prodefi/fcl/include/fcl/math/bv/R\+S\+S-\/inl.\+h\end{DoxyCompactItemize}

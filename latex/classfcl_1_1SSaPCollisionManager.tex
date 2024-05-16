@@ -1,0 +1,119 @@
+\hypertarget{classfcl_1_1SSaPCollisionManager}{}\doxysection{fcl\+::S\+Sa\+P\+Collision\+Manager$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1SSaPCollisionManager}\index{fcl::SSaPCollisionManager$<$ S $>$@{fcl::SSaPCollisionManager$<$ S $>$}}
+
+
+Simple S\+AP collision manager.  
+
+
+
+
+{\ttfamily \#include $<$broadphase\+\_\+\+S\+Sa\+P.\+h$>$}
+
+Inheritance diagram for fcl\+::S\+Sa\+P\+Collision\+Manager$<$ S $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfcl_1_1SSaPCollisionManager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_a34d35c84c3f8dd054d55cb4cf01eb3b7}\label{classfcl_1_1SSaPCollisionManager_a34d35c84c3f8dd054d55cb4cf01eb3b7}} 
+void \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_a34d35c84c3f8dd054d55cb4cf01eb3b7}{register\+Object}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj)
+\begin{DoxyCompactList}\small\item\em remove one object from the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_a97509a1376518b4b635939df09c2aabe}\label{classfcl_1_1SSaPCollisionManager_a97509a1376518b4b635939df09c2aabe}} 
+void \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_a97509a1376518b4b635939df09c2aabe}{unregister\+Object}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj)
+\begin{DoxyCompactList}\small\item\em add one object to the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_a48169a8fde52d2543028d1d233450634}\label{classfcl_1_1SSaPCollisionManager_a48169a8fde52d2543028d1d233450634}} 
+void \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_a48169a8fde52d2543028d1d233450634}{setup}} ()
+\begin{DoxyCompactList}\small\item\em initialize the manager, related with the specific type of manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_a7d908c049059aacb40c0aa289eb29bb7}\label{classfcl_1_1SSaPCollisionManager_a7d908c049059aacb40c0aa289eb29bb7}} 
+void \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_a7d908c049059aacb40c0aa289eb29bb7}{update}} ()
+\begin{DoxyCompactList}\small\item\em update the condition of manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_ad6124da8ded11c68c92bc905313dd273}\label{classfcl_1_1SSaPCollisionManager_ad6124da8ded11c68c92bc905313dd273}} 
+void \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_ad6124da8ded11c68c92bc905313dd273}{clear}} ()
+\begin{DoxyCompactList}\small\item\em clear the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_aa220e4d93db228873d8be45797b6a990}\label{classfcl_1_1SSaPCollisionManager_aa220e4d93db228873d8be45797b6a990}} 
+void \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_aa220e4d93db228873d8be45797b6a990}{get\+Objects}} (std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&objs) const
+\begin{DoxyCompactList}\small\item\em return the objects managed by the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_af1e58a92319431e14ce30085d54e7a70}\label{classfcl_1_1SSaPCollisionManager_af1e58a92319431e14ce30085d54e7a70}} 
+void \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_af1e58a92319431e14ce30085d54e7a70}{collide}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform collision test between one object and all the objects belonging to the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_ae5f30dd4c52b0132515eacc3463d352a}\label{classfcl_1_1SSaPCollisionManager_ae5f30dd4c52b0132515eacc3463d352a}} 
+void \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_ae5f30dd4c52b0132515eacc3463d352a}{distance}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform distance computation between one object and all the objects belonging to the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_af3b19523386a240e100b9e7bbc560161}\label{classfcl_1_1SSaPCollisionManager_af3b19523386a240e100b9e7bbc560161}} 
+void \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_af3b19523386a240e100b9e7bbc560161}{collide}} (void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform collision test for the objects belonging to the manager (i.\+e., N$^\wedge$2 self collision) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_a8ddfbb223ccf0cac5937efda2430f388}\label{classfcl_1_1SSaPCollisionManager_a8ddfbb223ccf0cac5937efda2430f388}} 
+void \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_a8ddfbb223ccf0cac5937efda2430f388}{distance}} (void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform distance test for the objects belonging to the manager (i.\+e., N$^\wedge$2 self distance) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_a5baf8a7936bf8e87fa89f36540d73d6e}\label{classfcl_1_1SSaPCollisionManager_a5baf8a7936bf8e87fa89f36540d73d6e}} 
+void \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_a5baf8a7936bf8e87fa89f36540d73d6e}{collide}} (\mbox{\hyperlink{classfcl_1_1BroadPhaseCollisionManager}{Broad\+Phase\+Collision\+Manager}}$<$ S $>$ $\ast$other\+\_\+manager, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform collision test with objects belonging to another manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_ac4ecce819ea7efe1963f0b7f076ea383}\label{classfcl_1_1SSaPCollisionManager_ac4ecce819ea7efe1963f0b7f076ea383}} 
+void \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_ac4ecce819ea7efe1963f0b7f076ea383}{distance}} (\mbox{\hyperlink{classfcl_1_1BroadPhaseCollisionManager}{Broad\+Phase\+Collision\+Manager}}$<$ S $>$ $\ast$other\+\_\+manager, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform distance test with objects belonging to another manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_abf8e926a26ed31bc9c56eed694cd9ab4}\label{classfcl_1_1SSaPCollisionManager_abf8e926a26ed31bc9c56eed694cd9ab4}} 
+bool \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_abf8e926a26ed31bc9c56eed694cd9ab4}{empty}} () const
+\begin{DoxyCompactList}\small\item\em whether the manager is empty \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_a2c3f49f62f41754023fa76fa0487b2d1}\label{classfcl_1_1SSaPCollisionManager_a2c3f49f62f41754023fa76fa0487b2d1}} 
+size\+\_\+t \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_a2c3f49f62f41754023fa76fa0487b2d1}{size}} () const
+\begin{DoxyCompactList}\small\item\em the number of objects managed by the manager \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_a31880132fa839e1dd06fe7b47864b8e6}\label{classfcl_1_1SSaPCollisionManager_a31880132fa839e1dd06fe7b47864b8e6}} 
+bool \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_a31880132fa839e1dd06fe7b47864b8e6}{check\+Coll}} (typename std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$\+::const\+\_\+iterator pos\+\_\+start, typename std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$\+::const\+\_\+iterator pos\+\_\+end, \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em check collision between one object and a list of objects, return value is whether stop is possible \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_a883d4418cdd9cc19f1a66c563ddea86c}\label{classfcl_1_1SSaPCollisionManager_a883d4418cdd9cc19f1a66c563ddea86c}} 
+bool \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_a883d4418cdd9cc19f1a66c563ddea86c}{check\+Dis}} (typename std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$\+::const\+\_\+iterator pos\+\_\+start, typename std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$\+::const\+\_\+iterator pos\+\_\+end, \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback, S \&min\+\_\+dist) const
+\begin{DoxyCompactList}\small\item\em check distance between one object and a list of objects, return value is whether stop is possible \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_ad5966efd1b111a4e33e283dac22b01a8}\label{classfcl_1_1SSaPCollisionManager_ad5966efd1b111a4e33e283dac22b01a8}} 
+bool {\bfseries collide\+\_\+} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_a4b135a86900609c8b60fdf311b60c19d}\label{classfcl_1_1SSaPCollisionManager_a4b135a86900609c8b60fdf311b60c19d}} 
+bool {\bfseries distance\+\_\+} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback, S \&min\+\_\+dist) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static size\+\_\+t \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_ad438f91ba169e53a6c43e5841c32d427}{select\+Optimal\+Axis}} (const std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&\mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_a5660e1bb4de189d14c88e4bc77fb0101}{objs\+\_\+x}}, const std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&\mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_a3df229674d7b1db1471d95304893c131}{objs\+\_\+y}}, const std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&\mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_a74c494504745a0a28cfaddc21cf08d46}{objs\+\_\+z}}, typename std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$\+::const\+\_\+iterator \&it\+\_\+beg, typename std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$\+::const\+\_\+iterator \&it\+\_\+end)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_a5660e1bb4de189d14c88e4bc77fb0101}\label{classfcl_1_1SSaPCollisionManager_a5660e1bb4de189d14c88e4bc77fb0101}} 
+std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_a5660e1bb4de189d14c88e4bc77fb0101}{objs\+\_\+x}}
+\begin{DoxyCompactList}\small\item\em Objects sorted according to lower x value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_a3df229674d7b1db1471d95304893c131}\label{classfcl_1_1SSaPCollisionManager_a3df229674d7b1db1471d95304893c131}} 
+std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_a3df229674d7b1db1471d95304893c131}{objs\+\_\+y}}
+\begin{DoxyCompactList}\small\item\em Objects sorted according to lower y value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_a74c494504745a0a28cfaddc21cf08d46}\label{classfcl_1_1SSaPCollisionManager_a74c494504745a0a28cfaddc21cf08d46}} 
+std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_a74c494504745a0a28cfaddc21cf08d46}{objs\+\_\+z}}
+\begin{DoxyCompactList}\small\item\em Objects sorted according to lower z value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_ab345ed061c61fb5d7cb4587695df8870}\label{classfcl_1_1SSaPCollisionManager_ab345ed061c61fb5d7cb4587695df8870}} 
+bool \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager_ab345ed061c61fb5d7cb4587695df8870}{setup\+\_\+}}
+\begin{DoxyCompactList}\small\item\em tag about whether the environment is maintained suitably (i.\+e., the objs\+\_\+x, objs\+\_\+y, objs\+\_\+z are sorted correctly \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+class fcl\+::\+S\+Sa\+P\+Collision\+Manager$<$ S $>$}
+
+Simple S\+AP collision manager. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfcl_1_1SSaPCollisionManager_ad438f91ba169e53a6c43e5841c32d427}\label{classfcl_1_1SSaPCollisionManager_ad438f91ba169e53a6c43e5841c32d427}} 
+\index{fcl::SSaPCollisionManager$<$ S $>$@{fcl::SSaPCollisionManager$<$ S $>$}!selectOptimalAxis@{selectOptimalAxis}}
+\index{selectOptimalAxis@{selectOptimalAxis}!fcl::SSaPCollisionManager$<$ S $>$@{fcl::SSaPCollisionManager$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{selectOptimalAxis()}{selectOptimalAxis()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+size\+\_\+t \mbox{\hyperlink{classfcl_1_1SSaPCollisionManager}{fcl\+::\+S\+Sa\+P\+Collision\+Manager}}$<$ S $>$\+::select\+Optimal\+Axis (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&}]{objs\+\_\+x,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&}]{objs\+\_\+y,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&}]{objs\+\_\+z,  }\item[{typename std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$\+::const\+\_\+iterator \&}]{it\+\_\+beg,  }\item[{typename std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$\+::const\+\_\+iterator \&}]{it\+\_\+end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+simple sweep and prune method
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/broadphase/broadphase\+\_\+\+S\+Sa\+P.\+h\item 
+/home/prodefi/fcl/include/fcl/broadphase/broadphase\+\_\+\+S\+Sa\+P-\/inl.\+h\end{DoxyCompactItemize}

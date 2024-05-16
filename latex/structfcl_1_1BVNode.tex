@@ -1,0 +1,56 @@
+\hypertarget{structfcl_1_1BVNode}{}\doxysection{fcl\+::B\+V\+Node$<$ BV $>$ Struct Template Reference}
+\label{structfcl_1_1BVNode}\index{fcl::BVNode$<$ BV $>$@{fcl::BVNode$<$ BV $>$}}
+
+
+A class describing a bounding volume node. It includes the tree structure providing in \mbox{\hyperlink{structfcl_1_1BVNodeBase}{B\+V\+Node\+Base}} and also the geometry data provided in BV template parameter.  
+
+
+
+
+{\ttfamily \#include $<$B\+V\+\_\+node.\+h$>$}
+
+Inheritance diagram for fcl\+::B\+V\+Node$<$ BV $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structfcl_1_1BVNode}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1BVNode_ae0a57d6a38f35d8a009980eae8524ad8}\label{structfcl_1_1BVNode_ae0a57d6a38f35d8a009980eae8524ad8}} 
+using {\bfseries S} = typename B\+V\+::S
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1BVNode_ab34e2995f7200f9ece5ac3eea74a4b1e}\label{structfcl_1_1BVNode_ab34e2995f7200f9ece5ac3eea74a4b1e}} 
+bool \mbox{\hyperlink{structfcl_1_1BVNode_ab34e2995f7200f9ece5ac3eea74a4b1e}{overlap}} (const \mbox{\hyperlink{structfcl_1_1BVNode}{B\+V\+Node}} \&other) const
+\begin{DoxyCompactList}\small\item\em Check whether two \mbox{\hyperlink{structfcl_1_1BVNode}{B\+V\+Node}} collide. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1BVNode_a5542ffef9c5678a4d6454c6cb81c391d}\label{structfcl_1_1BVNode_a5542ffef9c5678a4d6454c6cb81c391d}} 
+S \mbox{\hyperlink{structfcl_1_1BVNode_a5542ffef9c5678a4d6454c6cb81c391d}{distance}} (const \mbox{\hyperlink{structfcl_1_1BVNode}{B\+V\+Node}} \&other, Vector3$<$ S $>$ $\ast$P1=nullptr, Vector3$<$ S $>$ $\ast$P2=nullptr) const
+\begin{DoxyCompactList}\small\item\em Compute the distance between two \mbox{\hyperlink{structfcl_1_1BVNode}{B\+V\+Node}}. P1 and P2, if not nullptr and the underlying BV supports distance, return the nearest points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1BVNode_a9f21110175de1eef60297f3ad0adcc5f}\label{structfcl_1_1BVNode_a9f21110175de1eef60297f3ad0adcc5f}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{structfcl_1_1BVNode_a9f21110175de1eef60297f3ad0adcc5f}{get\+Center}} () const
+\begin{DoxyCompactList}\small\item\em Access the center of the BV. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1BVNode_a618275883ffdde624af65832a708fbdf}\label{structfcl_1_1BVNode_a618275883ffdde624af65832a708fbdf}} 
+Matrix3$<$ S $>$ \mbox{\hyperlink{structfcl_1_1BVNode_a618275883ffdde624af65832a708fbdf}{get\+Orientation}} () const
+\begin{DoxyCompactList}\small\item\em Access the orientation of the BV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1BVNode_a9d0bed18455553d597f52d739364b774}\label{structfcl_1_1BVNode_a9d0bed18455553d597f52d739364b774}} 
+BV \mbox{\hyperlink{structfcl_1_1BVNode_a9d0bed18455553d597f52d739364b774}{bv}}
+\begin{DoxyCompactList}\small\item\em bounding volume storing the geometry \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename BV$>$\newline
+struct fcl\+::\+B\+V\+Node$<$ B\+V $>$}
+
+A class describing a bounding volume node. It includes the tree structure providing in \mbox{\hyperlink{structfcl_1_1BVNodeBase}{B\+V\+Node\+Base}} and also the geometry data provided in BV template parameter. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/geometry/bvh/B\+V\+\_\+node.\+h\item 
+/home/prodefi/fcl/include/fcl/geometry/bvh/B\+V\+\_\+node-\/inl.\+h\end{DoxyCompactItemize}

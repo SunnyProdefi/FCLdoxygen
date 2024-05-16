@@ -1,0 +1,143 @@
+\hypertarget{classfcl_1_1SplineMotion}{}\doxysection{fcl\+::Spline\+Motion$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1SplineMotion}\index{fcl::SplineMotion$<$ S $>$@{fcl::SplineMotion$<$ S $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_af8c0a655e55421f9080c322ef6cfebe7}\label{classfcl_1_1SplineMotion_af8c0a655e55421f9080c322ef6cfebe7}} 
+\mbox{\hyperlink{classfcl_1_1SplineMotion_af8c0a655e55421f9080c322ef6cfebe7}{Spline\+Motion}} (const Vector3$<$ S $>$ \&Td0, const Vector3$<$ S $>$ \&Td1, const Vector3$<$ S $>$ \&Td2, const Vector3$<$ S $>$ \&Td3, const Vector3$<$ S $>$ \&Rd0, const Vector3$<$ S $>$ \&Rd1, const Vector3$<$ S $>$ \&Rd2, const Vector3$<$ S $>$ \&Rd3)
+\begin{DoxyCompactList}\small\item\em Construct motion from 4 de\+Boor points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a139badd55cfa1b8e5a539a0fa638314e}\label{classfcl_1_1SplineMotion_a139badd55cfa1b8e5a539a0fa638314e}} 
+{\bfseries Spline\+Motion} (const Matrix3$<$ S $>$ \&R1, const Vector3$<$ S $>$ \&T1, const Matrix3$<$ S $>$ \&R2, const Vector3$<$ S $>$ \&T2)
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a26b0eca03ac68d2ee0fe7128ad185566}\label{classfcl_1_1SplineMotion_a26b0eca03ac68d2ee0fe7128ad185566}} 
+{\bfseries Spline\+Motion} (const Transform3$<$ S $>$ \&tf1, const Transform3$<$ S $>$ \&tf2)
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_af4e2de3aeb33de35e4b32031a406ca21}\label{classfcl_1_1SplineMotion_af4e2de3aeb33de35e4b32031a406ca21}} 
+bool \mbox{\hyperlink{classfcl_1_1SplineMotion_af4e2de3aeb33de35e4b32031a406ca21}{integrate}} (S dt) const override
+\begin{DoxyCompactList}\small\item\em Integrate the motion from 0 to dt We compute the current transformation from zero point instead of from last integrate time, for precision. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a8020df48a6a751802b747bcdbd83ef3b}\label{classfcl_1_1SplineMotion_a8020df48a6a751802b747bcdbd83ef3b}} 
+S \mbox{\hyperlink{classfcl_1_1SplineMotion_a8020df48a6a751802b747bcdbd83ef3b}{compute\+Motion\+Bound}} (const \mbox{\hyperlink{classfcl_1_1BVMotionBoundVisitor}{B\+V\+Motion\+Bound\+Visitor}}$<$ S $>$ \&mb\+\_\+visitor) const override
+\begin{DoxyCompactList}\small\item\em Compute the motion bound for a bounding volume along a given direction n, which is defined in the visitor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a675244e562b760a9277fc6e7991a9ab2}\label{classfcl_1_1SplineMotion_a675244e562b760a9277fc6e7991a9ab2}} 
+S \mbox{\hyperlink{classfcl_1_1SplineMotion_a675244e562b760a9277fc6e7991a9ab2}{compute\+Motion\+Bound}} (const \mbox{\hyperlink{classfcl_1_1TriangleMotionBoundVisitor}{Triangle\+Motion\+Bound\+Visitor}}$<$ S $>$ \&mb\+\_\+visitor) const override
+\begin{DoxyCompactList}\small\item\em Compute the motion bound for a triangle along a given direction n, which is defined in the visitor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_ab6d8829d52c8d3076a1bcede5ad7d5d3}\label{classfcl_1_1SplineMotion_ab6d8829d52c8d3076a1bcede5ad7d5d3}} 
+void \mbox{\hyperlink{classfcl_1_1SplineMotion_ab6d8829d52c8d3076a1bcede5ad7d5d3}{get\+Current\+Transform}} (Transform3$<$ S $>$ \&tf\+\_\+) const override
+\begin{DoxyCompactList}\small\item\em Get the rotation and translation in current step. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfcl_1_1SplineMotion_a08b9eff238b0d27c5f548df83ff9d2f8}{get\+Taylor\+Model}} (\mbox{\hyperlink{classfcl_1_1TMatrix3}{T\+Matrix3}}$<$ S $>$ \&tm, \mbox{\hyperlink{classfcl_1_1TVector3}{T\+Vector3}}$<$ S $>$ \&tv) const override
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_acec958497a8b946447ce4b3e67c1a5ce}\label{classfcl_1_1SplineMotion_acec958497a8b946447ce4b3e67c1a5ce}} 
+S {\bfseries compute\+T\+Bound} (const Vector3$<$ S $>$ \&n) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a6cc3a3f9080bb84868891b2e878313ba}\label{classfcl_1_1SplineMotion_a6cc3a3f9080bb84868891b2e878313ba}} 
+S {\bfseries compute\+D\+W\+Max} () const
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a30e223d6a8262d18594c794b570cda95}\label{classfcl_1_1SplineMotion_a30e223d6a8262d18594c794b570cda95}} 
+S {\bfseries get\+Current\+Time} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a1f93463ce3bf3a4f49590d93ceb18767}\label{classfcl_1_1SplineMotion_a1f93463ce3bf3a4f49590d93ceb18767}} 
+void {\bfseries compute\+Spline\+Parameter} ()
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_ab5d0ce7560693b46ad6348f9eeb8cb75}\label{classfcl_1_1SplineMotion_ab5d0ce7560693b46ad6348f9eeb8cb75}} 
+S {\bfseries get\+Weight0} (S t) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a97cd59a1bfe642c1bde0296f010376e3}\label{classfcl_1_1SplineMotion_a97cd59a1bfe642c1bde0296f010376e3}} 
+S {\bfseries get\+Weight1} (S t) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_ae3b5973ef60fc783631b3eedb2ac4806}\label{classfcl_1_1SplineMotion_ae3b5973ef60fc783631b3eedb2ac4806}} 
+S {\bfseries get\+Weight2} (S t) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a5450f065f0defd89a2cf3038fc560ecc}\label{classfcl_1_1SplineMotion_a5450f065f0defd89a2cf3038fc560ecc}} 
+S {\bfseries get\+Weight3} (S t) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a1dc750c11abe6a1e11976191a2925d8b}\label{classfcl_1_1SplineMotion_a1dc750c11abe6a1e11976191a2925d8b}} 
+Vector3$<$ S $>$ {\bfseries Td} \mbox{[}4\mbox{]}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a50bb6c948809cbddcc5e280ce29319dc}\label{classfcl_1_1SplineMotion_a50bb6c948809cbddcc5e280ce29319dc}} 
+Vector3$<$ S $>$ {\bfseries Rd} \mbox{[}4\mbox{]}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a26e771362654eb740e404f23a9dd8f0f}\label{classfcl_1_1SplineMotion_a26e771362654eb740e404f23a9dd8f0f}} 
+Vector3$<$ S $>$ {\bfseries TA}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a5937a7f3621949a4cf2c3d81e78d9e75}\label{classfcl_1_1SplineMotion_a5937a7f3621949a4cf2c3d81e78d9e75}} 
+Vector3$<$ S $>$ {\bfseries TB}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a3550d962ed10493c5c79701db9153f24}\label{classfcl_1_1SplineMotion_a3550d962ed10493c5c79701db9153f24}} 
+Vector3$<$ S $>$ {\bfseries TC}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_af2d69685e6f45cf9aad23a1cecb5cc9c}\label{classfcl_1_1SplineMotion_af2d69685e6f45cf9aad23a1cecb5cc9c}} 
+Vector3$<$ S $>$ {\bfseries RA}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a6b41d636670d5564bc422a8eac049a63}\label{classfcl_1_1SplineMotion_a6b41d636670d5564bc422a8eac049a63}} 
+Vector3$<$ S $>$ {\bfseries RB}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_abeffe52940d8b49aa9526fd05012e695}\label{classfcl_1_1SplineMotion_abeffe52940d8b49aa9526fd05012e695}} 
+Vector3$<$ S $>$ {\bfseries RC}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_acc5fff69c94e1f82ca0cacfdb5de84fe}\label{classfcl_1_1SplineMotion_acc5fff69c94e1f82ca0cacfdb5de84fe}} 
+S {\bfseries Rd0\+Rd0}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_ac5f22e4e56159ee55eb0c5ccc2e15e92}\label{classfcl_1_1SplineMotion_ac5f22e4e56159ee55eb0c5ccc2e15e92}} 
+S {\bfseries Rd0\+Rd1}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_ac395461c7eda55490a65cc42640b1497}\label{classfcl_1_1SplineMotion_ac395461c7eda55490a65cc42640b1497}} 
+S {\bfseries Rd0\+Rd2}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a08fc8637527af0eaebf8f29c96db90ef}\label{classfcl_1_1SplineMotion_a08fc8637527af0eaebf8f29c96db90ef}} 
+S {\bfseries Rd0\+Rd3}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_ab9cd75cb15fe703ea636b6920985e724}\label{classfcl_1_1SplineMotion_ab9cd75cb15fe703ea636b6920985e724}} 
+S {\bfseries Rd1\+Rd1}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a09c228324b02149381178a871d70b0ff}\label{classfcl_1_1SplineMotion_a09c228324b02149381178a871d70b0ff}} 
+S {\bfseries Rd1\+Rd2}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_abe97d3ee8d5f44f6bdf8da2c43f7b35b}\label{classfcl_1_1SplineMotion_abe97d3ee8d5f44f6bdf8da2c43f7b35b}} 
+S {\bfseries Rd1\+Rd3}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a7e45b106245a22ad9950d463159e9c1e}\label{classfcl_1_1SplineMotion_a7e45b106245a22ad9950d463159e9c1e}} 
+S {\bfseries Rd2\+Rd2}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_ab25fd336fb7fac446860a423216b5cfd}\label{classfcl_1_1SplineMotion_ab25fd336fb7fac446860a423216b5cfd}} 
+S {\bfseries Rd2\+Rd3}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a663f4c30f911777e7953f935dd7685a6}\label{classfcl_1_1SplineMotion_a663f4c30f911777e7953f935dd7685a6}} 
+S {\bfseries Rd3\+Rd3}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a1912d6f66fe93cfef234ef377d8113f0}\label{classfcl_1_1SplineMotion_a1912d6f66fe93cfef234ef377d8113f0}} 
+Transform3$<$ S $>$ {\bfseries tf}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_ae622aaed868104f1ad341cfb4233245d}\label{classfcl_1_1SplineMotion_ae622aaed868104f1ad341cfb4233245d}} 
+S \mbox{\hyperlink{classfcl_1_1SplineMotion_ae622aaed868104f1ad341cfb4233245d}{tf\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em The time related with tf. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfcl_1_1SplineMotion_a08b9eff238b0d27c5f548df83ff9d2f8}\label{classfcl_1_1SplineMotion_a08b9eff238b0d27c5f548df83ff9d2f8}} 
+\index{fcl::SplineMotion$<$ S $>$@{fcl::SplineMotion$<$ S $>$}!getTaylorModel@{getTaylorModel}}
+\index{getTaylorModel@{getTaylorModel}!fcl::SplineMotion$<$ S $>$@{fcl::SplineMotion$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{getTaylorModel()}{getTaylorModel()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+void \mbox{\hyperlink{classfcl_1_1SplineMotion}{fcl\+::\+Spline\+Motion}}$<$ S $>$\+::get\+Taylor\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfcl_1_1TMatrix3}{T\+Matrix3}}$<$ S $>$ \&}]{tm,  }\item[{\mbox{\hyperlink{classfcl_1_1TVector3}{T\+Vector3}}$<$ S $>$ \&}]{tv }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+\begin{DoxyEnumerate}
+\item compute M(1/2)
+\item compute M\textquotesingle{}(1/2)
+\end{DoxyEnumerate}
+
+3.\+1. compute M\textquotesingle{}\textquotesingle{}(1/2)
+
+not correct, should fix
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/math/motion/bv\+\_\+motion\+\_\+bound\+\_\+visitor.\+h\item 
+/home/prodefi/fcl/include/fcl/math/motion/spline\+\_\+motion.\+h\item 
+/home/prodefi/fcl/include/fcl/math/motion/spline\+\_\+motion-\/inl.\+h\end{DoxyCompactItemize}

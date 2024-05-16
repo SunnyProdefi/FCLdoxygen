@@ -1,0 +1,50 @@
+\hypertarget{structfcl_1_1CostSource}{}\doxysection{fcl\+::Cost\+Source$<$ S $>$ Struct Template Reference}
+\label{structfcl_1_1CostSource}\index{fcl::CostSource$<$ S $>$@{fcl::CostSource$<$ S $>$}}
+
+
+Cost source describes an area with a cost. The area is described by an \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}\sout{ region. } 
+
+
+
+
+{\ttfamily \#include $<$cost\+\_\+source.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1CostSource_a2e80c816fe0d372bfe47c8b0878a8c09}\label{structfcl_1_1CostSource_a2e80c816fe0d372bfe47c8b0878a8c09}} 
+{\bfseries Cost\+Source} (const Vector3$<$ S $>$ \&aabb\+\_\+min\+\_\+, const Vector3$<$ S $>$ \&aabb\+\_\+max\+\_\+, S cost\+\_\+density\+\_\+)
+\item 
+\mbox{\Hypertarget{structfcl_1_1CostSource_a6d8054a7be7e13e58a2a5bad0fc47cac}\label{structfcl_1_1CostSource_a6d8054a7be7e13e58a2a5bad0fc47cac}} 
+{\bfseries Cost\+Source} (const \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \&aabb, S cost\+\_\+density\+\_\+)
+\item 
+\mbox{\Hypertarget{structfcl_1_1CostSource_a8d955054a0a6da959c89b0dfd0a4062e}\label{structfcl_1_1CostSource_a8d955054a0a6da959c89b0dfd0a4062e}} 
+bool {\bfseries operator$<$} (const \mbox{\hyperlink{structfcl_1_1CostSource}{Cost\+Source}} \&other) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1CostSource_a50d70a1c68e0ea4244773f8fd215881c}\label{structfcl_1_1CostSource_a50d70a1c68e0ea4244773f8fd215881c}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{structfcl_1_1CostSource_a50d70a1c68e0ea4244773f8fd215881c}{aabb\+\_\+min}}
+\begin{DoxyCompactList}\small\item\em aabb lower bound \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CostSource_a698b6d0cc59272f6b19e4678a469bb89}\label{structfcl_1_1CostSource_a698b6d0cc59272f6b19e4678a469bb89}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{structfcl_1_1CostSource_a698b6d0cc59272f6b19e4678a469bb89}{aabb\+\_\+max}}
+\begin{DoxyCompactList}\small\item\em aabb upper bound \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CostSource_a816ac03b1f90a624089d4d2053e8bdcb}\label{structfcl_1_1CostSource_a816ac03b1f90a624089d4d2053e8bdcb}} 
+S \mbox{\hyperlink{structfcl_1_1CostSource_a816ac03b1f90a624089d4d2053e8bdcb}{cost\+\_\+density}}
+\begin{DoxyCompactList}\small\item\em cost density in the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}\sout{ region }\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1CostSource_afcdf93915a5a344c8bac3f0aff812a72}\label{structfcl_1_1CostSource_afcdf93915a5a344c8bac3f0aff812a72}} 
+S {\bfseries total\+\_\+cost}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+struct fcl\+::\+Cost\+Source$<$ S $>$}
+
+Cost source describes an area with a cost. The area is described by an \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}\sout{ region. }
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/cost\+\_\+source.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/cost\+\_\+source-\/inl.\+h\end{DoxyCompactItemize}

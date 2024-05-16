@@ -1,0 +1,62 @@
+\hypertarget{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode}{}\doxysection{fcl\+::detail\+::Mesh\+Shape\+Distance\+Traversal\+Node$<$ BV, Shape, Narrow\+Phase\+Solver $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode}\index{fcl::detail::MeshShapeDistanceTraversalNode$<$ BV, Shape, NarrowPhaseSolver $>$@{fcl::detail::MeshShapeDistanceTraversalNode$<$ BV, Shape, NarrowPhaseSolver $>$}}
+
+
+Traversal node for distance between mesh and shape.  
+
+
+
+
+{\ttfamily \#include $<$mesh\+\_\+shape\+\_\+distance\+\_\+traversal\+\_\+node.\+h$>$}
+
+Inheritance diagram for fcl\+::detail\+::Mesh\+Shape\+Distance\+Traversal\+Node$<$ BV, Shape, Narrow\+Phase\+Solver $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.761905cm]{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_aaec2458e678995768512748ef7741f1b}\label{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_aaec2458e678995768512748ef7741f1b}} 
+using {\bfseries S} = typename B\+V\+::S
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_a4dada0e87bebba4f8e664cd3bdb521b2}\label{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_a4dada0e87bebba4f8e664cd3bdb521b2}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_a4dada0e87bebba4f8e664cd3bdb521b2}{leaf\+Testing}} (int b1, int b2) const
+\begin{DoxyCompactList}\small\item\em Distance testing between leaves (one triangle and one shape) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_a7fd25814e47f8981a27d672e66d0372a}\label{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_a7fd25814e47f8981a27d672e66d0372a}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_a7fd25814e47f8981a27d672e66d0372a}{can\+Stop}} (S c) const
+\begin{DoxyCompactList}\small\item\em Whether the traversal process can stop early. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_a555c09e379b0f0117af02e757afca381}\label{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_a555c09e379b0f0117af02e757afca381}} 
+Vector3$<$ S $>$ $\ast$ {\bfseries vertices}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_a71905f8c0ca4043a7e6f7263b3d79a14}\label{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_a71905f8c0ca4043a7e6f7263b3d79a14}} 
+\mbox{\hyperlink{classfcl_1_1Triangle}{Triangle}} $\ast$ {\bfseries tri\+\_\+indices}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_a6c01aa82f11561474144a0d8c6fa14db}\label{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_a6c01aa82f11561474144a0d8c6fa14db}} 
+S {\bfseries rel\+\_\+err}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_ad40c57a1190b6fb845bf9e7322fac62c}\label{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_ad40c57a1190b6fb845bf9e7322fac62c}} 
+S {\bfseries abs\+\_\+err}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_a5bec47db75a739b3604c1e9340d13391}\label{classfcl_1_1detail_1_1MeshShapeDistanceTraversalNode_a5bec47db75a739b3604c1e9340d13391}} 
+const Narrow\+Phase\+Solver $\ast$ {\bfseries nsolver}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename BV, typename Shape, typename Narrow\+Phase\+Solver$>$\newline
+class fcl\+::detail\+::\+Mesh\+Shape\+Distance\+Traversal\+Node$<$ B\+V, Shape, Narrow\+Phase\+Solver $>$}
+
+Traversal node for distance between mesh and shape. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/distance/mesh\+\_\+shape\+\_\+distance\+\_\+traversal\+\_\+node.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/distance/mesh\+\_\+shape\+\_\+distance\+\_\+traversal\+\_\+node-\/inl.\+h\end{DoxyCompactItemize}

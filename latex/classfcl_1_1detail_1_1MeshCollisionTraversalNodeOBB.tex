@@ -1,0 +1,60 @@
+\hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB}{}\doxysection{fcl\+::detail\+::Mesh\+Collision\+Traversal\+Node\+O\+BB$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB}\index{fcl::detail::MeshCollisionTraversalNodeOBB$<$ S $>$@{fcl::detail::MeshCollisionTraversalNodeOBB$<$ S $>$}}
+
+
+Traversal node for collision between two meshes if their underlying B\+VH node is oriented node (\mbox{\hyperlink{classfcl_1_1OBB}{O\+BB}}, \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}, \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}, \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}})  
+
+
+
+
+{\ttfamily \#include $<$mesh\+\_\+collision\+\_\+traversal\+\_\+node.\+h$>$}
+
+Inheritance diagram for fcl\+::detail\+::Mesh\+Collision\+Traversal\+Node\+O\+BB$<$ S $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_abd6e6e84441fc614000ad1c79de61eca}\label{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_abd6e6e84441fc614000ad1c79de61eca}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_abd6e6e84441fc614000ad1c79de61eca}{B\+V\+Testing}} (int b1, int b2) const
+\begin{DoxyCompactList}\small\item\em BV test between b1 and b2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_acf3f805e018225dcb14d4ea2c06e1a12}\label{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_acf3f805e018225dcb14d4ea2c06e1a12}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_acf3f805e018225dcb14d4ea2c06e1a12}{leaf\+Testing}} (int b1, int b2) const
+\begin{DoxyCompactList}\small\item\em Leaf test between node b1 and b2, if they are both leafs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_a0503d0fd9d5a13227465b25d40fcfb26}\label{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_a0503d0fd9d5a13227465b25d40fcfb26}} 
+bool {\bfseries B\+V\+Testing} (int b1, int b2, const Matrix3$<$ S $>$ \&Rc, const Vector3$<$ S $>$ \&Tc) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_a172279dac8cb3fe130a46da675494009}\label{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_a172279dac8cb3fe130a46da675494009}} 
+bool {\bfseries B\+V\+Testing} (int b1, int b2, const Transform3$<$ S $>$ \&tf) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_ada2ee77a40c0d5cb4dce06f83f060626}\label{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_ada2ee77a40c0d5cb4dce06f83f060626}} 
+void {\bfseries leaf\+Testing} (int b1, int b2, const Matrix3$<$ S $>$ \&Rc, const Vector3$<$ S $>$ \&Tc) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_a88fb7a5ba40afecb519d4e9c9beb7563}\label{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_a88fb7a5ba40afecb519d4e9c9beb7563}} 
+void {\bfseries leaf\+Testing} (int b1, int b2, const Transform3$<$ S $>$ \&tf) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_aa0b4557ef61f9240d3c947da33ecf115}\label{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_aa0b4557ef61f9240d3c947da33ecf115}} 
+Matrix3$<$ S $>$ {\bfseries R}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_ac4596a6cd39213d239753bc89d55c3b7}\label{classfcl_1_1detail_1_1MeshCollisionTraversalNodeOBB_ac4596a6cd39213d239753bc89d55c3b7}} 
+Vector3$<$ S $>$ {\bfseries T}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+class fcl\+::detail\+::\+Mesh\+Collision\+Traversal\+Node\+O\+B\+B$<$ S $>$}
+
+Traversal node for collision between two meshes if their underlying B\+VH node is oriented node (\mbox{\hyperlink{classfcl_1_1OBB}{O\+BB}}, \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}, \mbox{\hyperlink{classfcl_1_1OBBRSS}{O\+B\+B\+R\+SS}}, \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/collision/mesh\+\_\+collision\+\_\+traversal\+\_\+node.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/collision/mesh\+\_\+collision\+\_\+traversal\+\_\+node-\/inl.\+h\end{DoxyCompactItemize}

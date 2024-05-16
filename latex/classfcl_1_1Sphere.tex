@@ -1,0 +1,92 @@
+\hypertarget{classfcl_1_1Sphere}{}\doxysection{fcl\+::Sphere$<$ S\+\_\+ $>$ Class Template Reference}
+\label{classfcl_1_1Sphere}\index{fcl::Sphere$<$ S\_ $>$@{fcl::Sphere$<$ S\_ $>$}}
+
+
+Center at zero point sphere.  
+
+
+
+
+{\ttfamily \#include $<$sphere.\+h$>$}
+
+Inheritance diagram for fcl\+::Sphere$<$ S\+\_\+ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classfcl_1_1Sphere}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Sphere_ac0998ec131f37ff842272229ca88a328}\label{classfcl_1_1Sphere_ac0998ec131f37ff842272229ca88a328}} 
+using {\bfseries S} = S\+\_\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Sphere_a1dfd5532ade06cbe2c3fe562481e5002}\label{classfcl_1_1Sphere_a1dfd5532ade06cbe2c3fe562481e5002}} 
+{\bfseries Sphere} (S \mbox{\hyperlink{classfcl_1_1Sphere_a47c58ba5905353244155824339f35d65}{radius}})
+\item 
+\mbox{\Hypertarget{classfcl_1_1Sphere_a05285659a39f64278cf69c4303a2a9fa}\label{classfcl_1_1Sphere_a05285659a39f64278cf69c4303a2a9fa}} 
+void \mbox{\hyperlink{classfcl_1_1Sphere_a05285659a39f64278cf69c4303a2a9fa}{compute\+Local\+A\+A\+BB}} () override
+\begin{DoxyCompactList}\small\item\em Compute \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}\sout{ }\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Sphere_a05a098338b6e30432ba5649641640512}\label{classfcl_1_1Sphere_a05a098338b6e30432ba5649641640512}} 
+\mbox{\hyperlink{namespacefcl_a2b48aa89f14ef2fb4082575eefb145fc}{N\+O\+D\+E\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{classfcl_1_1Sphere_a05a098338b6e30432ba5649641640512}{get\+Node\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Get node type\+: a sphere. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Sphere_a5c18254e1fc5a127c8e84e52771ba2c8}\label{classfcl_1_1Sphere_a5c18254e1fc5a127c8e84e52771ba2c8}} 
+Matrix3$<$ S $>$ {\bfseries compute\+Momentof\+Inertia} () const override
+\item 
+\mbox{\Hypertarget{classfcl_1_1Sphere_acdc322b4c8ef80d44d5c89a5d015be17}\label{classfcl_1_1Sphere_acdc322b4c8ef80d44d5c89a5d015be17}} 
+S {\bfseries compute\+Volume} () const override
+\item 
+\mbox{\Hypertarget{classfcl_1_1Sphere_ae3027a4141076f00d654b85d56154a97}\label{classfcl_1_1Sphere_ae3027a4141076f00d654b85d56154a97}} 
+std\+::vector$<$ Vector3$<$ S $>$ $>$ \mbox{\hyperlink{classfcl_1_1Sphere_ae3027a4141076f00d654b85d56154a97}{get\+Bound\+Vertices}} (const Transform3$<$ S $>$ \&tf) const
+\begin{DoxyCompactList}\small\item\em get the vertices of some convex shape which can bound this shape in a specific configuration \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classfcl_1_1Sphere_a18cc88836fd1fbd2b514eeeb72b61ed1}{representation}} (int precision=20) const
+\begin{DoxyCompactList}\small\item\em Create a string that should be sufficient to recreate this shape. This is akin to the repr() implementation in python. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Sphere_a47c58ba5905353244155824339f35d65}\label{classfcl_1_1Sphere_a47c58ba5905353244155824339f35d65}} 
+S \mbox{\hyperlink{classfcl_1_1Sphere_a47c58ba5905353244155824339f35d65}{radius}}
+\begin{DoxyCompactList}\small\item\em Radius of the sphere. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Sphere_a3b7f59596140de241ae639a213673883}\label{classfcl_1_1Sphere_a3b7f59596140de241ae639a213673883}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{classfcl_1_1Sphere}{Sphere}} \&sphere)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S\+\_\+$>$\newline
+class fcl\+::\+Sphere$<$ S\+\_\+ $>$}
+
+Center at zero point sphere. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfcl_1_1Sphere_a18cc88836fd1fbd2b514eeeb72b61ed1}\label{classfcl_1_1Sphere_a18cc88836fd1fbd2b514eeeb72b61ed1}} 
+\index{fcl::Sphere$<$ S\_ $>$@{fcl::Sphere$<$ S\_ $>$}!representation@{representation}}
+\index{representation@{representation}!fcl::Sphere$<$ S\_ $>$@{fcl::Sphere$<$ S\_ $>$}}
+\doxysubsubsection{\texorpdfstring{representation()}{representation()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+std\+::string \mbox{\hyperlink{classfcl_1_1Sphere}{fcl\+::\+Sphere}}$<$ S $>$\+::representation (\begin{DoxyParamCaption}\item[{int}]{precision = {\ttfamily 20} }\end{DoxyParamCaption}) const}
+
+
+
+Create a string that should be sufficient to recreate this shape. This is akin to the repr() implementation in python. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em precision} & The requested digits of precision for the numerical measures (same semantics as std\+::setprecision()). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string representation of this instance. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/geometry/shape/sphere.\+h\item 
+/home/prodefi/fcl/include/fcl/geometry/shape/sphere-\/inl.\+h\end{DoxyCompactItemize}

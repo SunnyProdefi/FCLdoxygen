@@ -1,0 +1,134 @@
+\hypertarget{classfcl_1_1CollisionObject}{}\doxysection{fcl\+::Collision\+Object$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1CollisionObject}\index{fcl::CollisionObject$<$ S $>$@{fcl::CollisionObject$<$ S $>$}}
+
+
+the object for collision or distance computation, contains the geometry and the transform information  
+
+
+
+
+{\ttfamily \#include $<$collision\+\_\+object.\+h$>$}
+
+Inheritance diagram for fcl\+::Collision\+Object$<$ S $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfcl_1_1CollisionObject}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a6ce93c82108ad0093c55c7a5681e4268}\label{classfcl_1_1CollisionObject_a6ce93c82108ad0093c55c7a5681e4268}} 
+{\bfseries Collision\+Object} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$$>$ \&cgeom)
+\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_afb14f3bb24e1af5a945946f1fe45f760}\label{classfcl_1_1CollisionObject_afb14f3bb24e1af5a945946f1fe45f760}} 
+{\bfseries Collision\+Object} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$$>$ \&cgeom, const Transform3$<$ S $>$ \&tf)
+\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a67c011482e978267a975c8edbc4b7fee}\label{classfcl_1_1CollisionObject_a67c011482e978267a975c8edbc4b7fee}} 
+{\bfseries Collision\+Object} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$$>$ \&cgeom, const Matrix3$<$ S $>$ \&R, const Vector3$<$ S $>$ \&T)
+\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a233fb01f530b0fef6da6c7635bad290d}\label{classfcl_1_1CollisionObject_a233fb01f530b0fef6da6c7635bad290d}} 
+\mbox{\hyperlink{namespacefcl_a7675859ca6424d6552ee6b1028f29d7d}{O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{classfcl_1_1CollisionObject_a233fb01f530b0fef6da6c7635bad290d}{get\+Object\+Type}} () const
+\begin{DoxyCompactList}\small\item\em get the type of the object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_ab57f9c7119bbc732bef54b20adc499df}\label{classfcl_1_1CollisionObject_ab57f9c7119bbc732bef54b20adc499df}} 
+\mbox{\hyperlink{namespacefcl_a2b48aa89f14ef2fb4082575eefb145fc}{N\+O\+D\+E\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{classfcl_1_1CollisionObject_ab57f9c7119bbc732bef54b20adc499df}{get\+Node\+Type}} () const
+\begin{DoxyCompactList}\small\item\em get the node type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a599972567f4a34a068174091b6af4ddf}\label{classfcl_1_1CollisionObject_a599972567f4a34a068174091b6af4ddf}} 
+const \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1CollisionObject_a599972567f4a34a068174091b6af4ddf}{get\+A\+A\+BB}} () const
+\begin{DoxyCompactList}\small\item\em get the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} in world space \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a9fbf79bc43c5c7a63b462817936138b4}\label{classfcl_1_1CollisionObject_a9fbf79bc43c5c7a63b462817936138b4}} 
+void \mbox{\hyperlink{classfcl_1_1CollisionObject_a9fbf79bc43c5c7a63b462817936138b4}{compute\+A\+A\+BB}} ()
+\begin{DoxyCompactList}\small\item\em compute the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} in world space \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a947a513a0f42f5974128429ae4e9840f}\label{classfcl_1_1CollisionObject_a947a513a0f42f5974128429ae4e9840f}} 
+void $\ast$ \mbox{\hyperlink{classfcl_1_1CollisionObject_a947a513a0f42f5974128429ae4e9840f}{get\+User\+Data}} () const
+\begin{DoxyCompactList}\small\item\em get user data in object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_aaecd223fabae285b729fe22aee55abf6}\label{classfcl_1_1CollisionObject_aaecd223fabae285b729fe22aee55abf6}} 
+void \mbox{\hyperlink{classfcl_1_1CollisionObject_aaecd223fabae285b729fe22aee55abf6}{set\+User\+Data}} (void $\ast$data)
+\begin{DoxyCompactList}\small\item\em set user data in object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a1510ff8e64d6e942b581b1c77b22da9c}\label{classfcl_1_1CollisionObject_a1510ff8e64d6e942b581b1c77b22da9c}} 
+const Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1CollisionObject_a1510ff8e64d6e942b581b1c77b22da9c}{get\+Translation}} () const
+\begin{DoxyCompactList}\small\item\em get translation of the object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a32cb4fe20646de4f3e0ba1def19d57dc}\label{classfcl_1_1CollisionObject_a32cb4fe20646de4f3e0ba1def19d57dc}} 
+const Matrix3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1CollisionObject_a32cb4fe20646de4f3e0ba1def19d57dc}{get\+Rotation}} () const
+\begin{DoxyCompactList}\small\item\em get matrix rotation of the object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a5d02c542cd5b63dc80e8d41bfeb76283}\label{classfcl_1_1CollisionObject_a5d02c542cd5b63dc80e8d41bfeb76283}} 
+const Quaternion$<$ S $>$ \mbox{\hyperlink{classfcl_1_1CollisionObject_a5d02c542cd5b63dc80e8d41bfeb76283}{get\+Quat\+Rotation}} () const
+\begin{DoxyCompactList}\small\item\em get quaternion rotation of the object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_aac743e9c6bc89b7bd81bb946b19da436}\label{classfcl_1_1CollisionObject_aac743e9c6bc89b7bd81bb946b19da436}} 
+const Transform3$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1CollisionObject_aac743e9c6bc89b7bd81bb946b19da436}{get\+Transform}} () const
+\begin{DoxyCompactList}\small\item\em get object\textquotesingle{}s transform \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a53faddff0560e3600e097ee336c71243}\label{classfcl_1_1CollisionObject_a53faddff0560e3600e097ee336c71243}} 
+void \mbox{\hyperlink{classfcl_1_1CollisionObject_a53faddff0560e3600e097ee336c71243}{set\+Rotation}} (const Matrix3$<$ S $>$ \&R)
+\begin{DoxyCompactList}\small\item\em set object\textquotesingle{}s rotation matrix \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a0d653fc2835074e0d65bf20295f8ef45}\label{classfcl_1_1CollisionObject_a0d653fc2835074e0d65bf20295f8ef45}} 
+void \mbox{\hyperlink{classfcl_1_1CollisionObject_a0d653fc2835074e0d65bf20295f8ef45}{set\+Translation}} (const Vector3$<$ S $>$ \&T)
+\begin{DoxyCompactList}\small\item\em set object\textquotesingle{}s translation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a7d1b4cbf2e8044512e05e3ccb290d5e9}\label{classfcl_1_1CollisionObject_a7d1b4cbf2e8044512e05e3ccb290d5e9}} 
+void \mbox{\hyperlink{classfcl_1_1CollisionObject_a7d1b4cbf2e8044512e05e3ccb290d5e9}{set\+Quat\+Rotation}} (const Quaternion$<$ S $>$ \&q)
+\begin{DoxyCompactList}\small\item\em set object\textquotesingle{}s quatenrion rotation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a45a600d38572c069edd950c139ba8c32}\label{classfcl_1_1CollisionObject_a45a600d38572c069edd950c139ba8c32}} 
+void \mbox{\hyperlink{classfcl_1_1CollisionObject_a45a600d38572c069edd950c139ba8c32}{set\+Transform}} (const Matrix3$<$ S $>$ \&R, const Vector3$<$ S $>$ \&T)
+\begin{DoxyCompactList}\small\item\em set object\textquotesingle{}s transform \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_aca90901534ea1c4a3dd0df142f8057a9}\label{classfcl_1_1CollisionObject_aca90901534ea1c4a3dd0df142f8057a9}} 
+void \mbox{\hyperlink{classfcl_1_1CollisionObject_aca90901534ea1c4a3dd0df142f8057a9}{set\+Transform}} (const Quaternion$<$ S $>$ \&q, const Vector3$<$ S $>$ \&T)
+\begin{DoxyCompactList}\small\item\em set object\textquotesingle{}s transform \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_aeecf2095b642b43289c7999ad3a3405b}\label{classfcl_1_1CollisionObject_aeecf2095b642b43289c7999ad3a3405b}} 
+void \mbox{\hyperlink{classfcl_1_1CollisionObject_aeecf2095b642b43289c7999ad3a3405b}{set\+Transform}} (const Transform3$<$ S $>$ \&tf)
+\begin{DoxyCompactList}\small\item\em set object\textquotesingle{}s transform \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a1d5cd163f678e4eccce3aee6b179edef}\label{classfcl_1_1CollisionObject_a1d5cd163f678e4eccce3aee6b179edef}} 
+bool \mbox{\hyperlink{classfcl_1_1CollisionObject_a1d5cd163f678e4eccce3aee6b179edef}{is\+Identity\+Transform}} () const
+\begin{DoxyCompactList}\small\item\em whether the object is in local coordinate \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_abf4005f350cc172f9311adc387323b81}\label{classfcl_1_1CollisionObject_abf4005f350cc172f9311adc387323b81}} 
+void \mbox{\hyperlink{classfcl_1_1CollisionObject_abf4005f350cc172f9311adc387323b81}{set\+Identity\+Transform}} ()
+\begin{DoxyCompactList}\small\item\em set the object in local coordinate \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a2ee1128263f7573630f1f236120a0461}\label{classfcl_1_1CollisionObject_a2ee1128263f7573630f1f236120a0461}} 
+const F\+C\+L\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1CollisionObject_a2ee1128263f7573630f1f236120a0461}{get\+Collision\+Geometry}} () const
+\begin{DoxyCompactList}\small\item\em get geometry from the object instance \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_abca5b257f494f4a0cdca3b36d04907c6}\label{classfcl_1_1CollisionObject_abca5b257f494f4a0cdca3b36d04907c6}} 
+const std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $>$ \& \mbox{\hyperlink{classfcl_1_1CollisionObject_abca5b257f494f4a0cdca3b36d04907c6}{collision\+Geometry}} () const
+\begin{DoxyCompactList}\small\item\em get geometry from the object instance \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_aea0a1fb6c1d6a7687bc605027c63dcf9}\label{classfcl_1_1CollisionObject_aea0a1fb6c1d6a7687bc605027c63dcf9}} 
+S \mbox{\hyperlink{classfcl_1_1CollisionObject_aea0a1fb6c1d6a7687bc605027c63dcf9}{get\+Cost\+Density}} () const
+\begin{DoxyCompactList}\small\item\em get object\textquotesingle{}s cost density \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a5457c8bf0489bf5c631db8f01f535571}\label{classfcl_1_1CollisionObject_a5457c8bf0489bf5c631db8f01f535571}} 
+void \mbox{\hyperlink{classfcl_1_1CollisionObject_a5457c8bf0489bf5c631db8f01f535571}{set\+Cost\+Density}} (S c)
+\begin{DoxyCompactList}\small\item\em set object\textquotesingle{}s cost density \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a34bc5fc3a31cb0f0a4be49cc747c84de}\label{classfcl_1_1CollisionObject_a34bc5fc3a31cb0f0a4be49cc747c84de}} 
+bool \mbox{\hyperlink{classfcl_1_1CollisionObject_a34bc5fc3a31cb0f0a4be49cc747c84de}{is\+Occupied}} () const
+\begin{DoxyCompactList}\small\item\em whether the object is completely occupied \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a956d89b9a7909f19dc9f6f17f7575407}\label{classfcl_1_1CollisionObject_a956d89b9a7909f19dc9f6f17f7575407}} 
+bool \mbox{\hyperlink{classfcl_1_1CollisionObject_a956d89b9a7909f19dc9f6f17f7575407}{is\+Free}} () const
+\begin{DoxyCompactList}\small\item\em whether the object is completely free \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a4c3a78e37d95cd142606eee37dcada06}\label{classfcl_1_1CollisionObject_a4c3a78e37d95cd142606eee37dcada06}} 
+bool \mbox{\hyperlink{classfcl_1_1CollisionObject_a4c3a78e37d95cd142606eee37dcada06}{is\+Uncertain}} () const
+\begin{DoxyCompactList}\small\item\em whether the object is uncertain \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a4b8adf7fc9c98df4d25cd47e48b280e9}\label{classfcl_1_1CollisionObject_a4b8adf7fc9c98df4d25cd47e48b280e9}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $>$ {\bfseries cgeom}
+\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a3da5b96f58c254235ddd1d9c2b3ec98f}\label{classfcl_1_1CollisionObject_a3da5b96f58c254235ddd1d9c2b3ec98f}} 
+std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $>$ {\bfseries cgeom\+\_\+const}
+\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a13e3126f2da12c7f8ac732935c0d5231}\label{classfcl_1_1CollisionObject_a13e3126f2da12c7f8ac732935c0d5231}} 
+Transform3$<$ S $>$ {\bfseries t}
+\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a6c61ddf961c934abbe002f6d96d410f7}\label{classfcl_1_1CollisionObject_a6c61ddf961c934abbe002f6d96d410f7}} 
+\mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \mbox{\hyperlink{classfcl_1_1CollisionObject_a6c61ddf961c934abbe002f6d96d410f7}{aabb}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}\sout{ in global coordinate. }\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionObject_a4b5694258304646ca5de8b8e88ff89a3}\label{classfcl_1_1CollisionObject_a4b5694258304646ca5de8b8e88ff89a3}} 
+void $\ast$ \mbox{\hyperlink{classfcl_1_1CollisionObject_a4b5694258304646ca5de8b8e88ff89a3}{user\+\_\+data}}
+\begin{DoxyCompactList}\small\item\em pointer to user defined data specific to this object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+class fcl\+::\+Collision\+Object$<$ S $>$}
+
+the object for collision or distance computation, contains the geometry and the transform information 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/collision\+\_\+object.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/collision\+\_\+object-\/inl.\+h\end{DoxyCompactItemize}

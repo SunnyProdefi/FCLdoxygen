@@ -1,0 +1,59 @@
+\hypertarget{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode}{}\doxysection{fcl\+::detail\+::Shape\+Mesh\+Collision\+Traversal\+Node$<$ Shape, BV, Narrow\+Phase\+Solver $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode}\index{fcl::detail::ShapeMeshCollisionTraversalNode$<$ Shape, BV, NarrowPhaseSolver $>$@{fcl::detail::ShapeMeshCollisionTraversalNode$<$ Shape, BV, NarrowPhaseSolver $>$}}
+
+
+Traversal node for collision between shape and mesh.  
+
+
+
+
+{\ttfamily \#include $<$shape\+\_\+mesh\+\_\+collision\+\_\+traversal\+\_\+node.\+h$>$}
+
+Inheritance diagram for fcl\+::detail\+::Shape\+Mesh\+Collision\+Traversal\+Node$<$ Shape, BV, Narrow\+Phase\+Solver $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode_a2c2406f18b7e6d75aeedbbcaebac6b8b}\label{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode_a2c2406f18b7e6d75aeedbbcaebac6b8b}} 
+using {\bfseries S} = typename B\+V\+::S
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode_a3adfa56c7840a74c4df4fddfaff5f70d}\label{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode_a3adfa56c7840a74c4df4fddfaff5f70d}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode_a3adfa56c7840a74c4df4fddfaff5f70d}{leaf\+Testing}} (int b1, int b2) const
+\begin{DoxyCompactList}\small\item\em Intersection testing between leaves (one shape and one triangle) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode_a9b337b7bade8e836c7304298f17d6d93}\label{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode_a9b337b7bade8e836c7304298f17d6d93}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode_a9b337b7bade8e836c7304298f17d6d93}{can\+Stop}} () const
+\begin{DoxyCompactList}\small\item\em Whether the traversal process can stop early. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode_ab0c4d3d8a46cb1f9a7e4efd730add29d}\label{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode_ab0c4d3d8a46cb1f9a7e4efd730add29d}} 
+Vector3$<$ S $>$ $\ast$ {\bfseries vertices}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode_ab60c1d473c97cfdb322ad9d3a3d54f32}\label{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode_ab60c1d473c97cfdb322ad9d3a3d54f32}} 
+\mbox{\hyperlink{classfcl_1_1Triangle}{Triangle}} $\ast$ {\bfseries tri\+\_\+indices}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode_a2c212823d98d1cd9ba7132b988982b38}\label{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode_a2c212823d98d1cd9ba7132b988982b38}} 
+S {\bfseries cost\+\_\+density}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode_a0305f907baa9ac66635c8780d8d1acca}\label{classfcl_1_1detail_1_1ShapeMeshCollisionTraversalNode_a0305f907baa9ac66635c8780d8d1acca}} 
+const Narrow\+Phase\+Solver $\ast$ {\bfseries nsolver}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Shape, typename BV, typename Narrow\+Phase\+Solver$>$\newline
+class fcl\+::detail\+::\+Shape\+Mesh\+Collision\+Traversal\+Node$<$ Shape, B\+V, Narrow\+Phase\+Solver $>$}
+
+Traversal node for collision between shape and mesh. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/collision/shape\+\_\+mesh\+\_\+collision\+\_\+traversal\+\_\+node.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/collision/shape\+\_\+mesh\+\_\+collision\+\_\+traversal\+\_\+node-\/inl.\+h\end{DoxyCompactItemize}

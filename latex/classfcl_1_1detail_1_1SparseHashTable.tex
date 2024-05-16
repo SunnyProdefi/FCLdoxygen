@@ -1,0 +1,62 @@
+\hypertarget{classfcl_1_1detail_1_1SparseHashTable}{}\doxysection{fcl\+::detail\+::Sparse\+Hash\+Table$<$ Key, Data, Hash\+Fnc, TableT $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1SparseHashTable}\index{fcl::detail::SparseHashTable$<$ Key, Data, HashFnc, TableT $>$@{fcl::detail::SparseHashTable$<$ Key, Data, HashFnc, TableT $>$}}
+
+
+A hash table implemented using unordered\+\_\+map.  
+
+
+
+
+{\ttfamily \#include $<$sparse\+\_\+hash\+\_\+table.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SparseHashTable_a9877e09d9c9ba4ff54a701b0ec4501be}\label{classfcl_1_1detail_1_1SparseHashTable_a9877e09d9c9ba4ff54a701b0ec4501be}} 
+{\bfseries Sparse\+Hash\+Table} (const Hash\+Fnc \&h)
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SparseHashTable_af50cd111a93887573ffa4100c8a7dc26}\label{classfcl_1_1detail_1_1SparseHashTable_af50cd111a93887573ffa4100c8a7dc26}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1SparseHashTable_af50cd111a93887573ffa4100c8a7dc26}{init}} (size\+\_\+t)
+\begin{DoxyCompactList}\small\item\em Init the hash table. The bucket size is dynamically decided. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SparseHashTable_a9dd472d5c4ed377bc3fcd53afb0ec9a5}\label{classfcl_1_1detail_1_1SparseHashTable_a9dd472d5c4ed377bc3fcd53afb0ec9a5}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1SparseHashTable_a9dd472d5c4ed377bc3fcd53afb0ec9a5}{insert}} (Key key, Data value)
+\begin{DoxyCompactList}\small\item\em insert one key-\/value pair into the hash table \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SparseHashTable_a9c5f0f216c056545037c6b874fe15e79}\label{classfcl_1_1detail_1_1SparseHashTable_a9c5f0f216c056545037c6b874fe15e79}} 
+std\+::vector$<$ Data $>$ \mbox{\hyperlink{classfcl_1_1detail_1_1SparseHashTable_a9c5f0f216c056545037c6b874fe15e79}{query}} (Key key) const
+\begin{DoxyCompactList}\small\item\em find the elements whose key is the same as the query \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SparseHashTable_a7519b185ac73b8bda8e92b17cced916d}\label{classfcl_1_1detail_1_1SparseHashTable_a7519b185ac73b8bda8e92b17cced916d}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1SparseHashTable_a7519b185ac73b8bda8e92b17cced916d}{remove}} (Key key, Data value)
+\begin{DoxyCompactList}\small\item\em remove one key-\/value pair from the hash table \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SparseHashTable_ac1203acdf280c321045eee87e261a679}\label{classfcl_1_1detail_1_1SparseHashTable_ac1203acdf280c321045eee87e261a679}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1SparseHashTable_ac1203acdf280c321045eee87e261a679}{clear}} ()
+\begin{DoxyCompactList}\small\item\em clear the hash table \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SparseHashTable_ad0dbe808844b493f05e2dc8ba085d10a}\label{classfcl_1_1detail_1_1SparseHashTable_ad0dbe808844b493f05e2dc8ba085d10a}} 
+typedef std\+::list$<$ Data $>$ {\bfseries Bin}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SparseHashTable_a1f6ae262e054a9e2eccf6d5b015f49c3}\label{classfcl_1_1detail_1_1SparseHashTable_a1f6ae262e054a9e2eccf6d5b015f49c3}} 
+typedef TableT$<$ size\+\_\+t, Bin $>$ {\bfseries Table}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SparseHashTable_a5b8ec417ab1ff81d522bef206bd049a3}\label{classfcl_1_1detail_1_1SparseHashTable_a5b8ec417ab1ff81d522bef206bd049a3}} 
+Hash\+Fnc {\bfseries h\+\_\+}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SparseHashTable_a029c173bb8e4871c0ec6a1962c34ec7d}\label{classfcl_1_1detail_1_1SparseHashTable_a029c173bb8e4871c0ec6a1962c34ec7d}} 
+Table {\bfseries table\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Key, typename Data, typename Hash\+Fnc, template$<$ typename, typename $>$ class TableT = unordered\+\_\+map\+\_\+hash\+\_\+table$>$\newline
+class fcl\+::detail\+::\+Sparse\+Hash\+Table$<$ Key, Data, Hash\+Fnc, Table\+T $>$}
+
+A hash table implemented using unordered\+\_\+map. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/broadphase/detail/sparse\+\_\+hash\+\_\+table.\+h\item 
+/home/prodefi/fcl/include/fcl/broadphase/detail/sparse\+\_\+hash\+\_\+table-\/inl.\+h\end{DoxyCompactItemize}

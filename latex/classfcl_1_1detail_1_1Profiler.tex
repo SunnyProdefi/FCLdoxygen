@@ -1,0 +1,114 @@
+\hypertarget{classfcl_1_1detail_1_1Profiler}{}\doxysection{fcl\+::detail\+::Profiler Class Reference}
+\label{classfcl_1_1detail_1_1Profiler}\index{fcl::detail::Profiler@{fcl::detail::Profiler}}
+
+
+This is a simple thread-\/safe tool for counting time spent in various chunks of code. This is different from external profiling tools in that it allows the user to count time spent in various bits of code (sub-\/function granularity) or count how many times certain pieces of code are executed.  
+
+
+
+
+{\ttfamily \#include $<$profiler.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_a511123b24b664d0bfd28b01ccfdc0a0d}\label{classfcl_1_1detail_1_1Profiler_a511123b24b664d0bfd28b01ccfdc0a0d}} 
+{\bfseries Profiler} (const \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler}{Profiler}} \&)=delete
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_a2232c11b4913d777c8446c5e875107ab}\label{classfcl_1_1detail_1_1Profiler_a2232c11b4913d777c8446c5e875107ab}} 
+\mbox{\hyperlink{classfcl_1_1detail_1_1Profiler}{Profiler}} \& {\bfseries operator=} (const \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler}{Profiler}} \&)=delete
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_a8cd1088ab4e00f3c17354e3c99dfd94b}\label{classfcl_1_1detail_1_1Profiler_a8cd1088ab4e00f3c17354e3c99dfd94b}} 
+\mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_a8cd1088ab4e00f3c17354e3c99dfd94b}{Profiler}} (bool print\+On\+Destroy=false, bool auto\+Start=false)
+\begin{DoxyCompactList}\small\item\em Constructor. It is allowed to separately instantiate this class (not only as a singleton) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_a7d71e3ec7eccb6100cdc8c64bcbe1a3c}\label{classfcl_1_1detail_1_1Profiler_a7d71e3ec7eccb6100cdc8c64bcbe1a3c}} 
+\mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_a7d71e3ec7eccb6100cdc8c64bcbe1a3c}{$\sim$\+Profiler}} (void)
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_acb16ca5075417f33380d4b7cccf13c6f}\label{classfcl_1_1detail_1_1Profiler_acb16ca5075417f33380d4b7cccf13c6f}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_acb16ca5075417f33380d4b7cccf13c6f}{start}} (void)
+\begin{DoxyCompactList}\small\item\em Start counting time. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_a98d9edf4ee5b3725420b97fb384acb15}\label{classfcl_1_1detail_1_1Profiler_a98d9edf4ee5b3725420b97fb384acb15}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_a98d9edf4ee5b3725420b97fb384acb15}{stop}} (void)
+\begin{DoxyCompactList}\small\item\em Stop counting time. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_a367f129d873bcb988f3f3aeb9cb21443}\label{classfcl_1_1detail_1_1Profiler_a367f129d873bcb988f3f3aeb9cb21443}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_a367f129d873bcb988f3f3aeb9cb21443}{clear}} (void)
+\begin{DoxyCompactList}\small\item\em Clear counted time and events. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_a94d187d3d14c787be0d78ff3655d5a3f}\label{classfcl_1_1detail_1_1Profiler_a94d187d3d14c787be0d78ff3655d5a3f}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_a94d187d3d14c787be0d78ff3655d5a3f}{event}} (const std\+::string \&name, const unsigned int times=1)
+\begin{DoxyCompactList}\small\item\em Count a specific event for a number of times. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_ab6b1cc0c0b896f140a36371be5bbb22c}\label{classfcl_1_1detail_1_1Profiler_ab6b1cc0c0b896f140a36371be5bbb22c}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_ab6b1cc0c0b896f140a36371be5bbb22c}{average}} (const std\+::string \&name, const double value)
+\begin{DoxyCompactList}\small\item\em Maintain the average of a specific value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_a1047e6e2d8bb89ea866d2a82a5016a48}\label{classfcl_1_1detail_1_1Profiler_a1047e6e2d8bb89ea866d2a82a5016a48}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_a1047e6e2d8bb89ea866d2a82a5016a48}{begin}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Begin counting time for a specific chunk of code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_ae74c777eca7092b12169121e52f31710}\label{classfcl_1_1detail_1_1Profiler_ae74c777eca7092b12169121e52f31710}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_ae74c777eca7092b12169121e52f31710}{end}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Stop counting time for a specific chunk of code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_adf8fc705433bf603d3dc6d79210ce903}\label{classfcl_1_1detail_1_1Profiler_adf8fc705433bf603d3dc6d79210ce903}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_adf8fc705433bf603d3dc6d79210ce903}{status}} (std\+::ostream \&out=std\+::cout, bool merge=true)
+\begin{DoxyCompactList}\small\item\em Print the status of the profiled code chunks and events. Optionally, computation done by different threads can be printed separately. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_a43465b37ad876c73775a578746777e9b}\label{classfcl_1_1detail_1_1Profiler_a43465b37ad876c73775a578746777e9b}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_a43465b37ad876c73775a578746777e9b}{running}} (void) const
+\begin{DoxyCompactList}\small\item\em Check if the profiler is counting time or not. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_a5f4d14d6f18742c1cb26ff674876a37d}\label{classfcl_1_1detail_1_1Profiler_a5f4d14d6f18742c1cb26ff674876a37d}} 
+\mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_a5f4d14d6f18742c1cb26ff674876a37d}{Scoped\+Block}} (const std\+::string \&name, \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler}{Profiler}} \&prof=\mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_ac0a7320ff727b44d1e6375008963177c}{Profiler\+::\+Instance}}())
+\begin{DoxyCompactList}\small\item\em Start counting time for the block named {\itshape name} of the profiler {\itshape prof}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_ad1756530182ddcc6e229621a1b9b2144}\label{classfcl_1_1detail_1_1Profiler_ad1756530182ddcc6e229621a1b9b2144}} 
+\mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_ad1756530182ddcc6e229621a1b9b2144}{Scoped\+Start}} (\mbox{\hyperlink{classfcl_1_1detail_1_1Profiler}{Profiler}} \&prof=\mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_ac0a7320ff727b44d1e6375008963177c}{Profiler\+::\+Instance}}())
+\begin{DoxyCompactList}\small\item\em Take as argument the profiler instance to operate on ({\itshape prof}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_ac0a7320ff727b44d1e6375008963177c}\label{classfcl_1_1detail_1_1Profiler_ac0a7320ff727b44d1e6375008963177c}} 
+static \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler}{Profiler}} \& \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_ac0a7320ff727b44d1e6375008963177c}{Instance}} (void)
+\begin{DoxyCompactList}\small\item\em Return an instance of the class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_ae77df78f51245747baa34d28d3eecf43}\label{classfcl_1_1detail_1_1Profiler_ae77df78f51245747baa34d28d3eecf43}} 
+static void \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_ae77df78f51245747baa34d28d3eecf43}{Start}} (void)
+\begin{DoxyCompactList}\small\item\em Start counting time. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_adf6436c0e23a30c2b167a3dd7d8b9827}\label{classfcl_1_1detail_1_1Profiler_adf6436c0e23a30c2b167a3dd7d8b9827}} 
+static void \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_adf6436c0e23a30c2b167a3dd7d8b9827}{Stop}} (void)
+\begin{DoxyCompactList}\small\item\em Stop counting time. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_a5d8d11bce7c27bfb8e349845fe46209d}\label{classfcl_1_1detail_1_1Profiler_a5d8d11bce7c27bfb8e349845fe46209d}} 
+static void \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_a5d8d11bce7c27bfb8e349845fe46209d}{Clear}} (void)
+\begin{DoxyCompactList}\small\item\em Clear counted time and events. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_a18ef1a56abdc1f515916b89def802a62}\label{classfcl_1_1detail_1_1Profiler_a18ef1a56abdc1f515916b89def802a62}} 
+static void \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_a18ef1a56abdc1f515916b89def802a62}{Event}} (const std\+::string \&name, const unsigned int times=1)
+\begin{DoxyCompactList}\small\item\em Count a specific event for a number of times. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_a8180a128c2f6a38631810bc9fa3ce790}\label{classfcl_1_1detail_1_1Profiler_a8180a128c2f6a38631810bc9fa3ce790}} 
+static void \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_a8180a128c2f6a38631810bc9fa3ce790}{Average}} (const std\+::string \&name, const double value)
+\begin{DoxyCompactList}\small\item\em Maintain the average of a specific value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_ae513a513683261ce086f041a0a2b0c39}\label{classfcl_1_1detail_1_1Profiler_ae513a513683261ce086f041a0a2b0c39}} 
+static void \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_ae513a513683261ce086f041a0a2b0c39}{Begin}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Begin counting time for a specific chunk of code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_af4a777389327c4ad2966d675fa33e778}\label{classfcl_1_1detail_1_1Profiler_af4a777389327c4ad2966d675fa33e778}} 
+static void \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_af4a777389327c4ad2966d675fa33e778}{End}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Stop counting time for a specific chunk of code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_ab78bd595503f1d44a818e4b809901613}\label{classfcl_1_1detail_1_1Profiler_ab78bd595503f1d44a818e4b809901613}} 
+static void \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_ab78bd595503f1d44a818e4b809901613}{Status}} (std\+::ostream \&out=std\+::cout, bool merge=true)
+\begin{DoxyCompactList}\small\item\em Print the status of the profiled code chunks and events. Optionally, computation done by different threads can be printed separately. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_ab5abba281459990e44eb84193ec980e8}\label{classfcl_1_1detail_1_1Profiler_ab5abba281459990e44eb84193ec980e8}} 
+static bool \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_ab5abba281459990e44eb84193ec980e8}{Running}} (void)
+\begin{DoxyCompactList}\small\item\em Check if the profiler is counting time or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_a3bbb281cab0061b699051f45203e79b0}\label{classfcl_1_1detail_1_1Profiler_a3bbb281cab0061b699051f45203e79b0}} 
+class F\+C\+L\+\_\+\+E\+X\+P\+O\+RT \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_a3bbb281cab0061b699051f45203e79b0}{Scoped\+Block}}
+\begin{DoxyCompactList}\small\item\em This instance will call \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_a1047e6e2d8bb89ea866d2a82a5016a48}{Profiler\+::begin()}} when constructed and \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_ae74c777eca7092b12169121e52f31710}{Profiler\+::end()}} when it goes out of scope. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1Profiler_a57e90be6510a2553644732c176d515f6}\label{classfcl_1_1detail_1_1Profiler_a57e90be6510a2553644732c176d515f6}} 
+class F\+C\+L\+\_\+\+E\+X\+P\+O\+RT \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_a57e90be6510a2553644732c176d515f6}{Scoped\+Start}}
+\begin{DoxyCompactList}\small\item\em This instance will call \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_acb16ca5075417f33380d4b7cccf13c6f}{Profiler\+::start()}} when constructed and \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_a98d9edf4ee5b3725420b97fb384acb15}{Profiler\+::stop()}} when it goes out of scope. If the profiler was already started, this block\textquotesingle{}s constructor and destructor take no action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a simple thread-\/safe tool for counting time spent in various chunks of code. This is different from external profiling tools in that it allows the user to count time spent in various bits of code (sub-\/function granularity) or count how many times certain pieces of code are executed. 
+
+This instance will call \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_acb16ca5075417f33380d4b7cccf13c6f}{Profiler\+::start()}} when constructed and \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_a98d9edf4ee5b3725420b97fb384acb15}{Profiler\+::stop()}} when it goes out of scope. If the profiler was already started, this block\textquotesingle{}s constructor and destructor take no action.
+
+This instance will call \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_a1047e6e2d8bb89ea866d2a82a5016a48}{Profiler\+::begin()}} when constructed and \mbox{\hyperlink{classfcl_1_1detail_1_1Profiler_ae74c777eca7092b12169121e52f31710}{Profiler\+::end()}} when it goes out of scope. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/common/detail/profiler.\+h\item 
+/home/prodefi/fcl/src/common/detail/profiler.\+cpp\end{DoxyCompactItemize}

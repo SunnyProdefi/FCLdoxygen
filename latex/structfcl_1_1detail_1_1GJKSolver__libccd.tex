@@ -1,0 +1,108 @@
+\hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd}{}\doxysection{fcl\+::detail\+::G\+J\+K\+Solver\+\_\+libccd$<$ S\+\_\+ $>$ Struct Template Reference}
+\label{structfcl_1_1detail_1_1GJKSolver__libccd}\index{fcl::detail::GJKSolver\_libccd$<$ S\_ $>$@{fcl::detail::GJKSolver\_libccd$<$ S\_ $>$}}
+
+
+collision and distance solver based on libccd library.  
+
+
+
+
+{\ttfamily \#include $<$gjk\+\_\+solver\+\_\+libccd.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_ad13a106fd4b9d9a7411adc58f3930c74}\label{structfcl_1_1detail_1_1GJKSolver__libccd_ad13a106fd4b9d9a7411adc58f3930c74}} 
+using {\bfseries S} = S\+\_\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Shape1 , typename Shape2 $>$ }\\F\+C\+L\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED bool \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__libccd_a214ed1acd71d21f5368863ec85902798}{shape\+Intersect}} (const Shape1 \&s1, const Transform3$<$ S $>$ \&tf1, const Shape2 \&s2, const Transform3$<$ S $>$ \&tf2, Vector3$<$ S $>$ $\ast$contact\+\_\+points, S $\ast$penetration\+\_\+depth, Vector3$<$ S $>$ $\ast$normal) const
+\begin{DoxyCompactList}\small\item\em intersection checking between two shapes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_a15dbc8d8c7f7d80c8207f7524c6dfe13}\label{structfcl_1_1detail_1_1GJKSolver__libccd_a15dbc8d8c7f7d80c8207f7524c6dfe13}} 
+{\footnotesize template$<$typename Shape1 , typename Shape2 $>$ }\\bool \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__libccd_a15dbc8d8c7f7d80c8207f7524c6dfe13}{shape\+Intersect}} (const Shape1 \&s1, const Transform3$<$ S $>$ \&tf1, const Shape2 \&s2, const Transform3$<$ S $>$ \&tf2, std\+::vector$<$ \mbox{\hyperlink{structfcl_1_1ContactPoint}{Contact\+Point}}$<$ S $>$$>$ $\ast$contacts=nullptr) const
+\begin{DoxyCompactList}\small\item\em intersection checking between two shapes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_a2c2c11347855b096c6e2b5e845c38aa5}\label{structfcl_1_1detail_1_1GJKSolver__libccd_a2c2c11347855b096c6e2b5e845c38aa5}} 
+{\footnotesize template$<$typename Shape $>$ }\\bool \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__libccd_a2c2c11347855b096c6e2b5e845c38aa5}{shape\+Triangle\+Intersect}} (const Shape \&s, const Transform3$<$ S $>$ \&tf, const Vector3$<$ S $>$ \&P1, const Vector3$<$ S $>$ \&P2, const Vector3$<$ S $>$ \&P3, Vector3$<$ S $>$ $\ast$contact\+\_\+points=nullptr, S $\ast$penetration\+\_\+depth=nullptr, Vector3$<$ S $>$ $\ast$normal=nullptr) const
+\begin{DoxyCompactList}\small\item\em intersection checking between one shape and a triangle \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_a136b435641239cc0711a1eee4f84749c}\label{structfcl_1_1detail_1_1GJKSolver__libccd_a136b435641239cc0711a1eee4f84749c}} 
+{\footnotesize template$<$typename Shape $>$ }\\bool {\bfseries shape\+Triangle\+Intersect} (const Shape \&s, const Transform3$<$ S $>$ \&tf1, const Vector3$<$ S $>$ \&P1, const Vector3$<$ S $>$ \&P2, const Vector3$<$ S $>$ \&P3, const Transform3$<$ S $>$ \&tf2, Vector3$<$ S $>$ $\ast$contact\+\_\+points=nullptr, S $\ast$penetration\+\_\+depth=nullptr, Vector3$<$ S $>$ $\ast$normal=nullptr) const
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_ae2fbc8a8f692f9e0daaa1c45c239a2a4}\label{structfcl_1_1detail_1_1GJKSolver__libccd_ae2fbc8a8f692f9e0daaa1c45c239a2a4}} 
+{\footnotesize template$<$typename Shape1 , typename Shape2 $>$ }\\bool \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__libccd_ae2fbc8a8f692f9e0daaa1c45c239a2a4}{shape\+Distance}} (const Shape1 \&s1, const Transform3$<$ S $>$ \&tf1, const Shape2 \&s2, const Transform3$<$ S $>$ \&tf2, S $\ast$dist=nullptr, Vector3$<$ S $>$ $\ast$p1=nullptr, Vector3$<$ S $>$ $\ast$p2=nullptr) const
+\begin{DoxyCompactList}\small\item\em distance computation between two shapes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_a0b9fabfee03a1f1013b2e490a76ac0be}\label{structfcl_1_1detail_1_1GJKSolver__libccd_a0b9fabfee03a1f1013b2e490a76ac0be}} 
+{\footnotesize template$<$typename Shape1 , typename Shape2 $>$ }\\bool {\bfseries shape\+Signed\+Distance} (const Shape1 \&s1, const Transform3$<$ S $>$ \&tf1, const Shape2 \&s2, const Transform3$<$ S $>$ \&tf2, S $\ast$dist=nullptr, Vector3$<$ S $>$ $\ast$p1=nullptr, Vector3$<$ S $>$ $\ast$p2=nullptr) const
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_af1dd64f02c8d74938d54e4a2e3734104}\label{structfcl_1_1detail_1_1GJKSolver__libccd_af1dd64f02c8d74938d54e4a2e3734104}} 
+{\footnotesize template$<$typename Shape $>$ }\\bool \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__libccd_af1dd64f02c8d74938d54e4a2e3734104}{shape\+Triangle\+Distance}} (const Shape \&s, const Transform3$<$ S $>$ \&tf, const Vector3$<$ S $>$ \&P1, const Vector3$<$ S $>$ \&P2, const Vector3$<$ S $>$ \&P3, S $\ast$dist=nullptr, Vector3$<$ S $>$ $\ast$p1=nullptr, Vector3$<$ S $>$ $\ast$p2=nullptr) const
+\begin{DoxyCompactList}\small\item\em distance computation between one shape and a triangle \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_a2985c7265cd263630621771b82a010d0}\label{structfcl_1_1detail_1_1GJKSolver__libccd_a2985c7265cd263630621771b82a010d0}} 
+{\footnotesize template$<$typename Shape $>$ }\\bool \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__libccd_a2985c7265cd263630621771b82a010d0}{shape\+Triangle\+Distance}} (const Shape \&s, const Transform3$<$ S $>$ \&tf1, const Vector3$<$ S $>$ \&P1, const Vector3$<$ S $>$ \&P2, const Vector3$<$ S $>$ \&P3, const Transform3$<$ S $>$ \&tf2, S $\ast$dist=nullptr, Vector3$<$ S $>$ $\ast$p1=nullptr, Vector3$<$ S $>$ $\ast$p2=nullptr) const
+\begin{DoxyCompactList}\small\item\em distance computation between one shape and a triangle with transformation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_a7b2557754ea60b21d349195003e73eb1}\label{structfcl_1_1detail_1_1GJKSolver__libccd_a7b2557754ea60b21d349195003e73eb1}} 
+\mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__libccd_a7b2557754ea60b21d349195003e73eb1}{G\+J\+K\+Solver\+\_\+libccd}} ()
+\begin{DoxyCompactList}\small\item\em default setting for \mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}} algorithm \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_ac9cc6ac4bdd27453507caaf38c9cd102}\label{structfcl_1_1detail_1_1GJKSolver__libccd_ac9cc6ac4bdd27453507caaf38c9cd102}} 
+void {\bfseries enable\+Cached\+Guess} (bool if\+\_\+enable) const
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_aae15bf48f5c8ecbea75e97fb0773c806}\label{structfcl_1_1detail_1_1GJKSolver__libccd_aae15bf48f5c8ecbea75e97fb0773c806}} 
+void {\bfseries set\+Cached\+Guess} (const Vector3$<$ S $>$ \&guess) const
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_a3182abaac0c8477a9f33c2365447e5c1}\label{structfcl_1_1detail_1_1GJKSolver__libccd_a3182abaac0c8477a9f33c2365447e5c1}} 
+Vector3$<$ S $>$ {\bfseries get\+Cached\+Guess} () const
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_a061975970c215e4553d1e3fd579c60fb}\label{structfcl_1_1detail_1_1GJKSolver__libccd_a061975970c215e4553d1e3fd579c60fb}} 
+{\footnotesize template$<$typename Shape1 , typename Shape2 $>$ }\\bool {\bfseries shape\+Intersect} (const Shape1 \&s1, const Transform3$<$ S $>$ \&tf1, const Shape2 \&s2, const Transform3$<$ S $>$ \&tf2, Vector3$<$ S $>$ $\ast$contact\+\_\+points, S $\ast$penetration\+\_\+depth, Vector3$<$ S $>$ $\ast$normal) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_a2ef8d1afc38284fc3b9e93468f88d556}\label{structfcl_1_1detail_1_1GJKSolver__libccd_a2ef8d1afc38284fc3b9e93468f88d556}} 
+unsigned int \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__libccd_a2ef8d1afc38284fc3b9e93468f88d556}{max\+\_\+collision\+\_\+iterations}}
+\begin{DoxyCompactList}\small\item\em maximum number of iterations used in \mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}} algorithm for collision \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_a2a14dfb39c8336ec10f317d87f6a1026}\label{structfcl_1_1detail_1_1GJKSolver__libccd_a2a14dfb39c8336ec10f317d87f6a1026}} 
+unsigned int \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__libccd_a2a14dfb39c8336ec10f317d87f6a1026}{max\+\_\+distance\+\_\+iterations}}
+\begin{DoxyCompactList}\small\item\em maximum number of iterations used in \mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}} algorithm for distance \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_a59290879044878dcbf0455a93ef746c7}\label{structfcl_1_1detail_1_1GJKSolver__libccd_a59290879044878dcbf0455a93ef746c7}} 
+S \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__libccd_a59290879044878dcbf0455a93ef746c7}{collision\+\_\+tolerance}}
+\begin{DoxyCompactList}\small\item\em the threshold used in \mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}} algorithm to stop collision iteration \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_ad4629215f330b1e23a7b315b341417a3}\label{structfcl_1_1detail_1_1GJKSolver__libccd_ad4629215f330b1e23a7b315b341417a3}} 
+S \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__libccd_ad4629215f330b1e23a7b315b341417a3}{distance\+\_\+tolerance}}
+\begin{DoxyCompactList}\small\item\em the threshold used in \mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}} algorithm to stop distance iteration \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_aaf93f99f947e9b144ac65a3d2b3c20ac}\label{structfcl_1_1detail_1_1GJKSolver__libccd_aaf93f99f947e9b144ac65a3d2b3c20ac}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__libccd}{G\+J\+K\+Solver\+\_\+libccd}} \&solver)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S\+\_\+$>$\newline
+struct fcl\+::detail\+::\+G\+J\+K\+Solver\+\_\+libccd$<$ S\+\_\+ $>$}
+
+collision and distance solver based on libccd library. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJKSolver__libccd_a214ed1acd71d21f5368863ec85902798}\label{structfcl_1_1detail_1_1GJKSolver__libccd_a214ed1acd71d21f5368863ec85902798}} 
+\index{fcl::detail::GJKSolver\_libccd$<$ S\_ $>$@{fcl::detail::GJKSolver\_libccd$<$ S\_ $>$}!shapeIntersect@{shapeIntersect}}
+\index{shapeIntersect@{shapeIntersect}!fcl::detail::GJKSolver\_libccd$<$ S\_ $>$@{fcl::detail::GJKSolver\_libccd$<$ S\_ $>$}}
+\doxysubsubsection{\texorpdfstring{shapeIntersect()}{shapeIntersect()}}
+{\footnotesize\ttfamily template$<$typename S\+\_\+ $>$ \\
+template$<$typename Shape1 , typename Shape2 $>$ \\
+F\+C\+L\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED bool \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__libccd}{fcl\+::detail\+::\+G\+J\+K\+Solver\+\_\+libccd}}$<$ S\+\_\+ $>$\+::shape\+Intersect (\begin{DoxyParamCaption}\item[{const Shape1 \&}]{s1,  }\item[{const Transform3$<$ S $>$ \&}]{tf1,  }\item[{const Shape2 \&}]{s2,  }\item[{const Transform3$<$ S $>$ \&}]{tf2,  }\item[{Vector3$<$ S $>$ $\ast$}]{contact\+\_\+points,  }\item[{S $\ast$}]{penetration\+\_\+depth,  }\item[{Vector3$<$ S $>$ $\ast$}]{normal }\end{DoxyParamCaption}) const}
+
+
+
+intersection checking between two shapes 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000002}{Deprecated}}]use \mbox{\hyperlink{structfcl_1_1detail_1_1GJKSolver__libccd_a15dbc8d8c7f7d80c8207f7524c6dfe13}{shape\+Intersect(const Shape1\&, const Transform3$<$\+S$>$\&, const Shape2\&, const Transform3$<$\+S$>$\&, std\+::vector$<$\+Contact\+Point$<$\+S$>$$>$$\ast$) const }} \end{DoxyRefDesc}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/gjk\+\_\+solver\+\_\+libccd.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/gjk\+\_\+solver\+\_\+libccd-\/inl.\+h\end{DoxyCompactItemize}

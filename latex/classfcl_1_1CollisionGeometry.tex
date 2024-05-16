@@ -1,0 +1,92 @@
+\hypertarget{classfcl_1_1CollisionGeometry}{}\doxysection{fcl\+::Collision\+Geometry$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1CollisionGeometry}\index{fcl::CollisionGeometry$<$ S $>$@{fcl::CollisionGeometry$<$ S $>$}}
+
+
+The geometry for the object for collision or distance computation.  
+
+
+
+
+{\ttfamily \#include $<$collision\+\_\+geometry.\+h$>$}
+
+Inheritance diagram for fcl\+::Collision\+Geometry$<$ S $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classfcl_1_1CollisionGeometry}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_a1fe415055eb9b5d0b7c27c315e404a06}\label{classfcl_1_1CollisionGeometry_a1fe415055eb9b5d0b7c27c315e404a06}} 
+virtual \mbox{\hyperlink{namespacefcl_a7675859ca6424d6552ee6b1028f29d7d}{O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{classfcl_1_1CollisionGeometry_a1fe415055eb9b5d0b7c27c315e404a06}{get\+Object\+Type}} () const
+\begin{DoxyCompactList}\small\item\em get the type of the object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_a8b3c2c97a980de63c5d926d501e259d0}\label{classfcl_1_1CollisionGeometry_a8b3c2c97a980de63c5d926d501e259d0}} 
+virtual \mbox{\hyperlink{namespacefcl_a2b48aa89f14ef2fb4082575eefb145fc}{N\+O\+D\+E\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{classfcl_1_1CollisionGeometry_a8b3c2c97a980de63c5d926d501e259d0}{get\+Node\+Type}} () const
+\begin{DoxyCompactList}\small\item\em get the node type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_afff631276cf6c5ef287fac053c942994}\label{classfcl_1_1CollisionGeometry_afff631276cf6c5ef287fac053c942994}} 
+virtual void \mbox{\hyperlink{classfcl_1_1CollisionGeometry_afff631276cf6c5ef287fac053c942994}{compute\+Local\+A\+A\+BB}} ()=0
+\begin{DoxyCompactList}\small\item\em compute the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} for object in local coordinate \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_afc1c5f8549667011ec2d7bc15cf77f67}\label{classfcl_1_1CollisionGeometry_afc1c5f8549667011ec2d7bc15cf77f67}} 
+void $\ast$ \mbox{\hyperlink{classfcl_1_1CollisionGeometry_afc1c5f8549667011ec2d7bc15cf77f67}{get\+User\+Data}} () const
+\begin{DoxyCompactList}\small\item\em get user data in geometry \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_a41da97c05bdc45f664601b0b4c2ce6e9}\label{classfcl_1_1CollisionGeometry_a41da97c05bdc45f664601b0b4c2ce6e9}} 
+void \mbox{\hyperlink{classfcl_1_1CollisionGeometry_a41da97c05bdc45f664601b0b4c2ce6e9}{set\+User\+Data}} (void $\ast$data)
+\begin{DoxyCompactList}\small\item\em set user data in geometry \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_a123b7a8ec4fc30dd3e0434791357c141}\label{classfcl_1_1CollisionGeometry_a123b7a8ec4fc30dd3e0434791357c141}} 
+bool \mbox{\hyperlink{classfcl_1_1CollisionGeometry_a123b7a8ec4fc30dd3e0434791357c141}{is\+Occupied}} () const
+\begin{DoxyCompactList}\small\item\em whether the object is completely occupied \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_a2b8c41be8cacf4b19953b797b8dd8d14}\label{classfcl_1_1CollisionGeometry_a2b8c41be8cacf4b19953b797b8dd8d14}} 
+bool \mbox{\hyperlink{classfcl_1_1CollisionGeometry_a2b8c41be8cacf4b19953b797b8dd8d14}{is\+Free}} () const
+\begin{DoxyCompactList}\small\item\em whether the object is completely free \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_a13cde77a69aa896ddfaa2f3a1ad2a9fc}\label{classfcl_1_1CollisionGeometry_a13cde77a69aa896ddfaa2f3a1ad2a9fc}} 
+bool \mbox{\hyperlink{classfcl_1_1CollisionGeometry_a13cde77a69aa896ddfaa2f3a1ad2a9fc}{is\+Uncertain}} () const
+\begin{DoxyCompactList}\small\item\em whether the object has some uncertainty \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_ae4a4f50f8ee85a6140b1dfb944939799}\label{classfcl_1_1CollisionGeometry_ae4a4f50f8ee85a6140b1dfb944939799}} 
+virtual Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1CollisionGeometry_ae4a4f50f8ee85a6140b1dfb944939799}{compute\+C\+OM}} () const
+\begin{DoxyCompactList}\small\item\em compute center of mass \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_a1880715e78e33b101ae1eca3b1a45f35}\label{classfcl_1_1CollisionGeometry_a1880715e78e33b101ae1eca3b1a45f35}} 
+virtual Matrix3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1CollisionGeometry_a1880715e78e33b101ae1eca3b1a45f35}{compute\+Momentof\+Inertia}} () const
+\begin{DoxyCompactList}\small\item\em compute the inertia matrix, related to the origin \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_a339f0748c798039fb29aa45b05505e65}\label{classfcl_1_1CollisionGeometry_a339f0748c798039fb29aa45b05505e65}} 
+virtual S \mbox{\hyperlink{classfcl_1_1CollisionGeometry_a339f0748c798039fb29aa45b05505e65}{compute\+Volume}} () const
+\begin{DoxyCompactList}\small\item\em compute the volume \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_acfd22002598caad46a90feda3d9a2363}\label{classfcl_1_1CollisionGeometry_acfd22002598caad46a90feda3d9a2363}} 
+virtual Matrix3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1CollisionGeometry_acfd22002598caad46a90feda3d9a2363}{compute\+Momentof\+Inertia\+Related\+To\+C\+OM}} () const
+\begin{DoxyCompactList}\small\item\em compute the inertia matrix, related to the com \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_a401a7c851412078d160ce0d14bc2ec09}\label{classfcl_1_1CollisionGeometry_a401a7c851412078d160ce0d14bc2ec09}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1CollisionGeometry_a401a7c851412078d160ce0d14bc2ec09}{aabb\+\_\+center}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} center in local coordinate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_aac2ee19b42211a939f1a4dca7a15e485}\label{classfcl_1_1CollisionGeometry_aac2ee19b42211a939f1a4dca7a15e485}} 
+S \mbox{\hyperlink{classfcl_1_1CollisionGeometry_aac2ee19b42211a939f1a4dca7a15e485}{aabb\+\_\+radius}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} radius. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_a196bd09d5de051eb8cd59b123e34f2c5}\label{classfcl_1_1CollisionGeometry_a196bd09d5de051eb8cd59b123e34f2c5}} 
+\mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \mbox{\hyperlink{classfcl_1_1CollisionGeometry_a196bd09d5de051eb8cd59b123e34f2c5}{aabb\+\_\+local}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} in local coordinate, used for tight \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} when only translation transform. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_a1cd603df40fa39b2cc52d07ffd90c5cf}\label{classfcl_1_1CollisionGeometry_a1cd603df40fa39b2cc52d07ffd90c5cf}} 
+void $\ast$ \mbox{\hyperlink{classfcl_1_1CollisionGeometry_a1cd603df40fa39b2cc52d07ffd90c5cf}{user\+\_\+data}}
+\begin{DoxyCompactList}\small\item\em pointer to user defined data specific to this object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_a601a668c090c9b37dbb41eb8abbba1b5}\label{classfcl_1_1CollisionGeometry_a601a668c090c9b37dbb41eb8abbba1b5}} 
+S \mbox{\hyperlink{classfcl_1_1CollisionGeometry_a601a668c090c9b37dbb41eb8abbba1b5}{cost\+\_\+density}}
+\begin{DoxyCompactList}\small\item\em collision cost for unit volume \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_aea22ede05d6daa1477dbc2191bc21446}\label{classfcl_1_1CollisionGeometry_aea22ede05d6daa1477dbc2191bc21446}} 
+S \mbox{\hyperlink{classfcl_1_1CollisionGeometry_aea22ede05d6daa1477dbc2191bc21446}{threshold\+\_\+occupied}}
+\begin{DoxyCompactList}\small\item\em threshold for occupied ( $>$= is occupied) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1CollisionGeometry_ada0ddede71d15832c1e238d75ab9fa9a}\label{classfcl_1_1CollisionGeometry_ada0ddede71d15832c1e238d75ab9fa9a}} 
+S \mbox{\hyperlink{classfcl_1_1CollisionGeometry_ada0ddede71d15832c1e238d75ab9fa9a}{threshold\+\_\+free}}
+\begin{DoxyCompactList}\small\item\em threshold for free ($<$= is free) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+class fcl\+::\+Collision\+Geometry$<$ S $>$}
+
+The geometry for the object for collision or distance computation. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/geometry/collision\+\_\+geometry.\+h\item 
+/home/prodefi/fcl/include/fcl/geometry/collision\+\_\+geometry-\/inl.\+h\end{DoxyCompactItemize}

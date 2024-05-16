@@ -1,0 +1,34 @@
+\hypertarget{classfcl_1_1detail_1_1FailedAtThisConfiguration}{}\doxysection{fcl\+::detail\+::Failed\+At\+This\+Configuration Class Reference}
+\label{classfcl_1_1detail_1_1FailedAtThisConfiguration}\index{fcl::detail::FailedAtThisConfiguration@{fcl::detail::FailedAtThisConfiguration}}
+
+
+{\ttfamily \#include $<$failed\+\_\+at\+\_\+this\+\_\+configuration.\+h$>$}
+
+Inheritance diagram for fcl\+::detail\+::Failed\+At\+This\+Configuration\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfcl_1_1detail_1_1FailedAtThisConfiguration}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1FailedAtThisConfiguration_a2537a600ea3be053dd489e2a7af55611}\label{classfcl_1_1detail_1_1FailedAtThisConfiguration_a2537a600ea3be053dd489e2a7af55611}} 
+{\bfseries Failed\+At\+This\+Configuration} (const std\+::string \&message)
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1FailedAtThisConfiguration_a53612dd6c006b90e90a2760eb9455c79}\label{classfcl_1_1detail_1_1FailedAtThisConfiguration_a53612dd6c006b90e90a2760eb9455c79}} 
+const char $\ast$ {\bfseries what} () const noexcept final
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A custom exception type that can be thrown in low-\/level code indicating that the program has reached an unexpected configuration and that the caller that ultimately has access to the collision objects and their transforms should report the configuration that led to the exception.
+
+This is strictly an {\itshape internal} exception; it should {\itshape always} be caught and transformed into an exception that propagates to the operating system.
+
+Recommended usage is to throw by invoking the macro F\+C\+L\+\_\+\+T\+H\+R\+O\+W\+\_\+\+U\+N\+E\+X\+P\+E\+C\+T\+E\+D\+\_\+\+C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+O\+N\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON defined below. Code that exercises functionality that throws this type of exception should catch it and transform it to a {\ttfamily std\+::logic\+\_\+error} by invoking Throw\+Detailed\+Configuration(). ~\newline
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/failed\+\_\+at\+\_\+this\+\_\+configuration.\+h\end{DoxyCompactItemize}

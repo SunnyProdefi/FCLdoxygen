@@ -1,0 +1,62 @@
+\hypertarget{classfcl_1_1detail_1_1SimpleHashTable}{}\doxysection{fcl\+::detail\+::Simple\+Hash\+Table$<$ Key, Data, Hash\+Fnc $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1SimpleHashTable}\index{fcl::detail::SimpleHashTable$<$ Key, Data, HashFnc $>$@{fcl::detail::SimpleHashTable$<$ Key, Data, HashFnc $>$}}
+
+
+A simple hash table implemented as multiple buckets. Hash\+Fnc is any extended hash function\+: Hash\+Fnc(key) = \{index1, index2, ..., \}.  
+
+
+
+
+{\ttfamily \#include $<$simple\+\_\+hash\+\_\+table.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SimpleHashTable_af040dc5e74e9bc51d0ce8b1a61d2f063}\label{classfcl_1_1detail_1_1SimpleHashTable_af040dc5e74e9bc51d0ce8b1a61d2f063}} 
+{\bfseries Simple\+Hash\+Table} (const Hash\+Fnc \&h)
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SimpleHashTable_a80486ae1651c47f06889cdb85b50d012}\label{classfcl_1_1detail_1_1SimpleHashTable_a80486ae1651c47f06889cdb85b50d012}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1SimpleHashTable_a80486ae1651c47f06889cdb85b50d012}{init}} (size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Init the number of bins in the hash table. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SimpleHashTable_afbab12071088680ed2ac4556199a5bbd}\label{classfcl_1_1detail_1_1SimpleHashTable_afbab12071088680ed2ac4556199a5bbd}} 
+void {\bfseries insert} (Key key, Data value)
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SimpleHashTable_a7add9ef201c9d7e9a10eb11de80043c8}\label{classfcl_1_1detail_1_1SimpleHashTable_a7add9ef201c9d7e9a10eb11de80043c8}} 
+std\+::vector$<$ Data $>$ \mbox{\hyperlink{classfcl_1_1detail_1_1SimpleHashTable_a7add9ef201c9d7e9a10eb11de80043c8}{query}} (Key key) const
+\begin{DoxyCompactList}\small\item\em Find the elements in the hash table whose key is the same as query key. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SimpleHashTable_ae090f11ad25517e011e15fb5b0281539}\label{classfcl_1_1detail_1_1SimpleHashTable_ae090f11ad25517e011e15fb5b0281539}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1SimpleHashTable_ae090f11ad25517e011e15fb5b0281539}{remove}} (Key key, Data value)
+\begin{DoxyCompactList}\small\item\em remove the key-\/value pair from the table \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SimpleHashTable_ad1c6dd734cd03f748932c3a9487f6a3b}\label{classfcl_1_1detail_1_1SimpleHashTable_ad1c6dd734cd03f748932c3a9487f6a3b}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1SimpleHashTable_ad1c6dd734cd03f748932c3a9487f6a3b}{clear}} ()
+\begin{DoxyCompactList}\small\item\em clear the hash table \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SimpleHashTable_ab2822dc95537e13a69a12f509ecd0aaf}\label{classfcl_1_1detail_1_1SimpleHashTable_ab2822dc95537e13a69a12f509ecd0aaf}} 
+typedef std\+::list$<$ Data $>$ {\bfseries Bin}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SimpleHashTable_aaf489fa102aa2835733a1258ddbb32c2}\label{classfcl_1_1detail_1_1SimpleHashTable_aaf489fa102aa2835733a1258ddbb32c2}} 
+std\+::vector$<$ Bin $>$ {\bfseries table\+\_\+}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SimpleHashTable_a4587c725cf2607361440393e82b64d16}\label{classfcl_1_1detail_1_1SimpleHashTable_a4587c725cf2607361440393e82b64d16}} 
+Hash\+Fnc {\bfseries h\+\_\+}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1SimpleHashTable_aa55427fab7ae27d8f9f8570e846e95f1}\label{classfcl_1_1detail_1_1SimpleHashTable_aa55427fab7ae27d8f9f8570e846e95f1}} 
+size\+\_\+t {\bfseries table\+\_\+size\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Key, typename Data, typename Hash\+Fnc$>$\newline
+class fcl\+::detail\+::\+Simple\+Hash\+Table$<$ Key, Data, Hash\+Fnc $>$}
+
+A simple hash table implemented as multiple buckets. Hash\+Fnc is any extended hash function\+: Hash\+Fnc(key) = \{index1, index2, ..., \}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/broadphase/detail/simple\+\_\+hash\+\_\+table.\+h\item 
+/home/prodefi/fcl/include/fcl/broadphase/detail/simple\+\_\+hash\+\_\+table-\/inl.\+h\end{DoxyCompactItemize}

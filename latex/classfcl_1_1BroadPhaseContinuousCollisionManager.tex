@@ -1,0 +1,77 @@
+\hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager}{}\doxysection{fcl\+::Broad\+Phase\+Continuous\+Collision\+Manager$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1BroadPhaseContinuousCollisionManager}\index{fcl::BroadPhaseContinuousCollisionManager$<$ S $>$@{fcl::BroadPhaseContinuousCollisionManager$<$ S $>$}}
+
+
+Base class for broad phase continuous collision. It helps to accelerate the continuous collision/distance between N objects. Also support self collision, self distance and collision/distance with another M objects.  
+
+
+
+
+{\ttfamily \#include $<$broadphase\+\_\+continuous\+\_\+collision\+\_\+manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager_a8e11cd66f0e49ce3ef98ad83cd5b2bff}\label{classfcl_1_1BroadPhaseContinuousCollisionManager_a8e11cd66f0e49ce3ef98ad83cd5b2bff}} 
+virtual void \mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager_a8e11cd66f0e49ce3ef98ad83cd5b2bff}{register\+Objects}} (const std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject}{Continuous\+Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&other\+\_\+objs)
+\begin{DoxyCompactList}\small\item\em add objects to the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager_a94771b01022d0fca5507b48d32a34698}\label{classfcl_1_1BroadPhaseContinuousCollisionManager_a94771b01022d0fca5507b48d32a34698}} 
+virtual void \mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager_a94771b01022d0fca5507b48d32a34698}{register\+Object}} (\mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject}{Continuous\+Collision\+Object}}$<$ S $>$ $\ast$obj)=0
+\begin{DoxyCompactList}\small\item\em add one object to the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager_a2ead542b9947ce94c325bd7a2e289022}\label{classfcl_1_1BroadPhaseContinuousCollisionManager_a2ead542b9947ce94c325bd7a2e289022}} 
+virtual void \mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager_a2ead542b9947ce94c325bd7a2e289022}{unregister\+Object}} (\mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject}{Continuous\+Collision\+Object}}$<$ S $>$ $\ast$obj)=0
+\begin{DoxyCompactList}\small\item\em remove one object from the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager_a06bc4708282e1cc8bc04309a1f7f2faa}\label{classfcl_1_1BroadPhaseContinuousCollisionManager_a06bc4708282e1cc8bc04309a1f7f2faa}} 
+virtual void \mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager_a06bc4708282e1cc8bc04309a1f7f2faa}{setup}} ()=0
+\begin{DoxyCompactList}\small\item\em initialize the manager, related with the specific type of manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager_acf5bd44342b3b23930bc913b0ee947c0}\label{classfcl_1_1BroadPhaseContinuousCollisionManager_acf5bd44342b3b23930bc913b0ee947c0}} 
+virtual void \mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager_acf5bd44342b3b23930bc913b0ee947c0}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em update the condition of manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager_a0cb5624f9b7fee866280981700fea538}\label{classfcl_1_1BroadPhaseContinuousCollisionManager_a0cb5624f9b7fee866280981700fea538}} 
+virtual void \mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager_a0cb5624f9b7fee866280981700fea538}{update}} (\mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject}{Continuous\+Collision\+Object}}$<$ S $>$ $\ast$updated\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em update the manager by explicitly given the object updated \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager_a6303ef50f1227713fbc3ed138414049f}\label{classfcl_1_1BroadPhaseContinuousCollisionManager_a6303ef50f1227713fbc3ed138414049f}} 
+virtual void \mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager_a6303ef50f1227713fbc3ed138414049f}{update}} (const std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject}{Continuous\+Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&updated\+\_\+objs)
+\begin{DoxyCompactList}\small\item\em update the manager by explicitly given the set of objects update \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager_ac6cafde0ddbe6278098d51f0d0da05a4}\label{classfcl_1_1BroadPhaseContinuousCollisionManager_ac6cafde0ddbe6278098d51f0d0da05a4}} 
+virtual void \mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager_ac6cafde0ddbe6278098d51f0d0da05a4}{clear}} ()=0
+\begin{DoxyCompactList}\small\item\em clear the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager_aec9023f1232b78c4ff9a794ba1515df3}\label{classfcl_1_1BroadPhaseContinuousCollisionManager_aec9023f1232b78c4ff9a794ba1515df3}} 
+virtual void \mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager_aec9023f1232b78c4ff9a794ba1515df3}{get\+Objects}} (std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject}{Continuous\+Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&objs) const =0
+\begin{DoxyCompactList}\small\item\em return the objects managed by the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager_aaaa7948a2b77f9d85677208c381ea9eb}\label{classfcl_1_1BroadPhaseContinuousCollisionManager_aaaa7948a2b77f9d85677208c381ea9eb}} 
+virtual void \mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager_aaaa7948a2b77f9d85677208c381ea9eb}{collide}} (\mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject}{Continuous\+Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const =0
+\begin{DoxyCompactList}\small\item\em perform collision test between one object and all the objects belonging to the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager_a6403a36f4b77b3764bd46deb1653f202}\label{classfcl_1_1BroadPhaseContinuousCollisionManager_a6403a36f4b77b3764bd46deb1653f202}} 
+virtual void \mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager_a6403a36f4b77b3764bd46deb1653f202}{distance}} (\mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject}{Continuous\+Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback) const =0
+\begin{DoxyCompactList}\small\item\em perform distance computation between one object and all the objects belonging to the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager_a63cda0e04c50e67b646d48f1b4407468}\label{classfcl_1_1BroadPhaseContinuousCollisionManager_a63cda0e04c50e67b646d48f1b4407468}} 
+virtual void \mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager_a63cda0e04c50e67b646d48f1b4407468}{collide}} (void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const =0
+\begin{DoxyCompactList}\small\item\em perform collision test for the objects belonging to the manager (i.\+e., N$^\wedge$2 self collision) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager_a554ee7b8d618f03f1e9ea7f652abfed5}\label{classfcl_1_1BroadPhaseContinuousCollisionManager_a554ee7b8d618f03f1e9ea7f652abfed5}} 
+virtual void \mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager_a554ee7b8d618f03f1e9ea7f652abfed5}{distance}} (void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback) const =0
+\begin{DoxyCompactList}\small\item\em perform distance test for the objects belonging to the manager (i.\+e., N$^\wedge$2 self distance) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager_a0a85f2390c7fbe3fca0e8b9ad0d1506e}\label{classfcl_1_1BroadPhaseContinuousCollisionManager_a0a85f2390c7fbe3fca0e8b9ad0d1506e}} 
+virtual void \mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager_a0a85f2390c7fbe3fca0e8b9ad0d1506e}{collide}} (\mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager}{Broad\+Phase\+Continuous\+Collision\+Manager}}$<$ S $>$ $\ast$other\+\_\+manager, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const =0
+\begin{DoxyCompactList}\small\item\em perform collision test with objects belonging to another manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager_aaa5802913811ce3cbddd37c41b5b0148}\label{classfcl_1_1BroadPhaseContinuousCollisionManager_aaa5802913811ce3cbddd37c41b5b0148}} 
+virtual void \mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager_aaa5802913811ce3cbddd37c41b5b0148}{distance}} (\mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager}{Broad\+Phase\+Continuous\+Collision\+Manager}}$<$ S $>$ $\ast$other\+\_\+manager, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback) const =0
+\begin{DoxyCompactList}\small\item\em perform distance test with objects belonging to another manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager_a833d7d97883530c2effbff4b1e903876}\label{classfcl_1_1BroadPhaseContinuousCollisionManager_a833d7d97883530c2effbff4b1e903876}} 
+virtual bool \mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager_a833d7d97883530c2effbff4b1e903876}{empty}} () const =0
+\begin{DoxyCompactList}\small\item\em whether the manager is empty \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1BroadPhaseContinuousCollisionManager_ac8c3ca1d6a0deda9c86462ec5274b09d}\label{classfcl_1_1BroadPhaseContinuousCollisionManager_ac8c3ca1d6a0deda9c86462ec5274b09d}} 
+virtual size\+\_\+t \mbox{\hyperlink{classfcl_1_1BroadPhaseContinuousCollisionManager_ac8c3ca1d6a0deda9c86462ec5274b09d}{size}} () const =0
+\begin{DoxyCompactList}\small\item\em the number of objects managed by the manager \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+class fcl\+::\+Broad\+Phase\+Continuous\+Collision\+Manager$<$ S $>$}
+
+Base class for broad phase continuous collision. It helps to accelerate the continuous collision/distance between N objects. Also support self collision, self distance and collision/distance with another M objects. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/broadphase/broadphase\+\_\+continuous\+\_\+collision\+\_\+manager.\+h\item 
+/home/prodefi/fcl/include/fcl/broadphase/broadphase\+\_\+continuous\+\_\+collision\+\_\+manager-\/inl.\+h\end{DoxyCompactItemize}

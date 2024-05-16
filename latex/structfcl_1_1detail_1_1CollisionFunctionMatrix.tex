@@ -1,0 +1,57 @@
+\hypertarget{structfcl_1_1detail_1_1CollisionFunctionMatrix}{}\doxysection{fcl\+::detail\+::Collision\+Function\+Matrix$<$ Narrow\+Phase\+Solver $>$ Struct Template Reference}
+\label{structfcl_1_1detail_1_1CollisionFunctionMatrix}\index{fcl::detail::CollisionFunctionMatrix$<$ NarrowPhaseSolver $>$@{fcl::detail::CollisionFunctionMatrix$<$ NarrowPhaseSolver $>$}}
+
+
+collision matrix stores the functions for collision between different types of objects and provides a uniform call interface  
+
+
+
+
+{\ttfamily \#include $<$collision\+\_\+func\+\_\+matrix.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1CollisionFunctionMatrix_af224c066682ec0a839224435ae96fc7e}\label{structfcl_1_1detail_1_1CollisionFunctionMatrix_af224c066682ec0a839224435ae96fc7e}} 
+using {\bfseries S} = typename Narrow\+Phase\+Solver\+::S
+\item 
+using \mbox{\hyperlink{structfcl_1_1detail_1_1CollisionFunctionMatrix_afdd5f7dfb68bccfe0b02ef09f7271e4f}{Collision\+Func}} = std\+::size\+\_\+t($\ast$)(const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $\ast$o1, const Transform3$<$ S $>$ \&tf1, const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $\ast$o2, const Transform3$<$ S $>$ \&tf2, const Narrow\+Phase\+Solver $\ast$nsolver, const \mbox{\hyperlink{structfcl_1_1CollisionRequest}{Collision\+Request}}$<$ S $>$ \&request, \mbox{\hyperlink{structfcl_1_1CollisionResult}{Collision\+Result}}$<$ S $>$ \&result)
+\begin{DoxyCompactList}\small\item\em the uniform call interface for collision\+: for collision, we need know \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1CollisionFunctionMatrix_a304b9982f1223ddddfc7f2516407b723}\label{structfcl_1_1detail_1_1CollisionFunctionMatrix_a304b9982f1223ddddfc7f2516407b723}} 
+\mbox{\hyperlink{structfcl_1_1detail_1_1CollisionFunctionMatrix_afdd5f7dfb68bccfe0b02ef09f7271e4f}{Collision\+Func}} \mbox{\hyperlink{structfcl_1_1detail_1_1CollisionFunctionMatrix_a304b9982f1223ddddfc7f2516407b723}{collision\+\_\+matrix}} \mbox{[}N\+O\+D\+E\+\_\+\+C\+O\+U\+NT\mbox{]}\mbox{[}N\+O\+D\+E\+\_\+\+C\+O\+U\+NT\mbox{]}
+\begin{DoxyCompactList}\small\item\em each item in the collision matrix is a function to handle collision between objects of type1 and type2 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Narrow\+Phase\+Solver$>$\newline
+struct fcl\+::detail\+::\+Collision\+Function\+Matrix$<$ Narrow\+Phase\+Solver $>$}
+
+collision matrix stores the functions for collision between different types of objects and provides a uniform call interface 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structfcl_1_1detail_1_1CollisionFunctionMatrix_afdd5f7dfb68bccfe0b02ef09f7271e4f}\label{structfcl_1_1detail_1_1CollisionFunctionMatrix_afdd5f7dfb68bccfe0b02ef09f7271e4f}} 
+\index{fcl::detail::CollisionFunctionMatrix$<$ NarrowPhaseSolver $>$@{fcl::detail::CollisionFunctionMatrix$<$ NarrowPhaseSolver $>$}!CollisionFunc@{CollisionFunc}}
+\index{CollisionFunc@{CollisionFunc}!fcl::detail::CollisionFunctionMatrix$<$ NarrowPhaseSolver $>$@{fcl::detail::CollisionFunctionMatrix$<$ NarrowPhaseSolver $>$}}
+\doxysubsubsection{\texorpdfstring{CollisionFunc}{CollisionFunc}}
+{\footnotesize\ttfamily template$<$typename Narrow\+Phase\+Solver $>$ \\
+using \mbox{\hyperlink{structfcl_1_1detail_1_1CollisionFunctionMatrix}{fcl\+::detail\+::\+Collision\+Function\+Matrix}}$<$ Narrow\+Phase\+Solver $>$\+::\mbox{\hyperlink{structfcl_1_1detail_1_1CollisionFunctionMatrix_afdd5f7dfb68bccfe0b02ef09f7271e4f}{Collision\+Func}} =  std\+::size\+\_\+t ($\ast$)( const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$S$>$$\ast$ o1, const Transform3$<$S$>$\& tf1, const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$S$>$$\ast$ o2, const Transform3$<$S$>$\& tf2, const Narrow\+Phase\+Solver$\ast$ nsolver, const \mbox{\hyperlink{structfcl_1_1CollisionRequest}{Collision\+Request}}$<$S$>$\& request, \mbox{\hyperlink{structfcl_1_1CollisionResult}{Collision\+Result}}$<$S$>$\& result)}
+
+
+
+the uniform call interface for collision\+: for collision, we need know 
+
+
+\begin{DoxyEnumerate}
+\item two objects o1 and o2 and their configuration in world coordinate tf1 and tf2;
+\item the solver for narrow phase collision, this is for the collision between geometric shapes;
+\item the request setting for collision (e.\+g., whether need to return normal information, whether need to compute cost);
+\item the structure to return collision result 
+\end{DoxyEnumerate}
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/collision\+\_\+func\+\_\+matrix.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/collision\+\_\+func\+\_\+matrix-\/inl.\+h\end{DoxyCompactItemize}

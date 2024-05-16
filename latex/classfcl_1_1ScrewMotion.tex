@@ -1,0 +1,84 @@
+\hypertarget{classfcl_1_1ScrewMotion}{}\doxysection{fcl\+::Screw\+Motion$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1ScrewMotion}\index{fcl::ScrewMotion$<$ S $>$@{fcl::ScrewMotion$<$ S $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_a10923a056ed9cb55fae9b3b5182c3339}\label{classfcl_1_1ScrewMotion_a10923a056ed9cb55fae9b3b5182c3339}} 
+\mbox{\hyperlink{classfcl_1_1ScrewMotion_a10923a056ed9cb55fae9b3b5182c3339}{Screw\+Motion}} ()
+\begin{DoxyCompactList}\small\item\em Default transformations are all identities. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_a9d0887cd47170989031186aed6f5ae90}\label{classfcl_1_1ScrewMotion_a9d0887cd47170989031186aed6f5ae90}} 
+\mbox{\hyperlink{classfcl_1_1ScrewMotion_a9d0887cd47170989031186aed6f5ae90}{Screw\+Motion}} (const Matrix3$<$ S $>$ \&R1, const Vector3$<$ S $>$ \&T1, const Matrix3$<$ S $>$ \&R2, const Vector3$<$ S $>$ \&T2)
+\begin{DoxyCompactList}\small\item\em Construct motion from the initial rotation/translation and goal rotation/translation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_a0e05edd4ccf0998586e72d36c18c2942}\label{classfcl_1_1ScrewMotion_a0e05edd4ccf0998586e72d36c18c2942}} 
+\mbox{\hyperlink{classfcl_1_1ScrewMotion_a0e05edd4ccf0998586e72d36c18c2942}{Screw\+Motion}} (const Transform3$<$ S $>$ \&tf1\+\_\+, const Transform3$<$ S $>$ \&tf2\+\_\+)
+\begin{DoxyCompactList}\small\item\em Construct motion from the initial transform and goal transform. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_a6c861f784d44d00cf5b1f95abae70978}\label{classfcl_1_1ScrewMotion_a6c861f784d44d00cf5b1f95abae70978}} 
+bool \mbox{\hyperlink{classfcl_1_1ScrewMotion_a6c861f784d44d00cf5b1f95abae70978}{integrate}} (S dt) const
+\begin{DoxyCompactList}\small\item\em Integrate the motion from 0 to dt We compute the current transformation from zero point instead of from last integrate time, for precision. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_a450c68117d140df4b70a65210ad300c1}\label{classfcl_1_1ScrewMotion_a450c68117d140df4b70a65210ad300c1}} 
+S \mbox{\hyperlink{classfcl_1_1ScrewMotion_a450c68117d140df4b70a65210ad300c1}{compute\+Motion\+Bound}} (const \mbox{\hyperlink{classfcl_1_1BVMotionBoundVisitor}{B\+V\+Motion\+Bound\+Visitor}}$<$ S $>$ \&mb\+\_\+visitor) const
+\begin{DoxyCompactList}\small\item\em Compute the motion bound for a bounding volume along a given direction n, which is defined in the visitor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_ac082a80e21d44e57abfd8886d676081e}\label{classfcl_1_1ScrewMotion_ac082a80e21d44e57abfd8886d676081e}} 
+S \mbox{\hyperlink{classfcl_1_1ScrewMotion_ac082a80e21d44e57abfd8886d676081e}{compute\+Motion\+Bound}} (const \mbox{\hyperlink{classfcl_1_1TriangleMotionBoundVisitor}{Triangle\+Motion\+Bound\+Visitor}}$<$ S $>$ \&mb\+\_\+visitor) const
+\begin{DoxyCompactList}\small\item\em Compute the motion bound for a triangle along a given direction n, which is defined in the visitor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_ab57da20c42f52178d91d85bbabf696f3}\label{classfcl_1_1ScrewMotion_ab57da20c42f52178d91d85bbabf696f3}} 
+void \mbox{\hyperlink{classfcl_1_1ScrewMotion_ab57da20c42f52178d91d85bbabf696f3}{get\+Current\+Transform}} (Transform3$<$ S $>$ \&tf\+\_\+) const
+\begin{DoxyCompactList}\small\item\em Get the rotation and translation in current step. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_ad89fd40baa36fa19791bc44afa97ed92}\label{classfcl_1_1ScrewMotion_ad89fd40baa36fa19791bc44afa97ed92}} 
+void {\bfseries get\+Taylor\+Model} (\mbox{\hyperlink{classfcl_1_1TMatrix3}{T\+Matrix3}}$<$ S $>$ \&tm, \mbox{\hyperlink{classfcl_1_1TVector3}{T\+Vector3}}$<$ S $>$ \&tv) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_a7c1236ed0a2a2601e25abcbaca6a5775}\label{classfcl_1_1ScrewMotion_a7c1236ed0a2a2601e25abcbaca6a5775}} 
+S {\bfseries get\+Linear\+Velocity} () const
+\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_a16949065abfe3f3d964f378f16c0664f}\label{classfcl_1_1ScrewMotion_a16949065abfe3f3d964f378f16c0664f}} 
+S {\bfseries get\+Angular\+Velocity} () const
+\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_a60472ea79cd130177ed544bd74798204}\label{classfcl_1_1ScrewMotion_a60472ea79cd130177ed544bd74798204}} 
+const Vector3$<$ S $>$ \& {\bfseries get\+Axis} () const
+\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_a4380ded5f2411d87321e0ebc5d44d51c}\label{classfcl_1_1ScrewMotion_a4380ded5f2411d87321e0ebc5d44d51c}} 
+const Vector3$<$ S $>$ \& {\bfseries get\+Axis\+Origin} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_aece382d479c13e87afe8c7723b87e502}\label{classfcl_1_1ScrewMotion_aece382d479c13e87afe8c7723b87e502}} 
+void {\bfseries compute\+Screw\+Parameter} ()
+\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_a89b38cf61a75d174b52d21772ed470bd}\label{classfcl_1_1ScrewMotion_a89b38cf61a75d174b52d21772ed470bd}} 
+Quaternion$<$ S $>$ {\bfseries delta\+Rotation} (S dt) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_a937c3c2381d20effb859b344920b2ad2}\label{classfcl_1_1ScrewMotion_a937c3c2381d20effb859b344920b2ad2}} 
+Quaternion$<$ S $>$ {\bfseries absolute\+Rotation} (S dt) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_a95df4a84b6ef248dfb46c2ec4b94cc85}\label{classfcl_1_1ScrewMotion_a95df4a84b6ef248dfb46c2ec4b94cc85}} 
+Transform3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1ScrewMotion_a95df4a84b6ef248dfb46c2ec4b94cc85}{tf1}}
+\begin{DoxyCompactList}\small\item\em The transformation at time 0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_abd06cb349fc2f10c7849077bd823fce2}\label{classfcl_1_1ScrewMotion_abd06cb349fc2f10c7849077bd823fce2}} 
+Transform3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1ScrewMotion_abd06cb349fc2f10c7849077bd823fce2}{tf2}}
+\begin{DoxyCompactList}\small\item\em The transformation at time 1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_a9bc99fdea90ebc00cfd54b0a705dc177}\label{classfcl_1_1ScrewMotion_a9bc99fdea90ebc00cfd54b0a705dc177}} 
+Transform3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1ScrewMotion_a9bc99fdea90ebc00cfd54b0a705dc177}{tf}}
+\begin{DoxyCompactList}\small\item\em The transformation at current time t. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_a9241db305d11733755fa20d4d2115f8e}\label{classfcl_1_1ScrewMotion_a9241db305d11733755fa20d4d2115f8e}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1ScrewMotion_a9241db305d11733755fa20d4d2115f8e}{axis}}
+\begin{DoxyCompactList}\small\item\em screw axis \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_ad36e4b97908375dc1edbe368d70a59f0}\label{classfcl_1_1ScrewMotion_ad36e4b97908375dc1edbe368d70a59f0}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1ScrewMotion_ad36e4b97908375dc1edbe368d70a59f0}{p}}
+\begin{DoxyCompactList}\small\item\em A point on the axis. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_aad899828e3556f8dd0ac924ce8030774}\label{classfcl_1_1ScrewMotion_aad899828e3556f8dd0ac924ce8030774}} 
+S \mbox{\hyperlink{classfcl_1_1ScrewMotion_aad899828e3556f8dd0ac924ce8030774}{linear\+\_\+vel}}
+\begin{DoxyCompactList}\small\item\em linear velocity along the axis \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ScrewMotion_a98ea17014b9f75eaea8da5071c2d589a}\label{classfcl_1_1ScrewMotion_a98ea17014b9f75eaea8da5071c2d589a}} 
+S \mbox{\hyperlink{classfcl_1_1ScrewMotion_a98ea17014b9f75eaea8da5071c2d589a}{angular\+\_\+vel}}
+\begin{DoxyCompactList}\small\item\em angular velocity \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/math/motion/bv\+\_\+motion\+\_\+bound\+\_\+visitor.\+h\item 
+/home/prodefi/fcl/include/fcl/math/motion/screw\+\_\+motion.\+h\item 
+/home/prodefi/fcl/include/fcl/math/motion/screw\+\_\+motion-\/inl.\+h\end{DoxyCompactItemize}

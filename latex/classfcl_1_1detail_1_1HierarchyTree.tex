@@ -1,0 +1,141 @@
+\hypertarget{classfcl_1_1detail_1_1HierarchyTree}{}\doxysection{fcl\+::detail\+::Hierarchy\+Tree$<$ BV $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1HierarchyTree}\index{fcl::detail::HierarchyTree$<$ BV $>$@{fcl::detail::HierarchyTree$<$ BV $>$}}
+
+
+Class for hierarchy tree structure.  
+
+
+
+
+{\ttfamily \#include $<$hierarchy\+\_\+tree.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_ac7adc0eb61334ba9d55f7ebbdf78b681}\label{classfcl_1_1detail_1_1HierarchyTree_ac7adc0eb61334ba9d55f7ebbdf78b681}} 
+using {\bfseries S} = typename B\+V\+::S
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_ab354fd414370a6e93ab6865b294f5b9a}\label{classfcl_1_1detail_1_1HierarchyTree_ab354fd414370a6e93ab6865b294f5b9a}} 
+typedef \mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{Node\+Base}}$<$ BV $>$ {\bfseries Node\+Type}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a9b19aaec718c074ff638fd0db8c8506b}\label{classfcl_1_1detail_1_1HierarchyTree_a9b19aaec718c074ff638fd0db8c8506b}} 
+\mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_a9b19aaec718c074ff638fd0db8c8506b}{Hierarchy\+Tree}} (int bu\+\_\+threshold\+\_\+=16, int topdown\+\_\+level\+\_\+=0)
+\begin{DoxyCompactList}\small\item\em Create hierarchy tree with suitable setting. bu\+\_\+threshold decides the height of tree node to start bottom-\/up construction / optimization; topdown\+\_\+level decides different methods to construct tree in topdown manner. lower level method constructs tree with better quality but is slower. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a0de2aae3f7469a465a53fd825efb1906}\label{classfcl_1_1detail_1_1HierarchyTree_a0de2aae3f7469a465a53fd825efb1906}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_a0de2aae3f7469a465a53fd825efb1906}{init}} (std\+::vector$<$ \mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{Node\+Type}} $\ast$ $>$ \&leaves, int level=0)
+\begin{DoxyCompactList}\small\item\em Initialize the tree by a set of leaves using algorithm with a given level. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_ade0fe1a1e35f1ba3ed997d718e3108e8}\label{classfcl_1_1detail_1_1HierarchyTree_ade0fe1a1e35f1ba3ed997d718e3108e8}} 
+\mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{Node\+Type}} $\ast$ \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_ade0fe1a1e35f1ba3ed997d718e3108e8}{insert}} (const BV \&bv, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em Insest a node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_ade0821262ccbf0099ab6e704ebc41e21}\label{classfcl_1_1detail_1_1HierarchyTree_ade0821262ccbf0099ab6e704ebc41e21}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_ade0821262ccbf0099ab6e704ebc41e21}{remove}} (\mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{Node\+Type}} $\ast$leaf)
+\begin{DoxyCompactList}\small\item\em Remove a leaf node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a51bb8853f92bb463b4a657bc48f4de0c}\label{classfcl_1_1detail_1_1HierarchyTree_a51bb8853f92bb463b4a657bc48f4de0c}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_a51bb8853f92bb463b4a657bc48f4de0c}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clear the tree. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a071a6d1881dc2e318c9576b6d6d21707}\label{classfcl_1_1detail_1_1HierarchyTree_a071a6d1881dc2e318c9576b6d6d21707}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_a071a6d1881dc2e318c9576b6d6d21707}{empty}} () const
+\begin{DoxyCompactList}\small\item\em Whether the tree is empty. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_a39613e2acd2d85b11973a6dafcbe4e20}{update}} (\mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{Node\+Type}} $\ast$leaf, int lookahead\+\_\+level=-\/1)
+\begin{DoxyCompactList}\small\item\em Updates a {\ttfamily leaf} node. A use case is when the bounding volume of an object changes. Ensure every parent node has its bounding volume expand or shrink to fit the bounding volumes of its children. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a1ee94251e00dc4c53b0f685910b382fe}\label{classfcl_1_1detail_1_1HierarchyTree_a1ee94251e00dc4c53b0f685910b382fe}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_a1ee94251e00dc4c53b0f685910b382fe}{update}} (\mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{Node\+Type}} $\ast$leaf, const BV \&bv)
+\begin{DoxyCompactList}\small\item\em update the tree when the bounding volume of a given leaf has changed \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a64e6e6e5658be72e1d21b8df0ed47a34}\label{classfcl_1_1detail_1_1HierarchyTree_a64e6e6e5658be72e1d21b8df0ed47a34}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_a64e6e6e5658be72e1d21b8df0ed47a34}{update}} (\mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{Node\+Type}} $\ast$leaf, const BV \&bv, const Vector3$<$ S $>$ \&vel, S margin)
+\begin{DoxyCompactList}\small\item\em update one leaf\textquotesingle{}s bounding volume, with prediction \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a99d6a11f4540327e15c1ee0a52a824d7}\label{classfcl_1_1detail_1_1HierarchyTree_a99d6a11f4540327e15c1ee0a52a824d7}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_a99d6a11f4540327e15c1ee0a52a824d7}{update}} (\mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{Node\+Type}} $\ast$leaf, const BV \&bv, const Vector3$<$ S $>$ \&vel)
+\begin{DoxyCompactList}\small\item\em update one leaf\textquotesingle{}s bounding volume, with prediction \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a4b311b0def7601561aa4956c54caebaa}\label{classfcl_1_1detail_1_1HierarchyTree_a4b311b0def7601561aa4956c54caebaa}} 
+size\+\_\+t \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_a4b311b0def7601561aa4956c54caebaa}{get\+Max\+Height}} () const
+\begin{DoxyCompactList}\small\item\em get the max height of the tree \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_ab0b9addee66cac6f2ff1c4cd8110f76a}\label{classfcl_1_1detail_1_1HierarchyTree_ab0b9addee66cac6f2ff1c4cd8110f76a}} 
+size\+\_\+t \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_ab0b9addee66cac6f2ff1c4cd8110f76a}{get\+Max\+Depth}} () const
+\begin{DoxyCompactList}\small\item\em get the max depth of the tree \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_acc452ef243d3bbb52a3ffe90a7f9bb87}\label{classfcl_1_1detail_1_1HierarchyTree_acc452ef243d3bbb52a3ffe90a7f9bb87}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_acc452ef243d3bbb52a3ffe90a7f9bb87}{balance\+Bottomup}} ()
+\begin{DoxyCompactList}\small\item\em balance the tree from bottom \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a90e53d82d6b8c1fd73e8fc99c8e11199}\label{classfcl_1_1detail_1_1HierarchyTree_a90e53d82d6b8c1fd73e8fc99c8e11199}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_a90e53d82d6b8c1fd73e8fc99c8e11199}{balance\+Topdown}} ()
+\begin{DoxyCompactList}\small\item\em balance the tree from top \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a8750a377034007e2220fc6d28ed18aaa}\label{classfcl_1_1detail_1_1HierarchyTree_a8750a377034007e2220fc6d28ed18aaa}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_a8750a377034007e2220fc6d28ed18aaa}{balance\+Incremental}} (int iterations)
+\begin{DoxyCompactList}\small\item\em balance the tree in an incremental way \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a256dee4e501e9dd46cdd9b55847f953f}\label{classfcl_1_1detail_1_1HierarchyTree_a256dee4e501e9dd46cdd9b55847f953f}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_a256dee4e501e9dd46cdd9b55847f953f}{refit}} ()
+\begin{DoxyCompactList}\small\item\em refit the tree, i.\+e., when the leaf nodes\textquotesingle{} bounding volumes change, update the entire tree in a bottom-\/up manner \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_aa56cb1469ab9be9acd6551a71ea3d6bb}\label{classfcl_1_1detail_1_1HierarchyTree_aa56cb1469ab9be9acd6551a71ea3d6bb}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_aa56cb1469ab9be9acd6551a71ea3d6bb}{extract\+Leaves}} (const \mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{Node\+Type}} $\ast$root, std\+::vector$<$ \mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{Node\+Type}} $\ast$ $>$ \&leaves) const
+\begin{DoxyCompactList}\small\item\em extract all the leaves of the tree \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_aa66058ef65c28a1f0a7db97d76cc4b9c}\label{classfcl_1_1detail_1_1HierarchyTree_aa66058ef65c28a1f0a7db97d76cc4b9c}} 
+size\+\_\+t \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_aa66058ef65c28a1f0a7db97d76cc4b9c}{size}} () const
+\begin{DoxyCompactList}\small\item\em number of leaves in the tree \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a09d662db23f3284bb81e53beee33cb4a}\label{classfcl_1_1detail_1_1HierarchyTree_a09d662db23f3284bb81e53beee33cb4a}} 
+\mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{Node\+Type}} $\ast$ \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_a09d662db23f3284bb81e53beee33cb4a}{get\+Root}} () const
+\begin{DoxyCompactList}\small\item\em get the root of the tree \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a9f9301c44536cae3a1d4faf1c9bec42c}\label{classfcl_1_1detail_1_1HierarchyTree_a9f9301c44536cae3a1d4faf1c9bec42c}} 
+\mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{Node\+Type}} $\ast$\& {\bfseries get\+Root} ()
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a2d81d41185d2c0c29d64f92b40781704}\label{classfcl_1_1detail_1_1HierarchyTree_a2d81d41185d2c0c29d64f92b40781704}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_a2d81d41185d2c0c29d64f92b40781704}{print}} (\mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{Node\+Type}} $\ast$root, int depth)
+\begin{DoxyCompactList}\small\item\em print the tree in a recursive way \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_af68b4cb6dd1e6874549eaeceb2e0cd17}\label{classfcl_1_1detail_1_1HierarchyTree_af68b4cb6dd1e6874549eaeceb2e0cd17}} 
+int \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_af68b4cb6dd1e6874549eaeceb2e0cd17}{topdown\+\_\+level}}
+\begin{DoxyCompactList}\small\item\em decide which topdown algorithm to use \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a468593151365298cb55adc8dfa4181c1}\label{classfcl_1_1detail_1_1HierarchyTree_a468593151365298cb55adc8dfa4181c1}} 
+int \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_a468593151365298cb55adc8dfa4181c1}{bu\+\_\+threshold}}
+\begin{DoxyCompactList}\small\item\em decide the depth to use expensive bottom-\/up algorithm \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a1df500c8b39363a9d83e609007f974a5}\label{classfcl_1_1detail_1_1HierarchyTree_a1df500c8b39363a9d83e609007f974a5}} 
+\mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{Node\+Type}} $\ast$ {\bfseries root\+\_\+node}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_aaf56782527a4e0c81f3e5ff44c1de914}\label{classfcl_1_1detail_1_1HierarchyTree_aaf56782527a4e0c81f3e5ff44c1de914}} 
+size\+\_\+t {\bfseries n\+\_\+leaves}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a7eb14c6e61784af460fae697d7d4b42b}\label{classfcl_1_1detail_1_1HierarchyTree_a7eb14c6e61784af460fae697d7d4b42b}} 
+unsigned int {\bfseries opath}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a71b02409c56058cd682ee4eaec6751b5}\label{classfcl_1_1detail_1_1HierarchyTree_a71b02409c56058cd682ee4eaec6751b5}} 
+\mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{Node\+Type}} $\ast$ \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_a71b02409c56058cd682ee4eaec6751b5}{free\+\_\+node}}
+\begin{DoxyCompactList}\small\item\em This is a one Node\+Type cache, the reason is that we need to remove a node and then add it again frequently. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a6942c2ce1b05220fbe6b79f6295a1f3f}\label{classfcl_1_1detail_1_1HierarchyTree_a6942c2ce1b05220fbe6b79f6295a1f3f}} 
+int {\bfseries max\+\_\+lookahead\+\_\+level}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename BV$>$\newline
+class fcl\+::detail\+::\+Hierarchy\+Tree$<$ B\+V $>$}
+
+Class for hierarchy tree structure. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfcl_1_1detail_1_1HierarchyTree_a39613e2acd2d85b11973a6dafcbe4e20}\label{classfcl_1_1detail_1_1HierarchyTree_a39613e2acd2d85b11973a6dafcbe4e20}} 
+\index{fcl::detail::HierarchyTree$<$ BV $>$@{fcl::detail::HierarchyTree$<$ BV $>$}!update@{update}}
+\index{update@{update}!fcl::detail::HierarchyTree$<$ BV $>$@{fcl::detail::HierarchyTree$<$ BV $>$}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily template$<$typename BV $>$ \\
+void \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree}{fcl\+::detail\+::\+Hierarchy\+Tree}}$<$ BV $>$\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfcl_1_1detail_1_1NodeBase}{Node\+Type}} $\ast$}]{leaf,  }\item[{int}]{lookahead\+\_\+level = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Updates a {\ttfamily leaf} node. A use case is when the bounding volume of an object changes. Ensure every parent node has its bounding volume expand or shrink to fit the bounding volumes of its children. 
+
+\begin{DoxyNote}{Note}
+Strangely the structure of the tree may change even if the bounding volume of the {\ttfamily leaf} node does not change. It is just another valid tree of the same set of objects. This is because \mbox{\hyperlink{classfcl_1_1detail_1_1HierarchyTree_a39613e2acd2d85b11973a6dafcbe4e20}{update()}} works by first removing {\ttfamily leaf} and then inserting {\ttfamily leaf} back. The structural change could be as simple as switching the order of two leaves if the sibling of the {\ttfamily leaf} is also a leaf. Or it could be more complicated if the sibling is an internal node. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/broadphase/detail/hierarchy\+\_\+tree.\+h\item 
+/home/prodefi/fcl/include/fcl/broadphase/detail/hierarchy\+\_\+tree-\/inl.\+h\end{DoxyCompactItemize}

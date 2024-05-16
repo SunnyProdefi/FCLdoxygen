@@ -1,0 +1,116 @@
+\hypertarget{structfcl_1_1Interval}{}\doxysection{fcl\+::Interval$<$ S $>$ Struct Template Reference}
+\label{structfcl_1_1Interval}\index{fcl::Interval$<$ S $>$@{fcl::Interval$<$ S $>$}}
+
+
+\mbox{\hyperlink{structfcl_1_1Interval}{Interval}} class for \mbox{[}a, b\mbox{]}.  
+
+
+
+
+{\ttfamily \#include $<$interval.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_accd99890107ec44af2ef4358011056d9}\label{structfcl_1_1Interval_accd99890107ec44af2ef4358011056d9}} 
+{\bfseries Interval} (S v)
+\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a9755ef712244eed8d2e2991e59f618e7}\label{structfcl_1_1Interval_a9755ef712244eed8d2e2991e59f618e7}} 
+\mbox{\hyperlink{structfcl_1_1Interval_a9755ef712244eed8d2e2991e59f618e7}{Interval}} (S left, S right)
+\begin{DoxyCompactList}\small\item\em construct interval \mbox{[}left, right\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a8b24ebf09b5d370b6ce51e245367287b}\label{structfcl_1_1Interval_a8b24ebf09b5d370b6ce51e245367287b}} 
+void \mbox{\hyperlink{structfcl_1_1Interval_a8b24ebf09b5d370b6ce51e245367287b}{set\+Value}} (S a, S b)
+\begin{DoxyCompactList}\small\item\em construct interval \mbox{[}left, right\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a467e4f145670fee36b20523e8912b97a}\label{structfcl_1_1Interval_a467e4f145670fee36b20523e8912b97a}} 
+void \mbox{\hyperlink{structfcl_1_1Interval_a467e4f145670fee36b20523e8912b97a}{set\+Value}} (S x)
+\begin{DoxyCompactList}\small\item\em construct zero interval \mbox{[}x, x\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_aec6684acc0333327c8c8d76678be80a0}\label{structfcl_1_1Interval_aec6684acc0333327c8c8d76678be80a0}} 
+S \mbox{\hyperlink{structfcl_1_1Interval_aec6684acc0333327c8c8d76678be80a0}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t i) const
+\begin{DoxyCompactList}\small\item\em access the interval endpoints\+: 0 for left, 1 for right end \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_ae16c5c77135763524874d7ae8021b846}\label{structfcl_1_1Interval_ae16c5c77135763524874d7ae8021b846}} 
+S \& \mbox{\hyperlink{structfcl_1_1Interval_ae16c5c77135763524874d7ae8021b846}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t i)
+\begin{DoxyCompactList}\small\item\em access the interval endpoints\+: 0 for left, 1 for right end \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a5dd2271267456fb6fbd117ac0b014198}\label{structfcl_1_1Interval_a5dd2271267456fb6fbd117ac0b014198}} 
+bool \mbox{\hyperlink{structfcl_1_1Interval_a5dd2271267456fb6fbd117ac0b014198}{operator==}} (const \mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \&other) const
+\begin{DoxyCompactList}\small\item\em whether two intervals are the same \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a36224e382bb71c629932df51ca2b89c1}\label{structfcl_1_1Interval_a36224e382bb71c629932df51ca2b89c1}} 
+\mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \mbox{\hyperlink{structfcl_1_1Interval_a36224e382bb71c629932df51ca2b89c1}{operator+}} (const \mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \&other) const
+\begin{DoxyCompactList}\small\item\em add two intervals \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_aceb86cca4263d540b3102a3d6e184f4e}\label{structfcl_1_1Interval_aceb86cca4263d540b3102a3d6e184f4e}} 
+\mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \mbox{\hyperlink{structfcl_1_1Interval_aceb86cca4263d540b3102a3d6e184f4e}{operator-\/}} (const \mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \&other) const
+\begin{DoxyCompactList}\small\item\em minus another interval \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_abb9dcc9a7dc6fd25c7704415c4a20e74}\label{structfcl_1_1Interval_abb9dcc9a7dc6fd25c7704415c4a20e74}} 
+\mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \& {\bfseries operator+=} (const \mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \&other)
+\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a993655eff9e8c967a2fa4a119d337e46}\label{structfcl_1_1Interval_a993655eff9e8c967a2fa4a119d337e46}} 
+\mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \& {\bfseries operator-\/=} (const \mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \&other)
+\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a66030c60f66d59f4a6250f5c083484af}\label{structfcl_1_1Interval_a66030c60f66d59f4a6250f5c083484af}} 
+\mbox{\hyperlink{structfcl_1_1Interval}{Interval}} {\bfseries operator$\ast$} (const \mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \&other) const
+\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_ae55f855ba1996ca41c7de1d93dac1040}\label{structfcl_1_1Interval_ae55f855ba1996ca41c7de1d93dac1040}} 
+\mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \& {\bfseries operator$\ast$=} (const \mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \&other)
+\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a8c3593f68a9cdd7a4f481a4d411d3caf}\label{structfcl_1_1Interval_a8c3593f68a9cdd7a4f481a4d411d3caf}} 
+\mbox{\hyperlink{structfcl_1_1Interval}{Interval}} {\bfseries operator$\ast$} (S d) const
+\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a8c25163decc9b2434883dfb1797afbb3}\label{structfcl_1_1Interval_a8c25163decc9b2434883dfb1797afbb3}} 
+\mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \& {\bfseries operator$\ast$=} (S d)
+\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a006f7777b887b04b05bf9b697d28c2f9}\label{structfcl_1_1Interval_a006f7777b887b04b05bf9b697d28c2f9}} 
+\mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \mbox{\hyperlink{structfcl_1_1Interval_a006f7777b887b04b05bf9b697d28c2f9}{operator/}} (const \mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \&other) const
+\begin{DoxyCompactList}\small\item\em other must not contain 0 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_ad4ecb2be4b46f6e1e767a86d2343f103}\label{structfcl_1_1Interval_ad4ecb2be4b46f6e1e767a86d2343f103}} 
+\mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \& {\bfseries operator/=} (const \mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \&other)
+\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a2474a93af5f1943b99e0eae1af5c4187}\label{structfcl_1_1Interval_a2474a93af5f1943b99e0eae1af5c4187}} 
+bool \mbox{\hyperlink{structfcl_1_1Interval_a2474a93af5f1943b99e0eae1af5c4187}{overlap}} (const \mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \&other) const
+\begin{DoxyCompactList}\small\item\em determine whether the intersection between intervals is empty \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a733e4d9ae24318bb9a301a2d685ec43d}\label{structfcl_1_1Interval_a733e4d9ae24318bb9a301a2d685ec43d}} 
+bool {\bfseries intersect} (const \mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \&other)
+\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a6691885de964a54cc221f7873a881071}\label{structfcl_1_1Interval_a6691885de964a54cc221f7873a881071}} 
+\mbox{\hyperlink{structfcl_1_1Interval}{Interval}} {\bfseries operator-\/} () const
+\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a203a0bff588f1d54be41777fa2a36428}\label{structfcl_1_1Interval_a203a0bff588f1d54be41777fa2a36428}} 
+S \mbox{\hyperlink{structfcl_1_1Interval_a203a0bff588f1d54be41777fa2a36428}{get\+Abs\+Lower}} () const
+\begin{DoxyCompactList}\small\item\em Return the nearest distance for points within the interval to zero. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a63e5afbce8796788e9c600749d6b2211}\label{structfcl_1_1Interval_a63e5afbce8796788e9c600749d6b2211}} 
+S \mbox{\hyperlink{structfcl_1_1Interval_a63e5afbce8796788e9c600749d6b2211}{get\+Abs\+Upper}} () const
+\begin{DoxyCompactList}\small\item\em Return the farthest distance for points within the interval to zero. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_ad92e9cdd9be2f217d1250a7904ba10b7}\label{structfcl_1_1Interval_ad92e9cdd9be2f217d1250a7904ba10b7}} 
+bool {\bfseries contains} (S v) const
+\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a17ed786082e91b36c13ab0b141283195}\label{structfcl_1_1Interval_a17ed786082e91b36c13ab0b141283195}} 
+\mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \& \mbox{\hyperlink{structfcl_1_1Interval_a17ed786082e91b36c13ab0b141283195}{bound}} (S v)
+\begin{DoxyCompactList}\small\item\em Compute the minimum interval contains v and original interval. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_aa6f35a9882538284faca2180cd390629}\label{structfcl_1_1Interval_aa6f35a9882538284faca2180cd390629}} 
+\mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \& \mbox{\hyperlink{structfcl_1_1Interval_aa6f35a9882538284faca2180cd390629}{bound}} (const \mbox{\hyperlink{structfcl_1_1Interval}{Interval}} \&other)
+\begin{DoxyCompactList}\small\item\em Compute the minimum interval contains other and original interval. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a5913d2771c5070985e7e6cee37963843}\label{structfcl_1_1Interval_a5913d2771c5070985e7e6cee37963843}} 
+void {\bfseries print} () const
+\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_ab77bb8834824f6b8b2cfdc216fe9747c}\label{structfcl_1_1Interval_ab77bb8834824f6b8b2cfdc216fe9747c}} 
+S {\bfseries center} () const
+\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a12dabd5fc4659812f1b7a9adbf9da948}\label{structfcl_1_1Interval_a12dabd5fc4659812f1b7a9adbf9da948}} 
+S {\bfseries diameter} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1Interval_a847fb9e95f0f87ac2015dccf2e2c8aec}\label{structfcl_1_1Interval_a847fb9e95f0f87ac2015dccf2e2c8aec}} 
+S {\bfseries i\+\_\+} \mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+struct fcl\+::\+Interval$<$ S $>$}
+
+\mbox{\hyperlink{structfcl_1_1Interval}{Interval}} class for \mbox{[}a, b\mbox{]}. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/math/motion/taylor\+\_\+model/interval.\+h\item 
+/home/prodefi/fcl/include/fcl/math/motion/taylor\+\_\+model/interval-\/inl.\+h\end{DoxyCompactItemize}

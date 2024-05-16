@@ -1,0 +1,96 @@
+\hypertarget{structfcl_1_1detail_1_1EPA}{}\doxysection{fcl\+::detail\+::E\+PA$<$ S $>$ Struct Template Reference}
+\label{structfcl_1_1detail_1_1EPA}\index{fcl::detail::EPA$<$ S $>$@{fcl::detail::EPA$<$ S $>$}}
+
+
+class for \mbox{\hyperlink{structfcl_1_1detail_1_1EPA}{E\+PA}} algorithm  
+
+
+
+
+{\ttfamily \#include $<$epa.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1EPA_a34bc55873a867b3aac8c4213b6f5cae0}\label{structfcl_1_1detail_1_1EPA_a34bc55873a867b3aac8c4213b6f5cae0}} 
+enum {\bfseries Status} \{ \newline
+{\bfseries Valid}, 
+{\bfseries Touching}, 
+{\bfseries Degenerated}, 
+{\bfseries Non\+Convex}, 
+\newline
+{\bfseries Invalid\+Hull}, 
+{\bfseries Out\+Of\+Faces}, 
+{\bfseries Out\+Of\+Vertices}, 
+{\bfseries Accuracy\+Reached}, 
+\newline
+{\bfseries Fall\+Back}, 
+{\bfseries Failed}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1EPA_aa418770df67905e7fe3113f604c9133f}\label{structfcl_1_1detail_1_1EPA_aa418770df67905e7fe3113f604c9133f}} 
+{\bfseries E\+PA} (unsigned int max\+\_\+face\+\_\+num\+\_\+, unsigned int max\+\_\+vertex\+\_\+num\+\_\+, unsigned int max\+\_\+iterations\+\_\+, S tolerance\+\_\+)
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1EPA_a37ee36f2402387b2d2b248e9fbbfbc77}\label{structfcl_1_1detail_1_1EPA_a37ee36f2402387b2d2b248e9fbbfbc77}} 
+void {\bfseries initialize} ()
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1EPA_a3c14b1df23ab4839106ab59b07701c5f}\label{structfcl_1_1detail_1_1EPA_a3c14b1df23ab4839106ab59b07701c5f}} 
+bool {\bfseries get\+Edge\+Dist} (SimplexF $\ast$face, SimplexV $\ast$a, SimplexV $\ast$b, S \&dist)
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1EPA_ae121e5746b88dfc2803c900f21bbca5e}\label{structfcl_1_1detail_1_1EPA_ae121e5746b88dfc2803c900f21bbca5e}} 
+SimplexF $\ast$ {\bfseries new\+Face} (SimplexV $\ast$a, SimplexV $\ast$b, SimplexV $\ast$c, bool forced)
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1EPA_adc3de01b3f136ac1119d4e7216933980}\label{structfcl_1_1detail_1_1EPA_adc3de01b3f136ac1119d4e7216933980}} 
+SimplexF $\ast$ \mbox{\hyperlink{structfcl_1_1detail_1_1EPA_adc3de01b3f136ac1119d4e7216933980}{find\+Best}} ()
+\begin{DoxyCompactList}\small\item\em Find the best polytope face to split. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1EPA_a7438b599021cd13997673af50571ca6d}\label{structfcl_1_1detail_1_1EPA_a7438b599021cd13997673af50571ca6d}} 
+Status {\bfseries evaluate} (\mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}}$<$ S $>$ \&gjk, const Vector3$<$ S $>$ \&guess)
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1EPA_af4988c033d704079593d04b2c079d72a}\label{structfcl_1_1detail_1_1EPA_af4988c033d704079593d04b2c079d72a}} 
+bool \mbox{\hyperlink{structfcl_1_1detail_1_1EPA_af4988c033d704079593d04b2c079d72a}{expand}} (size\+\_\+t pass, SimplexV $\ast$w, SimplexF $\ast$f, size\+\_\+t e, Simplex\+Horizon \&horizon)
+\begin{DoxyCompactList}\small\item\em the goal is to add a face connecting vertex w and face edge f\mbox{[}e\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1EPA_ab78f3ae85132fb82eec95c3388960c1b}\label{structfcl_1_1detail_1_1EPA_ab78f3ae85132fb82eec95c3388960c1b}} 
+Status {\bfseries status}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1EPA_a6cbf91f483ec81a81bd5b15070267b4d}\label{structfcl_1_1detail_1_1EPA_a6cbf91f483ec81a81bd5b15070267b4d}} 
+\mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}}$<$ S $>$\+::Simplex {\bfseries result}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1EPA_a6850b36c511b9040b65de67eb0c9b179}\label{structfcl_1_1detail_1_1EPA_a6850b36c511b9040b65de67eb0c9b179}} 
+Vector3$<$ S $>$ {\bfseries normal}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1EPA_ae6d38f05a43ae0b42c49161ae795c628}\label{structfcl_1_1detail_1_1EPA_ae6d38f05a43ae0b42c49161ae795c628}} 
+S {\bfseries depth}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1EPA_ac33a77c3c2e08458b6f88059408e3d4d}\label{structfcl_1_1detail_1_1EPA_ac33a77c3c2e08458b6f88059408e3d4d}} 
+SimplexV $\ast$ {\bfseries sv\+\_\+store}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1EPA_a2a6c841813042b4e5a7092acc3c69af3}\label{structfcl_1_1detail_1_1EPA_a2a6c841813042b4e5a7092acc3c69af3}} 
+SimplexF $\ast$ {\bfseries fc\+\_\+store}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1EPA_aa8b6be2843720d35597b0cea109dbabb}\label{structfcl_1_1detail_1_1EPA_aa8b6be2843720d35597b0cea109dbabb}} 
+size\+\_\+t {\bfseries nextsv}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1EPA_ae212ecfcbee42afb0b695e351ccc81f7}\label{structfcl_1_1detail_1_1EPA_ae212ecfcbee42afb0b695e351ccc81f7}} 
+Simplex\+List {\bfseries hull}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1EPA_a9a8b09090e93a49f9dad09c67c7281b7}\label{structfcl_1_1detail_1_1EPA_a9a8b09090e93a49f9dad09c67c7281b7}} 
+Simplex\+List {\bfseries stock}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+struct fcl\+::detail\+::\+E\+P\+A$<$ S $>$}
+
+class for \mbox{\hyperlink{structfcl_1_1detail_1_1EPA}{E\+PA}} algorithm 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/convexity\+\_\+based\+\_\+algorithm/epa.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/convexity\+\_\+based\+\_\+algorithm/epa-\/inl.\+h\end{DoxyCompactItemize}

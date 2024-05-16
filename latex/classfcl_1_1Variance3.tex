@@ -1,0 +1,47 @@
+\hypertarget{classfcl_1_1Variance3}{}\doxysection{fcl\+::Variance3$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1Variance3}\index{fcl::Variance3$<$ S $>$@{fcl::Variance3$<$ S $>$}}
+
+
+Class for variance matrix in 3d.  
+
+
+
+
+{\ttfamily \#include $<$variance3.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Variance3_a844ddcb21ed8ffc6b678ce944004b9a1}\label{classfcl_1_1Variance3_a844ddcb21ed8ffc6b678ce944004b9a1}} 
+{\bfseries Variance3} (const Matrix3$<$ S $>$ \&\mbox{\hyperlink{classfcl_1_1Variance3_a9b8d3a1bcb9ff2de8e579ea714414d5a}{sigma}})
+\item 
+\mbox{\Hypertarget{classfcl_1_1Variance3_a0ce5278f1f7537015f8f1ab7b9f77105}\label{classfcl_1_1Variance3_a0ce5278f1f7537015f8f1ab7b9f77105}} 
+void \mbox{\hyperlink{classfcl_1_1Variance3_a0ce5278f1f7537015f8f1ab7b9f77105}{init}} ()
+\begin{DoxyCompactList}\small\item\em init the Variance \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Variance3_aac0ffae75c73902ec379bdb36b7768fb}\label{classfcl_1_1Variance3_aac0ffae75c73902ec379bdb36b7768fb}} 
+\mbox{\hyperlink{classfcl_1_1Variance3}{Variance3}}$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1Variance3_aac0ffae75c73902ec379bdb36b7768fb}{sqrt}} ()
+\begin{DoxyCompactList}\small\item\em Compute the sqrt of Sigma matrix based on the eigen decomposition result, this is useful when the uncertainty matrix is initialized as a square variation matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Variance3_adcd79814b949d19c90c0409a0902b0b3}\label{classfcl_1_1Variance3_adcd79814b949d19c90c0409a0902b0b3}} 
+Matrix3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1Variance3_adcd79814b949d19c90c0409a0902b0b3}{Sigma}}
+\begin{DoxyCompactList}\small\item\em Variation matrix. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Variance3_a9b8d3a1bcb9ff2de8e579ea714414d5a}\label{classfcl_1_1Variance3_a9b8d3a1bcb9ff2de8e579ea714414d5a}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1Variance3_a9b8d3a1bcb9ff2de8e579ea714414d5a}{sigma}}
+\begin{DoxyCompactList}\small\item\em Variations along the eign axes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Variance3_aba87be9f577df96955b6a4664328f80c}\label{classfcl_1_1Variance3_aba87be9f577df96955b6a4664328f80c}} 
+Matrix3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1Variance3_aba87be9f577df96955b6a4664328f80c}{axis}}
+\begin{DoxyCompactList}\small\item\em Matrix whose columns are eigenvectors of Sigma. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+class fcl\+::\+Variance3$<$ S $>$}
+
+Class for variance matrix in 3d. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/math/variance3.\+h\item 
+/home/prodefi/fcl/include/fcl/math/variance3-\/inl.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,110 @@
+\hypertarget{classfcl_1_1kIOS}{}\doxysection{fcl\+::k\+I\+OS$<$ S\+\_\+ $>$ Class Template Reference}
+\label{classfcl_1_1kIOS}\index{fcl::kIOS$<$ S\_ $>$@{fcl::kIOS$<$ S\_ $>$}}
+
+
+A class describing the \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}} collision structure, which is a set of spheres.  
+
+
+
+
+{\ttfamily \#include $<$k\+I\+O\+S.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_a0e900158168d605699fa2988f11269a8}\label{classfcl_1_1kIOS_a0e900158168d605699fa2988f11269a8}} 
+using {\bfseries S} = S\+\_\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_a86928a25ced7d1fcdd31325d6192afbf}\label{classfcl_1_1kIOS_a86928a25ced7d1fcdd31325d6192afbf}} 
+bool \mbox{\hyperlink{classfcl_1_1kIOS_a86928a25ced7d1fcdd31325d6192afbf}{overlap}} (const \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}$<$ S $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Check collision between two \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classfcl_1_1kIOS_a2c118a87191fca8b50bfdb37d80513f6}{overlap}} (const \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}$<$ S $>$ \&other, \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}$<$ S $>$ \&overlap\+\_\+part) const
+\begin{DoxyCompactList}\small\item\em Check collision between two \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}} and return the overlap part. For \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}, we return nothing, as the overlappart of two \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}} usually is not an \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_a2519428e5363802c61d264b09c10c10b}\label{classfcl_1_1kIOS_a2519428e5363802c61d264b09c10c10b}} 
+bool \mbox{\hyperlink{classfcl_1_1kIOS_a2519428e5363802c61d264b09c10c10b}{contain}} (const Vector3$<$ S $>$ \&p) const
+\begin{DoxyCompactList}\small\item\em Check whether the \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}} contains a point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_ac3bd24a5a6e749061d9d4e37972bd633}\label{classfcl_1_1kIOS_ac3bd24a5a6e749061d9d4e37972bd633}} 
+\mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1kIOS_ac3bd24a5a6e749061d9d4e37972bd633}{operator+=}} (const Vector3$<$ S $>$ \&p)
+\begin{DoxyCompactList}\small\item\em A simple way to merge the \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}} and a point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_a75b23b1277cefe1af33c85698f36ee8d}\label{classfcl_1_1kIOS_a75b23b1277cefe1af33c85698f36ee8d}} 
+\mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1kIOS_a75b23b1277cefe1af33c85698f36ee8d}{operator+=}} (const \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}$<$ S $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Merge the \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}} and another \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_a5633a021f2b291a3c5e40ea9f0af4852}\label{classfcl_1_1kIOS_a5633a021f2b291a3c5e40ea9f0af4852}} 
+\mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}$<$ S $>$ \mbox{\hyperlink{classfcl_1_1kIOS_a5633a021f2b291a3c5e40ea9f0af4852}{operator+}} (const \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}$<$ S $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Return the merged \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}} of current \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}} and the other one. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_ae4df109639ed717f8824ae245e63b5b8}\label{classfcl_1_1kIOS_ae4df109639ed717f8824ae245e63b5b8}} 
+const Vector3$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1kIOS_ae4df109639ed717f8824ae245e63b5b8}{center}} () const
+\begin{DoxyCompactList}\small\item\em Center of the \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_a48e431eac4aad055061bb84d299173f1}\label{classfcl_1_1kIOS_a48e431eac4aad055061bb84d299173f1}} 
+S \mbox{\hyperlink{classfcl_1_1kIOS_a48e431eac4aad055061bb84d299173f1}{width}} () const
+\begin{DoxyCompactList}\small\item\em Width of the \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_aa401c746f04803bcdb5672f6e2b9b0e0}\label{classfcl_1_1kIOS_aa401c746f04803bcdb5672f6e2b9b0e0}} 
+S \mbox{\hyperlink{classfcl_1_1kIOS_aa401c746f04803bcdb5672f6e2b9b0e0}{height}} () const
+\begin{DoxyCompactList}\small\item\em Height of the \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_aa0595b1d802d285ce88accaed19aef85}\label{classfcl_1_1kIOS_aa0595b1d802d285ce88accaed19aef85}} 
+S \mbox{\hyperlink{classfcl_1_1kIOS_aa0595b1d802d285ce88accaed19aef85}{depth}} () const
+\begin{DoxyCompactList}\small\item\em Depth of the \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_a06f7e0d3d2ffacc859416c7ea9f680da}\label{classfcl_1_1kIOS_a06f7e0d3d2ffacc859416c7ea9f680da}} 
+S \mbox{\hyperlink{classfcl_1_1kIOS_a06f7e0d3d2ffacc859416c7ea9f680da}{volume}} () const
+\begin{DoxyCompactList}\small\item\em Volume of the \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_a7dea3635d0d33348d9fd63de9e9affad}\label{classfcl_1_1kIOS_a7dea3635d0d33348d9fd63de9e9affad}} 
+S \mbox{\hyperlink{classfcl_1_1kIOS_a7dea3635d0d33348d9fd63de9e9affad}{size}} () const
+\begin{DoxyCompactList}\small\item\em size of the \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}} (used in B\+V\+\_\+\+Splitter to order two k\+I\+O\+Ss) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_a1992ba093a22be84b368146dd3669a21}\label{classfcl_1_1kIOS_a1992ba093a22be84b368146dd3669a21}} 
+S \mbox{\hyperlink{classfcl_1_1kIOS_a1992ba093a22be84b368146dd3669a21}{distance}} (const \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}$<$ S $>$ \&other, Vector3$<$ S $>$ $\ast$P=nullptr, Vector3$<$ S $>$ $\ast$Q=nullptr) const
+\begin{DoxyCompactList}\small\item\em The distance between two \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_a45a4429e8944affa91e4c473bfd80174}\label{classfcl_1_1kIOS_a45a4429e8944affa91e4c473bfd80174}} 
+static constexpr S {\bfseries ratio} ()
+\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_ad370703701991bde1f335ba92645462d}\label{classfcl_1_1kIOS_ad370703701991bde1f335ba92645462d}} 
+static constexpr S {\bfseries inv\+SinA} ()
+\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_ad2577f13bc2a3d2007495de02ee5523e}\label{classfcl_1_1kIOS_ad2577f13bc2a3d2007495de02ee5523e}} 
+static S {\bfseries cosA} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_ac1eb6a491e7ee164a7cf79e337a1af5c}\label{classfcl_1_1kIOS_ac1eb6a491e7ee164a7cf79e337a1af5c}} 
+k\+I\+O\+S\+\_\+\+Sphere \mbox{\hyperlink{classfcl_1_1kIOS_ac1eb6a491e7ee164a7cf79e337a1af5c}{spheres}} \mbox{[}5\mbox{]}
+\begin{DoxyCompactList}\small\item\em The (at most) five spheres for intersection. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_a0a0337102382eaf4ee3ee420ea3e5eda}\label{classfcl_1_1kIOS_a0a0337102382eaf4ee3ee420ea3e5eda}} 
+unsigned int \mbox{\hyperlink{classfcl_1_1kIOS_a0a0337102382eaf4ee3ee420ea3e5eda}{num\+\_\+spheres}}
+\begin{DoxyCompactList}\small\item\em The number of spheres, no larger than 5. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1kIOS_a077c9b92b257bbde3d0c95070fa7f742}\label{classfcl_1_1kIOS_a077c9b92b257bbde3d0c95070fa7f742}} 
+\mbox{\hyperlink{classfcl_1_1OBB}{O\+BB}}$<$ S $>$ \mbox{\hyperlink{classfcl_1_1kIOS_a077c9b92b257bbde3d0c95070fa7f742}{obb}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classfcl_1_1OBB}{O\+BB}} related with \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S\+\_\+$>$\newline
+class fcl\+::k\+I\+O\+S$<$ S\+\_\+ $>$}
+
+A class describing the \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}} collision structure, which is a set of spheres. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfcl_1_1kIOS_a2c118a87191fca8b50bfdb37d80513f6}\label{classfcl_1_1kIOS_a2c118a87191fca8b50bfdb37d80513f6}} 
+\index{fcl::kIOS$<$ S\_ $>$@{fcl::kIOS$<$ S\_ $>$}!overlap@{overlap}}
+\index{overlap@{overlap}!fcl::kIOS$<$ S\_ $>$@{fcl::kIOS$<$ S\_ $>$}}
+\doxysubsubsection{\texorpdfstring{overlap()}{overlap()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+bool \mbox{\hyperlink{classfcl_1_1kIOS}{fcl\+::k\+I\+OS}}$<$ S $>$\+::overlap (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}$<$ S $>$ \&}]{other,  }\item[{\mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}$<$ S $>$ \&}]{overlap\+\_\+part }\end{DoxyParamCaption}) const}
+
+
+
+Check collision between two \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}} and return the overlap part. For \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}, we return nothing, as the overlappart of two \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}} usually is not an \mbox{\hyperlink{classfcl_1_1kIOS}{k\+I\+OS}}. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]Not efficient. It first checks the sphere collisions and then use \mbox{\hyperlink{classfcl_1_1OBB}{O\+BB}} for further culling. \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/math/bv/k\+I\+O\+S.\+h\item 
+/home/prodefi/fcl/include/fcl/math/bv/k\+I\+O\+S-\/inl.\+h\end{DoxyCompactItemize}

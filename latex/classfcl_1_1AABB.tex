@@ -1,0 +1,116 @@
+\hypertarget{classfcl_1_1AABB}{}\doxysection{fcl\+::A\+A\+BB$<$ S\+\_\+ $>$ Class Template Reference}
+\label{classfcl_1_1AABB}\index{fcl::AABB$<$ S\_ $>$@{fcl::AABB$<$ S\_ $>$}}
+
+
+A class describing the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} collision structure, which is a box in 3D space determined by two diagonal points.  
+
+
+
+
+{\ttfamily \#include $<$A\+A\+B\+B.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_ac8b0d07fa266c4826badc19f149b84c2}\label{classfcl_1_1AABB_ac8b0d07fa266c4826badc19f149b84c2}} 
+using {\bfseries S} = S\+\_\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_a53dbcf28328c181cdf68822d91925e15}\label{classfcl_1_1AABB_a53dbcf28328c181cdf68822d91925e15}} 
+\mbox{\hyperlink{classfcl_1_1AABB_a53dbcf28328c181cdf68822d91925e15}{A\+A\+BB}} ()
+\begin{DoxyCompactList}\small\item\em Creating an \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} with zero size (low bound +inf, upper bound -\/inf) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_ace7907ef3f23bdeda37c6c79fc567d42}\label{classfcl_1_1AABB_ace7907ef3f23bdeda37c6c79fc567d42}} 
+\mbox{\hyperlink{classfcl_1_1AABB_ace7907ef3f23bdeda37c6c79fc567d42}{A\+A\+BB}} (const Vector3$<$ S $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Creating an \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} at position v with zero size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_afef73b6a48df775af72503ad31a8fff7}\label{classfcl_1_1AABB_afef73b6a48df775af72503ad31a8fff7}} 
+\mbox{\hyperlink{classfcl_1_1AABB_afef73b6a48df775af72503ad31a8fff7}{A\+A\+BB}} (const Vector3$<$ S $>$ \&a, const Vector3$<$ S $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Creating an \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} with two endpoints a and b. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_aad844d154b8eecfc7b69834ea104d7cd}\label{classfcl_1_1AABB_aad844d154b8eecfc7b69834ea104d7cd}} 
+\mbox{\hyperlink{classfcl_1_1AABB_aad844d154b8eecfc7b69834ea104d7cd}{A\+A\+BB}} (const \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \&core, const Vector3$<$ S $>$ \&delta)
+\begin{DoxyCompactList}\small\item\em Creating an \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} centered as core and is of half-\/dimension delta. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_a09408d7869799fe86f7ea33dfe4b079b}\label{classfcl_1_1AABB_a09408d7869799fe86f7ea33dfe4b079b}} 
+\mbox{\hyperlink{classfcl_1_1AABB_a09408d7869799fe86f7ea33dfe4b079b}{A\+A\+BB}} (const Vector3$<$ S $>$ \&a, const Vector3$<$ S $>$ \&b, const Vector3$<$ S $>$ \&c)
+\begin{DoxyCompactList}\small\item\em Creating an \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} contains three points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_a9a279f0c52d7ad608173d82a3eecfb5f}\label{classfcl_1_1AABB_a9a279f0c52d7ad608173d82a3eecfb5f}} 
+bool \mbox{\hyperlink{classfcl_1_1AABB_a9a279f0c52d7ad608173d82a3eecfb5f}{overlap}} (const \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Check whether two \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} are overlap. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_afd1022dbb4757562fadfb344eb23cfb9}\label{classfcl_1_1AABB_afd1022dbb4757562fadfb344eb23cfb9}} 
+bool \mbox{\hyperlink{classfcl_1_1AABB_afd1022dbb4757562fadfb344eb23cfb9}{contain}} (const \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Check whether the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} contains another \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_a47c8fbe950b2886737cc1326417d579d}\label{classfcl_1_1AABB_a47c8fbe950b2886737cc1326417d579d}} 
+bool \mbox{\hyperlink{classfcl_1_1AABB_a47c8fbe950b2886737cc1326417d579d}{axis\+Overlap}} (const \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \&other, int axis\+\_\+id) const
+\begin{DoxyCompactList}\small\item\em Check whether two \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} are overlapped along specific axis. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_aee360dbf5e13a6c1f5bb232eb066e7b8}\label{classfcl_1_1AABB_aee360dbf5e13a6c1f5bb232eb066e7b8}} 
+bool \mbox{\hyperlink{classfcl_1_1AABB_aee360dbf5e13a6c1f5bb232eb066e7b8}{overlap}} (const \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \&other, \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \&overlap\+\_\+part) const
+\begin{DoxyCompactList}\small\item\em Check whether two \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} are overlap and return the overlap part. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_a7fa28488df03a98072b4135fa6561646}\label{classfcl_1_1AABB_a7fa28488df03a98072b4135fa6561646}} 
+bool \mbox{\hyperlink{classfcl_1_1AABB_a7fa28488df03a98072b4135fa6561646}{contain}} (const Vector3$<$ S $>$ \&p) const
+\begin{DoxyCompactList}\small\item\em Check whether the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} contains a point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_a7420e091a0601e6f0f4530335b3c6bdc}\label{classfcl_1_1AABB_a7420e091a0601e6f0f4530335b3c6bdc}} 
+\mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1AABB_a7420e091a0601e6f0f4530335b3c6bdc}{operator+=}} (const Vector3$<$ S $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Merge the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} and a point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_a1aab1435f912558f54c34e5ee1b54f42}\label{classfcl_1_1AABB_a1aab1435f912558f54c34e5ee1b54f42}} 
+\mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1AABB_a1aab1435f912558f54c34e5ee1b54f42}{operator+=}} (const \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Merge the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} and another \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_ab4ef84c6b27ba17b6d8f80fd24e86020}\label{classfcl_1_1AABB_ab4ef84c6b27ba17b6d8f80fd24e86020}} 
+\mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \mbox{\hyperlink{classfcl_1_1AABB_ab4ef84c6b27ba17b6d8f80fd24e86020}{operator+}} (const \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Return the merged \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} of current \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} and the other one. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_ac2c098d72dcaa08a7b6b25858da37dcc}\label{classfcl_1_1AABB_ac2c098d72dcaa08a7b6b25858da37dcc}} 
+S \mbox{\hyperlink{classfcl_1_1AABB_ac2c098d72dcaa08a7b6b25858da37dcc}{width}} () const
+\begin{DoxyCompactList}\small\item\em Width of the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_a76d4792dec8002e2220e7440c6190d09}\label{classfcl_1_1AABB_a76d4792dec8002e2220e7440c6190d09}} 
+S \mbox{\hyperlink{classfcl_1_1AABB_a76d4792dec8002e2220e7440c6190d09}{height}} () const
+\begin{DoxyCompactList}\small\item\em Height of the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_aa772cba7bbf0e26251534c319d16b475}\label{classfcl_1_1AABB_aa772cba7bbf0e26251534c319d16b475}} 
+S \mbox{\hyperlink{classfcl_1_1AABB_aa772cba7bbf0e26251534c319d16b475}{depth}} () const
+\begin{DoxyCompactList}\small\item\em Depth of the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_a811b58cfb809e3cd0e59975e9b2c8479}\label{classfcl_1_1AABB_a811b58cfb809e3cd0e59975e9b2c8479}} 
+S \mbox{\hyperlink{classfcl_1_1AABB_a811b58cfb809e3cd0e59975e9b2c8479}{volume}} () const
+\begin{DoxyCompactList}\small\item\em Volume of the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_a97e02476c7286424f7f8ef3c2bad9f88}\label{classfcl_1_1AABB_a97e02476c7286424f7f8ef3c2bad9f88}} 
+S \mbox{\hyperlink{classfcl_1_1AABB_a97e02476c7286424f7f8ef3c2bad9f88}{size}} () const
+\begin{DoxyCompactList}\small\item\em Size of the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} (used in B\+V\+\_\+\+Splitter to order two A\+A\+B\+Bs) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_a058d7e2d7a8a847306c8f52642e84946}\label{classfcl_1_1AABB_a058d7e2d7a8a847306c8f52642e84946}} 
+S \mbox{\hyperlink{classfcl_1_1AABB_a058d7e2d7a8a847306c8f52642e84946}{radius}} () const
+\begin{DoxyCompactList}\small\item\em Radius of the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_aaa58e30bccbcd80d43b1d57b0291daec}\label{classfcl_1_1AABB_aaa58e30bccbcd80d43b1d57b0291daec}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1AABB_aaa58e30bccbcd80d43b1d57b0291daec}{center}} () const
+\begin{DoxyCompactList}\small\item\em Center of the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_a0dbec396754f12ecef263a37a146ff2d}\label{classfcl_1_1AABB_a0dbec396754f12ecef263a37a146ff2d}} 
+S \mbox{\hyperlink{classfcl_1_1AABB_a0dbec396754f12ecef263a37a146ff2d}{distance}} (const \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \&other, Vector3$<$ S $>$ $\ast$P, Vector3$<$ S $>$ $\ast$Q) const
+\begin{DoxyCompactList}\small\item\em Distance between two A\+A\+B\+Bs; P and Q, should not be nullptr, return the nearest points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_a541291afd2c50b3e03d5b37ff6a2e923}\label{classfcl_1_1AABB_a541291afd2c50b3e03d5b37ff6a2e923}} 
+S \mbox{\hyperlink{classfcl_1_1AABB_a541291afd2c50b3e03d5b37ff6a2e923}{distance}} (const \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Distance between two A\+A\+B\+Bs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_a7282fa5fce1c1117f48e861830f7e3cc}\label{classfcl_1_1AABB_a7282fa5fce1c1117f48e861830f7e3cc}} 
+bool \mbox{\hyperlink{classfcl_1_1AABB_a7282fa5fce1c1117f48e861830f7e3cc}{equal}} (const \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em whether two \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} are equal \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_ab9f2195f63b4d4828d90f0336914142d}\label{classfcl_1_1AABB_ab9f2195f63b4d4828d90f0336914142d}} 
+\mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1AABB_ab9f2195f63b4d4828d90f0336914142d}{expand}} (const Vector3$<$ S $>$ \&delta)
+\begin{DoxyCompactList}\small\item\em expand the half size of the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} by delta, and keep the center unchanged. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_a02367fbb613637a36c65dc108888187d}\label{classfcl_1_1AABB_a02367fbb613637a36c65dc108888187d}} 
+\mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1AABB_a02367fbb613637a36c65dc108888187d}{expand}} (const \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \&core, S ratio)
+\begin{DoxyCompactList}\small\item\em expand the aabb by increase the thickness of the plate by a ratio \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_a1d42f6f54956586f24e7a53eea0afebf}\label{classfcl_1_1AABB_a1d42f6f54956586f24e7a53eea0afebf}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1AABB_a1d42f6f54956586f24e7a53eea0afebf}{min\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The min point in the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1AABB_ac83c17a7a38ab3bd4b8fa225886c71b5}\label{classfcl_1_1AABB_ac83c17a7a38ab3bd4b8fa225886c71b5}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1AABB_ac83c17a7a38ab3bd4b8fa225886c71b5}{max\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The max point in the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S\+\_\+$>$\newline
+class fcl\+::\+A\+A\+B\+B$<$ S\+\_\+ $>$}
+
+A class describing the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}} collision structure, which is a box in 3D space determined by two diagonal points. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/math/bv/A\+A\+B\+B.\+h\item 
+/home/prodefi/fcl/include/fcl/math/bv/A\+A\+B\+B-\/inl.\+h\end{DoxyCompactItemize}

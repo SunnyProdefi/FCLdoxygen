@@ -1,0 +1,101 @@
+\hypertarget{classfcl_1_1Plane}{}\doxysection{fcl\+::Plane$<$ S\+\_\+ $>$ Class Template Reference}
+\label{classfcl_1_1Plane}\index{fcl::Plane$<$ S\_ $>$@{fcl::Plane$<$ S\_ $>$}}
+
+
+Infinite plane.  
+
+
+
+
+{\ttfamily \#include $<$plane.\+h$>$}
+
+Inheritance diagram for fcl\+::Plane$<$ S\+\_\+ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classfcl_1_1Plane}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Plane_adf5ba5332322d4928c64cac5b6b5d3c8}\label{classfcl_1_1Plane_adf5ba5332322d4928c64cac5b6b5d3c8}} 
+using {\bfseries S} = S\+\_\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Plane_ace50d42776be58ac9b14ac37a06df3e4}\label{classfcl_1_1Plane_ace50d42776be58ac9b14ac37a06df3e4}} 
+\mbox{\hyperlink{classfcl_1_1Plane_ace50d42776be58ac9b14ac37a06df3e4}{Plane}} (const Vector3$<$ S $>$ \&\mbox{\hyperlink{classfcl_1_1Plane_a5f0c45e6b919867c2db6c9cc41a6c3e2}{n}}, S \mbox{\hyperlink{classfcl_1_1Plane_a6c4c5505b09455869653bef29ecc3dbb}{d}})
+\begin{DoxyCompactList}\small\item\em Construct a plane with normal direction and offset. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Plane_ade015d875ba2e1015e2e33907f3f4a39}\label{classfcl_1_1Plane_ade015d875ba2e1015e2e33907f3f4a39}} 
+\mbox{\hyperlink{classfcl_1_1Plane_ade015d875ba2e1015e2e33907f3f4a39}{Plane}} (S a, S b, S c, S \mbox{\hyperlink{classfcl_1_1Plane_a6c4c5505b09455869653bef29ecc3dbb}{d}})
+\begin{DoxyCompactList}\small\item\em Construct a plane with normal direction and offset. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Plane_a3941a585e517c07978dc2070b349a6dd}\label{classfcl_1_1Plane_a3941a585e517c07978dc2070b349a6dd}} 
+S {\bfseries signed\+Distance} (const Vector3$<$ S $>$ \&p) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1Plane_ad5782cd995851853a31f822f3378aa0c}\label{classfcl_1_1Plane_ad5782cd995851853a31f822f3378aa0c}} 
+S {\bfseries distance} (const Vector3$<$ S $>$ \&p) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1Plane_abbe40f21936d765b8cbbdd7d80217b9f}\label{classfcl_1_1Plane_abbe40f21936d765b8cbbdd7d80217b9f}} 
+void \mbox{\hyperlink{classfcl_1_1Plane_abbe40f21936d765b8cbbdd7d80217b9f}{compute\+Local\+A\+A\+BB}} () override
+\begin{DoxyCompactList}\small\item\em Compute \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Plane_a54af221cb156d42c0b54b4d14f4fd3ef}\label{classfcl_1_1Plane_a54af221cb156d42c0b54b4d14f4fd3ef}} 
+\mbox{\hyperlink{namespacefcl_a2b48aa89f14ef2fb4082575eefb145fc}{N\+O\+D\+E\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{classfcl_1_1Plane_a54af221cb156d42c0b54b4d14f4fd3ef}{get\+Node\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Get node type\+: a plane. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classfcl_1_1Plane_aa730a941cf56d8b5a62564513af36cdd}{representation}} (int precision=20) const
+\begin{DoxyCompactList}\small\item\em Create a string that should be sufficient to recreate this shape. This is akin to the repr() implementation in python. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Plane_a5f0c45e6b919867c2db6c9cc41a6c3e2}\label{classfcl_1_1Plane_a5f0c45e6b919867c2db6c9cc41a6c3e2}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1Plane_a5f0c45e6b919867c2db6c9cc41a6c3e2}{n}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classfcl_1_1Plane}{Plane}} normal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1Plane_a6c4c5505b09455869653bef29ecc3dbb}\label{classfcl_1_1Plane_a6c4c5505b09455869653bef29ecc3dbb}} 
+S \mbox{\hyperlink{classfcl_1_1Plane_a6c4c5505b09455869653bef29ecc3dbb}{d}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classfcl_1_1Plane}{Plane}} offset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Plane_ae6320fa37552e641d962cd68e0b73974}\label{classfcl_1_1Plane_ae6320fa37552e641d962cd68e0b73974}} 
+void \mbox{\hyperlink{classfcl_1_1Plane_ae6320fa37552e641d962cd68e0b73974}{unit\+Normal\+Test}} ()
+\begin{DoxyCompactList}\small\item\em Turn non-\/unit normal into unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1Plane_a22d945ceb15ddd9a348bf57339dfaec5}\label{classfcl_1_1Plane_a22d945ceb15ddd9a348bf57339dfaec5}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{classfcl_1_1Plane}{Plane}} \&plane)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S\+\_\+$>$\newline
+class fcl\+::\+Plane$<$ S\+\_\+ $>$}
+
+Infinite plane. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfcl_1_1Plane_aa730a941cf56d8b5a62564513af36cdd}\label{classfcl_1_1Plane_aa730a941cf56d8b5a62564513af36cdd}} 
+\index{fcl::Plane$<$ S\_ $>$@{fcl::Plane$<$ S\_ $>$}!representation@{representation}}
+\index{representation@{representation}!fcl::Plane$<$ S\_ $>$@{fcl::Plane$<$ S\_ $>$}}
+\doxysubsubsection{\texorpdfstring{representation()}{representation()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+std\+::string \mbox{\hyperlink{classfcl_1_1Plane}{fcl\+::\+Plane}}$<$ S $>$\+::representation (\begin{DoxyParamCaption}\item[{int}]{precision = {\ttfamily 20} }\end{DoxyParamCaption}) const}
+
+
+
+Create a string that should be sufficient to recreate this shape. This is akin to the repr() implementation in python. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em precision} & The requested digits of precision for the numerical measures (same semantics as std\+::setprecision()). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string representation of this instance. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/geometry/shape/plane.\+h\item 
+/home/prodefi/fcl/include/fcl/geometry/shape/plane-\/inl.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,62 @@
+\hypertarget{classfcl_1_1detail_1_1BVFitter}{}\doxysection{fcl\+::detail\+::B\+V\+Fitter$<$ BV $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1BVFitter}\index{fcl::detail::BVFitter$<$ BV $>$@{fcl::detail::BVFitter$<$ BV $>$}}
+
+
+The class for the default algorithm fitting a bounding volume to a set of points.  
+
+
+
+
+{\ttfamily \#include $<$B\+V\+\_\+fitter.\+h$>$}
+
+Inheritance diagram for fcl\+::detail\+::B\+V\+Fitter$<$ BV $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfcl_1_1detail_1_1BVFitter}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVFitter_afc57b86a82a5500e468958ec8fe42c31}\label{classfcl_1_1detail_1_1BVFitter_afc57b86a82a5500e468958ec8fe42c31}} 
+using {\bfseries S} = typename \mbox{\hyperlink{classfcl_1_1detail_1_1BVFitterBase}{B\+V\+Fitter\+Base}}$<$ BV $>$\+::S
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVFitter_aae77f6169eb53d4fb45c1a81ecb555f3}\label{classfcl_1_1detail_1_1BVFitter_aae77f6169eb53d4fb45c1a81ecb555f3}} 
+virtual \mbox{\hyperlink{classfcl_1_1detail_1_1BVFitter_aae77f6169eb53d4fb45c1a81ecb555f3}{$\sim$\+B\+V\+Fitter}} ()
+\begin{DoxyCompactList}\small\item\em default deconstructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVFitter_ad4ac378ce42e22f3173cf4fa61004135}\label{classfcl_1_1detail_1_1BVFitter_ad4ac378ce42e22f3173cf4fa61004135}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1BVFitter_ad4ac378ce42e22f3173cf4fa61004135}{set}} (Vector3$<$ S $>$ $\ast$vertices\+\_\+, \mbox{\hyperlink{classfcl_1_1Triangle}{Triangle}} $\ast$tri\+\_\+indices\+\_\+, \mbox{\hyperlink{namespacefcl_a41f5f0e97729622fd4749b285a0fd848}{B\+V\+H\+Model\+Type}} type\+\_\+)
+\begin{DoxyCompactList}\small\item\em Prepare the geometry primitive data for fitting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVFitter_a5941e7f6ad0359685b434acdfd5a02de}\label{classfcl_1_1detail_1_1BVFitter_a5941e7f6ad0359685b434acdfd5a02de}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1BVFitter_a5941e7f6ad0359685b434acdfd5a02de}{set}} (Vector3$<$ S $>$ $\ast$vertices\+\_\+, Vector3$<$ S $>$ $\ast$prev\+\_\+vertices\+\_\+, \mbox{\hyperlink{classfcl_1_1Triangle}{Triangle}} $\ast$tri\+\_\+indices\+\_\+, \mbox{\hyperlink{namespacefcl_a41f5f0e97729622fd4749b285a0fd848}{B\+V\+H\+Model\+Type}} type\+\_\+)
+\begin{DoxyCompactList}\small\item\em Prepare the geometry primitive data for fitting, for deformable mesh. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVFitter_abe9b329e62c4f38666c2820f012e1add}\label{classfcl_1_1detail_1_1BVFitter_abe9b329e62c4f38666c2820f012e1add}} 
+BV \mbox{\hyperlink{classfcl_1_1detail_1_1BVFitter_abe9b329e62c4f38666c2820f012e1add}{fit}} (unsigned int $\ast$primitive\+\_\+indices, int num\+\_\+primitives)
+\begin{DoxyCompactList}\small\item\em Compute a bounding volume that fits a set of primitives (points or triangles). The primitive data was set by set function and primitive\+\_\+indices is the primitive index relative to the data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVFitter_a41c5b5cf9b11819571bcd7f24ae9c7aa}\label{classfcl_1_1detail_1_1BVFitter_a41c5b5cf9b11819571bcd7f24ae9c7aa}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1BVFitter_a41c5b5cf9b11819571bcd7f24ae9c7aa}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clear the geometry primitive data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVFitter_a4e642d0d62a12ecd85752f90ffb2af88}\label{classfcl_1_1detail_1_1BVFitter_a4e642d0d62a12ecd85752f90ffb2af88}} 
+{\footnotesize template$<$typename , typename $>$ }\\struct {\bfseries Set\+Impl}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVFitter_a803adcbb6057ae25b1d8e2dea15686a5}\label{classfcl_1_1detail_1_1BVFitter_a803adcbb6057ae25b1d8e2dea15686a5}} 
+{\footnotesize template$<$typename , typename $>$ }\\struct {\bfseries Fit\+Impl}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename BV$>$\newline
+class fcl\+::detail\+::\+B\+V\+Fitter$<$ B\+V $>$}
+
+The class for the default algorithm fitting a bounding volume to a set of points. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/geometry/bvh/detail/B\+V\+\_\+fitter.\+h\item 
+/home/prodefi/fcl/include/fcl/geometry/bvh/detail/B\+V\+\_\+fitter-\/inl.\+h\end{DoxyCompactItemize}

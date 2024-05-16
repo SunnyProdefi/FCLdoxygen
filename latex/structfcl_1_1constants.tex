@@ -1,0 +1,88 @@
+\hypertarget{structfcl_1_1constants}{}\doxysection{fcl\+::constants$<$ S $>$ Struct Template Reference}
+\label{structfcl_1_1constants}\index{fcl::constants$<$ S $>$@{fcl::constants$<$ S $>$}}
+
+
+{\ttfamily \#include $<$constants.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1constants_ac7cc505cc288082936379171a849dd0d}\label{structfcl_1_1constants_ac7cc505cc288082936379171a849dd0d}} 
+typedef \mbox{\hyperlink{structfcl_1_1detail_1_1ScalarTrait}{detail\+::\+Scalar\+Trait}}$<$ S $>$\+::type {\bfseries Real}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1constants_a6e3729007ab330d0e1dca82aba358a1d}\label{structfcl_1_1constants_a6e3729007ab330d0e1dca82aba358a1d}} 
+static constexpr S \mbox{\hyperlink{structfcl_1_1constants_a6e3729007ab330d0e1dca82aba358a1d}{pi}} ()
+\begin{DoxyCompactList}\small\item\em The mathematical constant pi. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1constants_a9fd49306d819d76044627c436c65656e}\label{structfcl_1_1constants_a9fd49306d819d76044627c436c65656e}} 
+static constexpr S \mbox{\hyperlink{structfcl_1_1constants_a9fd49306d819d76044627c436c65656e}{phi}} ()
+\begin{DoxyCompactList}\small\item\em The golden ratio. \end{DoxyCompactList}\item 
+static Real \mbox{\hyperlink{structfcl_1_1constants_a683ad3d5f56d5f5d2cf0d4b900069675}{gjk\+\_\+default\+\_\+tolerance}} ()
+\item 
+\mbox{\Hypertarget{structfcl_1_1constants_a991d2007cb7cf29472c4671e00caff25}\label{structfcl_1_1constants_a991d2007cb7cf29472c4671e00caff25}} 
+static constexpr Real \mbox{\hyperlink{structfcl_1_1constants_a991d2007cb7cf29472c4671e00caff25}{eps}} ()
+\begin{DoxyCompactList}\small\item\em Returns ε for the precision of the underlying scalar type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1constants_a303bead312e27d7d61b4c307f11a96b9}\label{structfcl_1_1constants_a303bead312e27d7d61b4c307f11a96b9}} 
+static Real \mbox{\hyperlink{structfcl_1_1constants_a303bead312e27d7d61b4c307f11a96b9}{eps\+\_\+78}} ()
+\begin{DoxyCompactList}\small\item\em Returns ε$^\wedge$(7/8) for the precision of the underlying scalar type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1constants_ab3ade4a177926ed2b585d8692dafda66}\label{structfcl_1_1constants_ab3ade4a177926ed2b585d8692dafda66}} 
+static Real \mbox{\hyperlink{structfcl_1_1constants_ab3ade4a177926ed2b585d8692dafda66}{eps\+\_\+34}} ()
+\begin{DoxyCompactList}\small\item\em Returns ε$^\wedge$(3/4) for the precision of the underlying scalar type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1constants_ab5752a72079513aec43753d134aefb0e}\label{structfcl_1_1constants_ab5752a72079513aec43753d134aefb0e}} 
+static Real \mbox{\hyperlink{structfcl_1_1constants_ab5752a72079513aec43753d134aefb0e}{eps\+\_\+12}} ()
+\begin{DoxyCompactList}\small\item\em Returns ε$^\wedge$(1/2) for the precision of the underlying scalar type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+struct fcl\+::constants$<$ S $>$}
+
+A collection of scalar-\/dependent constants. This provides the ability to get mathematical constants and tolerance values that are appropriately scaled and typed to the scalar type {\ttfamily S}.
+
+Constants {\ttfamily \mbox{\hyperlink{structfcl_1_1constants_a6e3729007ab330d0e1dca82aba358a1d}{pi()}}} and {\ttfamily \mbox{\hyperlink{structfcl_1_1constants_a9fd49306d819d76044627c436c65656e}{phi()}}} are returned in the literal scalar type {\ttfamily S}. In other words, if {\ttfamily S} is an {\ttfamily Auto\+Diff\+Scalar$<$...$>$}, then the value of {\ttfamily pi} and {\ttfamily phi} are likewise {\ttfamily Auto\+Diff\+Scalar$<$...$>$} typed.
+
+Tolerances (e.\+g., {\ttfamily \mbox{\hyperlink{structfcl_1_1constants_a991d2007cb7cf29472c4671e00caff25}{eps()}}} and its variants) are always provided in the scalar\textquotesingle{}s numerical representation. In other words, if {\ttfamily S} is a {\ttfamily double} or {\ttfamily float}, the tolerances are given as {\ttfamily double} and {\ttfamily float}, respectively. For {\ttfamily Auto\+Diff\+Scalar} it is more interesting. The {\ttfamily Auto\+Diff\+Scalar} has an underlying numerical representation (e.\+g., {\ttfamily Auto\+Diff\+Scalar$<$Matrix$<$double, 1, 3$>$$>$} has a double). It is the type of this underlying numerical representation that is provided by the tolerance functions.
+
+This is designed to specifically work with {\ttfamily float}, {\ttfamily double}, {\ttfamily long double}, and corresponding {\ttfamily Auto\+Diff\+Scalar} types. However, custom scalars will also work provided that the scalar type provides a class member type {\ttfamily Real} which must be one of {\ttfamily long double}, {\ttfamily double}, or {\ttfamily float}. E.\+g.,
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{struct }MyScalar \{}
+\DoxyCodeLine{ \textcolor{keyword}{public}:}
+\DoxyCodeLine{  \textcolor{keyword}{typedef} \textcolor{keywordtype}{double} Real;}
+\DoxyCodeLine{  ...}
+\DoxyCodeLine{\};}
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+The tolerance values provided are defined so as to provide varying precision that {\itshape scales} with the underlying numerical type. The following contrast will make it clear. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{S local\_eps = 10 * std::numeric\_limit<S>::epsilon();  \textcolor{comment}{// DON'T DO THIS!}}
+\end{DoxyCode}
+
+\end{DoxyNote}
+The above example shows a common but incorrect method for defining a local epsilon. It defines it as being an order of magnitude larger (base 10) than the machine epsilon for {\ttfamily S}. However, if {\ttfamily S} is a float, its epsilon is essentially 1e-\/7. A full decimal digit of precision is 1/7th of the available digits. In contrast, double epsilon is approximately 2e-\/16. Throwing away a digit there reduces the precision by only 1/16th. This technique disproportionately punishes lower-\/precision numerical representations. Instead, by raising epsilon to a fractional power, we {\itshape scale} the precision. Roughly, {\ttfamily ε$^\wedge$(1/2)} gives us half the precision (3.\+5e-\/4 for floats and 1.\+5e-\/8 for doubles). Similarly powers of 3/4 and 7/8 gives us three quarters and 7/8ths of the bits of precision. By defining tolerances in this way, one can get some fraction of machine precision, regardless of the choice of numeric type.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em S} & The scalar type for which constant values will be retrieved. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structfcl_1_1constants_a683ad3d5f56d5f5d2cf0d4b900069675}\label{structfcl_1_1constants_a683ad3d5f56d5f5d2cf0d4b900069675}} 
+\index{fcl::constants$<$ S $>$@{fcl::constants$<$ S $>$}!gjk\_default\_tolerance@{gjk\_default\_tolerance}}
+\index{gjk\_default\_tolerance@{gjk\_default\_tolerance}!fcl::constants$<$ S $>$@{fcl::constants$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{gjk\_default\_tolerance()}{gjk\_default\_tolerance()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+static Real \mbox{\hyperlink{structfcl_1_1constants}{fcl\+::constants}}$<$ S $>$\+::gjk\+\_\+default\+\_\+tolerance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Defines the default accuracy for gjk and epa tolerance. It is defined as ε$^\wedge$(7/8) -- where ε is the machine precision epsilon for the in-\/use Real. The value is a much smaller epsilon for doubles than for floats (2e-\/14 vs 9e-\/7, respectively). The choice of ε$^\wedge$(7/8) as the default G\+JK tolerance reflects a tolerance that is a {\itshape slightly} tighter bound than the historical value of 1e-\/6 used for 32-\/bit floats. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/math/constants.\+h\end{DoxyCompactItemize}

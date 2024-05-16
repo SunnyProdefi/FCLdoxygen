@@ -1,0 +1,28 @@
+\hypertarget{structfcl_1_1TBVMotionBoundVisitorVisitImpl_3_01S_00_01RSS_3_01S_01_4_00_01ScrewMotion_3_01S_01_4_01_4}{}\doxysection{fcl\+::T\+B\+V\+Motion\+Bound\+Visitor\+Visit\+Impl$<$ S, R\+SS$<$ S $>$, Screw\+Motion$<$ S $>$ $>$ Struct Template Reference}
+\label{structfcl_1_1TBVMotionBoundVisitorVisitImpl_3_01S_00_01RSS_3_01S_01_4_00_01ScrewMotion_3_01S_01_4_01_4}\index{fcl::TBVMotionBoundVisitorVisitImpl$<$ S, RSS$<$ S $>$, ScrewMotion$<$ S $>$ $>$@{fcl::TBVMotionBoundVisitorVisitImpl$<$ S, RSS$<$ S $>$, ScrewMotion$<$ S $>$ $>$}}
+
+
+Compute the motion bound for a bounding volume along a given direction n according to mu $<$ $\vert$v $\ast$ n$\vert$ + $\vert$$\vert$w x n$\vert$$\vert$(r + max($\vert$$\vert$ci$\ast$$\vert$$\vert$)) where $\vert$$\vert$ci$\ast$$\vert$$\vert$ = $\vert$$\vert$\+R0(ci) x w$\vert$$\vert$. w is the angular axis (normalized) and ci are the endpoints of the generator primitives of \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}. Notice that all bv parameters are in the local frame of the object, but n should be in the global frame (the reason is that the motion (t1, t2 and t) is in global frame)  
+
+
+
+
+{\ttfamily \#include $<$tbv\+\_\+motion\+\_\+bound\+\_\+visitor-\/inl.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1TBVMotionBoundVisitorVisitImpl_3_01S_00_01RSS_3_01S_01_4_00_01ScrewMotion_3_01S_01_4_01_4_aa88c879b9cb905c4a646271aee6cbc11}\label{structfcl_1_1TBVMotionBoundVisitorVisitImpl_3_01S_00_01RSS_3_01S_01_4_00_01ScrewMotion_3_01S_01_4_01_4_aa88c879b9cb905c4a646271aee6cbc11}} 
+static S {\bfseries run} (const \mbox{\hyperlink{classfcl_1_1TBVMotionBoundVisitor}{T\+B\+V\+Motion\+Bound\+Visitor}}$<$ \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}$<$ S $>$$>$ \&visitor, const \mbox{\hyperlink{classfcl_1_1ScrewMotion}{Screw\+Motion}}$<$ S $>$ \&motion)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+struct fcl\+::\+T\+B\+V\+Motion\+Bound\+Visitor\+Visit\+Impl$<$ S, R\+S\+S$<$ S $>$, Screw\+Motion$<$ S $>$ $>$}
+
+Compute the motion bound for a bounding volume along a given direction n according to mu $<$ $\vert$v $\ast$ n$\vert$ + $\vert$$\vert$w x n$\vert$$\vert$(r + max($\vert$$\vert$ci$\ast$$\vert$$\vert$)) where $\vert$$\vert$ci$\ast$$\vert$$\vert$ = $\vert$$\vert$\+R0(ci) x w$\vert$$\vert$. w is the angular axis (normalized) and ci are the endpoints of the generator primitives of \mbox{\hyperlink{classfcl_1_1RSS}{R\+SS}}. Notice that all bv parameters are in the local frame of the object, but n should be in the global frame (the reason is that the motion (t1, t2 and t) is in global frame) 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/math/motion/tbv\+\_\+motion\+\_\+bound\+\_\+visitor-\/inl.\+h\end{DoxyCompactItemize}

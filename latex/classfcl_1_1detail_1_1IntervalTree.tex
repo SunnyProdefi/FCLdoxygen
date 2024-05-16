@@ -1,0 +1,115 @@
+\hypertarget{classfcl_1_1detail_1_1IntervalTree}{}\doxysection{fcl\+::detail\+::Interval\+Tree$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1IntervalTree}\index{fcl::detail::IntervalTree$<$ S $>$@{fcl::detail::IntervalTree$<$ S $>$}}
+
+
+\mbox{\hyperlink{structfcl_1_1Interval}{Interval}} tree.  
+
+
+
+
+{\ttfamily \#include $<$interval\+\_\+tree.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree_aff8b6b26783f89a3dac19c403970f389}{Interval\+Tree}} ()
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1IntervalTree_afa0aa00c774906fe547cbac782e18734}\label{classfcl_1_1detail_1_1IntervalTree_afa0aa00c774906fe547cbac782e18734}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree_afa0aa00c774906fe547cbac782e18734}{print}} () const
+\begin{DoxyCompactList}\small\item\em Print the whole interval tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structfcl_1_1detail_1_1SimpleInterval}{Simple\+Interval}}$<$ S $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree_a21065e682f2f20dbf94359468fce0143}{delete\+Node}} (\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$node)
+\begin{DoxyCompactList}\small\item\em Delete one node of the interval tree. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1IntervalTree_a90fec5a0eca8e54337e7130c786e895a}\label{classfcl_1_1detail_1_1IntervalTree_a90fec5a0eca8e54337e7130c786e895a}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree_a90fec5a0eca8e54337e7130c786e895a}{delete\+Node}} (\mbox{\hyperlink{structfcl_1_1detail_1_1SimpleInterval}{Simple\+Interval}}$<$ S $>$ $\ast$ivl)
+\begin{DoxyCompactList}\small\item\em delete node stored a given interval \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree_adcc0c974e69d2de9200fa42fe94c4508}{insert}} (\mbox{\hyperlink{structfcl_1_1detail_1_1SimpleInterval}{Simple\+Interval}}$<$ S $>$ $\ast$new\+\_\+interval)
+\begin{DoxyCompactList}\small\item\em Insert one node of the interval tree. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1IntervalTree_a8e4fa79f69ceb8462ca8b3abd72a3f6a}\label{classfcl_1_1detail_1_1IntervalTree_a8e4fa79f69ceb8462ca8b3abd72a3f6a}} 
+\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree_a8e4fa79f69ceb8462ca8b3abd72a3f6a}{get\+Predecessor}} (\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$node) const
+\begin{DoxyCompactList}\small\item\em get the predecessor of a given node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1IntervalTree_ae80a6e70f8ff9d30a0e6923702b4f3c1}\label{classfcl_1_1detail_1_1IntervalTree_ae80a6e70f8ff9d30a0e6923702b4f3c1}} 
+\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree_ae80a6e70f8ff9d30a0e6923702b4f3c1}{get\+Successor}} (\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$node) const
+\begin{DoxyCompactList}\small\item\em Get the successor of a given node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1IntervalTree_a9489c2f345378dd27903b91b412e538b}\label{classfcl_1_1detail_1_1IntervalTree_a9489c2f345378dd27903b91b412e538b}} 
+std\+::deque$<$ \mbox{\hyperlink{structfcl_1_1detail_1_1SimpleInterval}{Simple\+Interval}}$<$ S $>$ $\ast$ $>$ \mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree_a9489c2f345378dd27903b91b412e538b}{query}} (S low, S high)
+\begin{DoxyCompactList}\small\item\em Return result for a given query. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1IntervalTree_a5b3b788e4eb7fe3d857e760505204d00}\label{classfcl_1_1detail_1_1IntervalTree_a5b3b788e4eb7fe3d857e760505204d00}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree_a5b3b788e4eb7fe3d857e760505204d00}{left\+Rotate}} (\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$node)
+\begin{DoxyCompactList}\small\item\em left rotation of tree node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1IntervalTree_aa35bc415f8f7aab213d36e8f6086e90c}\label{classfcl_1_1detail_1_1IntervalTree_aa35bc415f8f7aab213d36e8f6086e90c}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree_aa35bc415f8f7aab213d36e8f6086e90c}{right\+Rotate}} (\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$node)
+\begin{DoxyCompactList}\small\item\em right rotation of tree node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1IntervalTree_a6dff4564a56dd909516354544086ffdc}\label{classfcl_1_1detail_1_1IntervalTree_a6dff4564a56dd909516354544086ffdc}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree_a6dff4564a56dd909516354544086ffdc}{recursive\+Insert}} (\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$node)
+\begin{DoxyCompactList}\small\item\em Inserts node into the tree as if it were a regular binary tree. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1IntervalTree_ac9f446e9069565a6a7185cfd29c33c64}\label{classfcl_1_1detail_1_1IntervalTree_ac9f446e9069565a6a7185cfd29c33c64}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree_ac9f446e9069565a6a7185cfd29c33c64}{recursive\+Print}} (\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$node) const
+\begin{DoxyCompactList}\small\item\em recursively print a subtree \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1IntervalTree_a8998b15125cb33e53631e3ae272d731b}\label{classfcl_1_1detail_1_1IntervalTree_a8998b15125cb33e53631e3ae272d731b}} 
+\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree_a8998b15125cb33e53631e3ae272d731b}{recursive\+Search}} (\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$node, \mbox{\hyperlink{structfcl_1_1detail_1_1SimpleInterval}{Simple\+Interval}}$<$ S $>$ $\ast$ivl) const
+\begin{DoxyCompactList}\small\item\em recursively find the node corresponding to the interval \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1IntervalTree_a04d15baf0ddecbe78569cd49df6e156a}\label{classfcl_1_1detail_1_1IntervalTree_a04d15baf0ddecbe78569cd49df6e156a}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree_a04d15baf0ddecbe78569cd49df6e156a}{fixup\+Max\+High}} (\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$node)
+\begin{DoxyCompactList}\small\item\em Travels up to the root fixing the max\+\_\+high fields after an insertion or deletion. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1IntervalTree_afa76aae6422070f93b4ddfa3e465b6b9}\label{classfcl_1_1detail_1_1IntervalTree_afa76aae6422070f93b4ddfa3e465b6b9}} 
+void {\bfseries delete\+Fixup} (\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1IntervalTree_af824a43f6f03733481055549414dff3e}\label{classfcl_1_1detail_1_1IntervalTree_af824a43f6f03733481055549414dff3e}} 
+\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$ {\bfseries root}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1IntervalTree_ab3cf737e0f8ddd022e0fd27afda29dff}\label{classfcl_1_1detail_1_1IntervalTree_ab3cf737e0f8ddd022e0fd27afda29dff}} 
+\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$ {\bfseries nil}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+class fcl\+::detail\+::\+Interval\+Tree$<$ S $>$}
+
+\mbox{\hyperlink{structfcl_1_1Interval}{Interval}} tree. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfcl_1_1detail_1_1IntervalTree_aff8b6b26783f89a3dac19c403970f389}\label{classfcl_1_1detail_1_1IntervalTree_aff8b6b26783f89a3dac19c403970f389}} 
+\index{fcl::detail::IntervalTree$<$ S $>$@{fcl::detail::IntervalTree$<$ S $>$}!IntervalTree@{IntervalTree}}
+\index{IntervalTree@{IntervalTree}!fcl::detail::IntervalTree$<$ S $>$@{fcl::detail::IntervalTree$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{IntervalTree()}{IntervalTree()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree}{fcl\+::detail\+::\+Interval\+Tree}}$<$ S $>$\+::\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree}{Interval\+Tree}}}
+
+the following are used for the query function
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfcl_1_1detail_1_1IntervalTree_a21065e682f2f20dbf94359468fce0143}\label{classfcl_1_1detail_1_1IntervalTree_a21065e682f2f20dbf94359468fce0143}} 
+\index{fcl::detail::IntervalTree$<$ S $>$@{fcl::detail::IntervalTree$<$ S $>$}!deleteNode@{deleteNode}}
+\index{deleteNode@{deleteNode}!fcl::detail::IntervalTree$<$ S $>$@{fcl::detail::IntervalTree$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{deleteNode()}{deleteNode()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+\mbox{\hyperlink{structfcl_1_1detail_1_1SimpleInterval}{Simple\+Interval}}$<$ S $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree}{fcl\+::detail\+::\+Interval\+Tree}}$<$ S $>$\+::delete\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Delete one node of the interval tree. 
+
+y should not be nil in this case y is the node to splice out and x is its child\mbox{\Hypertarget{classfcl_1_1detail_1_1IntervalTree_adcc0c974e69d2de9200fa42fe94c4508}\label{classfcl_1_1detail_1_1IntervalTree_adcc0c974e69d2de9200fa42fe94c4508}} 
+\index{fcl::detail::IntervalTree$<$ S $>$@{fcl::detail::IntervalTree$<$ S $>$}!insert@{insert}}
+\index{insert@{insert}!fcl::detail::IntervalTree$<$ S $>$@{fcl::detail::IntervalTree$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+\mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTreeNode}{Interval\+Tree\+Node}}$<$ S $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1detail_1_1IntervalTree}{fcl\+::detail\+::\+Interval\+Tree}}$<$ S $>$\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfcl_1_1detail_1_1SimpleInterval}{Simple\+Interval}}$<$ S $>$ $\ast$}]{new\+\_\+interval }\end{DoxyParamCaption})}
+
+
+
+Insert one node of the interval tree. 
+
+use sentinel instead of checking for root
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/broadphase/detail/interval\+\_\+tree.\+h\item 
+/home/prodefi/fcl/include/fcl/broadphase/detail/interval\+\_\+tree-\/inl.\+h\end{DoxyCompactItemize}

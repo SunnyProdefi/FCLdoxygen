@@ -1,0 +1,68 @@
+\hypertarget{classfcl_1_1TriangleP}{}\doxysection{fcl\+::TriangleP$<$ S\+\_\+ $>$ Class Template Reference}
+\label{classfcl_1_1TriangleP}\index{fcl::TriangleP$<$ S\_ $>$@{fcl::TriangleP$<$ S\_ $>$}}
+
+
+\mbox{\hyperlink{classfcl_1_1Triangle}{Triangle}} stores the points instead of only indices of points.  
+
+
+
+
+{\ttfamily \#include $<$triangle\+\_\+p.\+h$>$}
+
+Inheritance diagram for fcl\+::TriangleP$<$ S\+\_\+ $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classfcl_1_1TriangleP}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1TriangleP_aceec7885d51c27dc9f6ad966ce285071}\label{classfcl_1_1TriangleP_aceec7885d51c27dc9f6ad966ce285071}} 
+using {\bfseries S} = S\+\_\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1TriangleP_abca6fa1c522a530ad62e42786c43a114}\label{classfcl_1_1TriangleP_abca6fa1c522a530ad62e42786c43a114}} 
+{\bfseries TriangleP} (const Vector3$<$ S $>$ \&a, const Vector3$<$ S $>$ \&b, const Vector3$<$ S $>$ \&c)
+\item 
+\mbox{\Hypertarget{classfcl_1_1TriangleP_a64a4c884c14f12eddcd6cd6dd3eebe10}\label{classfcl_1_1TriangleP_a64a4c884c14f12eddcd6cd6dd3eebe10}} 
+void \mbox{\hyperlink{classfcl_1_1TriangleP_a64a4c884c14f12eddcd6cd6dd3eebe10}{compute\+Local\+A\+A\+BB}} () override
+\begin{DoxyCompactList}\small\item\em virtual function of compute \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}\sout{ in local coordinate }\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1TriangleP_a730dd1f56686b7b583475b504722fedb}\label{classfcl_1_1TriangleP_a730dd1f56686b7b583475b504722fedb}} 
+\mbox{\hyperlink{namespacefcl_a2b48aa89f14ef2fb4082575eefb145fc}{N\+O\+D\+E\+\_\+\+T\+Y\+PE}} {\bfseries get\+Node\+Type} () const override
+\item 
+\mbox{\Hypertarget{classfcl_1_1TriangleP_a0a813d9524038efde70212142a742bf7}\label{classfcl_1_1TriangleP_a0a813d9524038efde70212142a742bf7}} 
+std\+::vector$<$ Vector3$<$ S $>$ $>$ \mbox{\hyperlink{classfcl_1_1TriangleP_a0a813d9524038efde70212142a742bf7}{get\+Bound\+Vertices}} (const Transform3$<$ S $>$ \&tf) const
+\begin{DoxyCompactList}\small\item\em get the vertices of some convex shape which can bound this shape in a specific configuration \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1TriangleP_a7f926f0e2c7ed841ecac274f63fe3ff6}\label{classfcl_1_1TriangleP_a7f926f0e2c7ed841ecac274f63fe3ff6}} 
+Vector3$<$ S $>$ {\bfseries a}
+\item 
+\mbox{\Hypertarget{classfcl_1_1TriangleP_a3a73b52d4fe0ff1f720302127e447411}\label{classfcl_1_1TriangleP_a3a73b52d4fe0ff1f720302127e447411}} 
+Vector3$<$ S $>$ {\bfseries b}
+\item 
+\mbox{\Hypertarget{classfcl_1_1TriangleP_a7e83ea1728d286b80734be9d0110111c}\label{classfcl_1_1TriangleP_a7e83ea1728d286b80734be9d0110111c}} 
+Vector3$<$ S $>$ {\bfseries c}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1TriangleP_a32e370691efba1afe9d445d02c509f53}\label{classfcl_1_1TriangleP_a32e370691efba1afe9d445d02c509f53}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{classfcl_1_1TriangleP}{TriangleP}} \&tri)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S\+\_\+$>$\newline
+class fcl\+::\+Triangle\+P$<$ S\+\_\+ $>$}
+
+\mbox{\hyperlink{classfcl_1_1Triangle}{Triangle}} stores the points instead of only indices of points. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/geometry/shape/triangle\+\_\+p.\+h\item 
+/home/prodefi/fcl/include/fcl/geometry/shape/triangle\+\_\+p-\/inl.\+h\end{DoxyCompactItemize}

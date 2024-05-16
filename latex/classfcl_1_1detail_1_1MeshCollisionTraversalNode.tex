@@ -1,0 +1,62 @@
+\hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNode}{}\doxysection{fcl\+::detail\+::Mesh\+Collision\+Traversal\+Node$<$ BV $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1MeshCollisionTraversalNode}\index{fcl::detail::MeshCollisionTraversalNode$<$ BV $>$@{fcl::detail::MeshCollisionTraversalNode$<$ BV $>$}}
+
+
+Traversal node for collision between two meshes.  
+
+
+
+
+{\ttfamily \#include $<$mesh\+\_\+collision\+\_\+traversal\+\_\+node.\+h$>$}
+
+Inheritance diagram for fcl\+::detail\+::Mesh\+Collision\+Traversal\+Node$<$ BV $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classfcl_1_1detail_1_1MeshCollisionTraversalNode}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNode_a2dbedac38bc81aaf081ab18b7674c8e1}\label{classfcl_1_1detail_1_1MeshCollisionTraversalNode_a2dbedac38bc81aaf081ab18b7674c8e1}} 
+using {\bfseries S} = typename B\+V\+::S
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNode_ae4a80272f1ee9508a885586335fdfc52}\label{classfcl_1_1detail_1_1MeshCollisionTraversalNode_ae4a80272f1ee9508a885586335fdfc52}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1MeshCollisionTraversalNode_ae4a80272f1ee9508a885586335fdfc52}{leaf\+Testing}} (int b1, int b2) const
+\begin{DoxyCompactList}\small\item\em Intersection testing between leaves (two triangles) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNode_abf94c4d624ce2bb4506b2ad6417cb31b}\label{classfcl_1_1detail_1_1MeshCollisionTraversalNode_abf94c4d624ce2bb4506b2ad6417cb31b}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1MeshCollisionTraversalNode_abf94c4d624ce2bb4506b2ad6417cb31b}{can\+Stop}} () const
+\begin{DoxyCompactList}\small\item\em Whether the traversal process can stop early. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNode_a9bd108f6e8425c488ab3998605379260}\label{classfcl_1_1detail_1_1MeshCollisionTraversalNode_a9bd108f6e8425c488ab3998605379260}} 
+Vector3$<$ S $>$ $\ast$ {\bfseries vertices1}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNode_a5f4a1f9481d4936a956790cf9d33dd48}\label{classfcl_1_1detail_1_1MeshCollisionTraversalNode_a5f4a1f9481d4936a956790cf9d33dd48}} 
+Vector3$<$ S $>$ $\ast$ {\bfseries vertices2}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNode_a56381fde14d5c4e6d61fafa4928fb84f}\label{classfcl_1_1detail_1_1MeshCollisionTraversalNode_a56381fde14d5c4e6d61fafa4928fb84f}} 
+\mbox{\hyperlink{classfcl_1_1Triangle}{Triangle}} $\ast$ {\bfseries tri\+\_\+indices1}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNode_a1ddd505c68573d6538f759fb18fee968}\label{classfcl_1_1detail_1_1MeshCollisionTraversalNode_a1ddd505c68573d6538f759fb18fee968}} 
+\mbox{\hyperlink{classfcl_1_1Triangle}{Triangle}} $\ast$ {\bfseries tri\+\_\+indices2}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1MeshCollisionTraversalNode_a369d0caf1afbac0077076700a4d545be}\label{classfcl_1_1detail_1_1MeshCollisionTraversalNode_a369d0caf1afbac0077076700a4d545be}} 
+S {\bfseries cost\+\_\+density}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename BV$>$\newline
+class fcl\+::detail\+::\+Mesh\+Collision\+Traversal\+Node$<$ B\+V $>$}
+
+Traversal node for collision between two meshes. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/collision/mesh\+\_\+collision\+\_\+traversal\+\_\+node.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/collision/mesh\+\_\+collision\+\_\+traversal\+\_\+node-\/inl.\+h\end{DoxyCompactItemize}

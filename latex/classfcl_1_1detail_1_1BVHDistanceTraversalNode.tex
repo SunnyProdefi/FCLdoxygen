@@ -1,0 +1,80 @@
+\hypertarget{classfcl_1_1detail_1_1BVHDistanceTraversalNode}{}\doxysection{fcl\+::detail\+::B\+V\+H\+Distance\+Traversal\+Node$<$ BV $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1BVHDistanceTraversalNode}\index{fcl::detail::BVHDistanceTraversalNode$<$ BV $>$@{fcl::detail::BVHDistanceTraversalNode$<$ BV $>$}}
+
+
+Traversal node for distance computation between B\+VH models.  
+
+
+
+
+{\ttfamily \#include $<$bvh\+\_\+distance\+\_\+traversal\+\_\+node.\+h$>$}
+
+Inheritance diagram for fcl\+::detail\+::B\+V\+H\+Distance\+Traversal\+Node$<$ BV $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classfcl_1_1detail_1_1BVHDistanceTraversalNode}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVHDistanceTraversalNode_a5ce942be9a476bcd922f30ca868c87e5}\label{classfcl_1_1detail_1_1BVHDistanceTraversalNode_a5ce942be9a476bcd922f30ca868c87e5}} 
+using {\bfseries S} = typename B\+V\+::S
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVHDistanceTraversalNode_af92033e32fcb110b65e7b9865bf1d847}\label{classfcl_1_1detail_1_1BVHDistanceTraversalNode_af92033e32fcb110b65e7b9865bf1d847}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1BVHDistanceTraversalNode_af92033e32fcb110b65e7b9865bf1d847}{is\+First\+Node\+Leaf}} (int b) const
+\begin{DoxyCompactList}\small\item\em Whether the BV node in the first B\+VH tree is leaf. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVHDistanceTraversalNode_ace628d089c5b219f6033997497867479}\label{classfcl_1_1detail_1_1BVHDistanceTraversalNode_ace628d089c5b219f6033997497867479}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1BVHDistanceTraversalNode_ace628d089c5b219f6033997497867479}{is\+Second\+Node\+Leaf}} (int b) const
+\begin{DoxyCompactList}\small\item\em Whether the BV node in the second B\+VH tree is leaf. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVHDistanceTraversalNode_a1f220615f40c93be63d09ce869f7b610}\label{classfcl_1_1detail_1_1BVHDistanceTraversalNode_a1f220615f40c93be63d09ce869f7b610}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1BVHDistanceTraversalNode_a1f220615f40c93be63d09ce869f7b610}{first\+Over\+Second}} (int b1, int b2) const
+\begin{DoxyCompactList}\small\item\em Determine the traversal order, is the first B\+V\+TT subtree better. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVHDistanceTraversalNode_a1b9096d1a3a013105203fac0259a0784}\label{classfcl_1_1detail_1_1BVHDistanceTraversalNode_a1b9096d1a3a013105203fac0259a0784}} 
+int \mbox{\hyperlink{classfcl_1_1detail_1_1BVHDistanceTraversalNode_a1b9096d1a3a013105203fac0259a0784}{get\+First\+Left\+Child}} (int b) const
+\begin{DoxyCompactList}\small\item\em Obtain the left child of BV node in the first B\+VH. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVHDistanceTraversalNode_a1c2b3f12944e9cd8f66c4f513efdf4af}\label{classfcl_1_1detail_1_1BVHDistanceTraversalNode_a1c2b3f12944e9cd8f66c4f513efdf4af}} 
+int \mbox{\hyperlink{classfcl_1_1detail_1_1BVHDistanceTraversalNode_a1c2b3f12944e9cd8f66c4f513efdf4af}{get\+First\+Right\+Child}} (int b) const
+\begin{DoxyCompactList}\small\item\em Obtain the right child of BV node in the first B\+VH. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVHDistanceTraversalNode_a8223256e2526fad3be7a95729efe202c}\label{classfcl_1_1detail_1_1BVHDistanceTraversalNode_a8223256e2526fad3be7a95729efe202c}} 
+int \mbox{\hyperlink{classfcl_1_1detail_1_1BVHDistanceTraversalNode_a8223256e2526fad3be7a95729efe202c}{get\+Second\+Left\+Child}} (int b) const
+\begin{DoxyCompactList}\small\item\em Obtain the left child of BV node in the second B\+VH. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVHDistanceTraversalNode_ac97bba810052a73cd8eb679b31e3dce5}\label{classfcl_1_1detail_1_1BVHDistanceTraversalNode_ac97bba810052a73cd8eb679b31e3dce5}} 
+int \mbox{\hyperlink{classfcl_1_1detail_1_1BVHDistanceTraversalNode_ac97bba810052a73cd8eb679b31e3dce5}{get\+Second\+Right\+Child}} (int b) const
+\begin{DoxyCompactList}\small\item\em Obtain the right child of BV node in the second B\+VH. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVHDistanceTraversalNode_ac55bd5fb3daccf12c88b906a5b109e09}\label{classfcl_1_1detail_1_1BVHDistanceTraversalNode_ac55bd5fb3daccf12c88b906a5b109e09}} 
+S \mbox{\hyperlink{classfcl_1_1detail_1_1BVHDistanceTraversalNode_ac55bd5fb3daccf12c88b906a5b109e09}{B\+V\+Testing}} (int b1, int b2) const
+\begin{DoxyCompactList}\small\item\em BV culling test in one B\+V\+TT node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVHDistanceTraversalNode_a70bcc82549d6b0682c563148bf597be9}\label{classfcl_1_1detail_1_1BVHDistanceTraversalNode_a70bcc82549d6b0682c563148bf597be9}} 
+const \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1detail_1_1BVHDistanceTraversalNode_a70bcc82549d6b0682c563148bf597be9}{model1}}
+\begin{DoxyCompactList}\small\item\em The first B\+VH model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVHDistanceTraversalNode_aa1d0b191feab00439b38bb11bb496450}\label{classfcl_1_1detail_1_1BVHDistanceTraversalNode_aa1d0b191feab00439b38bb11bb496450}} 
+const \mbox{\hyperlink{classfcl_1_1BVHModel}{B\+V\+H\+Model}}$<$ BV $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1detail_1_1BVHDistanceTraversalNode_aa1d0b191feab00439b38bb11bb496450}{model2}}
+\begin{DoxyCompactList}\small\item\em The second B\+VH model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVHDistanceTraversalNode_ad197479fda8c90d06628e4d2a442dfb6}\label{classfcl_1_1detail_1_1BVHDistanceTraversalNode_ad197479fda8c90d06628e4d2a442dfb6}} 
+int \mbox{\hyperlink{classfcl_1_1detail_1_1BVHDistanceTraversalNode_ad197479fda8c90d06628e4d2a442dfb6}{num\+\_\+bv\+\_\+tests}}
+\begin{DoxyCompactList}\small\item\em statistical information \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVHDistanceTraversalNode_aa3c22822866aee92d43a09dc8283b13d}\label{classfcl_1_1detail_1_1BVHDistanceTraversalNode_aa3c22822866aee92d43a09dc8283b13d}} 
+int {\bfseries num\+\_\+leaf\+\_\+tests}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1BVHDistanceTraversalNode_af87511b6a0a3c53848ee50480931d8c0}\label{classfcl_1_1detail_1_1BVHDistanceTraversalNode_af87511b6a0a3c53848ee50480931d8c0}} 
+S {\bfseries query\+\_\+time\+\_\+seconds}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename BV$>$\newline
+class fcl\+::detail\+::\+B\+V\+H\+Distance\+Traversal\+Node$<$ B\+V $>$}
+
+Traversal node for distance computation between B\+VH models. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/distance/bvh\+\_\+distance\+\_\+traversal\+\_\+node.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/distance/bvh\+\_\+distance\+\_\+traversal\+\_\+node-\/inl.\+h\end{DoxyCompactItemize}

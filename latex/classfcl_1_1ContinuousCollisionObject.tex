@@ -1,0 +1,77 @@
+\hypertarget{classfcl_1_1ContinuousCollisionObject}{}\doxysection{fcl\+::Continuous\+Collision\+Object$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1ContinuousCollisionObject}\index{fcl::ContinuousCollisionObject$<$ S $>$@{fcl::ContinuousCollisionObject$<$ S $>$}}
+
+
+the object for continuous collision or distance computation, contains the geometry and the motion information  
+
+
+
+
+{\ttfamily \#include $<$continuous\+\_\+collision\+\_\+object.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1ContinuousCollisionObject_ad5255e8b67e187a849721657ae6c3255}\label{classfcl_1_1ContinuousCollisionObject_ad5255e8b67e187a849721657ae6c3255}} 
+{\bfseries Continuous\+Collision\+Object} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$$>$ \&cgeom)
+\item 
+\mbox{\Hypertarget{classfcl_1_1ContinuousCollisionObject_a761054e369886a46dde5edc75549cc68}\label{classfcl_1_1ContinuousCollisionObject_a761054e369886a46dde5edc75549cc68}} 
+{\bfseries Continuous\+Collision\+Object} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$$>$ \&cgeom, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classfcl_1_1MotionBase}{Motion\+Base}}$<$ S $>$$>$ \&motion)
+\item 
+\mbox{\Hypertarget{classfcl_1_1ContinuousCollisionObject_ad982cf892f6b1467425aa4ae25eb7e85}\label{classfcl_1_1ContinuousCollisionObject_ad982cf892f6b1467425aa4ae25eb7e85}} 
+\mbox{\hyperlink{namespacefcl_a7675859ca6424d6552ee6b1028f29d7d}{O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject_ad982cf892f6b1467425aa4ae25eb7e85}{get\+Object\+Type}} () const
+\begin{DoxyCompactList}\small\item\em get the type of the object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ContinuousCollisionObject_a58547f77ef55bb08c9f02fff25621d29}\label{classfcl_1_1ContinuousCollisionObject_a58547f77ef55bb08c9f02fff25621d29}} 
+\mbox{\hyperlink{namespacefcl_a2b48aa89f14ef2fb4082575eefb145fc}{N\+O\+D\+E\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject_a58547f77ef55bb08c9f02fff25621d29}{get\+Node\+Type}} () const
+\begin{DoxyCompactList}\small\item\em get the node type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ContinuousCollisionObject_aec592607d88e58126108f43d75a1f957}\label{classfcl_1_1ContinuousCollisionObject_aec592607d88e58126108f43d75a1f957}} 
+const \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \& \mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject_aec592607d88e58126108f43d75a1f957}{get\+A\+A\+BB}} () const
+\begin{DoxyCompactList}\small\item\em get the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}\sout{ in the world space for the motion }\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ContinuousCollisionObject_adf46d02bf2e39f5b53c4a4fdb8c4bd55}\label{classfcl_1_1ContinuousCollisionObject_adf46d02bf2e39f5b53c4a4fdb8c4bd55}} 
+void \mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject_adf46d02bf2e39f5b53c4a4fdb8c4bd55}{compute\+A\+A\+BB}} ()
+\begin{DoxyCompactList}\small\item\em compute the \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}\sout{ in the world space for the motion }\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ContinuousCollisionObject_aef477c077bdb6c2d463f539943be9c28}\label{classfcl_1_1ContinuousCollisionObject_aef477c077bdb6c2d463f539943be9c28}} 
+void $\ast$ \mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject_aef477c077bdb6c2d463f539943be9c28}{get\+User\+Data}} () const
+\begin{DoxyCompactList}\small\item\em get user data in object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ContinuousCollisionObject_ad422187307b57a98fac77b552a4d1487}\label{classfcl_1_1ContinuousCollisionObject_ad422187307b57a98fac77b552a4d1487}} 
+void \mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject_ad422187307b57a98fac77b552a4d1487}{set\+User\+Data}} (void $\ast$data)
+\begin{DoxyCompactList}\small\item\em set user data in object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ContinuousCollisionObject_acbccabdb48922e85b2364fddb224b242}\label{classfcl_1_1ContinuousCollisionObject_acbccabdb48922e85b2364fddb224b242}} 
+\mbox{\hyperlink{classfcl_1_1MotionBase}{Motion\+Base}}$<$ S $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject_acbccabdb48922e85b2364fddb224b242}{get\+Motion}} () const
+\begin{DoxyCompactList}\small\item\em get motion from the object instance \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ContinuousCollisionObject_aa9f6716f80b9c46418ffcc75501608e6}\label{classfcl_1_1ContinuousCollisionObject_aa9f6716f80b9c46418ffcc75501608e6}} 
+const F\+C\+L\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject_aa9f6716f80b9c46418ffcc75501608e6}{get\+Collision\+Geometry}} () const
+\begin{DoxyCompactList}\small\item\em get geometry from the object instance \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ContinuousCollisionObject_a3029fd8de3cb3080ae3cacc23202a150}\label{classfcl_1_1ContinuousCollisionObject_a3029fd8de3cb3080ae3cacc23202a150}} 
+const std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $>$ \& \mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject_a3029fd8de3cb3080ae3cacc23202a150}{collision\+Geometry}} () const
+\begin{DoxyCompactList}\small\item\em get geometry from the object instance \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1ContinuousCollisionObject_ac30518b64833d4b33de57d4d0ad6e965}\label{classfcl_1_1ContinuousCollisionObject_ac30518b64833d4b33de57d4d0ad6e965}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $>$ {\bfseries cgeom}
+\item 
+\mbox{\Hypertarget{classfcl_1_1ContinuousCollisionObject_a44f3073a29a0338cb66bbb117c3199d9}\label{classfcl_1_1ContinuousCollisionObject_a44f3073a29a0338cb66bbb117c3199d9}} 
+std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $>$ {\bfseries cgeom\+\_\+const}
+\item 
+\mbox{\Hypertarget{classfcl_1_1ContinuousCollisionObject_a19cb73b80e1bfbafde7a3018acb8e342}\label{classfcl_1_1ContinuousCollisionObject_a19cb73b80e1bfbafde7a3018acb8e342}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classfcl_1_1MotionBase}{Motion\+Base}}$<$ S $>$ $>$ {\bfseries motion}
+\item 
+\mbox{\Hypertarget{classfcl_1_1ContinuousCollisionObject_a7221ffc182e6e1116cf82a6865493dcd}\label{classfcl_1_1ContinuousCollisionObject_a7221ffc182e6e1116cf82a6865493dcd}} 
+\mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject_a7221ffc182e6e1116cf82a6865493dcd}{aabb}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}\sout{ in the global coordinate for the motion. }\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1ContinuousCollisionObject_a969d5973aa9b1dc57a7671a9737cbfa5}\label{classfcl_1_1ContinuousCollisionObject_a969d5973aa9b1dc57a7671a9737cbfa5}} 
+void $\ast$ \mbox{\hyperlink{classfcl_1_1ContinuousCollisionObject_a969d5973aa9b1dc57a7671a9737cbfa5}{user\+\_\+data}}
+\begin{DoxyCompactList}\small\item\em pointer to user defined data specific to this object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+class fcl\+::\+Continuous\+Collision\+Object$<$ S $>$}
+
+the object for continuous collision or distance computation, contains the geometry and the motion information 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/continuous\+\_\+collision\+\_\+object.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/continuous\+\_\+collision\+\_\+object-\/inl.\+h\end{DoxyCompactItemize}

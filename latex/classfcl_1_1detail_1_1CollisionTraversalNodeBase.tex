@@ -1,0 +1,56 @@
+\hypertarget{classfcl_1_1detail_1_1CollisionTraversalNodeBase}{}\doxysection{fcl\+::detail\+::Collision\+Traversal\+Node\+Base$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1detail_1_1CollisionTraversalNodeBase}\index{fcl::detail::CollisionTraversalNodeBase$<$ S $>$@{fcl::detail::CollisionTraversalNodeBase$<$ S $>$}}
+
+
+Node structure encoding the information required for collision traversal.  
+
+
+
+
+{\ttfamily \#include $<$collision\+\_\+traversal\+\_\+node\+\_\+base.\+h$>$}
+
+Inheritance diagram for fcl\+::detail\+::Collision\+Traversal\+Node\+Base$<$ S $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfcl_1_1detail_1_1CollisionTraversalNodeBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1CollisionTraversalNodeBase_aea255d9bb865781d6d31af1f0f0b912d}\label{classfcl_1_1detail_1_1CollisionTraversalNodeBase_aea255d9bb865781d6d31af1f0f0b912d}} 
+virtual bool \mbox{\hyperlink{classfcl_1_1detail_1_1CollisionTraversalNodeBase_aea255d9bb865781d6d31af1f0f0b912d}{B\+V\+Testing}} (int b1, int b2) const
+\begin{DoxyCompactList}\small\item\em BV test between b1 and b2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1CollisionTraversalNodeBase_ab85ab46745e403ca00e5f4a3d0d9c2e4}\label{classfcl_1_1detail_1_1CollisionTraversalNodeBase_ab85ab46745e403ca00e5f4a3d0d9c2e4}} 
+virtual void \mbox{\hyperlink{classfcl_1_1detail_1_1CollisionTraversalNodeBase_ab85ab46745e403ca00e5f4a3d0d9c2e4}{leaf\+Testing}} (int b1, int b2) const
+\begin{DoxyCompactList}\small\item\em Leaf test between node b1 and b2, if they are both leafs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1CollisionTraversalNodeBase_a66411b3f8a0ded91b2265265c4b8954a}\label{classfcl_1_1detail_1_1CollisionTraversalNodeBase_a66411b3f8a0ded91b2265265c4b8954a}} 
+virtual bool \mbox{\hyperlink{classfcl_1_1detail_1_1CollisionTraversalNodeBase_a66411b3f8a0ded91b2265265c4b8954a}{can\+Stop}} () const
+\begin{DoxyCompactList}\small\item\em Check whether the traversal can stop. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1CollisionTraversalNodeBase_ae36cbb58d7cada0a5adc4d95891c7426}\label{classfcl_1_1detail_1_1CollisionTraversalNodeBase_ae36cbb58d7cada0a5adc4d95891c7426}} 
+void \mbox{\hyperlink{classfcl_1_1detail_1_1CollisionTraversalNodeBase_ae36cbb58d7cada0a5adc4d95891c7426}{enable\+Statistics}} (bool enable)
+\begin{DoxyCompactList}\small\item\em Whether store some statistics information during traversal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1CollisionTraversalNodeBase_a4ba108ff22dc902534d91b8d10ec0eef}\label{classfcl_1_1detail_1_1CollisionTraversalNodeBase_a4ba108ff22dc902534d91b8d10ec0eef}} 
+\mbox{\hyperlink{structfcl_1_1CollisionRequest}{Collision\+Request}}$<$ S $>$ \mbox{\hyperlink{classfcl_1_1detail_1_1CollisionTraversalNodeBase_a4ba108ff22dc902534d91b8d10ec0eef}{request}}
+\begin{DoxyCompactList}\small\item\em request setting for collision \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1CollisionTraversalNodeBase_af7039f7e82c1b6106116c578defd1fe5}\label{classfcl_1_1detail_1_1CollisionTraversalNodeBase_af7039f7e82c1b6106116c578defd1fe5}} 
+\mbox{\hyperlink{structfcl_1_1CollisionResult}{Collision\+Result}}$<$ S $>$ $\ast$ \mbox{\hyperlink{classfcl_1_1detail_1_1CollisionTraversalNodeBase_af7039f7e82c1b6106116c578defd1fe5}{result}}
+\begin{DoxyCompactList}\small\item\em collision result kept during the traversal iteration \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1detail_1_1CollisionTraversalNodeBase_a0422c0d384124c61e3b46c9334d71c14}\label{classfcl_1_1detail_1_1CollisionTraversalNodeBase_a0422c0d384124c61e3b46c9334d71c14}} 
+bool \mbox{\hyperlink{classfcl_1_1detail_1_1CollisionTraversalNodeBase_a0422c0d384124c61e3b46c9334d71c14}{enable\+\_\+statistics}}
+\begin{DoxyCompactList}\small\item\em Whether stores statistics. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+class fcl\+::detail\+::\+Collision\+Traversal\+Node\+Base$<$ S $>$}
+
+Node structure encoding the information required for collision traversal. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/collision/collision\+\_\+traversal\+\_\+node\+\_\+base.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/traversal/collision/collision\+\_\+traversal\+\_\+node\+\_\+base-\/inl.\+h\end{DoxyCompactItemize}

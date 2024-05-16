@@ -1,0 +1,87 @@
+\hypertarget{structfcl_1_1detail_1_1GJK}{}\doxysection{fcl\+::detail\+::G\+JK$<$ S $>$ Struct Template Reference}
+\label{structfcl_1_1detail_1_1GJK}\index{fcl::detail::GJK$<$ S $>$@{fcl::detail::GJK$<$ S $>$}}
+
+
+class for \mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}} algorithm  
+
+
+
+
+{\ttfamily \#include $<$gjk.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structfcl_1_1detail_1_1GJK_1_1Simplex}{Simplex}}
+\item 
+struct \mbox{\hyperlink{structfcl_1_1detail_1_1GJK_1_1SimplexV}{SimplexV}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJK_ad7e3def53f38909369d66f285fb0281d}\label{structfcl_1_1detail_1_1GJK_ad7e3def53f38909369d66f285fb0281d}} 
+enum {\bfseries Status} \{ {\bfseries Valid}, 
+{\bfseries Inside}, 
+{\bfseries Failed}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJK_acdf317b96f2402d47bf5451aaf3faea2}\label{structfcl_1_1detail_1_1GJK_acdf317b96f2402d47bf5451aaf3faea2}} 
+{\bfseries G\+JK} (unsigned int max\+\_\+iterations\+\_\+, S tolerance\+\_\+)
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJK_a8ce954916073d7c576472ba9dd89e409}\label{structfcl_1_1detail_1_1GJK_a8ce954916073d7c576472ba9dd89e409}} 
+void {\bfseries initialize} ()
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJK_a280640d5851396ea30f0dabcb370f157}\label{structfcl_1_1detail_1_1GJK_a280640d5851396ea30f0dabcb370f157}} 
+Status \mbox{\hyperlink{structfcl_1_1detail_1_1GJK_a280640d5851396ea30f0dabcb370f157}{evaluate}} (const \mbox{\hyperlink{structfcl_1_1detail_1_1MinkowskiDiff}{Minkowski\+Diff}}$<$ S $>$ \&shape\+\_\+, const Vector3$<$ S $>$ \&guess)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}} algorithm, given the initial value guess. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJK_a00c79bce732fe46c5c4ae2b467884f7a}\label{structfcl_1_1detail_1_1GJK_a00c79bce732fe46c5c4ae2b467884f7a}} 
+void \mbox{\hyperlink{structfcl_1_1detail_1_1GJK_a00c79bce732fe46c5c4ae2b467884f7a}{get\+Support}} (const Vector3$<$ S $>$ \&d, \mbox{\hyperlink{structfcl_1_1detail_1_1GJK_1_1SimplexV}{SimplexV}} \&sv) const
+\begin{DoxyCompactList}\small\item\em apply the support function along a direction, the result is return in sv \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJK_ab8cdf4570b3c791ca8a23cbbc111a2e1}\label{structfcl_1_1detail_1_1GJK_ab8cdf4570b3c791ca8a23cbbc111a2e1}} 
+void \mbox{\hyperlink{structfcl_1_1detail_1_1GJK_ab8cdf4570b3c791ca8a23cbbc111a2e1}{get\+Support}} (const Vector3$<$ S $>$ \&d, const Vector3$<$ S $>$ \&v, \mbox{\hyperlink{structfcl_1_1detail_1_1GJK_1_1SimplexV}{SimplexV}} \&sv) const
+\begin{DoxyCompactList}\small\item\em apply the support function along a direction, the result is return is sv, here shape0 is translating at velocity v \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJK_af99b4f5cbe1eb9daee02be73c222197b}\label{structfcl_1_1detail_1_1GJK_af99b4f5cbe1eb9daee02be73c222197b}} 
+void \mbox{\hyperlink{structfcl_1_1detail_1_1GJK_af99b4f5cbe1eb9daee02be73c222197b}{remove\+Vertex}} (\mbox{\hyperlink{structfcl_1_1detail_1_1GJK_1_1Simplex}{Simplex}} \&simplex)
+\begin{DoxyCompactList}\small\item\em discard one vertex from the simplex \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJK_a418017cf84660b0e2e5056f78a6a6ad3}\label{structfcl_1_1detail_1_1GJK_a418017cf84660b0e2e5056f78a6a6ad3}} 
+void \mbox{\hyperlink{structfcl_1_1detail_1_1GJK_a418017cf84660b0e2e5056f78a6a6ad3}{append\+Vertex}} (\mbox{\hyperlink{structfcl_1_1detail_1_1GJK_1_1Simplex}{Simplex}} \&simplex, const Vector3$<$ S $>$ \&v)
+\begin{DoxyCompactList}\small\item\em append one vertex to the simplex \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJK_a6dbaff3666c2135c0cbeade9c541fb8e}\label{structfcl_1_1detail_1_1GJK_a6dbaff3666c2135c0cbeade9c541fb8e}} 
+bool \mbox{\hyperlink{structfcl_1_1detail_1_1GJK_a6dbaff3666c2135c0cbeade9c541fb8e}{enclose\+Origin}} ()
+\begin{DoxyCompactList}\small\item\em whether the simplex enclose the origin \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJK_aa6e5739ddbd3cdeb649d1f56f4aa03d8}\label{structfcl_1_1detail_1_1GJK_aa6e5739ddbd3cdeb649d1f56f4aa03d8}} 
+\mbox{\hyperlink{structfcl_1_1detail_1_1GJK_1_1Simplex}{Simplex}} $\ast$ \mbox{\hyperlink{structfcl_1_1detail_1_1GJK_aa6e5739ddbd3cdeb649d1f56f4aa03d8}{get\+Simplex}} () const
+\begin{DoxyCompactList}\small\item\em get the underlying simplex using in \mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}}, can be used for cache in next iteration \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJK_a4b9a0c45333289a5bd527cc53dfbc464}\label{structfcl_1_1detail_1_1GJK_a4b9a0c45333289a5bd527cc53dfbc464}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{structfcl_1_1detail_1_1GJK_a4b9a0c45333289a5bd527cc53dfbc464}{get\+Guess\+From\+Simplex}} () const
+\begin{DoxyCompactList}\small\item\em get the guess from current simplex \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJK_ace79b758463306c1954ee585e46b6ff7}\label{structfcl_1_1detail_1_1GJK_ace79b758463306c1954ee585e46b6ff7}} 
+\mbox{\hyperlink{structfcl_1_1detail_1_1MinkowskiDiff}{Minkowski\+Diff}}$<$ S $>$ {\bfseries shape}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJK_aa768da957a53878f7e476cfdb4b1a8c8}\label{structfcl_1_1detail_1_1GJK_aa768da957a53878f7e476cfdb4b1a8c8}} 
+Vector3$<$ S $>$ {\bfseries ray}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJK_a0697d3bb51e1d29b1c049743d378b221}\label{structfcl_1_1detail_1_1GJK_a0697d3bb51e1d29b1c049743d378b221}} 
+S {\bfseries distance}
+\item 
+\mbox{\Hypertarget{structfcl_1_1detail_1_1GJK_ae874d68edc5685533ab457616bcf2124}\label{structfcl_1_1detail_1_1GJK_ae874d68edc5685533ab457616bcf2124}} 
+\mbox{\hyperlink{structfcl_1_1detail_1_1GJK_1_1Simplex}{Simplex}} {\bfseries simplices} \mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+struct fcl\+::detail\+::\+G\+J\+K$<$ S $>$}
+
+class for \mbox{\hyperlink{structfcl_1_1detail_1_1GJK}{G\+JK}} algorithm 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/convexity\+\_\+based\+\_\+algorithm/gjk.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/detail/convexity\+\_\+based\+\_\+algorithm/gjk-\/inl.\+h\end{DoxyCompactItemize}

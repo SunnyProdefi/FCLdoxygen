@@ -1,0 +1,79 @@
+\hypertarget{structfcl_1_1DistanceRequest}{}\doxysection{fcl\+::Distance\+Request$<$ S $>$ Struct Template Reference}
+\label{structfcl_1_1DistanceRequest}\index{fcl::DistanceRequest$<$ S $>$@{fcl::DistanceRequest$<$ S $>$}}
+
+
+request to the distance computation  
+
+
+
+
+{\ttfamily \#include $<$distance\+\_\+request.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1DistanceRequest_ae675deb5b8530fe0e1c093129b97a982}\label{structfcl_1_1DistanceRequest_ae675deb5b8530fe0e1c093129b97a982}} 
+{\bfseries Distance\+Request} (bool enable\+\_\+nearest\+\_\+points\+\_\+=false, bool \mbox{\hyperlink{structfcl_1_1DistanceRequest_a2771f4703621c10e1513605289821087}{enable\+\_\+signed\+\_\+distance}}=false, S rel\+\_\+err\+\_\+=0.\+0, S abs\+\_\+err\+\_\+=0.\+0, S \mbox{\hyperlink{structfcl_1_1DistanceRequest_a568032b609ffc71fc77f425b2988a7c6}{distance\+\_\+tolerance}}=1e-\/6, \mbox{\hyperlink{namespacefcl_a576bdc98c01e92cdef6f3c60617b2d3d}{G\+J\+K\+Solver\+Type}} gjk\+\_\+solver\+\_\+type\+\_\+=G\+S\+T\+\_\+\+L\+I\+B\+C\+CD)
+\item 
+\mbox{\Hypertarget{structfcl_1_1DistanceRequest_a9f5f7d74e5a5c0dad43d7df91a3cf885}\label{structfcl_1_1DistanceRequest_a9f5f7d74e5a5c0dad43d7df91a3cf885}} 
+bool {\bfseries is\+Satisfied} (const \mbox{\hyperlink{structfcl_1_1DistanceResult}{Distance\+Result}}$<$ S $>$ \&result) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1DistanceRequest_a01a3861b1a2bcc718eb1f4a7a715baa1}\label{structfcl_1_1DistanceRequest_a01a3861b1a2bcc718eb1f4a7a715baa1}} 
+bool \mbox{\hyperlink{structfcl_1_1DistanceRequest_a01a3861b1a2bcc718eb1f4a7a715baa1}{enable\+\_\+nearest\+\_\+points}}
+\begin{DoxyCompactList}\small\item\em whether to return the nearest points \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structfcl_1_1DistanceRequest_a2771f4703621c10e1513605289821087}{enable\+\_\+signed\+\_\+distance}}
+\begin{DoxyCompactList}\small\item\em Whether to compute exact negative distance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1DistanceRequest_a9631395b322bc05e3bfad931607b7540}\label{structfcl_1_1DistanceRequest_a9631395b322bc05e3bfad931607b7540}} 
+S \mbox{\hyperlink{structfcl_1_1DistanceRequest_a9631395b322bc05e3bfad931607b7540}{rel\+\_\+err}}
+\begin{DoxyCompactList}\small\item\em error threshold for approximate distance \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1DistanceRequest_ac32ce75c7fe3486ce1c5e4a62a943a6a}\label{structfcl_1_1DistanceRequest_ac32ce75c7fe3486ce1c5e4a62a943a6a}} 
+S {\bfseries abs\+\_\+err}
+\item 
+\mbox{\Hypertarget{structfcl_1_1DistanceRequest_a568032b609ffc71fc77f425b2988a7c6}\label{structfcl_1_1DistanceRequest_a568032b609ffc71fc77f425b2988a7c6}} 
+S \mbox{\hyperlink{structfcl_1_1DistanceRequest_a568032b609ffc71fc77f425b2988a7c6}{distance\+\_\+tolerance}}
+\begin{DoxyCompactList}\small\item\em the threshold used in G\+JK algorithm to stop distance iteration \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1DistanceRequest_a45a86570cea53745a95db868682b7eea}\label{structfcl_1_1DistanceRequest_a45a86570cea53745a95db868682b7eea}} 
+\mbox{\hyperlink{namespacefcl_a576bdc98c01e92cdef6f3c60617b2d3d}{G\+J\+K\+Solver\+Type}} \mbox{\hyperlink{structfcl_1_1DistanceRequest_a45a86570cea53745a95db868682b7eea}{gjk\+\_\+solver\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em narrow phase solver type \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+struct fcl\+::\+Distance\+Request$<$ S $>$}
+
+request to the distance computation 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structfcl_1_1DistanceRequest_a2771f4703621c10e1513605289821087}\label{structfcl_1_1DistanceRequest_a2771f4703621c10e1513605289821087}} 
+\index{fcl::DistanceRequest$<$ S $>$@{fcl::DistanceRequest$<$ S $>$}!enable\_signed\_distance@{enable\_signed\_distance}}
+\index{enable\_signed\_distance@{enable\_signed\_distance}!fcl::DistanceRequest$<$ S $>$@{fcl::DistanceRequest$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{enable\_signed\_distance}{enable\_signed\_distance}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+bool \mbox{\hyperlink{structfcl_1_1DistanceRequest}{fcl\+::\+Distance\+Request}}$<$ S $>$\+::enable\+\_\+signed\+\_\+distance}
+
+
+
+Whether to compute exact negative distance. 
+
+Basically, the distance computation routine computes only the exact positive distance when the two objects are not in collision. If the objects are in collision, the result distance is implementation defined (mostly -\/1). \begin{DoxyVerb}  [ Current Implementation Status ]
+\end{DoxyVerb}
+ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- G\+J\+K\+Solver\+Type $\vert$ G\+S\+T\+\_\+\+L\+I\+B\+C\+CD $\vert$ G\+S\+T\+\_\+\+I\+N\+D\+EP -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- primitive shapes $\vert$ S\+D\+\_\+1, NP $\vert$ S\+D\+\_\+2, N\+P\+\_\+X mesh and octree $\vert$ S\+D\+\_\+2, N\+P\+\_\+X $\vert$ S\+D\+\_\+2, N\+P\+\_\+X -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- S\+D\+\_\+1\+: Signed distance is computed using convexity based methods (G\+JK, M\+PA) S\+D\+\_\+2\+: Positive distance is computed using convexity based mothods (G\+JK, M\+PA), but negative distance is computed by a workaround using penetration computation. NP \+: The pair of nearest points are guaranteed to be on the surface of objects. N\+P\+\_\+X\+: The pair of nearest points are N\+OT guaranteed to be on the surface of objects.
+
+If this flag is set to true, F\+CL will perform additional collision checking when the two objects are in collision in order to get the exact negative distance, which is the negated penetration depth. If there are multiple contact for the two objects, then the maximum penetration depth is used.
+
+If this flag is set to false, the result minimum distance is implementation defined (mostly -\/1).
+
+The default is false.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structfcl_1_1DistanceResult_ae3cec46891358cb06a4142c905242b90}{Distance\+Result\+::min\+\_\+distance}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/distance\+\_\+request.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/distance\+\_\+request-\/inl.\+h\end{DoxyCompactItemize}

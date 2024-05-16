@@ -1,0 +1,100 @@
+\hypertarget{structfcl_1_1DistanceResult}{}\doxysection{fcl\+::Distance\+Result$<$ S $>$ Struct Template Reference}
+\label{structfcl_1_1DistanceResult}\index{fcl::DistanceResult$<$ S $>$@{fcl::DistanceResult$<$ S $>$}}
+
+
+distance result  
+
+
+
+
+{\ttfamily \#include $<$distance\+\_\+result.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1DistanceResult_afa4b0dca513b66cd71be633acf70d921}\label{structfcl_1_1DistanceResult_afa4b0dca513b66cd71be633acf70d921}} 
+{\bfseries Distance\+Result} (S min\+\_\+distance\+\_\+=std\+::numeric\+\_\+limits$<$ S $>$\+::max())
+\item 
+\mbox{\Hypertarget{structfcl_1_1DistanceResult_a55b64f38be2ee29dd25026fe5dd4ba6c}\label{structfcl_1_1DistanceResult_a55b64f38be2ee29dd25026fe5dd4ba6c}} 
+void \mbox{\hyperlink{structfcl_1_1DistanceResult_a55b64f38be2ee29dd25026fe5dd4ba6c}{update}} (S \mbox{\hyperlink{namespacefcl_a96484159054b342a432d5a861c3723f1}{distance}}, const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $\ast$o1\+\_\+, const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $\ast$o2\+\_\+, int b1\+\_\+, int b2\+\_\+)
+\begin{DoxyCompactList}\small\item\em add distance information into the result \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1DistanceResult_aacd167af057b8535e088b8bf87ff36a2}\label{structfcl_1_1DistanceResult_aacd167af057b8535e088b8bf87ff36a2}} 
+void \mbox{\hyperlink{structfcl_1_1DistanceResult_aacd167af057b8535e088b8bf87ff36a2}{update}} (S \mbox{\hyperlink{namespacefcl_a96484159054b342a432d5a861c3723f1}{distance}}, const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $\ast$o1\+\_\+, const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $\ast$o2\+\_\+, int b1\+\_\+, int b2\+\_\+, const Vector3$<$ S $>$ \&p1, const Vector3$<$ S $>$ \&p2)
+\begin{DoxyCompactList}\small\item\em add distance information into the result \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1DistanceResult_a233fe17cc1193bb0599d1d7d972f9e93}\label{structfcl_1_1DistanceResult_a233fe17cc1193bb0599d1d7d972f9e93}} 
+void \mbox{\hyperlink{structfcl_1_1DistanceResult_a233fe17cc1193bb0599d1d7d972f9e93}{update}} (const \mbox{\hyperlink{structfcl_1_1DistanceResult}{Distance\+Result}} \&other\+\_\+result)
+\begin{DoxyCompactList}\small\item\em add distance information into the result \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1DistanceResult_a47c138d7ac2f0ce3cb659bd58a921476}\label{structfcl_1_1DistanceResult_a47c138d7ac2f0ce3cb659bd58a921476}} 
+void \mbox{\hyperlink{structfcl_1_1DistanceResult_a47c138d7ac2f0ce3cb659bd58a921476}{clear}} ()
+\begin{DoxyCompactList}\small\item\em clear the result \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+S \mbox{\hyperlink{structfcl_1_1DistanceResult_ae3cec46891358cb06a4142c905242b90}{min\+\_\+distance}}
+\begin{DoxyCompactList}\small\item\em Minimum distance between two objects. \end{DoxyCompactList}\item 
+Vector3$<$ S $>$ \mbox{\hyperlink{structfcl_1_1DistanceResult_aef197796d811ebaef1c6301d825efb25}{nearest\+\_\+points}} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Nearest points in the world coordinates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1DistanceResult_a9345f6421591aa2a6e7409c62e21df22}\label{structfcl_1_1DistanceResult_a9345f6421591aa2a6e7409c62e21df22}} 
+const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $\ast$ \mbox{\hyperlink{structfcl_1_1DistanceResult_a9345f6421591aa2a6e7409c62e21df22}{o1}}
+\begin{DoxyCompactList}\small\item\em collision object 1 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1DistanceResult_ada676701243695ba1b985c46f9b7d82b}\label{structfcl_1_1DistanceResult_ada676701243695ba1b985c46f9b7d82b}} 
+const \mbox{\hyperlink{classfcl_1_1CollisionGeometry}{Collision\+Geometry}}$<$ S $>$ $\ast$ \mbox{\hyperlink{structfcl_1_1DistanceResult_ada676701243695ba1b985c46f9b7d82b}{o2}}
+\begin{DoxyCompactList}\small\item\em collision object 2 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1DistanceResult_a9bd6fbe241893949b3930bd75806df0d}\label{structfcl_1_1DistanceResult_a9bd6fbe241893949b3930bd75806df0d}} 
+intptr\+\_\+t \mbox{\hyperlink{structfcl_1_1DistanceResult_a9bd6fbe241893949b3930bd75806df0d}{b1}}
+\begin{DoxyCompactList}\small\item\em information about the nearest point in object 1 if object 1 is mesh or point cloud, it is the triangle or point id if object 1 is geometry shape, it is N\+O\+NE (-\/1), if object 1 is octree, it is the query cell id (see \mbox{\hyperlink{classfcl_1_1OcTree_aeb65629d41c14e92f7ae1ef68c549a5b}{Oc\+Tree\+::get\+Node\+By\+Query\+Cell\+Id}}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfcl_1_1DistanceResult_a01df402acaf24987b649a39162c05ce0}\label{structfcl_1_1DistanceResult_a01df402acaf24987b649a39162c05ce0}} 
+intptr\+\_\+t \mbox{\hyperlink{structfcl_1_1DistanceResult_a01df402acaf24987b649a39162c05ce0}{b2}}
+\begin{DoxyCompactList}\small\item\em information about the nearest point in object 2 if object 2 is mesh or point cloud, it is the triangle or point id if object 2 is geometry shape, it is N\+O\+NE (-\/1), if object 2 is octree, it is the query cell id (see \mbox{\hyperlink{classfcl_1_1OcTree_aeb65629d41c14e92f7ae1ef68c549a5b}{Oc\+Tree\+::get\+Node\+By\+Query\+Cell\+Id}}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfcl_1_1DistanceResult_aa1d02eb8c43270092200ca7e00fe16ca}\label{structfcl_1_1DistanceResult_aa1d02eb8c43270092200ca7e00fe16ca}} 
+static const int \mbox{\hyperlink{structfcl_1_1DistanceResult_aa1d02eb8c43270092200ca7e00fe16ca}{N\+O\+NE}} = -\/1
+\begin{DoxyCompactList}\small\item\em invalid contact primitive information \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+struct fcl\+::\+Distance\+Result$<$ S $>$}
+
+distance result 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structfcl_1_1DistanceResult_ae3cec46891358cb06a4142c905242b90}\label{structfcl_1_1DistanceResult_ae3cec46891358cb06a4142c905242b90}} 
+\index{fcl::DistanceResult$<$ S $>$@{fcl::DistanceResult$<$ S $>$}!min\_distance@{min\_distance}}
+\index{min\_distance@{min\_distance}!fcl::DistanceResult$<$ S $>$@{fcl::DistanceResult$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{min\_distance}{min\_distance}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+S \mbox{\hyperlink{structfcl_1_1DistanceResult}{fcl\+::\+Distance\+Result}}$<$ S $>$\+::min\+\_\+distance}
+
+
+
+Minimum distance between two objects. 
+
+The distance is correct as a positive value when the two objects are not in collision. If they are in collision, min\+\_\+distance would be a implementation defined negative value, which might not the correct negative distance. In order to get correct negative distance set \mbox{\hyperlink{structfcl_1_1DistanceRequest_a2771f4703621c10e1513605289821087}{Distance\+Request\+::enable\+\_\+signed\+\_\+distance}} to true.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structfcl_1_1DistanceRequest_a2771f4703621c10e1513605289821087}{Distance\+Request\+::enable\+\_\+signed\+\_\+distance}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{structfcl_1_1DistanceResult_aef197796d811ebaef1c6301d825efb25}\label{structfcl_1_1DistanceResult_aef197796d811ebaef1c6301d825efb25}} 
+\index{fcl::DistanceResult$<$ S $>$@{fcl::DistanceResult$<$ S $>$}!nearest\_points@{nearest\_points}}
+\index{nearest\_points@{nearest\_points}!fcl::DistanceResult$<$ S $>$@{fcl::DistanceResult$<$ S $>$}}
+\doxysubsubsection{\texorpdfstring{nearest\_points}{nearest\_points}}
+{\footnotesize\ttfamily template$<$typename S $>$ \\
+Vector3$<$S$>$ \mbox{\hyperlink{structfcl_1_1DistanceResult}{fcl\+::\+Distance\+Result}}$<$ S $>$\+::nearest\+\_\+points\mbox{[}2\mbox{]}}
+
+
+
+Nearest points in the world coordinates. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structfcl_1_1DistanceRequest_a01a3861b1a2bcc718eb1f4a7a715baa1}{Distance\+Request\+::enable\+\_\+nearest\+\_\+points}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/narrowphase/distance\+\_\+request.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/distance\+\_\+result.\+h\item 
+/home/prodefi/fcl/include/fcl/narrowphase/distance\+\_\+result-\/inl.\+h\end{DoxyCompactItemize}

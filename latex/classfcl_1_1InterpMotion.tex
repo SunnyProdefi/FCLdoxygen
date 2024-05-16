@@ -1,0 +1,105 @@
+\hypertarget{classfcl_1_1InterpMotion}{}\doxysection{fcl\+::Interp\+Motion$<$ S $>$ Class Template Reference}
+\label{classfcl_1_1InterpMotion}\index{fcl::InterpMotion$<$ S $>$@{fcl::InterpMotion$<$ S $>$}}
+
+
+Linear interpolation motion Each Motion is assumed to have constant linear velocity and angular velocity The motion is R(t)(p -\/ p\+\_\+ref) + p\+\_\+ref + T(t) Therefore, R(0) = R0, R(1) = R1 T(0) = T0 + R0 p\+\_\+ref -\/ p\+\_\+ref T(1) = T1 + R1 p\+\_\+ref -\/ p\+\_\+ref.  
+
+
+
+
+{\ttfamily \#include $<$interp\+\_\+motion.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_a245442efb4dd857d0c837a1adfc128e5}\label{classfcl_1_1InterpMotion_a245442efb4dd857d0c837a1adfc128e5}} 
+\mbox{\hyperlink{classfcl_1_1InterpMotion_a245442efb4dd857d0c837a1adfc128e5}{Interp\+Motion}} ()
+\begin{DoxyCompactList}\small\item\em Default transformations are all identities. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_a89326d386349dc2fad561213686a5adc}\label{classfcl_1_1InterpMotion_a89326d386349dc2fad561213686a5adc}} 
+\mbox{\hyperlink{classfcl_1_1InterpMotion_a89326d386349dc2fad561213686a5adc}{Interp\+Motion}} (const Matrix3$<$ S $>$ \&R1, const Vector3$<$ S $>$ \&T1, const Matrix3$<$ S $>$ \&R2, const Vector3$<$ S $>$ \&T2)
+\begin{DoxyCompactList}\small\item\em Construct motion from the initial rotation/translation and goal rotation/translation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_ac6702fbccdd817f3f78d7c021b317d56}\label{classfcl_1_1InterpMotion_ac6702fbccdd817f3f78d7c021b317d56}} 
+{\bfseries Interp\+Motion} (const Transform3$<$ S $>$ \&tf1\+\_\+, const Transform3$<$ S $>$ \&tf2\+\_\+)
+\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_a728c27f45dfc0a424808f5940d96ff15}\label{classfcl_1_1InterpMotion_a728c27f45dfc0a424808f5940d96ff15}} 
+\mbox{\hyperlink{classfcl_1_1InterpMotion_a728c27f45dfc0a424808f5940d96ff15}{Interp\+Motion}} (const Matrix3$<$ S $>$ \&R1, const Vector3$<$ S $>$ \&T1, const Matrix3$<$ S $>$ \&R2, const Vector3$<$ S $>$ \&T2, const Vector3$<$ S $>$ \&O)
+\begin{DoxyCompactList}\small\item\em Construct motion from the initial rotation/translation and goal rotation/translation related to some rotation center. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_a0f3bcc50cef220964ad4f6338846dd60}\label{classfcl_1_1InterpMotion_a0f3bcc50cef220964ad4f6338846dd60}} 
+{\bfseries Interp\+Motion} (const Transform3$<$ S $>$ \&tf1\+\_\+, const Transform3$<$ S $>$ \&tf2\+\_\+, const Vector3$<$ S $>$ \&O)
+\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_a3e4049134582e33b97ca6643fd02d810}\label{classfcl_1_1InterpMotion_a3e4049134582e33b97ca6643fd02d810}} 
+bool \mbox{\hyperlink{classfcl_1_1InterpMotion_a3e4049134582e33b97ca6643fd02d810}{integrate}} (S dt) const
+\begin{DoxyCompactList}\small\item\em Integrate the motion from 0 to dt We compute the current transformation from zero point instead of from last integrate time, for precision. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_a555ca9f31b46b4ca34175855991c0da6}\label{classfcl_1_1InterpMotion_a555ca9f31b46b4ca34175855991c0da6}} 
+S \mbox{\hyperlink{classfcl_1_1InterpMotion_a555ca9f31b46b4ca34175855991c0da6}{compute\+Motion\+Bound}} (const \mbox{\hyperlink{classfcl_1_1BVMotionBoundVisitor}{B\+V\+Motion\+Bound\+Visitor}}$<$ S $>$ \&mb\+\_\+visitor) const
+\begin{DoxyCompactList}\small\item\em Compute the motion bound for a bounding volume along a given direction n, which is defined in the visitor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_ada902c2bf14e755259ac8f3b355119b8}\label{classfcl_1_1InterpMotion_ada902c2bf14e755259ac8f3b355119b8}} 
+S \mbox{\hyperlink{classfcl_1_1InterpMotion_ada902c2bf14e755259ac8f3b355119b8}{compute\+Motion\+Bound}} (const \mbox{\hyperlink{classfcl_1_1TriangleMotionBoundVisitor}{Triangle\+Motion\+Bound\+Visitor}}$<$ S $>$ \&mb\+\_\+visitor) const
+\begin{DoxyCompactList}\small\item\em Compute the motion bound for a triangle along a given direction n, which is defined in the visitor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_ad92b64227bcd2ce485a8b216c2ee019d}\label{classfcl_1_1InterpMotion_ad92b64227bcd2ce485a8b216c2ee019d}} 
+void \mbox{\hyperlink{classfcl_1_1InterpMotion_ad92b64227bcd2ce485a8b216c2ee019d}{get\+Current\+Transform}} (Transform3$<$ S $>$ \&tf\+\_\+) const
+\begin{DoxyCompactList}\small\item\em Get the rotation and translation in current step. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_a5c5f9045d90b76f216c65923fb17e42b}\label{classfcl_1_1InterpMotion_a5c5f9045d90b76f216c65923fb17e42b}} 
+void {\bfseries get\+Taylor\+Model} (\mbox{\hyperlink{classfcl_1_1TMatrix3}{T\+Matrix3}}$<$ S $>$ \&tm, \mbox{\hyperlink{classfcl_1_1TVector3}{T\+Vector3}}$<$ S $>$ \&tv) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_ac22d01267cf7b4e5fbb1b62d6b44f653}\label{classfcl_1_1InterpMotion_ac22d01267cf7b4e5fbb1b62d6b44f653}} 
+const Vector3$<$ S $>$ \& {\bfseries get\+Reference\+Point} () const
+\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_a78b505baaf68bd37a20f2ab910eef758}\label{classfcl_1_1InterpMotion_a78b505baaf68bd37a20f2ab910eef758}} 
+const Vector3$<$ S $>$ \& {\bfseries get\+Angular\+Axis} () const
+\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_a8bfe9f2577ca66ada74044056d428b2e}\label{classfcl_1_1InterpMotion_a8bfe9f2577ca66ada74044056d428b2e}} 
+S {\bfseries get\+Angular\+Velocity} () const
+\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_a5391b8c9128a9d607df0e934e6710939}\label{classfcl_1_1InterpMotion_a5391b8c9128a9d607df0e934e6710939}} 
+const Vector3$<$ S $>$ \& {\bfseries get\+Linear\+Velocity} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_a277c6387320573eef2e86391cf50b039}\label{classfcl_1_1InterpMotion_a277c6387320573eef2e86391cf50b039}} 
+void {\bfseries compute\+Velocity} ()
+\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_ae93aafd851370fae44b672901c69d852}\label{classfcl_1_1InterpMotion_ae93aafd851370fae44b672901c69d852}} 
+Quaternion$<$ S $>$ {\bfseries delta\+Rotation} (S dt) const
+\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_aef1de8c3e4634b32a02ae6ddd0c2a628}\label{classfcl_1_1InterpMotion_aef1de8c3e4634b32a02ae6ddd0c2a628}} 
+Quaternion$<$ S $>$ {\bfseries absolute\+Rotation} (S dt) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_a79e3711b635b1e93d95abf7d0eaa04ff}\label{classfcl_1_1InterpMotion_a79e3711b635b1e93d95abf7d0eaa04ff}} 
+Transform3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1InterpMotion_a79e3711b635b1e93d95abf7d0eaa04ff}{tf1}}
+\begin{DoxyCompactList}\small\item\em The transformation at time 0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_ac948c5debb871a2e5684abaae05be44f}\label{classfcl_1_1InterpMotion_ac948c5debb871a2e5684abaae05be44f}} 
+Transform3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1InterpMotion_ac948c5debb871a2e5684abaae05be44f}{tf2}}
+\begin{DoxyCompactList}\small\item\em The transformation at time 1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_ad55c9aa360ade4019d2b9f9fa00b02b4}\label{classfcl_1_1InterpMotion_ad55c9aa360ade4019d2b9f9fa00b02b4}} 
+Transform3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1InterpMotion_ad55c9aa360ade4019d2b9f9fa00b02b4}{tf}}
+\begin{DoxyCompactList}\small\item\em The transformation at current time t. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_af95423f2ab8e63d866846d258e926a4c}\label{classfcl_1_1InterpMotion_af95423f2ab8e63d866846d258e926a4c}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1InterpMotion_af95423f2ab8e63d866846d258e926a4c}{linear\+\_\+vel}}
+\begin{DoxyCompactList}\small\item\em Linear velocity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_ae6a50bddf5e88c593d21ae0e796486ee}\label{classfcl_1_1InterpMotion_ae6a50bddf5e88c593d21ae0e796486ee}} 
+S \mbox{\hyperlink{classfcl_1_1InterpMotion_ae6a50bddf5e88c593d21ae0e796486ee}{angular\+\_\+vel}}
+\begin{DoxyCompactList}\small\item\em Angular speed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_aa68258e202dc8c376f2c114fef02970e}\label{classfcl_1_1InterpMotion_aa68258e202dc8c376f2c114fef02970e}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1InterpMotion_aa68258e202dc8c376f2c114fef02970e}{angular\+\_\+axis}}
+\begin{DoxyCompactList}\small\item\em Angular velocity axis. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1InterpMotion_a3f60ab731c2a9d8a2e7671abae977793}\label{classfcl_1_1InterpMotion_a3f60ab731c2a9d8a2e7671abae977793}} 
+Vector3$<$ S $>$ \mbox{\hyperlink{classfcl_1_1InterpMotion_a3f60ab731c2a9d8a2e7671abae977793}{reference\+\_\+p}}
+\begin{DoxyCompactList}\small\item\em Reference point for the motion (in the object\textquotesingle{}s local frame) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S$>$\newline
+class fcl\+::\+Interp\+Motion$<$ S $>$}
+
+Linear interpolation motion Each Motion is assumed to have constant linear velocity and angular velocity The motion is R(t)(p -\/ p\+\_\+ref) + p\+\_\+ref + T(t) Therefore, R(0) = R0, R(1) = R1 T(0) = T0 + R0 p\+\_\+ref -\/ p\+\_\+ref T(1) = T1 + R1 p\+\_\+ref -\/ p\+\_\+ref. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/math/motion/bv\+\_\+motion\+\_\+bound\+\_\+visitor.\+h\item 
+/home/prodefi/fcl/include/fcl/math/motion/interp\+\_\+motion.\+h\item 
+/home/prodefi/fcl/include/fcl/math/motion/interp\+\_\+motion-\/inl.\+h\end{DoxyCompactItemize}

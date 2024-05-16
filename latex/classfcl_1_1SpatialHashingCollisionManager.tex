@@ -1,0 +1,119 @@
+\hypertarget{classfcl_1_1SpatialHashingCollisionManager}{}\doxysection{fcl\+::Spatial\+Hashing\+Collision\+Manager$<$ S, Hash\+Table $>$ Class Template Reference}
+\label{classfcl_1_1SpatialHashingCollisionManager}\index{fcl::SpatialHashingCollisionManager$<$ S, HashTable $>$@{fcl::SpatialHashingCollisionManager$<$ S, HashTable $>$}}
+
+
+spatial hashing collision mananger  
+
+
+
+
+{\ttfamily \#include $<$broadphase\+\_\+spatialhash.\+h$>$}
+
+Inheritance diagram for fcl\+::Spatial\+Hashing\+Collision\+Manager$<$ S, Hash\+Table $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfcl_1_1SpatialHashingCollisionManager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a0aee7c648cdf2dd1a0c3dbcde5c0a425}\label{classfcl_1_1SpatialHashingCollisionManager_a0aee7c648cdf2dd1a0c3dbcde5c0a425}} 
+{\bfseries Spatial\+Hashing\+Collision\+Manager} (S cell\+\_\+size, const Vector3$<$ S $>$ \&scene\+\_\+min, const Vector3$<$ S $>$ \&scene\+\_\+max, unsigned int default\+\_\+table\+\_\+size=1000)
+\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a38e35fb3912e9aa60723352f4153b49c}\label{classfcl_1_1SpatialHashingCollisionManager_a38e35fb3912e9aa60723352f4153b49c}} 
+void \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a38e35fb3912e9aa60723352f4153b49c}{register\+Object}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj)
+\begin{DoxyCompactList}\small\item\em add one object to the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_afa42d4faa536b799cba5f907af3e9ee5}\label{classfcl_1_1SpatialHashingCollisionManager_afa42d4faa536b799cba5f907af3e9ee5}} 
+void \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_afa42d4faa536b799cba5f907af3e9ee5}{unregister\+Object}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj)
+\begin{DoxyCompactList}\small\item\em remove one object from the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a634a0653affe008f6a1547aa0177dbc2}\label{classfcl_1_1SpatialHashingCollisionManager_a634a0653affe008f6a1547aa0177dbc2}} 
+void \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a634a0653affe008f6a1547aa0177dbc2}{setup}} ()
+\begin{DoxyCompactList}\small\item\em initialize the manager, related with the specific type of manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a844d7eaca04eaefe465f90b6cde0cb32}\label{classfcl_1_1SpatialHashingCollisionManager_a844d7eaca04eaefe465f90b6cde0cb32}} 
+void \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a844d7eaca04eaefe465f90b6cde0cb32}{update}} ()
+\begin{DoxyCompactList}\small\item\em update the condition of manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_ab8e7e7ee01e4c4706dc783bc8bc3bed6}\label{classfcl_1_1SpatialHashingCollisionManager_ab8e7e7ee01e4c4706dc783bc8bc3bed6}} 
+void \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_ab8e7e7ee01e4c4706dc783bc8bc3bed6}{update}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$updated\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em update the manager by explicitly given the object updated \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a88469bd4f74ab87970120aa3e133da05}\label{classfcl_1_1SpatialHashingCollisionManager_a88469bd4f74ab87970120aa3e133da05}} 
+void \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a88469bd4f74ab87970120aa3e133da05}{update}} (const std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&updated\+\_\+objs)
+\begin{DoxyCompactList}\small\item\em update the manager by explicitly given the set of objects update \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a7d43034f49e0c0e8bdc86797c23e6bb6}\label{classfcl_1_1SpatialHashingCollisionManager_a7d43034f49e0c0e8bdc86797c23e6bb6}} 
+void \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a7d43034f49e0c0e8bdc86797c23e6bb6}{clear}} ()
+\begin{DoxyCompactList}\small\item\em clear the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a6c6c955114d6d9056c040645667f07cf}\label{classfcl_1_1SpatialHashingCollisionManager_a6c6c955114d6d9056c040645667f07cf}} 
+void \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a6c6c955114d6d9056c040645667f07cf}{get\+Objects}} (std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&\mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a387ef252c3e93605c66b44323ffa4875}{objs}}) const
+\begin{DoxyCompactList}\small\item\em return the objects managed by the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a25d4f17f8f916e2b8190d2e9c9cb2a9a}\label{classfcl_1_1SpatialHashingCollisionManager_a25d4f17f8f916e2b8190d2e9c9cb2a9a}} 
+void \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a25d4f17f8f916e2b8190d2e9c9cb2a9a}{collide}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform collision test between one object and all the objects belonging to the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a040f9a3a9598b925c6a2a84984727386}\label{classfcl_1_1SpatialHashingCollisionManager_a040f9a3a9598b925c6a2a84984727386}} 
+void \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a040f9a3a9598b925c6a2a84984727386}{distance}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform distance computation between one object and all the objects belonging ot the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_ab1d89ca30c8ed66a02b1f7e645b7bb46}\label{classfcl_1_1SpatialHashingCollisionManager_ab1d89ca30c8ed66a02b1f7e645b7bb46}} 
+void \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_ab1d89ca30c8ed66a02b1f7e645b7bb46}{collide}} (void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform collision test for the objects belonging to the manager (i.\+e, N$^\wedge$2 self collision) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a38bb4981bb23698cbb1e6fdc2870e943}\label{classfcl_1_1SpatialHashingCollisionManager_a38bb4981bb23698cbb1e6fdc2870e943}} 
+void \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a38bb4981bb23698cbb1e6fdc2870e943}{distance}} (void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform distance test for the objects belonging to the manager (i.\+e., N$^\wedge$2 self distance) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a14dd0e26ed1924eb7cd8445b5a5ee788}\label{classfcl_1_1SpatialHashingCollisionManager_a14dd0e26ed1924eb7cd8445b5a5ee788}} 
+void \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a14dd0e26ed1924eb7cd8445b5a5ee788}{collide}} (\mbox{\hyperlink{classfcl_1_1BroadPhaseCollisionManager}{Broad\+Phase\+Collision\+Manager}}$<$ S $>$ $\ast$other\+\_\+manager, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform collision test with objects belonging to another manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a8b63b3275325749a9d36eca8a58be1c8}\label{classfcl_1_1SpatialHashingCollisionManager_a8b63b3275325749a9d36eca8a58be1c8}} 
+void \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a8b63b3275325749a9d36eca8a58be1c8}{distance}} (\mbox{\hyperlink{classfcl_1_1BroadPhaseCollisionManager}{Broad\+Phase\+Collision\+Manager}}$<$ S $>$ $\ast$other\+\_\+manager, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform distance test with objects belonging to another manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a487a3a51ffdb61532912ee926ff8cee5}\label{classfcl_1_1SpatialHashingCollisionManager_a487a3a51ffdb61532912ee926ff8cee5}} 
+bool \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a487a3a51ffdb61532912ee926ff8cee5}{empty}} () const
+\begin{DoxyCompactList}\small\item\em whether the manager is empty \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a4f74b9530577ffb812d87a17c5c5f4ae}\label{classfcl_1_1SpatialHashingCollisionManager_a4f74b9530577ffb812d87a17c5c5f4ae}} 
+size\+\_\+t \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a4f74b9530577ffb812d87a17c5c5f4ae}{size}} () const
+\begin{DoxyCompactList}\small\item\em the number of objects managed by the manager \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a44a9fd88f776f2abccaa46b5a84279f8}\label{classfcl_1_1SpatialHashingCollisionManager_a44a9fd88f776f2abccaa46b5a84279f8}} 
+static void \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a44a9fd88f776f2abccaa46b5a84279f8}{compute\+Bound}} (std\+::vector$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \&\mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a387ef252c3e93605c66b44323ffa4875}{objs}}, Vector3$<$ S $>$ \&l, Vector3$<$ S $>$ \&u)
+\begin{DoxyCompactList}\small\item\em compute the bound for the environent \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_ae14299316890e53a175051a84ea46331}\label{classfcl_1_1SpatialHashingCollisionManager_ae14299316890e53a175051a84ea46331}} 
+bool \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_ae14299316890e53a175051a84ea46331}{collide\+\_\+}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_ad3d91aa981105e93352826566fbb264c}{Collision\+Call\+Back}}$<$ S $>$ callback) const
+\begin{DoxyCompactList}\small\item\em perform collision test between one object and all the objects belonging to the manager \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_af188730251079e1d9065b80fa0340a33}\label{classfcl_1_1SpatialHashingCollisionManager_af188730251079e1d9065b80fa0340a33}} 
+bool \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_af188730251079e1d9065b80fa0340a33}{distance\+\_\+}} (\mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$obj, void $\ast$cdata, \mbox{\hyperlink{namespacefcl_a00a119735ceaf9bddfb33ee48ec641ea}{Distance\+Call\+Back}}$<$ S $>$ callback, S \&min\+\_\+dist) const
+\begin{DoxyCompactList}\small\item\em perform distance computation between one object and all the objects belonging ot the manager \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a387ef252c3e93605c66b44323ffa4875}\label{classfcl_1_1SpatialHashingCollisionManager_a387ef252c3e93605c66b44323ffa4875}} 
+std\+::list$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a387ef252c3e93605c66b44323ffa4875}{objs}}
+\begin{DoxyCompactList}\small\item\em all objects in the scene \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_ab2d6e8937b245896bae1803c85953a96}\label{classfcl_1_1SpatialHashingCollisionManager_ab2d6e8937b245896bae1803c85953a96}} 
+std\+::list$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_ab2d6e8937b245896bae1803c85953a96}{objs\+\_\+partially\+\_\+penetrating\+\_\+scene\+\_\+limit}}
+\begin{DoxyCompactList}\small\item\em objects partially penetrating (not totally inside nor outside) the scene limit are in another list \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_ad9084a28f6638dd07c1239049602d1a5}\label{classfcl_1_1SpatialHashingCollisionManager_ad9084a28f6638dd07c1239049602d1a5}} 
+std\+::list$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$ $>$ \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_ad9084a28f6638dd07c1239049602d1a5}{objs\+\_\+outside\+\_\+scene\+\_\+limit}}
+\begin{DoxyCompactList}\small\item\em objects outside the scene limit are in another list \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a12c5e4b9fe6e2044c157b29953dc9c20}\label{classfcl_1_1SpatialHashingCollisionManager_a12c5e4b9fe6e2044c157b29953dc9c20}} 
+\mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a12c5e4b9fe6e2044c157b29953dc9c20}{scene\+\_\+limit}}
+\begin{DoxyCompactList}\small\item\em the size of the scene \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_a181c1ff12792a7898c66fd10c6b24d08}\label{classfcl_1_1SpatialHashingCollisionManager_a181c1ff12792a7898c66fd10c6b24d08}} 
+std\+::map$<$ \mbox{\hyperlink{classfcl_1_1CollisionObject}{Collision\+Object}}$<$ S $>$ $\ast$, \mbox{\hyperlink{classfcl_1_1AABB}{A\+A\+BB}}$<$ S $>$ $>$ \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_a181c1ff12792a7898c66fd10c6b24d08}{obj\+\_\+aabb\+\_\+map}}
+\begin{DoxyCompactList}\small\item\em store the map between objects and their aabbs. will make update more convenient \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfcl_1_1SpatialHashingCollisionManager_ac868d4cf9dbd6b9a1296699d366fa1f3}\label{classfcl_1_1SpatialHashingCollisionManager_ac868d4cf9dbd6b9a1296699d366fa1f3}} 
+Hash\+Table $\ast$ \mbox{\hyperlink{classfcl_1_1SpatialHashingCollisionManager_ac868d4cf9dbd6b9a1296699d366fa1f3}{hash\+\_\+table}}
+\begin{DoxyCompactList}\small\item\em objects in the scene limit (given by scene\+\_\+min and scene\+\_\+max) are in the spatial hash table \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename S, typename Hash\+Table = detail\+::\+Simple\+Hash\+Table$<$\+A\+A\+B\+B$<$\+S$>$, Collision\+Object$<$\+S$>$$\ast$, detail\+::\+Spatial\+Hash$<$\+S$>$$>$$>$\newline
+class fcl\+::\+Spatial\+Hashing\+Collision\+Manager$<$ S, Hash\+Table $>$}
+
+spatial hashing collision mananger 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/prodefi/fcl/include/fcl/broadphase/broadphase\+\_\+spatialhash.\+h\item 
+/home/prodefi/fcl/include/fcl/broadphase/broadphase\+\_\+spatialhash-\/inl.\+h\end{DoxyCompactItemize}
